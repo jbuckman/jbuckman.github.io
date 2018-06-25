@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on Jacob Buckman&#39;s Homepage</title>
-    <link>https://www.jacobbuckman.com/publication/</link>
+    <link>https://jacobbuckman.com/publication/</link>
     <description>Recent content in Publications on Jacob Buckman&#39;s Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.jacobbuckman.com/publication/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jacobbuckman.com/publication/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Is Generator Conditioning Causally Related to GAN Performance?</title>
-      <link>https://www.jacobbuckman.com/publication/jacobean-gan/</link>
+      <link>https://jacobbuckman.com/publication/jacobean-gan/</link>
       <pubDate>Tue, 12 Jun 2018 12:27:43 +0000</pubDate>
       
-      <guid>https://www.jacobbuckman.com/publication/jacobean-gan/</guid>
+      <guid>https://jacobbuckman.com/publication/jacobean-gan/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Neural Lattice Language Models</title>
-      <link>https://www.jacobbuckman.com/publication/nllm/</link>
+      <link>https://jacobbuckman.com/publication/nllm/</link>
       <pubDate>Sun, 03 Jun 2018 12:27:16 +0000</pubDate>
       
-      <guid>https://www.jacobbuckman.com/publication/nllm/</guid>
+      <guid>https://jacobbuckman.com/publication/nllm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Thermometer Encoding: One Hot Way to Resist Adversarial Examples</title>
-      <link>https://www.jacobbuckman.com/publication/thermometer/</link>
+      <link>https://jacobbuckman.com/publication/thermometer/</link>
       <pubDate>Wed, 25 Apr 2018 12:26:57 +0000</pubDate>
       
-      <guid>https://www.jacobbuckman.com/publication/thermometer/</guid>
+      <guid>https://jacobbuckman.com/publication/thermometer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Transition-Based Dependency Parsing with Heuristic Backtracking</title>
-      <link>https://www.jacobbuckman.com/publication/heuristic-backtracking/</link>
+      <link>https://jacobbuckman.com/publication/heuristic-backtracking/</link>
       <pubDate>Fri, 25 Nov 2016 12:26:43 +0000</pubDate>
       
-      <guid>https://www.jacobbuckman.com/publication/heuristic-backtracking/</guid>
+      <guid>https://jacobbuckman.com/publication/heuristic-backtracking/</guid>
       <description></description>
     </item>
     
