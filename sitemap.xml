@@ -5,7 +5,34 @@
     
     <url>
     
-      <loc>https://jbuckman.github.io/post/</loc>
+      <loc>https://www.jacobbuckman.com/publication/jacobean-gan/</loc>
+      <lastmod>2018-06-12T12:27:43+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://www.jacobbuckman.com/publication/nllm/</loc>
+      <lastmod>2018-06-03T12:27:16+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://www.jacobbuckman.com/publication/thermometer/</loc>
+      <lastmod>2018-04-25T12:26:57+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://www.jacobbuckman.com/post/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -14,7 +41,7 @@
     
     <url>
     
-      <loc>https://jbuckman.github.io/publication/</loc>
+      <loc>https://www.jacobbuckman.com/publication/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -23,7 +50,7 @@
     
     <url>
     
-      <loc>https://jbuckman.github.io/talk/</loc>
+      <loc>https://www.jacobbuckman.com/talk/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -32,7 +59,17 @@
     
     <url>
     
-      <loc>https://jbuckman.github.io/categories/</loc>
+      <loc>https://www.jacobbuckman.com/publication/heuristic-backtracking/</loc>
+      <lastmod>2016-11-25T12:26:43+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://www.jacobbuckman.com/publication_types/1/</loc>
+      <lastmod>2018-06-12T12:27:43+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -41,7 +78,26 @@
     
     <url>
     
-      <loc>https://jbuckman.github.io/</loc>
+      <loc>https://www.jacobbuckman.com/publication_types/2/</loc>
+      <lastmod>2018-06-03T12:27:16+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://www.jacobbuckman.com/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://www.jacobbuckman.com/</loc>
       <lastmod>2016-04-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -51,7 +107,8 @@
     
     <url>
     
-      <loc>https://jbuckman.github.io/publication_types/</loc>
+      <loc>https://www.jacobbuckman.com/publication_types/</loc>
+      <lastmod>2018-06-12T12:27:43+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -60,7 +117,7 @@
     
     <url>
     
-      <loc>https://jbuckman.github.io/tags/</loc>
+      <loc>https://www.jacobbuckman.com/tags/</loc>
       <priority>0</priority>
     </url>
     

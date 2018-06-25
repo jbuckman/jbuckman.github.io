@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 on Jacob Buckman&#39;s Homepage</title>
+    <link>https://www.jacobbuckman.com/publication_types/2/</link>
+    <description>Recent content in 2 on Jacob Buckman&#39;s Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 03 Jun 2018 12:27:16 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.jacobbuckman.com/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Neural Lattice Language Models</title>
+      <link>https://www.jacobbuckman.com/publication/nllm/</link>
+      <pubDate>Sun, 03 Jun 2018 12:27:16 +0000</pubDate>
+      
+      <guid>https://www.jacobbuckman.com/publication/nllm/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

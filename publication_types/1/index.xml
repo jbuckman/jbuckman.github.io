@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jacob Buckman&#39;s Homepage on Jacob Buckman&#39;s Homepage</title>
-    <link>https://www.jacobbuckman.com/</link>
-    <description>Recent content in Jacob Buckman&#39;s Homepage on Jacob Buckman&#39;s Homepage</description>
+    <title>1 on Jacob Buckman&#39;s Homepage</title>
+    <link>https://www.jacobbuckman.com/publication_types/1/</link>
+    <description>Recent content in 1 on Jacob Buckman&#39;s Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Jun 2018 12:27:43 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.jacobbuckman.com/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Is Generator Conditioning Causally Related to GAN Performance?</title>
@@ -16,15 +18,6 @@
       <pubDate>Tue, 12 Jun 2018 12:27:43 +0000</pubDate>
       
       <guid>https://www.jacobbuckman.com/publication/jacobean-gan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Neural Lattice Language Models</title>
-      <link>https://www.jacobbuckman.com/publication/nllm/</link>
-      <pubDate>Sun, 03 Jun 2018 12:27:16 +0000</pubDate>
-      
-      <guid>https://www.jacobbuckman.com/publication/nllm/</guid>
       <description></description>
     </item>
     

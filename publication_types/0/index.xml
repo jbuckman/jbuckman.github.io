@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>0 on Jacob Buckman&#39;s Homepage</title>
+    <link>https://jbuckman.github.io/publication_types/0/</link>
+    <description>Recent content in 0 on Jacob Buckman&#39;s Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Mon, 25 Jun 2018 12:27:43 +0000</lastBuildDate>
+    
+	<atom:link href="https://jbuckman.github.io/publication_types/0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Jacobean Gan</title>
+      <link>https://jbuckman.github.io/publication/jacobean-gan/</link>
+      <pubDate>Mon, 25 Jun 2018 12:27:43 +0000</pubDate>
+      
+      <guid>https://jbuckman.github.io/publication/jacobean-gan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nllm</title>
+      <link>https://jbuckman.github.io/publication/nllm/</link>
+      <pubDate>Mon, 25 Jun 2018 12:27:16 +0000</pubDate>
+      
+      <guid>https://jbuckman.github.io/publication/nllm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thermometer</title>
+      <link>https://jbuckman.github.io/publication/thermometer/</link>
+      <pubDate>Mon, 25 Jun 2018 12:26:57 +0000</pubDate>
+      
+      <guid>https://jbuckman.github.io/publication/thermometer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heuristic Backtracking</title>
+      <link>https://jbuckman.github.io/publication/heuristic-backtracking/</link>
+      <pubDate>Mon, 25 Jun 2018 12:26:43 +0000</pubDate>
+      
+      <guid>https://jbuckman.github.io/publication/heuristic-backtracking/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
