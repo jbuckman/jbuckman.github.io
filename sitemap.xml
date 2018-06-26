@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>https://jacobbuckman.com/post/tensorflow-the-confusing-parts-1/</loc>
+      <lastmod>2018-06-25T14:53:44+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://jacobbuckman.com/publication/jacobean-gan/</loc>
       <lastmod>2018-06-12T12:27:43+00:00</lastmod>
     </url>
@@ -118,6 +127,26 @@
     <url>
     
       <loc>https://jacobbuckman.com/tags/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://jacobbuckman.com/tags/tensorflow/</loc>
+      <lastmod>2018-06-25T14:53:44+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://jacobbuckman.com/categories/tutorial/</loc>
+      <lastmod>2018-06-25T14:53:44+00:00</lastmod>
       <priority>0</priority>
     </url>
     
