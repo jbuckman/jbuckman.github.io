@@ -292,7 +292,9 @@ What is this? Who are you? I’m Jacob, a Google AI Resident. When I started the
 
 <h2 id="introduction">Introduction</h2>
 
-<p>In the three years since its release, Tensorflow has cemented itself as a cornerstone of the deep learning ecosystem. However, it can be non-intuitive for beginners, especially compared to define-by-run neural network libraries like PyTorch or DyNet.*{Footnote: Click here for more information on the difference between define-and-run and define-by-run.} Many introductory Tensorflow tutorials exist, for doing everything from linear regression, to classifying MNIST, to state-of-the-art translation. These concrete, practical guides are great resources for getting Tensorflow projects up and running, and can serve as jumping-off points for similar projects. But for the people who are working on applications for which a good tutorial does not exist, or who want to do something totally off the beaten path (as is common in research), Tensorflow can definitely feel frustrating at first.</p>
+<p>In the three years since its release, Tensorflow has cemented itself as a cornerstone of the deep learning ecosystem. However, it can be non-intuitive for beginners, especially compared to define-by-run neural network libraries like PyTorch or DyNet.<sup class="footnote-ref" id="fnref:0"><a href="#fn:0">1</a></sup></p>
+
+<p>Many introductory Tensorflow tutorials exist, for doing everything from linear regression, to classifying MNIST, to state-of-the-art translation. These concrete, practical guides are great resources for getting Tensorflow projects up and running, and can serve as jumping-off points for similar projects. But for the people who are working on applications for which a good tutorial does not exist, or who want to do something totally off the beaten path (as is common in research), Tensorflow can definitely feel frustrating at first.</p>
 
 <p>This post is my attempt to fill this gap. Rather than focusing on a specific task, I take a more general approach, and explain the fundamental abstractions underpinning Tensorflow. With a good grasp of these concepts, deep learning with Tensorflow becomes intuitive and straightforward.</p>
 
@@ -325,7 +327,7 @@ What is this? Who are you? I’m Jacob, a Google AI Resident. When I started the
 
 <figure>
 
-<img src="/img/tfcp1/fig0.png" width="500px" />
+<img src="/img/tfcp1/fig0.png" width="300px" />
 
 
 </figure>
@@ -348,7 +350,7 @@ print two_node
 
 <figure>
 
-<img src="/img/tfcp1/fig1.png" width="500px" />
+<img src="/img/tfcp1/fig1.png" width="300px" />
 
 
 </figure>
@@ -368,7 +370,7 @@ tf.constant(3)
 
 <figure>
 
-<img src="/img/tfcp1/fig2.png" width="500px" />
+<img src="/img/tfcp1/fig2.png" width="300px" />
 
 
 </figure>
@@ -397,7 +399,7 @@ Tensor(&quot;Const:0&quot;, shape=(), dtype=int32)
 
 <figure>
 
-<img src="/img/tfcp1/fig3.png" width="500px" />
+<img src="/img/tfcp1/fig3.png" width="300px" />
 
 
 </figure>
@@ -416,7 +418,7 @@ sum_node = two_node + three_node # equivalent to tf.add(two_node, three_node)
 
 <figure>
 
-<img src="/img/tfcp1/fig4.png" width="500px" />
+<img src="/img/tfcp1/fig4.png" width="300px" />
 
 
 </figure>
@@ -456,7 +458,7 @@ print sess.run(sum_node)
 
 <figure>
 
-<img src="/img/tfcp1/fig4.png" width="500px" />
+<img src="/img/tfcp1/fig4.png" width="300px" />
 
 
 </figure>
@@ -482,7 +484,7 @@ print sess.run([two_node, sum_node])
 
 <figure>
 
-<img src="/img/tfcp1/fig4.png" width="500px" />
+<img src="/img/tfcp1/fig4.png" width="300px" />
 
 
 </figure>
@@ -515,7 +517,7 @@ InvalidArgumentError (see above for traceback): You must feed a value for placeh
 
 <figure>
 
-<img src="/img/tfcp1/fig5.png" width="500px" />
+<img src="/img/tfcp1/fig5.png" width="300px" />
 
 
 </figure>
@@ -541,7 +543,7 @@ print sess.run(input_placeholder, feed_dict={input_placeholder: 2})
 
 <figure>
 
-<img src="/img/tfcp1/fig5.png" width="500px" />
+<img src="/img/tfcp1/fig5.png" width="300px" />
 
 
 </figure>
@@ -576,7 +578,7 @@ InvalidArgumentError (see above for traceback): You must feed a value for placeh
 
 <figure>
 
-<img src="/img/tfcp1/fig6.png" width="500px" />
+<img src="/img/tfcp1/fig6.png" width="300px" />
 
 
 </figure>
@@ -585,17 +587,17 @@ InvalidArgumentError (see above for traceback): You must feed a value for placeh
 
 <p>When we call <code>sess.run()</code> on a node that is dependent on other nodes in the graph, we need to compute the values of those nodes, too. And if those nodes have dependencies, we need to calculate those values (and so on and so on&hellip;) until we reach the “top” of the computation graph where nodes have no predecessors.</p>
 
-<p>Consider the computation path of sum_node:</p>
+<p>Consider the computation path of <code>sum_node</code>:</p>
 
 <p><figure>
 
-<img src="/img/tfcp1/fig7.png" width="500px" />
+<img src="/img/tfcp1/fig7.png" width="300px" />
 
 
 </figure>
 <figure>
 
-<img src="/img/tfcp1/fig8.png" width="500px" />
+<img src="/img/tfcp1/fig8.png" width="300px" />
 
 
 </figure></p>
@@ -606,7 +608,7 @@ InvalidArgumentError (see above for traceback): You must feed a value for placeh
 
 <figure>
 
-<img src="/img/tfcp1/fig9.png" width="500px" />
+<img src="/img/tfcp1/fig9.png" width="300px" />
 
 
 </figure>
@@ -643,7 +645,7 @@ tensorflow.python.framework.errors_impl.FailedPreconditionError: Attempting to u
 
 <figure>
 
-<img src="/img/tfcp1/fig10.png" width="500px" />
+<img src="/img/tfcp1/fig10.png" width="300px" />
 
 
 </figure>
@@ -670,7 +672,7 @@ print sess.run(count_variable)
 
 <figure>
 
-<img src="/img/tfcp1/fig11.png" width="500px" />
+<img src="/img/tfcp1/fig11.png" width="300px" />
 
 
 </figure>
@@ -689,7 +691,7 @@ print sess.run(count_variable)
 
 <figure>
 
-<img src="/img/tfcp1/fig12.png" width="500px" />
+<img src="/img/tfcp1/fig12.png" width="300px" />
 
 
 </figure>
@@ -719,7 +721,7 @@ tensorflow.python.framework.errors_impl.FailedPreconditionError: Attempting to u
 
 <figure>
 
-<img src="/img/tfcp1/fig13.png" width="500px" />
+<img src="/img/tfcp1/fig13.png" width="300px" />
 
 
 </figure>
@@ -748,7 +750,7 @@ print sess.run(count_variable)
 
 <figure>
 
-<img src="/img/tfcp1/fig14.png" width="500px" />
+<img src="/img/tfcp1/fig14.png" width="300px" />
 
 
 </figure>
@@ -825,9 +827,7 @@ print &quot;Learned parameters:  m=%.4f, b=%.4f&quot; % tuple(sess.run([m, b]))
 
 <h6 id="output-11">Output:</h6>
 
-<pre><code class="language-python"></code></pre>
-
-<p>0 2.3205383
+<pre><code class="language-python">0 2.3205383
 1 0.5792742
 2 1.55254
 3 1.5733259
@@ -838,7 +838,7 @@ print &quot;Learned parameters:  m=%.4f, b=%.4f&quot; % tuple(sess.run([m, b]))
 8 1.6775116
 9 1.6462423
 10 2.441034
-&hellip;
+...
 99990 2.9878322e-12
 99991 5.158629e-11
 99992 4.53646e-11
@@ -850,13 +850,12 @@ print &quot;Learned parameters:  m=%.4f, b=%.4f&quot; % tuple(sess.run([m, b]))
 99998 5.684342e-14
 99999 3.007017e-11
 True parameters:     m=0.3519, b=0.3242
-Learned parameters:  m=0.3519, b=0.3242</p>
+Learned parameters:  m=0.3519, b=0.3242
+</code></pre>
 
-<pre><code>
-As you can see, the loss goes down to basically nothing, and we wind up with a really good estimate of the true parameters. Hopefully, the only part of the code that is new to you is this segment:
+<p>As you can see, the loss goes down to basically nothing, and we wind up with a really good estimate of the true parameters. Hopefully, the only part of the code that is new to you is this segment:</p>
 
-```python 
-# finally, set up the optimizer and minimization node
+<pre><code class="language-python"># finally, set up the optimizer and minimization node
 optimizer = tf.train.GradientDescentOptimizer(1e-3)
 train_op = optimizer.minimize(loss)
 </code></pre>
@@ -867,7 +866,7 @@ train_op = optimizer.minimize(loss)
 
 <p>So essentially, when we call <code>sess.run(train_op)</code>, it does a step of gradient descent on all of our variables for us. Of course, we also need to fill in the input and output placeholders with our feed_dict, and we also want to print the loss, because it’s handy for debugging.</p>
 
-<h2 id="debugging-with-tf-print">Debugging with tf.Print</h2>
+<h2 id="debugging-with-tf-print">Debugging with <code>tf.Print</code></h2>
 
 <p>As you start doing more complicated things with Tensorflow, you’re going to want to debug. In general, it’s quite hard to inspect what’s going on inside a computation graph. You can’t use a regular Python print statement, because you never have access to the values you want to print &ndash; they are locked away inside the <code>sess.run()</code> call. To elaborate, suppose you want to inspect an intermediate value of a computation. Before the <code>sess.run()</code> call, the intermediate values do not exist yet. But when the <code>sess.run()</code> call returns, the intermediate values are gone!</p>
 
@@ -931,7 +930,7 @@ print sess.run(print_sum_node)
 
 <figure>
 
-<img src="/img/tfcp1/fig15.png" width="500px" />
+<img src="/img/tfcp1/fig15.png" width="300px" />
 
 
 </figure>
@@ -959,7 +958,7 @@ print sess.run(sum_node)
 
 <figure>
 
-<img src="/img/tfcp1/fig16.png" width="500px" />
+<img src="/img/tfcp1/fig16.png" width="300px" />
 
 
 </figure>
@@ -972,7 +971,18 @@ print sess.run(sum_node)
 
 <p>Happy training!</p>
 
-<p><em>I&rsquo;d like to thank Kathryn Rough, Katherine Lee, Sara Hooker, and Ludwig Schubert for all of their help and feedback when writing this post.</em></p>
+<p><em>Many thanks to Kathryn Rough, Katherine Lee, Sara Hooker, and Ludwig Schubert for all of their help and feedback when writing this post.</em></p>
+
+<hr />
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:0">Click here for more information on the difference between define-and-run and define-by-run.
+ <a class="footnote-return" href="#fnref:0"><sup>^</sup></a></li>
+</ol>
+</div>
 
     </div>
 

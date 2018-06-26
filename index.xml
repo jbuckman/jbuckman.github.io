@@ -26,7 +26,9 @@
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 
-&lt;p&gt;In the three years since its release, Tensorflow has cemented itself as a cornerstone of the deep learning ecosystem. However, it can be non-intuitive for beginners, especially compared to define-by-run neural network libraries like PyTorch or DyNet.*{Footnote: Click here for more information on the difference between define-and-run and define-by-run.} Many introductory Tensorflow tutorials exist, for doing everything from linear regression, to classifying MNIST, to state-of-the-art translation. These concrete, practical guides are great resources for getting Tensorflow projects up and running, and can serve as jumping-off points for similar projects. But for the people who are working on applications for which a good tutorial does not exist, or who want to do something totally off the beaten path (as is common in research), Tensorflow can definitely feel frustrating at first.&lt;/p&gt;
+&lt;p&gt;In the three years since its release, Tensorflow has cemented itself as a cornerstone of the deep learning ecosystem. However, it can be non-intuitive for beginners, especially compared to define-by-run neural network libraries like PyTorch or DyNet.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:0&#34;&gt;&lt;a href=&#34;#fn:0&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;Many introductory Tensorflow tutorials exist, for doing everything from linear regression, to classifying MNIST, to state-of-the-art translation. These concrete, practical guides are great resources for getting Tensorflow projects up and running, and can serve as jumping-off points for similar projects. But for the people who are working on applications for which a good tutorial does not exist, or who want to do something totally off the beaten path (as is common in research), Tensorflow can definitely feel frustrating at first.&lt;/p&gt;
 
 &lt;p&gt;This post is my attempt to fill this gap. Rather than focusing on a specific task, I take a more general approach, and explain the fundamental abstractions underpinning Tensorflow. With a good grasp of these concepts, deep learning with Tensorflow becomes intuitive and straightforward.&lt;/p&gt;
 
@@ -59,7 +61,7 @@
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig0.png&#34; width=&#34;500px&#34; /&gt;
+&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig0.png&#34; width=&#34;300px&#34; /&gt;
 
 
 &lt;/figure&gt;
@@ -82,7 +84,7 @@ print two_node
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig1.png&#34; width=&#34;500px&#34; /&gt;
+&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig1.png&#34; width=&#34;300px&#34; /&gt;
 
 
 &lt;/figure&gt;
@@ -102,7 +104,7 @@ tf.constant(3)
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig2.png&#34; width=&#34;500px&#34; /&gt;
+&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig2.png&#34; width=&#34;300px&#34; /&gt;
 
 
 &lt;/figure&gt;
@@ -131,7 +133,7 @@ Tensor(&amp;quot;Const:0&amp;quot;, shape=(), dtype=int32)
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig3.png&#34; width=&#34;500px&#34; /&gt;
+&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig3.png&#34; width=&#34;300px&#34; /&gt;
 
 
 &lt;/figure&gt;
@@ -150,7 +152,7 @@ sum_node = two_node + three_node # equivalent to tf.add(two_node, three_node)
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig4.png&#34; width=&#34;500px&#34; /&gt;
+&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig4.png&#34; width=&#34;300px&#34; /&gt;
 
 
 &lt;/figure&gt;
@@ -190,7 +192,7 @@ print sess.run(sum_node)
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig4.png&#34; width=&#34;500px&#34; /&gt;
+&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig4.png&#34; width=&#34;300px&#34; /&gt;
 
 
 &lt;/figure&gt;
@@ -216,7 +218,7 @@ print sess.run([two_node, sum_node])
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig4.png&#34; width=&#34;500px&#34; /&gt;
+&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig4.png&#34; width=&#34;300px&#34; /&gt;
 
 
 &lt;/figure&gt;
@@ -249,7 +251,7 @@ InvalidArgumentError (see above for traceback): You must feed a value for placeh
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig5.png&#34; width=&#34;500px&#34; /&gt;
+&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig5.png&#34; width=&#34;300px&#34; /&gt;
 
 
 &lt;/figure&gt;
@@ -275,7 +277,7 @@ print sess.run(input_placeholder, feed_dict={input_placeholder: 2})
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig5.png&#34; width=&#34;500px&#34; /&gt;
+&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig5.png&#34; width=&#34;300px&#34; /&gt;
 
 
 &lt;/figure&gt;
@@ -310,7 +312,7 @@ InvalidArgumentError (see above for traceback): You must feed a value for placeh
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig6.png&#34; width=&#34;500px&#34; /&gt;
+&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig6.png&#34; width=&#34;300px&#34; /&gt;
 
 
 &lt;/figure&gt;
@@ -319,17 +321,17 @@ InvalidArgumentError (see above for traceback): You must feed a value for placeh
 
 &lt;p&gt;When we call &lt;code&gt;sess.run()&lt;/code&gt; on a node that is dependent on other nodes in the graph, we need to compute the values of those nodes, too. And if those nodes have dependencies, we need to calculate those values (and so on and so on&amp;hellip;) until we reach the “top” of the computation graph where nodes have no predecessors.&lt;/p&gt;
 
-&lt;p&gt;Consider the computation path of sum_node:&lt;/p&gt;
+&lt;p&gt;Consider the computation path of &lt;code&gt;sum_node&lt;/code&gt;:&lt;/p&gt;
 
 &lt;p&gt;&lt;figure&gt;
 
-&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig7.png&#34; width=&#34;500px&#34; /&gt;
+&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig7.png&#34; width=&#34;300px&#34; /&gt;
 
 
 &lt;/figure&gt;
 &lt;figure&gt;
 
-&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig8.png&#34; width=&#34;500px&#34; /&gt;
+&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig8.png&#34; width=&#34;300px&#34; /&gt;
 
 
 &lt;/figure&gt;&lt;/p&gt;
@@ -340,7 +342,7 @@ InvalidArgumentError (see above for traceback): You must feed a value for placeh
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig9.png&#34; width=&#34;500px&#34; /&gt;
+&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig9.png&#34; width=&#34;300px&#34; /&gt;
 
 
 &lt;/figure&gt;
@@ -377,7 +379,7 @@ tensorflow.python.framework.errors_impl.FailedPreconditionError: Attempting to u
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig10.png&#34; width=&#34;500px&#34; /&gt;
+&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig10.png&#34; width=&#34;300px&#34; /&gt;
 
 
 &lt;/figure&gt;
@@ -404,7 +406,7 @@ print sess.run(count_variable)
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig11.png&#34; width=&#34;500px&#34; /&gt;
+&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig11.png&#34; width=&#34;300px&#34; /&gt;
 
 
 &lt;/figure&gt;
@@ -423,7 +425,7 @@ print sess.run(count_variable)
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig12.png&#34; width=&#34;500px&#34; /&gt;
+&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig12.png&#34; width=&#34;300px&#34; /&gt;
 
 
 &lt;/figure&gt;
@@ -453,7 +455,7 @@ tensorflow.python.framework.errors_impl.FailedPreconditionError: Attempting to u
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig13.png&#34; width=&#34;500px&#34; /&gt;
+&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig13.png&#34; width=&#34;300px&#34; /&gt;
 
 
 &lt;/figure&gt;
@@ -482,7 +484,7 @@ print sess.run(count_variable)
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig14.png&#34; width=&#34;500px&#34; /&gt;
+&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig14.png&#34; width=&#34;300px&#34; /&gt;
 
 
 &lt;/figure&gt;
@@ -559,9 +561,7 @@ print &amp;quot;Learned parameters:  m=%.4f, b=%.4f&amp;quot; % tuple(sess.run([
 
 &lt;h6 id=&#34;output-11&#34;&gt;Output:&lt;/h6&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;0 2.3205383
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;0 2.3205383
 1 0.5792742
 2 1.55254
 3 1.5733259
@@ -572,7 +572,7 @@ print &amp;quot;Learned parameters:  m=%.4f, b=%.4f&amp;quot; % tuple(sess.run([
 8 1.6775116
 9 1.6462423
 10 2.441034
-&amp;hellip;
+...
 99990 2.9878322e-12
 99991 5.158629e-11
 99992 4.53646e-11
@@ -584,13 +584,12 @@ print &amp;quot;Learned parameters:  m=%.4f, b=%.4f&amp;quot; % tuple(sess.run([
 99998 5.684342e-14
 99999 3.007017e-11
 True parameters:     m=0.3519, b=0.3242
-Learned parameters:  m=0.3519, b=0.3242&lt;/p&gt;
+Learned parameters:  m=0.3519, b=0.3242
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code&gt;
-As you can see, the loss goes down to basically nothing, and we wind up with a really good estimate of the true parameters. Hopefully, the only part of the code that is new to you is this segment:
+&lt;p&gt;As you can see, the loss goes down to basically nothing, and we wind up with a really good estimate of the true parameters. Hopefully, the only part of the code that is new to you is this segment:&lt;/p&gt;
 
-```python 
-# finally, set up the optimizer and minimization node
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# finally, set up the optimizer and minimization node
 optimizer = tf.train.GradientDescentOptimizer(1e-3)
 train_op = optimizer.minimize(loss)
 &lt;/code&gt;&lt;/pre&gt;
@@ -601,7 +600,7 @@ train_op = optimizer.minimize(loss)
 
 &lt;p&gt;So essentially, when we call &lt;code&gt;sess.run(train_op)&lt;/code&gt;, it does a step of gradient descent on all of our variables for us. Of course, we also need to fill in the input and output placeholders with our feed_dict, and we also want to print the loss, because it’s handy for debugging.&lt;/p&gt;
 
-&lt;h2 id=&#34;debugging-with-tf-print&#34;&gt;Debugging with tf.Print&lt;/h2&gt;
+&lt;h2 id=&#34;debugging-with-tf-print&#34;&gt;Debugging with &lt;code&gt;tf.Print&lt;/code&gt;&lt;/h2&gt;
 
 &lt;p&gt;As you start doing more complicated things with Tensorflow, you’re going to want to debug. In general, it’s quite hard to inspect what’s going on inside a computation graph. You can’t use a regular Python print statement, because you never have access to the values you want to print &amp;ndash; they are locked away inside the &lt;code&gt;sess.run()&lt;/code&gt; call. To elaborate, suppose you want to inspect an intermediate value of a computation. Before the &lt;code&gt;sess.run()&lt;/code&gt; call, the intermediate values do not exist yet. But when the &lt;code&gt;sess.run()&lt;/code&gt; call returns, the intermediate values are gone!&lt;/p&gt;
 
@@ -665,7 +664,7 @@ print sess.run(print_sum_node)
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig15.png&#34; width=&#34;500px&#34; /&gt;
+&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig15.png&#34; width=&#34;300px&#34; /&gt;
 
 
 &lt;/figure&gt;
@@ -693,7 +692,7 @@ print sess.run(sum_node)
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig16.png&#34; width=&#34;500px&#34; /&gt;
+&lt;img src=&#34;https://jacobbuckman.com/img/tfcp1/fig16.png&#34; width=&#34;300px&#34; /&gt;
 
 
 &lt;/figure&gt;
@@ -706,7 +705,18 @@ print sess.run(sum_node)
 
 &lt;p&gt;Happy training!&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;I&amp;rsquo;d like to thank Kathryn Rough, Katherine Lee, Sara Hooker, and Ludwig Schubert for all of their help and feedback when writing this post.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Many thanks to Kathryn Rough, Katherine Lee, Sara Hooker, and Ludwig Schubert for all of their help and feedback when writing this post.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:0&#34;&gt;Click here for more information on the difference between define-and-run and define-by-run.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:0&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </description>
     </item>
     
