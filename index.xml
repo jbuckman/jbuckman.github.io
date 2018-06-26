@@ -18,7 +18,7 @@
       <guid>https://jacobbuckman.com/post/tensorflow-the-confusing-parts-1/</guid>
       <description>
 
-&lt;p&gt;&lt;a href=&#34;#understanding-tensorflow-abstractions&#34;&gt;Click here to skip the intro and dive right in!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;#understanding-tensorflow&#34;&gt;Click here to skip the intro and dive right in!&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 
@@ -40,7 +40,7 @@
 
 &lt;p&gt;======&lt;/p&gt;
 
-&lt;h1 id=&#34;understanding-tensorflow-abstractions&#34;&gt;Understanding Tensorflow Abstractions&lt;/h1&gt;
+&lt;h1 id=&#34;understanding-tensorflow&#34;&gt;Understanding Tensorflow&lt;/h1&gt;
 
 &lt;h3 id=&#34;tensorflow-is-not-a-normal-python-library&#34;&gt;Tensorflow Is Not A Normal Python Library&lt;/h3&gt;
 
@@ -715,13 +715,13 @@ print sess.run(sum_node)
 &lt;hr /&gt;
 
 &lt;ol&gt;
-&lt;li id=&#34;fn:0&#34;&gt;&lt;a href=&#34;https://docs.chainer.org/en/stable/guides/define_by_run.html&#34; target=&#34;_blank&#34;&gt;This Chainer documentation&lt;/a&gt; describes the difference between define-and-run and define-by-run.
+&lt;li id=&#34;fn:0&#34;&gt;&lt;a href=&#34;https://docs.chainer.org/en/stable/guides/define_by_run.html&#34; target=&#34;_blank&#34;&gt;This page&lt;/a&gt; from the Chainer documentation describes the difference between define-and-run and define-by-run.
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:0&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li id=&#34;fn:1&#34;&gt;In general, I prefer to make sure I already have the entire graph in place when I create a session, and I follow that paradigm in my examples here. But you might see it done differently in other Tensorflow code.
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li id=&#34;fn:2&#34;&gt;Since the Tensorflow team is dedicated to backwards compatibility, there are several ways to create variables. In older code, it is common to also encounter the &lt;code&gt;tf.Variable()&lt;/code&gt; syntax, which serves the same purpose.
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:3&#34;&gt;&lt;a href=&#34;https://www.tensorflow.org/api_docs/python/tf/variable_scope&#34; target=&#34;_blank&#34;&gt;Name management can be made a bit easier with &lt;code&gt;tf.variable_scope()&lt;/code&gt;&lt;/a&gt;. I will cover scoping in more detail In a future post!
+&lt;li id=&#34;fn:3&#34;&gt;Name management can be made a bit easier with &lt;code&gt;tf.variable_scope()&lt;/code&gt;. I will cover scoping in more detail In a future post!
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;

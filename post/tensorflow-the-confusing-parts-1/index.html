@@ -219,6 +219,9 @@ Introduction What is this? Who are you? I’m Jacob, a Google AI Resident. When 
 
   
   
+  <span class="middot-divider"></span>
+  <a href="https://jacobbuckman.com/post/tensorflow-the-confusing-parts-1/#disqus_thread"></a>
+  
 
   
   
@@ -284,7 +287,7 @@ Introduction What is this? Who are you? I’m Jacob, a Google AI Resident. When 
     <div class="article-style" itemprop="articleBody">
       
 
-<p><a href="#understanding-tensorflow-abstractions">Click here to skip the intro and dive right in!</a></p>
+<p><a href="#understanding-tensorflow">Click here to skip the intro and dive right in!</a></p>
 
 <h1 id="introduction">Introduction</h1>
 
@@ -306,7 +309,7 @@ Introduction What is this? Who are you? I’m Jacob, a Google AI Resident. When 
 
 <p>======</p>
 
-<h1 id="understanding-tensorflow-abstractions">Understanding Tensorflow Abstractions</h1>
+<h1 id="understanding-tensorflow">Understanding Tensorflow</h1>
 
 <h3 id="tensorflow-is-not-a-normal-python-library">Tensorflow Is Not A Normal Python Library</h3>
 
@@ -981,13 +984,13 @@ print sess.run(sum_node)
 <hr />
 
 <ol>
-<li id="fn:0"><a href="https://docs.chainer.org/en/stable/guides/define_by_run.html" target="_blank">This Chainer documentation</a> describes the difference between define-and-run and define-by-run.
+<li id="fn:0"><a href="https://docs.chainer.org/en/stable/guides/define_by_run.html" target="_blank">This page</a> from the Chainer documentation describes the difference between define-and-run and define-by-run.
  <a class="footnote-return" href="#fnref:0"><sup>^</sup></a></li>
 <li id="fn:1">In general, I prefer to make sure I already have the entire graph in place when I create a session, and I follow that paradigm in my examples here. But you might see it done differently in other Tensorflow code.
  <a class="footnote-return" href="#fnref:1"><sup>^</sup></a></li>
 <li id="fn:2">Since the Tensorflow team is dedicated to backwards compatibility, there are several ways to create variables. In older code, it is common to also encounter the <code>tf.Variable()</code> syntax, which serves the same purpose.
  <a class="footnote-return" href="#fnref:2"><sup>^</sup></a></li>
-<li id="fn:3"><a href="https://www.tensorflow.org/api_docs/python/tf/variable_scope" target="_blank">Name management can be made a bit easier with <code>tf.variable_scope()</code></a>. I will cover scoping in more detail In a future post!
+<li id="fn:3">Name management can be made a bit easier with <code>tf.variable_scope()</code>. I will cover scoping in more detail In a future post!
  <a class="footnote-return" href="#fnref:3"><sup>^</sup></a></li>
 </ol>
 </div>
@@ -1012,6 +1015,29 @@ print sess.run(sum_node)
     
 
     
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jacobbuckman" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
 
 
   </div>
@@ -1066,6 +1092,8 @@ print sess.run(sum_node)
     
 
     
+    
+    <script id="dsq-count-scr" src="//jacobbuckman.disqus.com/count.js" async></script>
     
 
     
