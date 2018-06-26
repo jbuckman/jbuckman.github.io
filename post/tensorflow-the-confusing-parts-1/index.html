@@ -213,7 +213,7 @@ What is this? Who are you? I’m Jacob, a Google AI Resident. When I started the
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    20 min read
+    21 min read
   </span>
   
 
@@ -300,7 +300,7 @@ What is this? Who are you? I’m Jacob, a Google AI Resident. When I started the
 
 <p>This tutorial is intended for people who already have some experience with both programming and machine learning, and want to pick up Tensorflow. For example: a computer science student who wants to use Tensorflow in the final project of her ML class; a software engineer who has just been assigned to a project that involves deep learning; or a bewildered new Google AI Resident (shout-out to past Jacob). If you’d like a refresher on the basics, here are some good resources. Otherwise: let’s get started!</p>
 
-<h3 id="pagebreak">Pagebreak</h3>
+<hr />
 
 <h2 id="tensorflow-is-not-a-normal-python-library">Tensorflow Is Not A Normal Python Library</h2>
 
@@ -321,33 +321,41 @@ What is this? Who are you? I’m Jacob, a Google AI Resident. When I started the
 <pre><code class="language-python">import tensorflow as tf
 </code></pre>
 
+<h6 id="graph">Graph:</h6>
+
 <figure>
 
-<img src="/img/tfcp1/fig0.png" />
+<img src="/img/tfcp1/fig0.png" width="500px" />
 
 
 </figure>
 
 <p>Predictably, just importing Tensorflow does not give us an interesting computation graph. Just a lonely, empty global variable. But what about when we call a Tensorflow operation?</p>
 
+<h6 id="code">Code:</h6>
+
 <pre><code class="language-python">import tensorflow as tf
 two_node = tf.constant(2)
 print two_node
 </code></pre>
 
-<p>Output:</p>
+<h6 id="output">Output:</h6>
 
 <pre><code class="language-python">Tensor(&quot;Const:0&quot;, shape=(), dtype=int32)
 </code></pre>
 
+<h6 id="graph-1">Graph:</h6>
+
 <figure>
 
-<img src="/img/tfcp1/fig1.png" width="100px" />
+<img src="/img/tfcp1/fig1.png" width="500px" />
 
 
 </figure>
 
 <p>Would you look at that! We got ourselves a node. It contains the constant 2. Shocking, I know, coming from a function called <code>tf.constant</code>. When we print the variable, we see that it returns a <code>tf.Tensor</code> object, which is a pointer to the node that we just created. To emphasize this, here’s another example:</p>
+
+<h6 id="code-1">Code:</h6>
 
 <pre><code class="language-python">import tensorflow as tf
 two_node = tf.constant(2)
@@ -356,9 +364,11 @@ two_node = tf.constant(2)
 tf.constant(3)
 </code></pre>
 
+<h6 id="graph-2">Graph:</h6>
+
 <figure>
 
-<img src="/img/tfcp1/fig2.png" />
+<img src="/img/tfcp1/fig2.png" width="500px" />
 
 
 </figure>
@@ -366,6 +376,8 @@ tf.constant(3)
 <p>Every time we call <code>tf.constant</code>, we create a new node in the graph. This is true even if the node is functionally identical to an existing node, even if we re-assign a node to the same variable, or  even if we don’t assign it to a variable at all.</p>
 
 <p>In contrast, if you make a new variable and set it equal to an existing node, you are just copying the pointer to that node and nothing is added to the graph:</p>
+
+<h6 id="code-2">Code:</h6>
 
 <pre><code class="language-python">import tensorflow as tf
 two_node = tf.constant(2)
@@ -375,15 +387,24 @@ print two_node
 print another_pointer_at_two_node
 </code></pre>
 
-<p>Output:</p>
+<h6 id="output-1">Output:</h6>
 
 <pre><code class="language-python">None
 Tensor(&quot;Const:0&quot;, shape=(), dtype=int32)
 </code></pre>
 
-<p>{[2]}</p>
+<h6 id="graph-3">Graph:</h6>
+
+<figure>
+
+<img src="/img/tfcp1/fig3.png" width="500px" />
+
+
+</figure>
 
 <p>Okay, let’s liven things up a bit:</p>
+
+<h6 id="code-3">Code:</h6>
 
 <pre><code class="language-python">import tensorflow as tf
 two_node = tf.constant(2)
@@ -391,7 +412,14 @@ three_node = tf.constant(3)
 sum_node = two_node + three_node # equivalent to tf.add(two_node, three_node)
 </code></pre>
 
-<p>{[2]&ndash;&gt;[+]&lt;&ndash;[3]}</p>
+<h6 id="graph-4">Graph:</h6>
+
+<figure>
+
+<img src="/img/tfcp1/fig4.png" width="500px" />
+
+
+</figure>
 
 <p>Now we’re talking - that’s a bona-fide computational graph we got there! Notice that the <code>+</code> operation is overloaded in Tensorflow, so adding two tensors together adds a node to the graph, even though it doesn’t seem like a Tensorflow operation on the surface.</p>
 
@@ -409,35 +437,55 @@ sum_node = two_node + three_node # equivalent to tf.add(two_node, three_node)
 
 <p>After creating your session object, you can use <code>sess.run(node)</code> to return the value of a node, and Tensorflow performs all computations necessary to determine that value.</p>
 
-<p><code>
-import tensorflow as tf
+<h6 id="code-4">Code:</h6>
+
+<pre><code class="language-python">import tensorflow as tf
 two_node = tf.constant(2)
 three_node = tf.constant(3)
 sum_node = two_node + three_node
 sess = tf.Session()
 print sess.run(sum_node)
-</code>
-Output:
-<code>
-5
-</code>
-{[2]&ndash;&gt;[+]&lt;&ndash;[3]}</p>
+</code></pre>
+
+<h6 id="output-2">Output:</h6>
+
+<pre><code class="language-python">5
+</code></pre>
+
+<h6 id="graph-5">Graph:</h6>
+
+<figure>
+
+<img src="/img/tfcp1/fig4.png" width="500px" />
+
+
+</figure>
 
 <p>Wonderful! We can also pass a list, <code>sess.run([node1, node2,...])</code>, and have it return multiple outputs:</p>
 
-<p><code>
-import tensorflow as tf
+<h6 id="code-5">Code:</h6>
+
+<pre><code class="language-python">import tensorflow as tf
 two_node = tf.constant(2)
 three_node = tf.constant(3)
 sum_node = two_node + three_node
 sess = tf.Session()
 print sess.run([two_node, sum_node])
-</code>
-Output:
-<code>
-[2, 5]
-</code>
-{[2]&ndash;&gt;[+]&lt;&ndash;[3]}</p>
+</code></pre>
+
+<h6 id="output-3">Output:</h6>
+
+<pre><code class="language-python">[2, 5]
+</code></pre>
+
+<h6 id="graph-6">Graph:</h6>
+
+<figure>
+
+<img src="/img/tfcp1/fig4.png" width="500px" />
+
+
+</figure>
 
 <p>In general, <code>sess.run()</code> calls tend to be one of the biggest TensorFlow bottlenecks, so the fewer times you call it, the better. Whenever possible, return multiple items in a single <code>sess.run()</code> call instead of making multiple calls.</p>
 
@@ -447,36 +495,56 @@ Output:
 
 <p>The most straightforward way to do this is with placeholders. A placeholder is a type of node that is designed to accept external input.</p>
 
-<p><code>
-import tensorflow as tf
+<h6 id="code-6">Code:</h6>
+
+<pre><code class="language-python">import tensorflow as tf
 input_placeholder = tf.placeholder(tf.int32)
 sess = tf.Session()
 print sess.run(input_placeholder)
-</code>
-Output:
-<code>
-Traceback (most recent call last):
+</code></pre>
+
+<h6 id="output-4">Output:</h6>
+
+<pre><code class="language-python">Traceback (most recent call last):
 ...
 InvalidArgumentError (see above for traceback): You must feed a value for placeholder tensor 'Placeholder' with dtype int32
-     [[Node: Placeholder = Placeholder[dtype=DT_INT32, shape=&lt;unknown&gt;, _device=&quot;/job:localhost/replica:0/task:0/device:CPU:0&quot;]()]]
-</code>
-{[p]}</p>
+	 [[Node: Placeholder = Placeholder[dtype=DT_INT32, shape=&lt;unknown&gt;, _device=&quot;/job:localhost/replica:0/task:0/device:CPU:0&quot;]()]]
+</code></pre>
+
+<h6 id="graph-7">Graph:</h6>
+
+<figure>
+
+<img src="/img/tfcp1/fig5.png" width="500px" />
+
+
+</figure>
 
 <p>&hellip;is a terrible example, since it throws an exception. Placeholders expect to be given a value. We didn’t supply one, so Tensorflow crashed.</p>
 
 <p>To provide a value, we use the feed_dict attribute of <code>sess.run()</code>.</p>
 
-<p><code>
-import tensorflow as tf
+<h6 id="code-7">Code:</h6>
+
+<pre><code class="language-python">import tensorflow as tf
 input_placeholder = tf.placeholder(tf.int32)
 sess = tf.Session()
 print sess.run(input_placeholder, feed_dict={input_placeholder: 2})
-</code>
-Output:
-<code>
-2
-</code>
-{[p]}</p>
+</code></pre>
+
+<h6 id="output-5">Output:</h6>
+
+<pre><code class="language-python">2
+</code></pre>
+
+<h6 id="graph-8">Graph:</h6>
+
+<figure>
+
+<img src="/img/tfcp1/fig5.png" width="500px" />
+
+
+</figure>
 
 <p>Much better. Notice the format of the dict passed into <code>feed_dict</code>. The keys should be variables corresponding to placeholder nodes from the graph (which, as discussed earlier, really means <em>pointers</em> to placeholder nodes in the graph). The corresponding values are the data elements to assign to each placeholder &ndash; typically scalars or Numpy arrays.</p>
 
@@ -484,24 +552,34 @@ Output:
 
 <p>Let’s try another example involving placeholders:</p>
 
-<p><code>
-import tensorflow as tf
+<h6 id="code-8">Code:</h6>
+
+<pre><code class="language-python">import tensorflow as tf
 input_placeholder = tf.placeholder(tf.int32)
 three_node = tf.constant(3)
 sum_node = input_placeholder + three_node
 sess = tf.Session()
 print sess.run(three_node)
 print sess.run(sum_node)
-</code>
-Output:
-<code>
-3
+</code></pre>
+
+<h6 id="output-6">Output:</h6>
+
+<pre><code class="language-python">3
 Traceback (most recent call last):
 ...
 InvalidArgumentError (see above for traceback): You must feed a value for placeholder tensor 'Placeholder_2' with dtype int32
-     [[Node: Placeholder_2 = Placeholder[dtype=DT_INT32, shape=&lt;unknown&gt;, _device=&quot;/job:localhost/replica:0/task:0/device:CPU:0&quot;]()]]
-</code>
-{[p]&ndash;&gt;[+]&lt;&ndash;[3]}</p>
+	 [[Node: Placeholder_2 = Placeholder[dtype=DT_INT32, shape=&lt;unknown&gt;, _device=&quot;/job:localhost/replica:0/task:0/device:CPU:0&quot;]()]]
+</code></pre>
+
+<h6 id="graph-9">Graph:</h6>
+
+<figure>
+
+<img src="/img/tfcp1/fig6.png" width="500px" />
+
+
+</figure>
 
 <p>Why does the second call to <code>sess.run()</code> fail? And why does it raise an error related to <code>input_placeholder</code>, even though we are not evaluating <code>input_placeholder</code>? The answer lies in the final key Tensorflow abstraction: computation paths. Luckily, this one is very intuitive.</p>
 
@@ -509,14 +587,29 @@ InvalidArgumentError (see above for traceback): You must feed a value for placeh
 
 <p>Consider the computation path of sum_node:</p>
 
-<p>{[p]&ndash;&gt;[+]&lt;&ndash;[3]}
-{[p]&ndash;&gt;[+]&lt;&ndash;[3]}</p>
+<p><figure>
+
+<img src="/img/tfcp1/fig7.png" width="500px" />
+
+
+</figure>
+<figure>
+
+<img src="/img/tfcp1/fig8.png" width="500px" />
+
+
+</figure></p>
 
 <p>All three nodes need to be evaluated to compute the value of <code>sum_node</code>. Crucially, this includes our un-filled placeholder and explains the exception!</p>
 
 <p>In contrast, consider the computation path of <code>three_node</code>:</p>
 
-<p>{[p]&ndash;&gt;[+]&lt;&ndash;[3]}</p>
+<figure>
+
+<img src="/img/tfcp1/fig9.png" width="500px" />
+
+
+</figure>
 
 <p>Due to the graph structure, we don’t need to compute all of the nodes in order to evaluate the one we want! Because we don’t need to evaluate <code>placeholder_node</code> to evaluate <code>three_node</code>, running <code>sess.run(three_node)</code> doesn’t raise an exception.</p>
 
@@ -530,37 +623,57 @@ InvalidArgumentError (see above for traceback): You must feed a value for placeh
 
 <p>To create variables, use <code>tf.get_variable()</code>.<em>{Footnote: Since the Tensorflow team is dedicated to backwards compatibility, there are several ways to create variables. In older code, it is common to also encounter the <code>tf.Variable()</code> syntax, which serves the same purpose.} The first two arguments to <code>tf.get_variable()</code> are required; the rest are optional. They are <code>tf.get_variable(name, shape)</code>. <code>name</code> is a string which uniquely identifies this variable object. It must be unique relative to the global graph, so be careful to keep track of all names you have used to ensure there are no duplicates.</em>{Footnote: Name management can be made a bit easier with <code>tf.variable_scope()</code>. I will cover scoping in more detail In a future post!}  <code>shape</code> is an array of integers corresponding to the shape of a tensor; the syntax of this is intuitive &ndash; just one integer per dimension, in order. For example, a 3x8 matrix would have shape <code>[3, 8]</code>. To create a scalar, use an empty list as your shape: <code>[]</code>.</p>
 
-<p><code>
-import tensorflow as tf
+<h6 id="code-9">Code:</h6>
+
+<pre><code class="language-python">import tensorflow as tf
 count_variable = tf.get_variable(&quot;count&quot;, [])
 sess = tf.Session()
 print sess.run(count_variable)
-</code>
-Output:
-<code>
-Traceback (most recent call last):
+</code></pre>
+
+<h6 id="output-7">Output:</h6>
+
+<pre><code class="language-python">Traceback (most recent call last):
 ...
 tensorflow.python.framework.errors_impl.FailedPreconditionError: Attempting to use uninitialized value count
-     [[Node: _retval_count_0_0 = _Retval[T=DT_FLOAT, index=0, _device=&quot;/job:localhost/replica:0/task:0/device:CPU:0&quot;](count)]]
-</code>
-{[v]}</p>
+	 [[Node: _retval_count_0_0 = _Retval[T=DT_FLOAT, index=0, _device=&quot;/job:localhost/replica:0/task:0/device:CPU:0&quot;](count)]]
+</code></pre>
+
+<h6 id="graph-10">Graph:</h6>
+
+<figure>
+
+<img src="/img/tfcp1/fig10.png" width="500px" />
+
+
+</figure>
 
 <p>Alas, another exception. When a variable node is first created, it basically stores “null”, and any attempts to evaluate it will result in this exception. We can only evaluate a variable after putting a value into it first. There are two main ways to put a value into a variable: initializers and <code>tf.assign()</code>. Let’s look at <code>tf.assign()</code> first:</p>
 
-<p><code>
-import tensorflow as tf
+<h6 id="code-10">Code:</h6>
+
+<pre><code class="language-python">import tensorflow as tf
 count_variable = tf.get_variable(&quot;count&quot;, [])
 zero_node = tf.constant(0.)
 assign_node = tf.assign(count_variable, zero_node)
 sess = tf.Session()
 sess.run(assign_node)
 print sess.run(count_variable)
-</code>
-Output:
-<code>
-0
-</code>
-{[v]&mdash;[ass]&lt;&mdash;[0]}</p>
+</code></pre>
+
+<h6 id="output-8">Output:</h6>
+
+<pre><code class="language-python">0
+</code></pre>
+
+<h6 id="graph-11">Graph:</h6>
+
+<figure>
+
+<img src="/img/tfcp1/fig11.png" width="500px" />
+
+
+</figure>
 
 <p><code>tf.assign(target, value)</code> is a node that has some unique properties compared to nodes we’ve seen so far:</p>
 
@@ -572,46 +685,73 @@ Output:
 
 <p>“Side effect” nodes underpin most of the Tensorflow deep learning workflow, so make sure you really understand what’s going on here. When we call <code>sess.run(assign_node)</code>, the computation path goes through <code>assign_node</code> and <code>zero_node</code>.</p>
 
-<p>{[v]&mdash;[ass]&lt;&mdash;[0]}</p>
+<h6 id="graph-12">Graph:</h6>
+
+<figure>
+
+<img src="/img/tfcp1/fig12.png" width="500px" />
+
+
+</figure>
 
 <p>As computation flows through any node in the graph, it also enacts any side effects controlled by that node, shown in green. Due to the particular side effects of <code>tf.assign</code>, the memory associated with <code>count_variable</code> (which was previously “null”) is now permanently set to equal 0. This means that when we next call <code>sess.run(count_variable)</code>, we don’t throw any exceptions. Instead, we get a value of 0. Success!</p>
 
 <p>Next, let’s look at initializers:</p>
 
-<p><code>
-import tensorflow as tf
+<h6 id="code-11">Code:</h6>
+
+<pre><code class="language-python">import tensorflow as tf
 const_init_node = tf.constant_initializer(0.)
 count_variable = tf.get_variable(&quot;count&quot;, [], initializer=const_init_node)
 sess = tf.Session()
 print sess.run([count_variable])
-</code>
-Output:
-<code>
-Traceback (most recent call last):
+</code></pre>
+
+<h6 id="output-9">Output:</h6>
+
+<pre><code class="language-python">Traceback (most recent call last):
 ...
 tensorflow.python.framework.errors_impl.FailedPreconditionError: Attempting to use uninitialized value count
-     [[Node: _retval_count_0_0 = _Retval[T=DT_FLOAT, index=0, _device=&quot;/job:localhost/replica:0/task:0/device:CPU:0&quot;](count)]]
-</code>
-{[v]&ndash;[const_init]}</p>
+	 [[Node: _retval_count_0_0 = _Retval[T=DT_FLOAT, index=0, _device=&quot;/job:localhost/replica:0/task:0/device:CPU:0&quot;](count)]]
+</code></pre>
+
+<h6 id="graph-13">Graph:</h6>
+
+<figure>
+
+<img src="/img/tfcp1/fig13.png" width="500px" />
+
+
+</figure>
 
 <p>Okay, what happened here? Why didn’t the initializer work?</p>
 
 <p>The answer lies in the split between sessions and graphs. We’ve set the <code>initializer</code> property of <code>get_variable</code> to point at our <code>const_init_node</code>, but that just added a new connection between nodes in the graph. We haven’t done anything about the root of the exception: <em>the memory associated with the variable node</em> (which is stored in the session, not the graph!) is still set to “null”. We need the session to tell the <code>const_init_node</code> to actually update the variable.</p>
 
-<p><code>
-import tensorflow as tf
+<h6 id="code-12">Code:</h6>
+
+<pre><code class="language-python">import tensorflow as tf
 const_init_node = tf.constant_initializer(0.)
 count_variable = tf.get_variable(&quot;count&quot;, [], initializer=const_init_node)
 init = tf.global_variables_initializer()
 sess = tf.Session()
 sess.run(init)
 print sess.run(count_variable)
-</code>
-Output:
-<code>
-0.
-</code>
-{[v]&ndash;[const_init]&mdash;init}</p>
+</code></pre>
+
+<h6 id="output-10">Output:</h6>
+
+<pre><code class="language-python">0.
+</code></pre>
+
+<h6 id="graph-14">Graph:</h6>
+
+<figure>
+
+<img src="/img/tfcp1/fig14.png" width="500px" />
+
+
+</figure>
 
 <p>To do this, we added another, special node: <code>init = tf.global_variables_initializer()</code>. Similarly to <code>tf.assign()</code>, this is a node with side effects. In contrast to <code>tf.assign()</code>, we don’t actually need to specify what its inputs are! <code>tf.global_variables_initializer()</code> will look at the global graph at the moment of its creation and automatically add dependencies to every <code>tf.initializer</code> in the graph. When we then evaluate it with <code>sess.run(init)</code>, it goes to each of the initializers and tells them to do their thang, initializing the variables and allowing us to run <code>sess.run(count_variable)</code> without an error.</p>
 
@@ -634,65 +774,60 @@ Output:
 
 <p>Let’s put together a quick script for a toy linear regression problem:</p>
 
-<p>`
-import tensorflow as tf</p>
+<h6 id="code-13">Code:</h6>
 
-<h2 id="build-the-graph">build the graph</h2>
+<pre><code class="language-python">import tensorflow as tf
 
-<h1 id="first-set-up-the-parameters">first set up the parameters</h1>
+## build the graph
+# first set up the parameters
+m = tf.get_variable(&quot;m&quot;, [], initializer=tf.constant_initializer(0.)) # notice that we initialize it with a float
+b = tf.get_variable(&quot;b&quot;, [], initializer=tf.constant_initializer(0.))
+init = tf.global_variables_initializer()
 
-<p>m = tf.get_variable(&ldquo;m&rdquo;, [], initializer=tf.constant_initializer(0.)) # notice that we initialize it with a float
-b = tf.get_variable(&ldquo;b&rdquo;, [], initializer=tf.constant_initializer(0.))
-init = tf.global_variables_initializer()</p>
+# then set up the computations
+input_placeholder = tf.placeholder(tf.float32)
+output_placeholder = tf.placeholder(tf.float32)
 
-<h1 id="then-set-up-the-computations">then set up the computations</h1>
-
-<p>input_placeholder = tf.placeholder(tf.float32)
-output_placeholder = tf.placeholder(tf.float32)</p>
-
-<p>x = input_placeholder
+x = input_placeholder
 y = output_placeholder
-y_guess = m * x + b</p>
+y_guess = m * x + b
 
-<p>loss = tf.square(y - y_guess)</p>
+loss = tf.square(y - y_guess)
 
-<h1 id="finally-set-up-the-optimizer-and-minimization-node">finally, set up the optimizer and minimization node</h1>
+# finally, set up the optimizer and minimization node
+optimizer = tf.train.GradientDescentOptimizer(1e-3)
+train_op = optimizer.minimize(loss)
 
-<p>optimizer = tf.train.GradientDescentOptimizer(1e-3)
-train_op = optimizer.minimize(loss)</p>
+## start the session
+sess = tf.Session()
+sess.run(init)
 
-<h2 id="start-the-session">start the session</h2>
+## perform the training loop
+import random
 
-<p>sess = tf.Session()
-sess.run(init)</p>
+# set up problem
+true_m = random.random()
+true_b = random.random()
 
-<h2 id="perform-the-training-loop">perform the training loop</h2>
-
-<p>import random</p>
-
-<h1 id="set-up-problem">set up problem</h1>
-
-<p>true_m = random.random()
-true_b = random.random()</p>
-
-<p>for update_i in range(100000):
+for update_i in range(100000):
   # (1) get the input and output
   input_data = random.random()
-  output_data = true_m * input_data + true_b</p>
+  output_data = true_m * input_data + true_b
 
-<p># (2), (3), and (4) all take place within a single call to sess.run()!
+  # (2), (3), and (4) all take place within a single call to sess.run()!
   _loss, _ = sess.run([loss, train_op], feed_dict={input_placeholder: input_data, output_placeholder: output_data})
-  print update_i, _loss</p>
+  print update_i, _loss
 
-<h2 id="finally-print-out-the-values-we-learned-for-our-two-variables">finally, print out the values we learned for our two variables</h2>
+## finally, print out the values we learned for our two variables
+print &quot;True parameters:     m=%.4f, b=%.4f&quot; % (true_m, true_b)
+print &quot;Learned parameters:  m=%.4f, b=%.4f&quot; % tuple(sess.run([m, b]))
+</code></pre>
 
-<p>print &ldquo;True parameters:     m=%.4f, b=%.4f&rdquo; % (true_m, true_b)
-print &ldquo;Learned parameters:  m=%.4f, b=%.4f&rdquo; % tuple(sess.run([m, b]))
-<code>
-Output:
-</code>
-<code>
-0 2.3205383
+<h6 id="output-11">Output:</h6>
+
+<pre><code class="language-python"></code></pre>
+
+<p>0 2.3205383
 1 0.5792742
 2 1.55254
 3 1.5733259
@@ -703,7 +838,7 @@ Output:
 8 1.6775116
 9 1.6462423
 10 2.441034
-...
+&hellip;
 99990 2.9878322e-12
 99991 5.158629e-11
 99992 4.53646e-11
@@ -715,18 +850,16 @@ Output:
 99998 5.684342e-14
 99999 3.007017e-11
 True parameters:     m=0.3519, b=0.3242
-Learned parameters:  m=0.3519, b=0.3242
-</code></p>
+Learned parameters:  m=0.3519, b=0.3242</p>
 
-<p>As you can see, the loss goes down to basically nothing, and we wind up with a really good estimate of the true parameters. Hopefully, the only part of the code that is new to you is this segment:</p>
+<pre><code>
+As you can see, the loss goes down to basically nothing, and we wind up with a really good estimate of the true parameters. Hopefully, the only part of the code that is new to you is this segment:
 
-<p>`</p>
-
-<h1 id="finally-set-up-the-optimizer-and-minimization-node-1">finally, set up the optimizer and minimization node</h1>
-
-<p>optimizer = tf.train.GradientDescentOptimizer(1e-3)
+```python 
+# finally, set up the optimizer and minimization node
+optimizer = tf.train.GradientDescentOptimizer(1e-3)
 train_op = optimizer.minimize(loss)
-`</p>
+</code></pre>
 
 <p>But, now that you have a good understanding of the concepts underlying Tensorflow, this code is easy to explain! The first line, <code>optimizer = tf.train.GradientDescentOptimizer(1e-3)</code>, is not adding a node to the graph. It is simply creating a Python object that has useful helper functions. The second line, <code>train_op = optimizer.minimize(loss)</code>, is adding a node to the graph, and storing a pointer to it in variable <code>train_op</code>. The <code>train_op</code> node has no output, but has a very complicated side effect:</p>
 
@@ -740,22 +873,26 @@ train_op = optimizer.minimize(loss)
 
 <p>Let’s look at a simple example.</p>
 
-<p><code>
-import tensorflow as tf
+<h6 id="code-14">Code:</h6>
+
+<pre><code class="language-python">import tensorflow as tf
 two_node = tf.constant(2)
 three_node = tf.constant(3)
 sum_node = two_node + three_node
 sess = tf.Session()
 print sess.run(sum_node)
-</code>
-Output:
-<code>
-5
-</code>
-This lets us see our overall answer, 5. But what if we want to inspect the intermediate values, <code>two_node</code> and <code>three_node</code>? One way to inspect the intermediate values is to add a return argument to <code>sess.run()</code> that points at each of the intermediate nodes you want to inspect, and then, after it has been returned, print it.</p>
+</code></pre>
 
-<p><code>
-import tensorflow as tf
+<h6 id="output-12">Output:</h6>
+
+<pre><code class="language-python">5
+</code></pre>
+
+<p>This lets us see our overall answer, 5. But what if we want to inspect the intermediate values, <code>two_node</code> and <code>three_node</code>? One way to inspect the intermediate values is to add a return argument to <code>sess.run()</code> that points at each of the intermediate nodes you want to inspect, and then, after it has been returned, print it.</p>
+
+<h6 id="code-15">Code:</h6>
+
+<pre><code class="language-python">import tensorflow as tf
 two_node = tf.constant(2)
 three_node = tf.constant(3)
 sum_node = two_node + three_node
@@ -763,47 +900,69 @@ sess = tf.Session()
 answer, inspection = sess.run([sum_node, [two_node, three_node]])
 print inspection
 print answer
-</code>
-Output:
-<code>
-[2, 3]
-5
-</code>
-This often works well, but as code becomes more complex, it can be a bit awkward. A more convenient approach is to use a <code>tf.Print</code> statement. Confusingly, <code>tf.Print</code> is actually a type of Tensorflow node, which has both output and side effects! It has two required arguments: a node to copy, and a list of things to print. The “node to copy” can be any node in the graph; <code>tf.Print</code> is an identity operation with respect to its “node to copy”, meaning that it outputs an exact copy of its input. But, it also prints all the current values in the “list of things to print” as a side effect.</p>
+</code></pre>
 
-<p><code>
-import tensorflow as tf
+<h6 id="output-13">Output:</h6>
+
+<pre><code class="language-python">[2, 3]
+5
+</code></pre>
+
+<p>This often works well, but as code becomes more complex, it can be a bit awkward. A more convenient approach is to use a <code>tf.Print</code> statement. Confusingly, <code>tf.Print</code> is actually a type of Tensorflow node, which has both output and side effects! It has two required arguments: a node to copy, and a list of things to print. The “node to copy” can be any node in the graph; <code>tf.Print</code> is an identity operation with respect to its “node to copy”, meaning that it outputs an exact copy of its input. But, it also prints all the current values in the “list of things to print” as a side effect.</p>
+
+<h6 id="code-16">Code:</h6>
+
+<pre><code class="language-python">import tensorflow as tf
 two_node = tf.constant(2)
 three_node = tf.constant(3)
 sum_node = two_node + three_node
 print_sum_node = tf.Print(sum_node, [two_node, three_node])
 sess = tf.Session()
 print sess.run(print_sum_node)
-</code>
-Output:
-<code>
-[2][3]
+</code></pre>
+
+<h6 id="output-14">Output:</h6>
+
+<pre><code class="language-python">[2][3]
 5
-</code></p>
+</code></pre>
+
+<h6 id="graph-15">Graph:</h6>
+
+<figure>
+
+<img src="/img/tfcp1/fig15.png" width="500px" />
+
+
+</figure>
 
 <p>One important, somewhat-subtle point about <code>tf.Print</code>: printing is a side effect. Like all other side effects, printing only occurs if the computation flows through the <code>tf.Print</code> node. If the <code>tf.Print</code> node is not in the path of the computation, nothing will print. In particular, even if the original node that your <code>tf.Print</code> node is copying is on the computation path, the <code>tf.Print</code> node itself might not be. Watch out for this issue! When it strikes (and it eventually will), it can be incredibly frustrating if you aren’t specifically looking for it. As a general rule, try to always create your <code>tf.Print</code> node immediately after creating the node that it copies.</p>
 
-<p>`
-import tensorflow as tf
+<h6 id="code-17">Code:</h6>
+
+<pre><code class="language-python">import tensorflow as tf
 two_node = tf.constant(2)
 three_node = tf.constant(3)
-sum_node = two_node + three_node</p>
-
-<h2 id="this-new-copy-of-two-node-is-not-on-the-computation-path-so-nothing-prints">this new copy of two_node is not on the computation path, so nothing prints!</h2>
-
-<p>print_two_node = tf.Print(two_node, [two_node, three_node, sum_node])
+sum_node = two_node + three_node
+## this new copy of two_node is not on the computation path, so nothing prints!
+print_two_node = tf.Print(two_node, [two_node, three_node, sum_node])
 sess = tf.Session()
 print sess.run(sum_node)
-<code>
-Output:
-</code>
-5
-`</p>
+</code></pre>
+
+<h6 id="output-15">Output:</h6>
+
+<pre><code class="language-python">5
+</code></pre>
+
+<h6 id="graph-16">Graph:</h6>
+
+<figure>
+
+<img src="/img/tfcp1/fig16.png" width="500px" />
+
+
+</figure>
 
 <h2 id="conclusion">Conclusion</h2>
 
