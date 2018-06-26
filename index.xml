@@ -52,7 +52,7 @@
 
 &lt;h3 id=&#34;first-key-abstraction-the-computation-graph&#34;&gt;First Key Abstraction: The Computation Graph&lt;/h3&gt;
 
-&lt;p&gt;In browsing the Tensorflow documentation, you’ve probably found oblique references to “graphs” and “nodes”. If you’re a particularly savvy browser, you may have even discovered this page, which covers the content I’m about to explain in a much more accurate and technical fashion. This section is a high-level walkthrough that captures the important intuition, while sacrificing some technical details.&lt;/p&gt;
+&lt;p&gt;In browsing the Tensorflow documentation, you’ve probably found oblique references to “graphs” and “nodes”. If you’re a particularly savvy browser, you may have even discovered &lt;a href=&#34;https://www.tensorflow.org/programmers_guide/graphs&#34; target=&#34;_blank&#34;&gt;this page&lt;/a&gt;, which covers the content I’m about to explain in a much more accurate and technical fashion. This section is a high-level walkthrough that captures the important intuition, while sacrificing some technical details.&lt;/p&gt;
 
 &lt;p&gt;So: what is a computation graph? Essentially, it’s a global data structure: a directed graph that captures instructions about how to calculate things.&lt;/p&gt;
 
@@ -700,6 +700,8 @@ print sess.run(sum_node)
 
 
 &lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://wookayin.github.io/tensorflow-talk-debugging/#1&#34; target=&#34;_blank&#34;&gt;Here&lt;/a&gt; is a great resource which provides additional practical debugging advice.&lt;/p&gt;
 
 &lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
 
