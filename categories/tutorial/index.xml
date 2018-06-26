@@ -13,13 +13,13 @@
     
     
     <item>
-      <title>Tensorflow the Confusing Parts 1</title>
+      <title>Tensorflow for ML Researchers: The Confusing Parts</title>
       <link>https://jacobbuckman.com/post/tensorflow-the-confusing-parts-1/</link>
       <pubDate>Mon, 25 Jun 2018 14:53:44 +0000</pubDate>
       
       <guid>https://jacobbuckman.com/post/tensorflow-the-confusing-parts-1/</guid>
-      <description>Tensorflow for ML Researchers: The Confusing Parts Click here to skip the intro and dive right in
-What is this? Who are you? I’m Jacob, a Google AI Resident. When I started the residency program in the summer of 2017, I had a lot of experience programming, and a good understanding of machine learning, but I had never used Tensorflow before. I figured that given my background I’d be able to pick it up quickly.</description>
+      <description>Click here to skip the intro and dive right in
+What is this? Who are you? I’m Jacob, a Google AI Resident. When I started the residency program in the summer of 2017, I had a lot of experience programming, and a good understanding of machine learning, but I had never used Tensorflow before. I figured that given my background I’d be able to pick it up quickly. To my surprise, the learning curve was fairly steep, and even months into the residency, I would occasionally find myself confused about how to turn ideas into Tensorflow code.</description>
     </item>
     
   </channel>
