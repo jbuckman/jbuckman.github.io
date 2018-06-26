@@ -789,7 +789,7 @@ print sess.run(count_variable)
 
 ### build the graph
 ## first set up the parameters
-m = tf.get_variable(&quot;m&quot;, [], initializer=tf.constant_initializer(0.)) ## notice that we initialize it with a float
+m = tf.get_variable(&quot;m&quot;, [], initializer=tf.constant_initializer(0.))
 b = tf.get_variable(&quot;b&quot;, [], initializer=tf.constant_initializer(0.))
 init = tf.global_variables_initializer()
 
@@ -869,7 +869,7 @@ train_op = optimizer.minimize(loss)
 
 <p>But, now that you have a good understanding of the concepts underlying Tensorflow, this code is easy to explain! The first line, <code>optimizer = tf.train.GradientDescentOptimizer(1e-3)</code>, is not adding a node to the graph. It is simply creating a Python object that has useful helper functions. The second line, <code>train_op = optimizer.minimize(loss)</code>, is adding a node to the graph, and storing a pointer to it in variable <code>train_op</code>. The <code>train_op</code> node has no output, but has a very complicated side effect:</p>
 
-<p><code>train_op</code> traces back through the computation path of its input, loss, looking for variable nodes. For each variable node it finds, it computes the gradient of that variable with respect to the loss. Then, it computes a new value for that variable: the current value minus the gradient times the learning rate. Finally, it performs an assign operation to update the value of the variable.</p>
+<p><code>train_op</code> traces back through the computation path of its input, <code>loss</code>, looking for variable nodes. For each variable node it finds, it computes the gradient of that variable with respect to the loss. Then, it computes a new value for that variable: the current value minus the gradient times the learning rate. Finally, it performs an assign operation to update the value of the variable.</p>
 
 <p>So essentially, when we call <code>sess.run(train_op)</code>, it does a step of gradient descent on all of our variables for us. Of course, we also need to fill in the input and output placeholders with our feed_dict, and we also want to print the loss, because it’s handy for debugging.</p>
 

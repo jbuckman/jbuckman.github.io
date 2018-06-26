@@ -520,7 +520,7 @@ print sess.run(count_variable)
 
 ### build the graph
 ## first set up the parameters
-m = tf.get_variable(&amp;quot;m&amp;quot;, [], initializer=tf.constant_initializer(0.)) ## notice that we initialize it with a float
+m = tf.get_variable(&amp;quot;m&amp;quot;, [], initializer=tf.constant_initializer(0.))
 b = tf.get_variable(&amp;quot;b&amp;quot;, [], initializer=tf.constant_initializer(0.))
 init = tf.global_variables_initializer()
 
@@ -600,7 +600,7 @@ train_op = optimizer.minimize(loss)
 
 &lt;p&gt;But, now that you have a good understanding of the concepts underlying Tensorflow, this code is easy to explain! The first line, &lt;code&gt;optimizer = tf.train.GradientDescentOptimizer(1e-3)&lt;/code&gt;, is not adding a node to the graph. It is simply creating a Python object that has useful helper functions. The second line, &lt;code&gt;train_op = optimizer.minimize(loss)&lt;/code&gt;, is adding a node to the graph, and storing a pointer to it in variable &lt;code&gt;train_op&lt;/code&gt;. The &lt;code&gt;train_op&lt;/code&gt; node has no output, but has a very complicated side effect:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;train_op&lt;/code&gt; traces back through the computation path of its input, loss, looking for variable nodes. For each variable node it finds, it computes the gradient of that variable with respect to the loss. Then, it computes a new value for that variable: the current value minus the gradient times the learning rate. Finally, it performs an assign operation to update the value of the variable.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;train_op&lt;/code&gt; traces back through the computation path of its input, &lt;code&gt;loss&lt;/code&gt;, looking for variable nodes. For each variable node it finds, it computes the gradient of that variable with respect to the loss. Then, it computes a new value for that variable: the current value minus the gradient times the learning rate. Finally, it performs an assign operation to update the value of the variable.&lt;/p&gt;
 
 &lt;p&gt;So essentially, when we call &lt;code&gt;sess.run(train_op)&lt;/code&gt;, it does a step of gradient descent on all of our variables for us. Of course, we also need to fill in the input and output placeholders with our feed_dict, and we also want to print the loss, because it’s handy for debugging.&lt;/p&gt;
 
