@@ -17,7 +17,7 @@
       
     
   
-  <meta name="description" content="Click here to skip the intro and dive right in
+  <meta name="description" content="Click here to skip the intro and dive right in!
 Introduction What is this? Who are you? I’m Jacob, a Google AI Resident. When I started the residency program in the summer of 2017, I had a lot of experience programming, and a good understanding of machine learning, but I had never used Tensorflow before. I figured that given my background I’d be able to pick it up quickly. To my surprise, the learning curve was fairly steep, and even months into the residency, I would occasionally find myself confused about how to turn ideas into Tensorflow code.">
 
   
@@ -79,8 +79,8 @@ Introduction What is this? Who are you? I’m Jacob, a Google AI Resident. When 
   
   <meta property="og:site_name" content="Jacob Buckman&#39;s Homepage">
   <meta property="og:url" content="https://jacobbuckman.com/post/tensorflow-the-confusing-parts-1/">
-  <meta property="og:title" content="Tensorflow: The Confusing Parts | Jacob Buckman&#39;s Homepage">
-  <meta property="og:description" content="Click here to skip the intro and dive right in
+  <meta property="og:title" content="Tensorflow: The Confusing Parts (1) | Jacob Buckman&#39;s Homepage">
+  <meta property="og:description" content="Click here to skip the intro and dive right in!
 Introduction What is this? Who are you? I’m Jacob, a Google AI Resident. When I started the residency program in the summer of 2017, I had a lot of experience programming, and a good understanding of machine learning, but I had never used Tensorflow before. I figured that given my background I’d be able to pick it up quickly. To my surprise, the learning curve was fairly steep, and even months into the residency, I would occasionally find myself confused about how to turn ideas into Tensorflow code.">
   <meta property="og:locale" content="en-us">
   
@@ -92,7 +92,7 @@ Introduction What is this? Who are you? I’m Jacob, a Google AI Resident. When 
   
   
 
-  <title>Tensorflow: The Confusing Parts | Jacob Buckman&#39;s Homepage</title>
+  <title>Tensorflow: The Confusing Parts (1) | Jacob Buckman&#39;s Homepage</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -194,7 +194,7 @@ Introduction What is this? Who are you? I’m Jacob, a Google AI Resident. When 
 
 
   <div class="article-container">
-    <h1 itemprop="name">Tensorflow: The Confusing Parts</h1>
+    <h1 itemprop="name">Tensorflow: The Confusing Parts (1)</h1>
 
     
 
@@ -240,7 +240,7 @@ Introduction What is this? Who are you? I’m Jacob, a Google AI Resident. When 
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Tensorflow%3a%20The%20Confusing%20Parts&amp;url=https%3a%2f%2fjacobbuckman.com%2fpost%2ftensorflow-the-confusing-parts-1%2f"
+         href="https://twitter.com/intent/tweet?text=Tensorflow%3a%20The%20Confusing%20Parts%20%281%29&amp;url=https%3a%2f%2fjacobbuckman.com%2fpost%2ftensorflow-the-confusing-parts-1%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-twitter"></i>
       </a>
@@ -254,21 +254,21 @@ Introduction What is this? Who are you? I’m Jacob, a Google AI Resident. When 
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjacobbuckman.com%2fpost%2ftensorflow-the-confusing-parts-1%2f&amp;title=Tensorflow%3a%20The%20Confusing%20Parts"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjacobbuckman.com%2fpost%2ftensorflow-the-confusing-parts-1%2f&amp;title=Tensorflow%3a%20The%20Confusing%20Parts%20%281%29"
          target="_blank" rel="noopener">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fjacobbuckman.com%2fpost%2ftensorflow-the-confusing-parts-1%2f&amp;title=Tensorflow%3a%20The%20Confusing%20Parts"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fjacobbuckman.com%2fpost%2ftensorflow-the-confusing-parts-1%2f&amp;title=Tensorflow%3a%20The%20Confusing%20Parts%20%281%29"
          target="_blank" rel="noopener">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Tensorflow%3a%20The%20Confusing%20Parts&amp;body=https%3a%2f%2fjacobbuckman.com%2fpost%2ftensorflow-the-confusing-parts-1%2f">
+         href="mailto:?subject=Tensorflow%3a%20The%20Confusing%20Parts%20%281%29&amp;body=https%3a%2f%2fjacobbuckman.com%2fpost%2ftensorflow-the-confusing-parts-1%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -284,19 +284,19 @@ Introduction What is this? Who are you? I’m Jacob, a Google AI Resident. When 
     <div class="article-style" itemprop="articleBody">
       
 
-<p><a href="#understanding-tensorflow">Click here to skip the intro and dive right in</a></p>
+<p><a href="#understanding-tensorflow-abstractions">Click here to skip the intro and dive right in!</a></p>
 
-<h2 id="introduction">Introduction</h2>
+<h1 id="introduction">Introduction</h1>
 
 <h3 id="what-is-this-who-are-you">What is this? Who are you?</h3>
 
-<p>I’m Jacob, a Google AI Resident. When I started the residency program in the summer of 2017, I had a lot of experience programming, and a good understanding of machine learning, but I had never used Tensorflow before. I figured that given my background I’d be able to pick it up quickly.  To my surprise, the learning curve was fairly steep, and even months into the residency, I would occasionally find myself confused about how to turn ideas into Tensorflow code. I’m writing this blog post as a message-in-a-bottle to my former self: it’s the introduction that I wish I had been given before starting on my journey. Hopefully, it will also be a helpful resource for others.</p>
+<p>I’m Jacob, a <a href="https://ai.google/research/join-us/ai-residency/" target="_blank">Google AI Resident</a>. When I started the residency program in the summer of 2017, I had a lot of experience programming, and a good understanding of machine learning, but I had never used Tensorflow before. I figured that given my background I’d be able to pick it up quickly.  To my surprise, the learning curve was fairly steep, and even months into the residency, I would occasionally find myself confused about how to turn ideas into Tensorflow code. I’m writing this blog post as a message-in-a-bottle to my former self: it’s the introduction that I wish I had been given before starting on my journey. Hopefully, it will also be a helpful resource for others.</p>
 
-<h3 id="introduction-1">Introduction</h3>
+<h3 id="what-was-missing">What was missing?</h3>
 
-<p>In the three years since its release, Tensorflow has cemented itself as a cornerstone of the deep learning ecosystem. However, it can be non-intuitive for beginners, especially compared to define-by-run neural network libraries like PyTorch or DyNet.<sup class="footnote-ref" id="fnref:0"><a href="#fn:0">1</a></sup></p>
+<p>In the three years since its release, <a href="https://github.com/thedataincubator/data-science-blogs/blob/master/output/DL_libraries_final_Rankings.csv" target="_blank">Tensorflow has cemented itself as a cornerstone of the deep learning ecosystem</a>. However, it can be non-intuitive for beginners, especially compared to define-by-run neural network libraries like <a href="https://pytorch.org/" target="_blank">PyTorch</a> or <a href="dynet.io" target="_blank">DyNet</a>.<sup class="footnote-ref" id="fnref:0"><a href="#fn:0">1</a></sup></p>
 
-<p>Many introductory Tensorflow tutorials exist, for doing everything from linear regression, to classifying MNIST, to state-of-the-art translation. These concrete, practical guides are great resources for getting Tensorflow projects up and running, and can serve as jumping-off points for similar projects. But for the people who are working on applications for which a good tutorial does not exist, or who want to do something totally off the beaten path (as is common in research), Tensorflow can definitely feel frustrating at first.</p>
+<p>Many introductory Tensorflow tutorials exist, for doing everything from <a href="https://www.tensorflow.org/tutorials/wide" target="_blank">linear regression</a>, to <a href="https://www.tensorflow.org/tutorials/layers" target="_blank">classifying MNIST</a>, to <a href="https://www.tensorflow.org/tutorials/seq2seq" target="_blank">machine translation</a>. These concrete, practical guides are great resources for getting Tensorflow projects up and running, and can serve as jumping-off points for similar projects. But for the people who are working on applications for which a good tutorial does not exist, or who want to do something totally off the beaten path (as is common in research), Tensorflow can definitely feel frustrating at first.</p>
 
 <p>This post is my attempt to fill this gap. Rather than focusing on a specific task, I take a more general approach, and explain the fundamental abstractions underpinning Tensorflow. With a good grasp of these concepts, deep learning with Tensorflow becomes intuitive and straightforward.</p>
 
@@ -304,9 +304,9 @@ Introduction What is this? Who are you? I’m Jacob, a Google AI Resident. When 
 
 <p>This tutorial is intended for people who already have some experience with both programming and machine learning, and want to pick up Tensorflow. For example: a computer science student who wants to use Tensorflow in the final project of her ML class; a software engineer who has just been assigned to a project that involves deep learning; or a bewildered new Google AI Resident (shout-out to past Jacob). If you’d like a refresher on the basics, here are some good resources. Otherwise: let’s get started!</p>
 
-<hr />
+<p>======</p>
 
-<h2 id="understanding-tensorflow">Understanding Tensorflow</h2>
+<h1 id="understanding-tensorflow-abstractions">Understanding Tensorflow Abstractions</h1>
 
 <h3 id="tensorflow-is-not-a-normal-python-library">Tensorflow Is Not A Normal Python Library</h3>
 
@@ -327,39 +327,41 @@ Introduction What is this? Who are you? I’m Jacob, a Google AI Resident. When 
 <pre><code class="language-python">import tensorflow as tf
 </code></pre>
 
-<p>####### Graph:
+<h6 id="graph">Graph:</h6>
+
 <figure>
 
 <img src="/img/tfcp1/fig0.png" width="300px" />
 
 
-</figure></p>
+</figure>
 
 <p>Predictably, just importing Tensorflow does not give us an interesting computation graph. Just a lonely, empty global variable. But what about when we call a Tensorflow operation?</p>
 
-<p>####### Code:</p>
+<h6 id="code">Code:</h6>
 
 <pre><code class="language-python">import tensorflow as tf
 two_node = tf.constant(2)
 print two_node
 </code></pre>
 
-<p>####### Output:</p>
+<h6 id="output">Output:</h6>
 
 <pre><code class="language-python">Tensor(&quot;Const:0&quot;, shape=(), dtype=int32)
 </code></pre>
 
-<p>####### Graph:
+<h6 id="graph-1">Graph:</h6>
+
 <figure>
 
 <img src="/img/tfcp1/fig1.png" width="300px" />
 
 
-</figure></p>
+</figure>
 
 <p>Would you look at that! We got ourselves a node. It contains the constant 2. Shocking, I know, coming from a function called <code>tf.constant</code>. When we print the variable, we see that it returns a <code>tf.Tensor</code> object, which is a pointer to the node that we just created. To emphasize this, here’s another example:</p>
 
-<p>####### Code:</p>
+<h6 id="code-1">Code:</h6>
 
 <pre><code class="language-python">import tensorflow as tf
 two_node = tf.constant(2)
@@ -368,19 +370,20 @@ two_node = tf.constant(2)
 tf.constant(3)
 </code></pre>
 
-<p>####### Graph:
+<h6 id="graph-2">Graph:</h6>
+
 <figure>
 
 <img src="/img/tfcp1/fig2.png" width="300px" />
 
 
-</figure></p>
+</figure>
 
 <p>Every time we call <code>tf.constant</code>, we create a new node in the graph. This is true even if the node is functionally identical to an existing node, even if we re-assign a node to the same variable, or  even if we don’t assign it to a variable at all.</p>
 
 <p>In contrast, if you make a new variable and set it equal to an existing node, you are just copying the pointer to that node and nothing is added to the graph:</p>
 
-<p>####### Code:</p>
+<h6 id="code-2">Code:</h6>
 
 <pre><code class="language-python">import tensorflow as tf
 two_node = tf.constant(2)
@@ -390,23 +393,24 @@ print two_node
 print another_pointer_at_two_node
 </code></pre>
 
-<p>####### Output:</p>
+<h6 id="output-1">Output:</h6>
 
 <pre><code class="language-python">None
 Tensor(&quot;Const:0&quot;, shape=(), dtype=int32)
 </code></pre>
 
-<p>####### Graph:
+<h6 id="graph-3">Graph:</h6>
+
 <figure>
 
 <img src="/img/tfcp1/fig3.png" width="300px" />
 
 
-</figure></p>
+</figure>
 
 <p>Okay, let’s liven things up a bit:</p>
 
-<p>####### Code:</p>
+<h6 id="code-3">Code:</h6>
 
 <pre><code class="language-python">import tensorflow as tf
 two_node = tf.constant(2)
@@ -414,13 +418,14 @@ three_node = tf.constant(3)
 sum_node = two_node + three_node ## equivalent to tf.add(two_node, three_node)
 </code></pre>
 
-<p>####### Graph:
+<h6 id="graph-4">Graph:</h6>
+
 <figure>
 
 <img src="/img/tfcp1/fig4.png" width="300px" />
 
 
-</figure></p>
+</figure>
 
 <p>Now we’re talking - that’s a bona-fide computational graph we got there! Notice that the <code>+</code> operation is overloaded in Tensorflow, so adding two tensors together adds a node to the graph, even though it doesn’t seem like a Tensorflow operation on the surface.</p>
 
@@ -434,11 +439,11 @@ sum_node = two_node + three_node ## equivalent to tf.add(two_node, three_node)
 
 <p>The role of the session is to handle the memory allocation and optimization that allows us to actually perform the computations specified by a graph. You can think of the computation graph as a “template” for the computations we want to do: it lays out all the steps. In order to make use of the graph, we also need to make a session, which allows us to actually do things; for example, going through the template node-by-node to allocate a bunch of memory for storing computation outputs. In order to do any computation with Tensorflow, you need both a graph and a session.</p>
 
-<p>The session contains a pointer to the global graph, which is constantly updated with pointers to all nodes. That means it doesn’t really matter whether you create the session before or after you create the nodes. *{Footnote: In general, I prefer to make sure I already have the entire graph in place when I create a session, and I follow that paradigm in my examples here. But you might see it done differently in other Tensorflow code.}</p>
+<p>The session contains a pointer to the global graph, which is constantly updated with pointers to all nodes. That means it doesn’t really matter whether you create the session before or after you create the nodes. <sup class="footnote-ref" id="fnref:1"><a href="#fn:1">2</a></sup></p>
 
 <p>After creating your session object, you can use <code>sess.run(node)</code> to return the value of a node, and Tensorflow performs all computations necessary to determine that value.</p>
 
-<p>####### Code:</p>
+<h6 id="code-4">Code:</h6>
 
 <pre><code class="language-python">import tensorflow as tf
 two_node = tf.constant(2)
@@ -448,22 +453,23 @@ sess = tf.Session()
 print sess.run(sum_node)
 </code></pre>
 
-<p>####### Output:</p>
+<h6 id="output-2">Output:</h6>
 
 <pre><code class="language-python">5
 </code></pre>
 
-<p>####### Graph:
+<h6 id="graph-5">Graph:</h6>
+
 <figure>
 
 <img src="/img/tfcp1/fig4.png" width="300px" />
 
 
-</figure></p>
+</figure>
 
 <p>Wonderful! We can also pass a list, <code>sess.run([node1, node2,...])</code>, and have it return multiple outputs:</p>
 
-<p>####### Code:</p>
+<h6 id="code-5">Code:</h6>
 
 <pre><code class="language-python">import tensorflow as tf
 two_node = tf.constant(2)
@@ -473,18 +479,19 @@ sess = tf.Session()
 print sess.run([two_node, sum_node])
 </code></pre>
 
-<p>####### Output:</p>
+<h6 id="output-3">Output:</h6>
 
 <pre><code class="language-python">[2, 5]
 </code></pre>
 
-<p>####### Graph:
+<h6 id="graph-6">Graph:</h6>
+
 <figure>
 
 <img src="/img/tfcp1/fig4.png" width="300px" />
 
 
-</figure></p>
+</figure>
 
 <p>In general, <code>sess.run()</code> calls tend to be one of the biggest TensorFlow bottlenecks, so the fewer times you call it, the better. Whenever possible, return multiple items in a single <code>sess.run()</code> call instead of making multiple calls.</p>
 
@@ -494,7 +501,7 @@ print sess.run([two_node, sum_node])
 
 <p>The most straightforward way to do this is with placeholders. A placeholder is a type of node that is designed to accept external input.</p>
 
-<p>####### Code:</p>
+<h6 id="code-6">Code:</h6>
 
 <pre><code class="language-python">import tensorflow as tf
 input_placeholder = tf.placeholder(tf.int32)
@@ -502,7 +509,7 @@ sess = tf.Session()
 print sess.run(input_placeholder)
 </code></pre>
 
-<p>####### Output:</p>
+<h6 id="output-4">Output:</h6>
 
 <pre><code class="language-python">Traceback (most recent call last):
 ...
@@ -510,19 +517,20 @@ InvalidArgumentError (see above for traceback): You must feed a value for placeh
 	 [[Node: Placeholder = Placeholder[dtype=DT_INT32, shape=&lt;unknown&gt;, _device=&quot;/job:localhost/replica:0/task:0/device:CPU:0&quot;]()]]
 </code></pre>
 
-<p>####### Graph:
+<h6 id="graph-7">Graph:</h6>
+
 <figure>
 
 <img src="/img/tfcp1/fig5.png" width="300px" />
 
 
-</figure></p>
+</figure>
 
 <p>&hellip;is a terrible example, since it throws an exception. Placeholders expect to be given a value. We didn’t supply one, so Tensorflow crashed.</p>
 
 <p>To provide a value, we use the feed_dict attribute of <code>sess.run()</code>.</p>
 
-<p>####### Code:</p>
+<h6 id="code-7">Code:</h6>
 
 <pre><code class="language-python">import tensorflow as tf
 input_placeholder = tf.placeholder(tf.int32)
@@ -530,18 +538,19 @@ sess = tf.Session()
 print sess.run(input_placeholder, feed_dict={input_placeholder: 2})
 </code></pre>
 
-<p>####### Output:</p>
+<h6 id="output-5">Output:</h6>
 
 <pre><code class="language-python">2
 </code></pre>
 
-<p>####### Graph:
+<h6 id="graph-8">Graph:</h6>
+
 <figure>
 
 <img src="/img/tfcp1/fig5.png" width="300px" />
 
 
-</figure></p>
+</figure>
 
 <p>Much better. Notice the format of the dict passed into <code>feed_dict</code>. The keys should be variables corresponding to placeholder nodes from the graph (which, as discussed earlier, really means <em>pointers</em> to placeholder nodes in the graph). The corresponding values are the data elements to assign to each placeholder &ndash; typically scalars or Numpy arrays.</p>
 
@@ -549,7 +558,7 @@ print sess.run(input_placeholder, feed_dict={input_placeholder: 2})
 
 <p>Let’s try another example involving placeholders:</p>
 
-<p>####### Code:</p>
+<h6 id="code-8">Code:</h6>
 
 <pre><code class="language-python">import tensorflow as tf
 input_placeholder = tf.placeholder(tf.int32)
@@ -560,7 +569,7 @@ print sess.run(three_node)
 print sess.run(sum_node)
 </code></pre>
 
-<p>####### Output:</p>
+<h6 id="output-6">Output:</h6>
 
 <pre><code class="language-python">3
 Traceback (most recent call last):
@@ -569,13 +578,14 @@ InvalidArgumentError (see above for traceback): You must feed a value for placeh
 	 [[Node: Placeholder_2 = Placeholder[dtype=DT_INT32, shape=&lt;unknown&gt;, _device=&quot;/job:localhost/replica:0/task:0/device:CPU:0&quot;]()]]
 </code></pre>
 
-<p>####### Graph:
+<h6 id="graph-9">Graph:</h6>
+
 <figure>
 
 <img src="/img/tfcp1/fig6.png" width="300px" />
 
 
-</figure></p>
+</figure>
 
 <p>Why does the second call to <code>sess.run()</code> fail? And why does it raise an error related to <code>input_placeholder</code>, even though we are not evaluating <code>input_placeholder</code>? The answer lies in the final key Tensorflow abstraction: computation paths. Luckily, this one is very intuitive.</p>
 
@@ -617,9 +627,9 @@ InvalidArgumentError (see above for traceback): You must feed a value for placeh
 
 <p>Understanding variables is essential to doing deep learning with Tensorflow, because the parameters of your model fall into this category. During training, you want to update your parameters at every step, via gradient descent; but during evaluation, you want to keep your parameters fixed, and pass a bunch of different test-set inputs into the model. More than likely, all of your model’s trainable parameters will be implemented as variables.</p>
 
-<p>To create variables, use <code>tf.get_variable()</code>.<em>{Footnote: Since the Tensorflow team is dedicated to backwards compatibility, there are several ways to create variables. In older code, it is common to also encounter the <code>tf.Variable()</code> syntax, which serves the same purpose.} The first two arguments to <code>tf.get_variable()</code> are required; the rest are optional. They are <code>tf.get_variable(name, shape)</code>. <code>name</code> is a string which uniquely identifies this variable object. It must be unique relative to the global graph, so be careful to keep track of all names you have used to ensure there are no duplicates.</em>{Footnote: Name management can be made a bit easier with <code>tf.variable_scope()</code>. I will cover scoping in more detail In a future post!}  <code>shape</code> is an array of integers corresponding to the shape of a tensor; the syntax of this is intuitive &ndash; just one integer per dimension, in order. For example, a 3x8 matrix would have shape <code>[3, 8]</code>. To create a scalar, use an empty list as your shape: <code>[]</code>.</p>
+<p>To create variables, use <code>tf.get_variable()</code><sup class="footnote-ref" id="fnref:2"><a href="#fn:2">3</a></sup>. The first two arguments to <code>tf.get_variable()</code> are required; the rest are optional. They are <code>tf.get_variable(name, shape)</code>. <code>name</code> is a string which uniquely identifies this variable object. It must be unique relative to the global graph, so be careful to keep track of all names you have used to ensure there are no duplicates<sup class="footnote-ref" id="fnref:3"><a href="#fn:3">4</a></sup>. <code>shape</code> is an array of integers corresponding to the shape of a tensor; the syntax of this is intuitive &ndash; just one integer per dimension, in order. For example, a 3x8 matrix would have shape <code>[3, 8]</code>. To create a scalar, use an empty list as your shape: <code>[]</code>.</p>
 
-<p>####### Code:</p>
+<h6 id="code-9">Code:</h6>
 
 <pre><code class="language-python">import tensorflow as tf
 count_variable = tf.get_variable(&quot;count&quot;, [])
@@ -627,7 +637,7 @@ sess = tf.Session()
 print sess.run(count_variable)
 </code></pre>
 
-<p>####### Output:</p>
+<h6 id="output-7">Output:</h6>
 
 <pre><code class="language-python">Traceback (most recent call last):
 ...
@@ -635,17 +645,18 @@ tensorflow.python.framework.errors_impl.FailedPreconditionError: Attempting to u
 	 [[Node: _retval_count_0_0 = _Retval[T=DT_FLOAT, index=0, _device=&quot;/job:localhost/replica:0/task:0/device:CPU:0&quot;](count)]]
 </code></pre>
 
-<p>####### Graph:
+<h6 id="graph-10">Graph:</h6>
+
 <figure>
 
 <img src="/img/tfcp1/fig10.png" width="300px" />
 
 
-</figure></p>
+</figure>
 
 <p>Alas, another exception. When a variable node is first created, it basically stores “null”, and any attempts to evaluate it will result in this exception. We can only evaluate a variable after putting a value into it first. There are two main ways to put a value into a variable: initializers and <code>tf.assign()</code>. Let’s look at <code>tf.assign()</code> first:</p>
 
-<p>####### Code:</p>
+<h6 id="code-10">Code:</h6>
 
 <pre><code class="language-python">import tensorflow as tf
 count_variable = tf.get_variable(&quot;count&quot;, [])
@@ -656,18 +667,19 @@ sess.run(assign_node)
 print sess.run(count_variable)
 </code></pre>
 
-<p>####### Output:</p>
+<h6 id="output-8">Output:</h6>
 
 <pre><code class="language-python">0
 </code></pre>
 
-<p>####### Graph:
+<h6 id="graph-11">Graph:</h6>
+
 <figure>
 
 <img src="/img/tfcp1/fig11.png" width="300px" />
 
 
-</figure></p>
+</figure>
 
 <p><code>tf.assign(target, value)</code> is a node that has some unique properties compared to nodes we’ve seen so far:</p>
 
@@ -679,19 +691,20 @@ print sess.run(count_variable)
 
 <p>“Side effect” nodes underpin most of the Tensorflow deep learning workflow, so make sure you really understand what’s going on here. When we call <code>sess.run(assign_node)</code>, the computation path goes through <code>assign_node</code> and <code>zero_node</code>.</p>
 
-<p>####### Graph:
+<h6 id="graph-12">Graph:</h6>
+
 <figure>
 
 <img src="/img/tfcp1/fig12.png" width="300px" />
 
 
-</figure></p>
+</figure>
 
 <p>As computation flows through any node in the graph, it also enacts any side effects controlled by that node, shown in green. Due to the particular side effects of <code>tf.assign</code>, the memory associated with <code>count_variable</code> (which was previously “null”) is now permanently set to equal 0. This means that when we next call <code>sess.run(count_variable)</code>, we don’t throw any exceptions. Instead, we get a value of 0. Success!</p>
 
 <p>Next, let’s look at initializers:</p>
 
-<p>####### Code:</p>
+<h6 id="code-11">Code:</h6>
 
 <pre><code class="language-python">import tensorflow as tf
 const_init_node = tf.constant_initializer(0.)
@@ -700,7 +713,7 @@ sess = tf.Session()
 print sess.run([count_variable])
 </code></pre>
 
-<p>####### Output:</p>
+<h6 id="output-9">Output:</h6>
 
 <pre><code class="language-python">Traceback (most recent call last):
 ...
@@ -708,19 +721,20 @@ tensorflow.python.framework.errors_impl.FailedPreconditionError: Attempting to u
 	 [[Node: _retval_count_0_0 = _Retval[T=DT_FLOAT, index=0, _device=&quot;/job:localhost/replica:0/task:0/device:CPU:0&quot;](count)]]
 </code></pre>
 
-<p>####### Graph:
+<h6 id="graph-13">Graph:</h6>
+
 <figure>
 
 <img src="/img/tfcp1/fig13.png" width="300px" />
 
 
-</figure></p>
+</figure>
 
 <p>Okay, what happened here? Why didn’t the initializer work?</p>
 
 <p>The answer lies in the split between sessions and graphs. We’ve set the <code>initializer</code> property of <code>get_variable</code> to point at our <code>const_init_node</code>, but that just added a new connection between nodes in the graph. We haven’t done anything about the root of the exception: <em>the memory associated with the variable node</em> (which is stored in the session, not the graph!) is still set to “null”. We need the session to tell the <code>const_init_node</code> to actually update the variable.</p>
 
-<p>####### Code:</p>
+<h6 id="code-12">Code:</h6>
 
 <pre><code class="language-python">import tensorflow as tf
 const_init_node = tf.constant_initializer(0.)
@@ -731,18 +745,19 @@ sess.run(init)
 print sess.run(count_variable)
 </code></pre>
 
-<p>####### Output:</p>
+<h6 id="output-10">Output:</h6>
 
 <pre><code class="language-python">0.
 </code></pre>
 
-<p>####### Graph:
+<h6 id="graph-14">Graph:</h6>
+
 <figure>
 
 <img src="/img/tfcp1/fig14.png" width="300px" />
 
 
-</figure></p>
+</figure>
 
 <p>To do this, we added another, special node: <code>init = tf.global_variables_initializer()</code>. Similarly to <code>tf.assign()</code>, this is a node with side effects. In contrast to <code>tf.assign()</code>, we don’t actually need to specify what its inputs are! <code>tf.global_variables_initializer()</code> will look at the global graph at the moment of its creation and automatically add dependencies to every <code>tf.initializer</code> in the graph. When we then evaluate it with <code>sess.run(init)</code>, it goes to each of the initializers and tells them to do their thang, initializing the variables and allowing us to run <code>sess.run(count_variable)</code> without an error.</p>
 
@@ -765,7 +780,7 @@ print sess.run(count_variable)
 
 <p>Let’s put together a quick script for a toy linear regression problem:</p>
 
-<p>####### Code:</p>
+<h6 id="code-13">Code:</h6>
 
 <pre><code class="language-python">import tensorflow as tf
 
@@ -814,7 +829,7 @@ print &quot;True parameters:     m=%.4f, b=%.4f&quot; % (true_m, true_b)
 print &quot;Learned parameters:  m=%.4f, b=%.4f&quot; % tuple(sess.run([m, b]))
 </code></pre>
 
-<p>####### Output:</p>
+<h6 id="output-11">Output:</h6>
 
 <pre><code class="language-python">0 2.3205383
 1 0.5792742
@@ -861,7 +876,7 @@ train_op = optimizer.minimize(loss)
 
 <p>Let’s look at a simple example.</p>
 
-<p>####### Code:</p>
+<h6 id="code-14">Code:</h6>
 
 <pre><code class="language-python">import tensorflow as tf
 two_node = tf.constant(2)
@@ -871,14 +886,14 @@ sess = tf.Session()
 print sess.run(sum_node)
 </code></pre>
 
-<p>####### Output:</p>
+<h6 id="output-12">Output:</h6>
 
 <pre><code class="language-python">5
 </code></pre>
 
 <p>This lets us see our overall answer, 5. But what if we want to inspect the intermediate values, <code>two_node</code> and <code>three_node</code>? One way to inspect the intermediate values is to add a return argument to <code>sess.run()</code> that points at each of the intermediate nodes you want to inspect, and then, after it has been returned, print it.</p>
 
-<p>####### Code:</p>
+<h6 id="code-15">Code:</h6>
 
 <pre><code class="language-python">import tensorflow as tf
 two_node = tf.constant(2)
@@ -890,7 +905,7 @@ print inspection
 print answer
 </code></pre>
 
-<p>####### Output:</p>
+<h6 id="output-13">Output:</h6>
 
 <pre><code class="language-python">[2, 3]
 5
@@ -898,7 +913,7 @@ print answer
 
 <p>This often works well, but as code becomes more complex, it can be a bit awkward. A more convenient approach is to use a <code>tf.Print</code> statement. Confusingly, <code>tf.Print</code> is actually a type of Tensorflow node, which has both output and side effects! It has two required arguments: a node to copy, and a list of things to print. The “node to copy” can be any node in the graph; <code>tf.Print</code> is an identity operation with respect to its “node to copy”, meaning that it outputs an exact copy of its input. But, it also prints all the current values in the “list of things to print” as a side effect.</p>
 
-<p>####### Code:</p>
+<h6 id="code-16">Code:</h6>
 
 <pre><code class="language-python">import tensorflow as tf
 two_node = tf.constant(2)
@@ -909,23 +924,24 @@ sess = tf.Session()
 print sess.run(print_sum_node)
 </code></pre>
 
-<p>####### Output:</p>
+<h6 id="output-14">Output:</h6>
 
 <pre><code class="language-python">[2][3]
 5
 </code></pre>
 
-<p>####### Graph:
+<h6 id="graph-15">Graph:</h6>
+
 <figure>
 
 <img src="/img/tfcp1/fig15.png" width="300px" />
 
 
-</figure></p>
+</figure>
 
 <p>One important, somewhat-subtle point about <code>tf.Print</code>: printing is a side effect. Like all other side effects, printing only occurs if the computation flows through the <code>tf.Print</code> node. If the <code>tf.Print</code> node is not in the path of the computation, nothing will print. In particular, even if the original node that your <code>tf.Print</code> node is copying is on the computation path, the <code>tf.Print</code> node itself might not be. Watch out for this issue! When it strikes (and it eventually will), it can be incredibly frustrating if you aren’t specifically looking for it. As a general rule, try to always create your <code>tf.Print</code> node immediately after creating the node that it copies.</p>
 
-<p>####### Code:</p>
+<h6 id="code-17">Code:</h6>
 
 <pre><code class="language-python">import tensorflow as tf
 two_node = tf.constant(2)
@@ -937,20 +953,21 @@ sess = tf.Session()
 print sess.run(sum_node)
 </code></pre>
 
-<p>####### Output:</p>
+<h6 id="output-15">Output:</h6>
 
 <pre><code class="language-python">5
 </code></pre>
 
-<p>####### Graph:
+<h6 id="graph-16">Graph:</h6>
+
 <figure>
 
 <img src="/img/tfcp1/fig16.png" width="300px" />
 
 
-</figure></p>
+</figure>
 
-<h2 id="conclusion">Conclusion</h2>
+<h1 id="conclusion">Conclusion</h1>
 
 <p>Hopefully this post helped you get a better intuition for what Tensorflow is, how it works, and how to use it. At the end of the day, the concepts presented here are fundamental to all Tensorflow programs, but this is only scratching the surface. In your Tensorflow adventures, you will likely encounter all sorts of other fun things that you want to use: conditionals, iteration, distributed Tensorflow, variable scopes, saving &amp; loading models, multi-graph, multi-session, and multi-core, data-loader queues, and much more. Many of these topics I will cover in future posts. But if you build on the ideas you learned here with the official documentation, some code examples, and just a pinch of deep learning magic, I’m sure you’ll be able to figure it out!</p>
 
@@ -964,8 +981,14 @@ print sess.run(sum_node)
 <hr />
 
 <ol>
-<li id="fn:0">Click here for more information on the difference between define-and-run and define-by-run.
+<li id="fn:0"><a href="https://docs.chainer.org/en/stable/guides/define_by_run.html" target="_blank">This Chainer documentation</a> describes the difference between define-and-run and define-by-run.
  <a class="footnote-return" href="#fnref:0"><sup>^</sup></a></li>
+<li id="fn:1">In general, I prefer to make sure I already have the entire graph in place when I create a session, and I follow that paradigm in my examples here. But you might see it done differently in other Tensorflow code.
+ <a class="footnote-return" href="#fnref:1"><sup>^</sup></a></li>
+<li id="fn:2">Since the Tensorflow team is dedicated to backwards compatibility, there are several ways to create variables. In older code, it is common to also encounter the <code>tf.Variable()</code> syntax, which serves the same purpose.
+ <a class="footnote-return" href="#fnref:2"><sup>^</sup></a></li>
+<li id="fn:3"><a href="https://www.tensorflow.org/api_docs/python/tf/variable_scope" target="_blank">Name management can be made a bit easier with <code>tf.variable_scope()</code></a>. I will cover scoping in more detail In a future post!
+ <a class="footnote-return" href="#fnref:3"><sup>^</sup></a></li>
 </ol>
 </div>
 
