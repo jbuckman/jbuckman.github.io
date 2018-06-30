@@ -1,154 +1,142 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-    
-    
-    <url>
-    
-      <loc>https://jacobbuckman.com/post/tensorflow-the-confusing-parts-1/</loc>
-      <lastmod>2018-06-25T14:53:44+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://jacobbuckman.com/home/about/</loc>
+    <lastmod>2016-04-20T00:00:00-07:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://jacobbuckman.com/publication/jacobean-gan/</loc>
-      <lastmod>2018-06-12T12:27:43+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://jacobbuckman.com/home/publications_selected/</loc>
+    <lastmod>2016-04-20T00:00:00-07:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://jacobbuckman.com/publication/nllm/</loc>
-      <lastmod>2018-06-03T12:27:16+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://jacobbuckman.com/home/publications/</loc>
+    <lastmod>2016-04-20T00:00:00-07:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://jacobbuckman.com/publication/thermometer/</loc>
-      <lastmod>2018-04-25T12:26:57+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://jacobbuckman.com/home/talks/</loc>
+    <lastmod>2016-04-20T00:00:00-07:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://jacobbuckman.com/post/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://jacobbuckman.com/home/posts/</loc>
+    <lastmod>2016-04-20T00:00:00-07:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://jacobbuckman.com/publication/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://jacobbuckman.com/home/projects/</loc>
+    <lastmod>2016-04-20T00:00:00-07:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://jacobbuckman.com/talk/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://jacobbuckman.com/home/teaching/</loc>
+    <lastmod>2016-04-20T00:00:00-07:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://jacobbuckman.com/publication/heuristic-backtracking/</loc>
-      <lastmod>2016-11-25T12:26:43+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>https://jacobbuckman.com/home/tags/</loc>
+    <lastmod>2017-09-20T00:00:00-07:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://jacobbuckman.com/publication_types/1/</loc>
-      <lastmod>2018-06-12T12:27:43+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://jacobbuckman.com/home/contact/</loc>
+    <lastmod>2016-04-20T00:00:00-07:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://jacobbuckman.com/publication_types/2/</loc>
-      <lastmod>2018-06-03T12:27:16+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://jacobbuckman.com/post/tensorflow-the-confusing-parts-1/</loc>
+    <lastmod>2018-06-25T14:53:44+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://jacobbuckman.com/</loc>
-      <lastmod>2016-04-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://jacobbuckman.com/publication/jacobean-gan/</loc>
+    <lastmod>2018-06-12T12:27:43+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://jacobbuckman.com/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://jacobbuckman.com/publication/nllm/</loc>
+    <lastmod>2018-06-03T12:27:16+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://jacobbuckman.com/publication_types/</loc>
-      <lastmod>2018-06-12T12:27:43+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://jacobbuckman.com/publication/thermometer/</loc>
+    <lastmod>2018-04-25T12:26:57+00:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://jacobbuckman.com/tags/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://jacobbuckman.com/post/</loc>
+    <lastmod>2017-01-01T00:00:00-08:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://jacobbuckman.com/tags/tensorflow/</loc>
-      <lastmod>2018-06-25T14:53:44+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://jacobbuckman.com/publication/</loc>
+    <lastmod>2017-01-01T00:00:00-08:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>https://jacobbuckman.com/categories/tutorial/</loc>
-      <lastmod>2018-06-25T14:53:44+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>https://jacobbuckman.com/talk/</loc>
+    <lastmod>2017-01-01T00:00:00-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacobbuckman.com/publication/heuristic-backtracking/</loc>
+    <lastmod>2016-11-25T12:26:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacobbuckman.com/publication_types/1/</loc>
+    <lastmod>2018-06-12T12:27:43+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jacobbuckman.com/publication_types/2/</loc>
+    <lastmod>2018-06-03T12:27:16+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jacobbuckman.com/</loc>
+    <lastmod>2016-04-20T00:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jacobbuckman.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jacobbuckman.com/home/</loc>
+    <lastmod>2016-04-20T00:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jacobbuckman.com/publication_types/</loc>
+    <lastmod>2018-06-12T12:27:43+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jacobbuckman.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jacobbuckman.com/tags/tensorflow/</loc>
+    <lastmod>2018-06-25T14:53:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jacobbuckman.com/categories/tutorial/</loc>
+    <lastmod>2018-06-25T14:53:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
   
 </urlset>
