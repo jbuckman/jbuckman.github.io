@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://jacobbuckman.com/home/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title></title>
       <link>https://jacobbuckman.com/home/about/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://jacobbuckman.com/home/about/</guid>
       <description>Biography Hello there! I&amp;rsquo;m Jacob Buckman, currently a Google AI Resident in San Francisco. My research is focused on deep learning, especially natural language processing and reinforcement learning. I&amp;rsquo;m interested in how artificial agents can learn to understand their environment and how that knowledge can be effectively communicated to others.</description>
@@ -24,7 +24,7 @@
     <item>
       <title>Selected Publications</title>
       <link>https://jacobbuckman.com/home/publications_selected/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://jacobbuckman.com/home/publications_selected/</guid>
       <description></description>
@@ -33,7 +33,7 @@
     <item>
       <title>Recent Publications</title>
       <link>https://jacobbuckman.com/home/publications/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://jacobbuckman.com/home/publications/</guid>
       <description></description>
@@ -42,7 +42,7 @@
     <item>
       <title>Recent &amp; Upcoming Talks</title>
       <link>https://jacobbuckman.com/home/talks/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://jacobbuckman.com/home/talks/</guid>
       <description></description>
@@ -51,7 +51,7 @@
     <item>
       <title>Recent Posts</title>
       <link>https://jacobbuckman.com/home/posts/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://jacobbuckman.com/home/posts/</guid>
       <description></description>
@@ -60,7 +60,7 @@
     <item>
       <title>Projects</title>
       <link>https://jacobbuckman.com/home/projects/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://jacobbuckman.com/home/projects/</guid>
       <description></description>
@@ -69,7 +69,7 @@
     <item>
       <title>Custom Section</title>
       <link>https://jacobbuckman.com/home/teaching/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://jacobbuckman.com/home/teaching/</guid>
       <description>This is an example of using the custom widget to create your own homepage section.
@@ -79,7 +79,7 @@ To remove this section, either delete content/home/teaching.md or edit the front
     <item>
       <title>Tags</title>
       <link>https://jacobbuckman.com/home/tags/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 -0400</pubDate>
       
       <guid>https://jacobbuckman.com/home/tags/</guid>
       <description></description>
@@ -88,7 +88,7 @@ To remove this section, either delete content/home/teaching.md or edit the front
     <item>
       <title>Contact</title>
       <link>https://jacobbuckman.com/home/contact/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>https://jacobbuckman.com/home/contact/</guid>
       <description></description>

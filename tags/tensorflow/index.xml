@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Mon, 25 Jun 2018 14:53:44 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Aug 2018 01:39:42 -0400</lastBuildDate>
     
 	<atom:link href="https://jacobbuckman.com/tags/tensorflow/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>More on Graph Inspection</title>
+      <link>https://jacobbuckman.com/post/graph-inspection/</link>
+      <pubDate>Sun, 05 Aug 2018 01:39:42 -0400</pubDate>
+      
+      <guid>https://jacobbuckman.com/post/graph-inspection/</guid>
+      <description>In Tensorflow: The Confusing Parts (1), I described the abstractions underlying Tensorflow at a high level in an intuitive manner. In this follow-up post, I dig more deeply, and examine how these abstractions are actually implemented. Understanding these implementation details isn&amp;rsquo;t necessarily essential to writing and using Tensorflow, but it allows us to inspect and debug computational graphs.
+Inspecting Graphs The computational graph is not just a nebulous, immaterial abstraction; it is a computational object that exists, and can be inspected.</description>
+    </item>
     
     <item>
       <title>Tensorflow: The Confusing Parts (1)</title>

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0800</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://jacobbuckman.com/publication/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sample-efficient Reinforcement Learning with Stochastic Ensemble Value Expansion</title>
+      <link>https://jacobbuckman.com/publication/steve/</link>
+      <pubDate>Mon, 06 Aug 2018 02:00:24 -0400</pubDate>
+      
+      <guid>https://jacobbuckman.com/publication/steve/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Is Generator Conditioning Causally Related to GAN Performance?</title>

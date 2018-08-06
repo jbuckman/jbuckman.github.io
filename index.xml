@@ -7,8 +7,240 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Sample-efficient Reinforcement Learning with Stochastic Ensemble Value Expansion</title>
+      <link>https://jacobbuckman.com/publication/steve/</link>
+      <pubDate>Mon, 06 Aug 2018 02:00:24 -0400</pubDate>
+      
+      <guid>https://jacobbuckman.com/publication/steve/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>More on Graph Inspection</title>
+      <link>https://jacobbuckman.com/post/graph-inspection/</link>
+      <pubDate>Sun, 05 Aug 2018 01:39:42 -0400</pubDate>
+      
+      <guid>https://jacobbuckman.com/post/graph-inspection/</guid>
+      <description>
+
+&lt;p&gt;In &lt;a href=&#34;https://jacobbuckman.com/post/tensorflow-the-confusing-parts-1/&#34; target=&#34;_blank&#34;&gt;Tensorflow: The Confusing Parts (1)&lt;/a&gt;, I described the abstractions underlying Tensorflow at a high level in an intuitive manner. In this follow-up post, I dig more deeply, and examine how these abstractions are actually implemented. Understanding these implementation details isn&amp;rsquo;t necessarily essential to writing and using Tensorflow, but it allows us to inspect and debug computational graphs.&lt;/p&gt;
+
+&lt;h2 id=&#34;inspecting-graphs&#34;&gt;Inspecting Graphs&lt;/h2&gt;
+
+&lt;p&gt;The computational graph is not just a nebulous, immaterial abstraction; it is a computational object that exists, and can be inspected. Complicated graphs are difficult to debug if we are representing them entirely in our heads, but inspecting and debugging the actual graph object makes thigs much easier.&lt;/p&gt;
+
+&lt;p&gt;To access the graph object, use &lt;code&gt;tf.get_default_graph()&lt;/code&gt;, which returns a pointer to the global default graph object:&lt;/p&gt;
+
+&lt;h6 id=&#34;code&#34;&gt;Code:&lt;/h6&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import tensorflow as tf
+g = tf.get_default_graph()
+print g
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h6 id=&#34;output&#34;&gt;Output:&lt;/h6&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;lt;tensorflow.python.framework.ops.Graph object at 0x1144ffd90&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This object has the potential to tell us everything we need to know about the computational graph we have constructed. But only if we know how to use it! First, let&amp;rsquo;s take a step back and dive a bit deeper into something I glossed over in the first part: the difference between edges and nodes.&lt;/p&gt;
+
+&lt;p&gt;The mathematical definition of a graph includes both edges and nodes. A Tensorflow graph is no exception: it has &lt;code&gt;tf.Operation&lt;/code&gt; objects (nodes) and &lt;code&gt;tf.Tensor&lt;/code&gt; objects (edges). An operation results in a single tensor (edge) as an output, so it&amp;rsquo;s fine to conflate the two in most cases; that&amp;rsquo;s what I did in TFTCP1. But in terms of the actual Python objects that make up the graph, they are programmatically distinct.&lt;/p&gt;
+
+&lt;p&gt;When we create a new node, there are actually three things happening under the hood:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;We gather up all the &lt;code&gt;tf.Tensor&lt;/code&gt; objects corresponding to the incoming edges for our new node&lt;/li&gt;
+&lt;li&gt;We create a new node, which is a &lt;code&gt;tf.Operation&lt;/code&gt; object&lt;/li&gt;
+&lt;li&gt;We create one or more new outgoing edges, which are &lt;code&gt;tf.Tensor&lt;/code&gt; objects, and return pointers to them&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;There are three primary ways that we can inspect the graph to understand how these pieces fit together:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;List All Nodes:&lt;/strong&gt; &lt;code&gt;tf.Graph.get_operations()&lt;/code&gt; returns all operations in the graph&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inspecting Nodes:&lt;/strong&gt; &lt;code&gt;tf.Operation.inputs&lt;/code&gt; and &lt;code&gt;tf.Operation.outputs&lt;/code&gt; each return a list of &lt;code&gt;tf.Tensor&lt;/code&gt; objects, which correspond to the incoming edges and outgoing edges, respectively&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inspecting Edges:&lt;/strong&gt; &lt;code&gt;tf.Tensor.op&lt;/code&gt; returns a single &lt;code&gt;tf.Operation&lt;/code&gt; for which this tensor is the output, and &lt;code&gt;tf.Tensor.consumers()&lt;/code&gt; returns a list of all &lt;code&gt;tf.Operations&lt;/code&gt; for which this tensor is used as an input.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Here&amp;rsquo;s an example of these in action:&lt;/p&gt;
+
+&lt;h6 id=&#34;code-1&#34;&gt;Code&lt;/h6&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import tensorflow as tf
+a = tf.constant(2, name=&#39;a&#39;)
+b = tf.constant(3, name=&#39;b&#39;)
+c = a + b
+
+print &amp;quot;Our tf.Tensor objects:&amp;quot;
+print a
+print b
+print c
+print
+
+a_op = a.op
+b_op = b.op
+c_op = c.op
+
+print &amp;quot;Our tf.Operation objects, printed in compressed form:&amp;quot;
+print a_op.__repr__()
+print b_op.__repr__()
+print c_op.__repr__()
+print
+
+print &amp;quot;The default behavior of printing a tf.Operation object is to pretty-print:&amp;quot;
+print c_op
+
+print &amp;quot;Inspect consumers for each tensor:&amp;quot;
+print a.consumers()
+print b.consumers()
+print c.consumers()
+print
+
+print &amp;quot;Inspect input tensors for each op:&amp;quot;
+# it&#39;s in a weird format, tensorflow.python.framework.ops._InputList, so we need to convert to list() to inspect
+print list(a_op.inputs)
+print list(b_op.inputs)
+print list(c_op.inputs)
+print
+
+print &amp;quot;Inspect input tensors for each op:&amp;quot;
+print a_op.outputs
+print b_op.outputs
+print c_op.outputs
+print
+
+print &amp;quot;The list of all nodes (tf.Operations) in the graph:&amp;quot;
+g = tf.get_default_graph()
+ops_list = g.get_operations()
+print ops_list
+print
+
+print &amp;quot;The list of all edges (tf.Tensors) in the graph, by way of list comprehension:&amp;quot;
+tensors_list = [tensor for op in ops_list for tensor in op.outputs]
+print tensors_list
+print
+
+print &amp;quot;Note that these are the same pointers we can find by referring to our various graph elements directly:&amp;quot;
+print ops_list[0] == a_op, tensors_list[0] == a
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h6 id=&#34;output-1&#34;&gt;Output&lt;/h6&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;Our tf.Tensor objects:
+Tensor(&amp;quot;a:0&amp;quot;, shape=(), dtype=int32)
+Tensor(&amp;quot;b:0&amp;quot;, shape=(), dtype=int32)
+Tensor(&amp;quot;add:0&amp;quot;, shape=(), dtype=int32)
+
+Our tf.Operation objects, printed in compressed form:
+&amp;lt;tf.Operation &#39;a&#39; type=Const&amp;gt;
+&amp;lt;tf.Operation &#39;b&#39; type=Const&amp;gt;
+&amp;lt;tf.Operation &#39;add&#39; type=Add&amp;gt;
+
+The default behavior of printing a tf.Operation object is to pretty-print:
+name: &amp;quot;add&amp;quot;
+op: &amp;quot;Add&amp;quot;
+input: &amp;quot;a&amp;quot;
+input: &amp;quot;b&amp;quot;
+attr {
+  key: &amp;quot;T&amp;quot;
+  value {
+    type: DT_INT32
+  }
+}
+
+Inspect consumers for each tensor:
+[&amp;lt;tf.Operation &#39;add&#39; type=Add&amp;gt;]
+[&amp;lt;tf.Operation &#39;add&#39; type=Add&amp;gt;]
+[]
+
+Inspect input tensors for each op:
+[]
+[]
+[&amp;lt;tf.Tensor &#39;a:0&#39; shape=() dtype=int32&amp;gt;, &amp;lt;tf.Tensor &#39;b:0&#39; shape=() dtype=int32&amp;gt;]
+
+Inspect input tensors for each op:
+[&amp;lt;tf.Tensor &#39;a:0&#39; shape=() dtype=int32&amp;gt;]
+[&amp;lt;tf.Tensor &#39;b:0&#39; shape=() dtype=int32&amp;gt;]
+[&amp;lt;tf.Tensor &#39;add:0&#39; shape=() dtype=int32&amp;gt;]
+
+The list of all nodes (tf.Operations) in the graph:
+[&amp;lt;tf.Operation &#39;a&#39; type=Const&amp;gt;, &amp;lt;tf.Operation &#39;b&#39; type=Const&amp;gt;, &amp;lt;tf.Operation &#39;add&#39; type=Add&amp;gt;]
+
+The list of all edges (tf.Tensors) in the graph, by way of list comprehension:
+[&amp;lt;tf.Tensor &#39;a:0&#39; shape=() dtype=int32&amp;gt;, &amp;lt;tf.Tensor &#39;b:0&#39; shape=() dtype=int32&amp;gt;, &amp;lt;tf.Tensor &#39;add:0&#39; shape=() dtype=int32&amp;gt;]
+
+Note that these are the same pointers we can find by referring to our various graph elements directly:
+True True
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There are a couple of funky things that we have to do to make everything nice to look at, but once you get used to them, inspecting the graph becomes second nature.&lt;/p&gt;
+
+&lt;p&gt;Of course, no discussion of graphs would be complete without taking a look at &lt;code&gt;tf.Variable&lt;/code&gt; objects too:&lt;/p&gt;
+
+&lt;h6 id=&#34;code-2&#34;&gt;Code&lt;/h6&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import tensorflow as tf
+a = tf.constant(2, name=&#39;a&#39;)
+b = tf.get_variable(&#39;b&#39;, [], dtype=tf.int32)
+c = a + b
+
+g = tf.get_default_graph()
+ops_list = g.get_operations()
+print
+
+print &amp;quot;tf.Variable objects are really a bundle of four operations (and their corresponding tensors):&amp;quot;
+print b
+print ops_list
+print
+
+print &amp;quot;Two of these are accessed via their tf.Operations,&amp;quot;,
+print &amp;quot;the core&amp;quot;, b.op.__repr__(), &amp;quot;and the initializer&amp;quot;, b.initializer.__repr__()
+print &amp;quot;The other two are accessed via their tf.Tensors,&amp;quot;,
+print &amp;quot;the initial-value&amp;quot;, b.initial_value, &amp;quot;and the current-value&amp;quot;, b.value()
+print
+
+print &amp;quot;A tf.Variable core-op takes no inputs, and outputs a tensor of type *_ref:&amp;quot;
+print b.op.__repr__()
+print list(b.op.inputs), b.op.outputs
+print
+
+print &amp;quot;A tf.Variable current-value is the output of a \&amp;quot;/read\&amp;quot; operation, which converts from *_ref to a tensor with a concrete data-type.&amp;quot;
+print &amp;quot;Other ops use the concrete node as their input:&amp;quot;
+print b.value()
+print b.value().op.__repr__()
+print list(c.op.inputs)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h6 id=&#34;output-2&#34;&gt;Output&lt;/h6&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;tf.Variable objects are really a bundle of four operations (and their corresponding tensors):
+&amp;lt;tf.Variable &#39;b:0&#39; shape=() dtype=int32_ref&amp;gt;
+[&amp;lt;tf.Operation &#39;a&#39; type=Const&amp;gt;, &amp;lt;tf.Operation &#39;b/Initializer/zeros&#39; type=Const&amp;gt;, &amp;lt;tf.Operation &#39;b&#39; type=VariableV2&amp;gt;, &amp;lt;tf.Operation &#39;b/Assign&#39; type=Assign&amp;gt;, &amp;lt;tf.Operation &#39;b/read&#39; type=Identity&amp;gt;, &amp;lt;tf.Operation &#39;add&#39; type=Add&amp;gt;]
+
+Two of these are accessed via their tf.Operations, the core &amp;lt;tf.Operation &#39;b&#39; type=VariableV2&amp;gt; and the initializer &amp;lt;tf.Operation &#39;b/Assign&#39; type=Assign&amp;gt;
+The other two are accessed via their tf.Tensors, the initial-value Tensor(&amp;quot;b/Initializer/zeros:0&amp;quot;, shape=(), dtype=int32) and the current-value Tensor(&amp;quot;b/read:0&amp;quot;, shape=(), dtype=int32)
+
+A tf.Variable core-op takes no inputs, and outputs a tensor of type *_ref:
+&amp;lt;tf.Operation &#39;b&#39; type=VariableV2&amp;gt;
+[] [&amp;lt;tf.Tensor &#39;b:0&#39; shape=() dtype=int32_ref&amp;gt;]
+
+A tf.Variable current-value is the output of a &amp;quot;/read&amp;quot; operation, which converts from *_ref to a tensor with a concrete data-type.
+Other ops use the concrete node as their input:
+Tensor(&amp;quot;b/read:0&amp;quot;, shape=(), dtype=int32)
+&amp;lt;tf.Operation &#39;b/read&#39; type=Identity&amp;gt;
+[&amp;lt;tf.Tensor &#39;a:0&#39; shape=() dtype=int32&amp;gt;, &amp;lt;tf.Tensor &#39;b/read:0&#39; shape=() dtype=int32&amp;gt;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So a &lt;code&gt;tf.Variable&lt;/code&gt; adds (at least) four ops, but most of the details can be happily abstracted away by the &lt;code&gt;tf.Variable&lt;/code&gt; interface. In general, you can just assume that a &lt;code&gt;tf.Variable&lt;/code&gt; will be the thing you want it to be in any given circumstance. For example, if you want to assign a value to a variable, it will resolve to the core-op; if you want to use the variable in a computation, it will resolve to the current-value-op; etc.&lt;/p&gt;
+
+&lt;p&gt;Take some time to play around with inspecting simple Tensorflow graphs in a Colab or interpreter - it will pay off in time saved debugging later!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Tensorflow: The Confusing Parts (1)</title>
@@ -497,7 +729,7 @@ print sess.run(count_variable)
 
 &lt;h4 id=&#34;variable-sharing&#34;&gt;Variable Sharing&lt;/h4&gt;
 
-&lt;p&gt;You may encounter Tensorflow code with variable sharing. which involves creating a scope and setting “reuse=True”. I strongly recommend that you don’t use this in your own code. If you want to use a single variable in multiple places, simply keep track of your pointer to that variable&amp;rsquo;s node programmatically, and re-use it when you need to. In other words, you should have only a single call of &lt;code&gt;tf.get_variable()&lt;/code&gt; for each parameter you intend to store in memory.&lt;/p&gt;
+&lt;p&gt;You may encounter Tensorflow code with variable sharing, which involves creating a scope and setting “reuse=True”. I strongly recommend that you don’t use this in your own code. If you want to use a single variable in multiple places, simply keep track of your pointer to that variable&amp;rsquo;s node programmatically, and re-use it when you need to. In other words, you should have only a single call of &lt;code&gt;tf.get_variable()&lt;/code&gt; for each parameter you intend to store in memory.&lt;/p&gt;
 
 &lt;h3 id=&#34;optimizers&#34;&gt;Optimizers&lt;/h3&gt;
 
@@ -645,7 +877,7 @@ print answer
 5
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;This often works well, but as code becomes more complex, it can be a bit awkward. A more convenient approach is to use a &lt;code&gt;tf.Print&lt;/code&gt; statement. Confusingly, &lt;code&gt;tf.Print&lt;/code&gt; is actually a type of Tensorflow node, which has both output and side effects! It has two required arguments: a node to copy, and a list of things to print. The “node to copy” can be any node in the graph; &lt;code&gt;tf.Print&lt;/code&gt; is an identity operation with respect to its “node to copy”, meaning that it outputs an exact copy of its input. But, it also prints all the current values in the “list of things to print” as a side effect.&lt;/p&gt;
+&lt;p&gt;This often works well, but as code becomes more complex, it can be a bit awkward. A more convenient approach is to use a &lt;code&gt;tf.Print&lt;/code&gt; statement. Confusingly, &lt;code&gt;tf.Print&lt;/code&gt; is actually a type of Tensorflow node, which has both output and side effects! It has two required arguments: a node to copy, and a list of things to print. The “node to copy” can be any node in the graph; &lt;code&gt;tf.Print&lt;/code&gt; is an identity operation with respect to its “node to copy”, meaning that it outputs an exact copy of its input. But, it also prints all the current values in the “list of things to print” as a side effect.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;h6 id=&#34;code-16&#34;&gt;Code:&lt;/h6&gt;
 
@@ -707,6 +939,8 @@ print sess.run(sum_node)
 
 &lt;p&gt;Hopefully this post helped you get a better intuition for what Tensorflow is, how it works, and how to use it. At the end of the day, the concepts presented here are fundamental to all Tensorflow programs, but this is only scratching the surface. In your Tensorflow adventures, you will likely encounter all sorts of other fun things that you want to use: conditionals, iteration, distributed Tensorflow, variable scopes, saving &amp;amp; loading models, multi-graph, multi-session, and multi-core, data-loader queues, and much more. Many of these topics I will cover in future posts. But if you build on the ideas you learned here with the official documentation, some code examples, and just a pinch of deep learning magic, I’m sure you’ll be able to figure it out!&lt;/p&gt;
 
+&lt;p&gt;For more detail on how these abstractions are implemented in Tensorflow, and how to interact with them, take a look at my &lt;a href=&#34;https://jacobbuckman.com/post/graph-inspection/&#34; target=&#34;_blank&#34;&gt;post on inspecting computational graphs&lt;/a&gt;.&lt;/p&gt;
+
 &lt;p&gt;Please give me feedback in the comments (or via email) if anything discussed in this guide was unclear. And if you enjoyed this post, let me know what I should cover next!&lt;/p&gt;
 
 &lt;p&gt;Happy training!&lt;/p&gt;
@@ -725,6 +959,8 @@ print sess.run(sum_node)
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li id=&#34;fn:3&#34;&gt;Name management can be made a bit easier with &lt;code&gt;tf.variable_scope()&lt;/code&gt;. I will cover scoping in more detail In a future post!
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34;&gt;Note that &lt;code&gt;tf.Print&lt;/code&gt; is not compatible with Colab or IPython notebooks; it prints to the standard output, which is not shown in the notebook. There are various solutions on StackOverflow.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:4&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 </description>

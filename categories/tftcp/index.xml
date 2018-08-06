@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TFTCP on Buckman&#39;s Homepage</title>
+    <link>https://jacobbuckman.com/categories/tftcp/</link>
+    <description>Recent content in TFTCP on Buckman&#39;s Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Mon, 25 Jun 2018 14:53:44 +0000</lastBuildDate>
+    
+	<atom:link href="https://jacobbuckman.com/categories/tftcp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tensorflow: The Confusing Parts (1)</title>
+      <link>https://jacobbuckman.com/post/tensorflow-the-confusing-parts-1/</link>
+      <pubDate>Mon, 25 Jun 2018 14:53:44 +0000</pubDate>
+      
+      <guid>https://jacobbuckman.com/post/tensorflow-the-confusing-parts-1/</guid>
+      <description>Click here to skip the intro and dive right in!
+Introduction What is this? Who are you? I’m Jacob, a Google AI Resident. When I started the residency program in the summer of 2017, I had a lot of experience programming, and a good understanding of machine learning, but I had never used Tensorflow before. I figured that given my background I’d be able to pick it up quickly. To my surprise, the learning curve was fairly steep, and even months into the residency, I would occasionally find myself confused about how to turn ideas into Tensorflow code.</description>
+    </item>
+    
+  </channel>
+</rss>
