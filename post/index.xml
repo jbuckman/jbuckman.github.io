@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>Tensorflow: The Confusing Parts (2)</title>
+      <link>https://jacobbuckman.com/post/tensorflow-the-confusing-parts-2/</link>
+      <pubDate>Mon, 17 Sep 2018 00:30:19 -0400</pubDate>
+      
+      <guid>https://jacobbuckman.com/post/tensorflow-the-confusing-parts-2/</guid>
+      <description>This post is the second of a series; click here for the previous post, or here for a list of all posts in this series.
+Naming and Scoping Naming Variables and Tensors As we discussed in Part 1, every time you call tf.get_variable(), you need to assign the variable a new, unique name. Actually, it goes deeper than that: every tensor in the graph gets a unique name too. The name can be accessed explicitly with the .</description>
+    </item>
+    
+    <item>
       <title>OpenAI Five Takeaways</title>
       <link>https://jacobbuckman.com/post/openaifive-takeaways/</link>
       <pubDate>Mon, 06 Aug 2018 18:38:24 -0400</pubDate>

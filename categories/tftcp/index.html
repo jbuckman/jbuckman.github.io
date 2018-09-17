@@ -71,6 +71,20 @@
 
   
   
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-62746966-1', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
   
 
   
@@ -95,10 +109,36 @@
   <meta property="og:description" content="PhD Student">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2018-06-25T14:53:44&#43;00:00">
+  <meta property="og:updated_time" content="2018-09-17T00:30:19-04:00">
   
 
   
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#3f51b5",
+          "text": "#fff"
+        },
+        "button": {
+          "background": "#fff",
+          "text": "#3f51b5"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "https://cookies.insites.com"
+      }
+    })});
+</script>
+
 
   
 
@@ -208,6 +248,16 @@
   
 
   
+  
+  <div>
+    <h2><a href="https://jacobbuckman.com/post/tensorflow-the-confusing-parts-2/">Tensorflow: The Confusing Parts (2)</a></h2>
+    <div class="article-style">
+      
+      This post is the second of a series; click here for the previous post, or here for a list of all posts in this series.
+Naming and Scoping Naming Variables and Tensors As we discussed in Part 1, every time you call tf.get_variable(), you need to assign the variable a new, unique name. Actually, it goes deeper than that: every tensor in the graph gets a unique name too. The name can be accessed explicitly with the .
+      
+    </div>
+  </div>
   
   <div>
     <h2><a href="https://jacobbuckman.com/post/tensorflow-the-confusing-parts-1/">Tensorflow: The Confusing Parts (1)</a></h2>
