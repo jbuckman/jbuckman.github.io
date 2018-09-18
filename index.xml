@@ -775,6 +775,8 @@ Tensor(&amp;quot;b/read:0&amp;quot;, shape=(), dtype=int32)
       <guid>https://jacobbuckman.com/post/tensorflow-the-confusing-parts-1/</guid>
       <description>
 
+&lt;p&gt;&lt;em&gt;This post is the first of a series; click &lt;a href=&#34;https://jacobbuckman.com/post/tensorflow-the-confusing-parts-2/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; for the next post, or &lt;a href=&#34;https://jacobbuckman.com/categories/tftcp/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; for a list of all posts in this series.&lt;/em&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;a href=&#34;#understanding-tensorflow&#34;&gt;Click here to skip the intro and dive right in!&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
@@ -1469,6 +1471,8 @@ print sess.run(sum_node)
 &lt;p&gt;Please give me feedback in the comments (or via email) if anything discussed in this guide was unclear. And if you enjoyed this post, let me know what I should cover next!&lt;/p&gt;
 
 &lt;p&gt;Happy training!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This post is the first of a series; click &lt;a href=&#34;https://jacobbuckman.com/post/tensorflow-the-confusing-parts-2/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; for the next post, or &lt;a href=&#34;https://jacobbuckman.com/categories/tftcp/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; for a list of all posts in this series.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Many thanks to Kathryn Rough, Katherine Lee, Sara Hooker, and Ludwig Schubert for all of their help and feedback when writing this post.&lt;/em&gt;&lt;/p&gt;
 &lt;div class=&#34;footnotes&#34;&gt;

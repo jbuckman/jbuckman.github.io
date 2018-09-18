@@ -15,8 +15,9 @@
   
     
   
-  <meta name="description" content="Click here to skip the intro and dive right in!
-Introduction What is this? Who are you? I’m Jacob, a Google AI Resident. When I started the residency program in the summer of 2017, I had a lot of experience programming, and a good understanding of machine learning, but I had never used Tensorflow before. I figured that given my background I’d be able to pick it up quickly. To my surprise, the learning curve was fairly steep, and even months into the residency, I would occasionally find myself confused about how to turn ideas into Tensorflow code.">
+  <meta name="description" content="This post is the first of a series; click here for the next post, or here for a list of all posts in this series.
+Click here to skip the intro and dive right in!
+Introduction What is this? Who are you? I’m Jacob, a Google AI Resident. When I started the residency program in the summer of 2017, I had a lot of experience programming, and a good understanding of machine learning, but I had never used Tensorflow before.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://jacobbuckman.com/post/tensorflow-the-confusing-parts-1/">
@@ -75,7 +76,7 @@ Introduction What is this? Who are you? I’m Jacob, a Google AI Resident. When 
     <script>
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
       ga('create', 'UA-62746966-1', 'auto');
-      
+      ga('set', 'anonymizeIp', true);
       ga('require', 'eventTracker');
       ga('require', 'outboundLinkTracker');
       ga('require', 'urlChangeTracker');
@@ -107,8 +108,9 @@ Introduction What is this? Who are you? I’m Jacob, a Google AI Resident. When 
   <meta property="og:site_name" content="Buckman&#39;s Homepage">
   <meta property="og:url" content="https://jacobbuckman.com/post/tensorflow-the-confusing-parts-1/">
   <meta property="og:title" content="Tensorflow: The Confusing Parts (1) | Buckman&#39;s Homepage">
-  <meta property="og:description" content="Click here to skip the intro and dive right in!
-Introduction What is this? Who are you? I’m Jacob, a Google AI Resident. When I started the residency program in the summer of 2017, I had a lot of experience programming, and a good understanding of machine learning, but I had never used Tensorflow before. I figured that given my background I’d be able to pick it up quickly. To my surprise, the learning curve was fairly steep, and even months into the residency, I would occasionally find myself confused about how to turn ideas into Tensorflow code.">
+  <meta property="og:description" content="This post is the first of a series; click here for the next post, or here for a list of all posts in this series.
+Click here to skip the intro and dive right in!
+Introduction What is this? Who are you? I’m Jacob, a Google AI Resident. When I started the residency program in the summer of 2017, I had a lot of experience programming, and a good understanding of machine learning, but I had never used Tensorflow before.">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2018-06-25T14:53:44&#43;00:00">
@@ -117,6 +119,32 @@ Introduction What is this? Who are you? I’m Jacob, a Google AI Resident. When 
   
 
   
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#3f51b5",
+          "text": "#fff"
+        },
+        "button": {
+          "background": "#fff",
+          "text": "#3f51b5"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "https://cookies.insites.com"
+      }
+    })});
+</script>
+
 
   
 
@@ -328,6 +356,8 @@ Introduction What is this? Who are you? I’m Jacob, a Google AI Resident. When 
 
     <div class="article-style" itemprop="articleBody">
       
+
+<p><em>This post is the first of a series; click <a href="https://jacobbuckman.com/post/tensorflow-the-confusing-parts-2/" target="_blank">here</a> for the next post, or <a href="https://jacobbuckman.com/categories/tftcp/" target="_blank">here</a> for a list of all posts in this series.</em></p>
 
 <p><a href="#understanding-tensorflow">Click here to skip the intro and dive right in!</a></p>
 
@@ -1023,6 +1053,8 @@ print sess.run(sum_node)
 <p>Please give me feedback in the comments (or via email) if anything discussed in this guide was unclear. And if you enjoyed this post, let me know what I should cover next!</p>
 
 <p>Happy training!</p>
+
+<p><em>This post is the first of a series; click <a href="https://jacobbuckman.com/post/tensorflow-the-confusing-parts-2/" target="_blank">here</a> for the next post, or <a href="https://jacobbuckman.com/categories/tftcp/" target="_blank">here</a> for a list of all posts in this series.</em></p>
 
 <p><em>Many thanks to Kathryn Rough, Katherine Lee, Sara Hooker, and Ludwig Schubert for all of their help and feedback when writing this post.</em></p>
 <div class="footnotes">
