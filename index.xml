@@ -375,7 +375,7 @@ Thanks for reading!&lt;/p&gt;
 &lt;hr /&gt;
 
 &lt;ol&gt;
-&lt;li id=&#34;fn:0&#34;&gt;There will also be a suffix &lt;code&gt;:device_num&lt;/code&gt; added to the tensor names. For now, that&amp;rsquo;s always &lt;code&gt;:0&lt;/code&gt;, meaning the tensor is stored on device 0; using multiple devices will be covered in a future post.
+&lt;li id=&#34;fn:0&#34;&gt;There will also be a suffix &lt;code&gt;:output_num&lt;/code&gt; added to the tensor names. For now, that&amp;rsquo;s always &lt;code&gt;:0&lt;/code&gt;, since we are only using operations with a single output. See &lt;a href=&#34;https://stackoverflow.com/questions/40925652/in-tensorflow-whats-the-meaning-of-0-in-a-variables-name&#34; target=&#34;_blank&#34;&gt;this StackOverflow question for more info&lt;/a&gt;. Thanks Su Tang for pointing this out!
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:0&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
