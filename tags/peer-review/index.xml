@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Miscellaneous on Buckman&#39;s Homepage</title>
-    <link>https://jacobbuckman.com/categories/miscellaneous/</link>
-    <description>Recent content in Miscellaneous on Buckman&#39;s Homepage</description>
+    <title>Peer Review on Buckman&#39;s Homepage</title>
+    <link>https://jacobbuckman.com/tags/peer-review/</link>
+    <description>Recent content in Peer Review on Buckman&#39;s Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Thu, 16 May 2019 18:38:24 -0400</lastBuildDate>
     
-	<atom:link href="https://jacobbuckman.com/categories/miscellaneous/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jacobbuckman.com/tags/peer-review/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,15 +21,6 @@
       <description>In light of the recent discussions on the *ACL reviewing process on Twitter, I want to share some thoughts.
 Do We Need Peer Review? Specifically, do we need double-blind peer review of the sort that conferences provide?
 I’m in full agreement with Ryan that it is an essential service for the scientific community. As scientists, our job is to develop and capture knowledge. Peer review ensures that the work of the least-advantaged members of our community is judged by the same standards as the most-advantaged members.</description>
-    </item>
-    
-    <item>
-      <title>OpenAI Five Takeaways</title>
-      <link>https://jacobbuckman.com/post/openaifive-takeaways/</link>
-      <pubDate>Mon, 06 Aug 2018 18:38:24 -0400</pubDate>
-      
-      <guid>https://jacobbuckman.com/post/openaifive-takeaways/</guid>
-      <description>On August 5th, OpenAI successfully defeated top human players in a Dota 2 best-of-three series. Their AI Dota agent, called OpenAI Five, was a deep neural network trained using reinforcement learning. As a researcher studying deep reinforcement learning, as well as a long-time follower of competitive Dota 2, I found this face-off really interesting. The eventual OAI5 victory was both impressive and well-earned - congrats to the team at OpenAI, and props to the humans for a hard-fought battle!</description>
     </item>
     
   </channel>
