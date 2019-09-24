@@ -39,14 +39,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="21" />
-          <entry key="md" value="1576" />
+          <entry key="md" value="1621" />
           <entry key="yml" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="21" />
-          <entry key="Markdown" value="1576" />
+          <entry key="Markdown" value="1621" />
           <entry key="YAML" value="14" />
         </counts>
       </usages-collector>
@@ -58,8 +58,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2019-09-23-automation-via-reinforcement-learning.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="94">
-                <caret line="14" column="212" selection-start-line="14" selection-start-column="212" selection-end-line="14" selection-end-column="212" />
+              <first_editor relative-caret-position="125">
+                <caret line="18" column="206" selection-start-line="18" selection-start-column="206" selection-end-line="18" selection-end-column="206" />
               </first_editor>
               <second_editor />
             </state>
@@ -192,13 +192,13 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -314,8 +314,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-09-23-automation-via-reinforcement-learning.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="94">
-            <caret line="14" column="212" selection-start-line="14" selection-start-column="212" selection-end-line="14" selection-end-column="212" />
+          <first_editor relative-caret-position="125">
+            <caret line="18" column="206" selection-start-line="18" selection-start-column="206" selection-end-line="18" selection-end-column="206" />
           </first_editor>
           <second_editor />
         </state>
