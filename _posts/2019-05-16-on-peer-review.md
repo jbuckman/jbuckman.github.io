@@ -86,4 +86,4 @@ I’d love to get feedback from the community on this, on both my framing of thi
 
 [^1]: There are other complaints about peer review, of course. For example, the “turnaround rate” of peer review is very slow: oftentimes, by the time a paper is presented at a conference, it has already been read and built upon by the majority of the community. However, these issues seem to be orthogonal to the core purpose of double-blind peer review, so I’m not going to discuss then further here. We already have a tool for fast turnaround: arXiv. Peer review serves a unique purpose, so if we change it, we should focus on changes that let it better serve that purpose.
 
-[^2]: There’s some rare exceptions, of course, such as if the first author commits academic fraud or something egregious, in which case the senior author gets penalized too.
+[^2]: There are some rare exceptions, of course, such as if the first author commits academic fraud or something egregious, in which case the senior author gets penalized too.
