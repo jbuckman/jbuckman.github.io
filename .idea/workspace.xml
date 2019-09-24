@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="46e852db-af01-4e65-9a99-4e29b6234bf4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-08-05-graph-inspection.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-08-05-graph-inspection.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-09-17-tensorflow-the-confusing-parts-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-09-17-tensorflow-the-confusing-parts-2.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../personal-website/content/post/on-peer-review.md" beforeDir="false" afterPath="$PROJECT_DIR$/../personal-website/content/post/on-peer-review.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../personal-website/public" beforeDir="false" afterPath="$PROJECT_DIR$/../personal-website/public" afterDir="false" />
     </list>
@@ -37,13 +35,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="11" />
-          <entry key="md" value="13" />
+          <entry key="md" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="11" />
-          <entry key="Markdown" value="13" />
+          <entry key="Markdown" value="14" />
         </counts>
       </usages-collector>
     </session>
@@ -63,8 +61,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-09-17-tensorflow-the-confusing-parts-2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="47">
-                <caret line="7" column="81" selection-start-line="7" selection-start-column="81" selection-end-line="7" selection-end-column="81" />
+              <first_editor relative-caret-position="105">
+                <caret line="7" column="82" selection-start-line="7" selection-start-column="82" selection-end-line="7" selection-end-column="82" />
               </first_editor>
               <second_editor />
             </state>
@@ -75,8 +73,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-08-05-graph-inspection.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="105">
-                <caret line="7" column="71" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
+              <first_editor relative-caret-position="180">
+                <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               </first_editor>
               <second_editor />
             </state>
@@ -87,8 +85,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="134">
-                <caret line="515" column="1" lean-forward="true" selection-start-line="515" selection-start-column="1" selection-end-line="515" selection-end-column="1" />
+              <first_editor relative-caret-position="252">
+                <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
               </first_editor>
               <second_editor />
             </state>
@@ -104,9 +102,11 @@
       <find>jacobbuckman</find>
       <find>img</find>
       <find>post/</find>
+      <find>static/</find>
     </findStrings>
     <replaceStrings>
       <replace>static/img</replace>
+      <replace>/static/</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -267,21 +267,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-08-05-graph-inspection.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2018-09-17-tensorflow-the-confusing-parts-2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="105">
-            <caret line="7" column="71" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
+            <caret line="7" column="82" selection-start-line="7" selection-start-column="82" selection-end-line="7" selection-end-column="82" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-09-17-tensorflow-the-confusing-parts-2.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2018-08-05-graph-inspection.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="47">
-            <caret line="7" column="81" selection-start-line="7" selection-start-column="81" selection-end-line="7" selection-end-column="81" />
+          <first_editor relative-caret-position="180">
+            <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           </first_editor>
           <second_editor />
         </state>
@@ -290,8 +290,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="134">
-            <caret line="515" column="1" lean-forward="true" selection-start-line="515" selection-start-column="1" selection-end-line="515" selection-end-column="1" />
+          <first_editor relative-caret-position="252">
+            <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
           </first_editor>
           <second_editor />
         </state>
