@@ -10,9 +10,9 @@ The dream of reinforcement learning is that it can one day be used to derive aut
 
 But reinforcement learning, especially deep RL, is an exciting research area precisely *because* of its enormous unfulfilled potential. Improvements in RL directly translate into an improved ability to automate complex, cognitively-demanding tasks, which is where humanity, collectively, currently spends a lot of effort. If we can push reinforcement learning forward far enough, we will be able to take tasks that currently require substantial human effort, and solve them with *no* human effort: just a little bit of data and a lot of computation.
 
-With this in mind, let’s delve a bit more into what it means to automate a task with reinforcement learning. The basic process can be decomposed into two steps: first *reduce the problem to RL* by writing it as an MDP or POMDP, and then *solve for the optimal policy* of the MDP or POMDP[^1]. The optimal policy then gives a powerful automated solution to the task, capable of solving it with no further human effort or data effort, and only minor compute effort. Which is awesome, but of course, these two steps require quite a bit of effort themselves!
+With this in mind, let’s delve a bit more into what it means to automate a task with reinforcement learning. The basic process can be decomposed into two steps: first *reduce the problem to RL* by writing it as an MDP or POMDP, and then *solve for the optimal policy* of the MDP or POMDP[^1]. The optimal policy then gives a powerful automated solution to the task, capable of solving it with no further human effort or data collection, and relatively little compute cost.
 
-I'll describe each of these in some more detail.
+Although this two-part breakdown is straightforward, it seems to me that not many RL researchers currently think about their work through the lens of automation. I find it to be a very useful perspective, and it reveals some insights into how we should be doing research. First, I'll describe each of these in some more detail.
 
 ### Reduction to RL
 
