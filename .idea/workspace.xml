@@ -39,14 +39,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="21" />
-          <entry key="md" value="2085" />
+          <entry key="md" value="2087" />
           <entry key="yml" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="21" />
-          <entry key="Markdown" value="2085" />
+          <entry key="Markdown" value="2087" />
           <entry key="YAML" value="14" />
         </counts>
       </usages-collector>
@@ -58,8 +58,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2019-09-23-automation-via-reinforcement-learning.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="197">
-                <caret line="26" column="69" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
+              <first_editor relative-caret-position="131">
+                <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
               </first_editor>
               <second_editor />
             </state>
@@ -86,6 +86,7 @@
       <find>a powerful</find>
       <find>not data coll</find>
       <find>the real ev</find>
+      <find>OG</find>
     </findStrings>
     <replaceStrings>
       <replace>static/img</replace>
@@ -318,8 +319,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-09-23-automation-via-reinforcement-learning.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="197">
-            <caret line="26" column="69" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
+          <first_editor relative-caret-position="131">
+            <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
           </first_editor>
           <second_editor />
         </state>
