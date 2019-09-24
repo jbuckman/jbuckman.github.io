@@ -12,7 +12,7 @@ But reinforcement learning, especially deep RL, is an exciting research area pre
 
 With this in mind, let’s delve a bit more into what it means to automate a task with reinforcement learning. The basic process can be decomposed into two steps: first *reduce the problem to RL* by writing it as an MDP or POMDP, and then *solve for the optimal policy* of the MDP or POMDP[^1]. The optimal policy then allows us to fully automate the task, completing it any number of times with no further human effort.
 
-Although this two-part breakdown is straightforward, my impression is that not many RL researchers currently think about their work through the lens of automation. I find it to be a very useful perspective, and it bears a strong influence on how I think about my research. First, I'll describe each of these in some more detail.
+Although this two-part breakdown is straightforward, my impression is that not many RL researchers currently think about their work through the lens of automation. I find it to be a very useful perspective, and it really influences how I think about my research. First, I'll describe each of these in some more detail.
 
 ### Reduction to RL
 
