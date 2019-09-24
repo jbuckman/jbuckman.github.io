@@ -39,14 +39,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="21" />
-          <entry key="md" value="1951" />
+          <entry key="md" value="1973" />
           <entry key="yml" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="21" />
-          <entry key="Markdown" value="1951" />
+          <entry key="Markdown" value="1973" />
           <entry key="YAML" value="14" />
         </counts>
       </usages-collector>
@@ -59,7 +59,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="121">
-                <caret line="14" column="307" selection-start-line="14" selection-start-column="307" selection-end-line="14" selection-end-column="307" />
+                <caret line="14" column="272" selection-start-line="14" selection-start-column="272" selection-end-line="14" selection-end-column="272" />
               </first_editor>
               <second_editor />
             </state>
@@ -317,7 +317,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="121">
-            <caret line="14" column="307" selection-start-line="14" selection-start-column="307" selection-end-line="14" selection-end-column="307" />
+            <caret line="14" column="272" selection-start-line="14" selection-start-column="272" selection-end-line="14" selection-end-column="272" />
           </first_editor>
           <second_editor />
         </state>
