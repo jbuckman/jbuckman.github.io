@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="46e852db-af01-4e65-9a99-4e29b6234bf4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/_posts/2018-09-17-tensorflow-the-confusing-parts-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-09-17-tensorflow-the-confusing-parts-2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../personal-website/content/post/on-peer-review.md" beforeDir="false" afterPath="$PROJECT_DIR$/../personal-website/content/post/on-peer-review.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../personal-website/public" beforeDir="false" afterPath="$PROJECT_DIR$/../personal-website/public" afterDir="false" />
     </list>
@@ -62,8 +61,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-09-17-tensorflow-the-confusing-parts-2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="210">
-                <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <first_editor relative-caret-position="30">
+                <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
               </first_editor>
               <second_editor />
             </state>
@@ -174,13 +173,13 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -246,8 +245,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-09-17-tensorflow-the-confusing-parts-2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="210">
-            <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           </first_editor>
           <second_editor />
         </state>
