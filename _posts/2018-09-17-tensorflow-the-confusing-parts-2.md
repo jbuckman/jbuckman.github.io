@@ -5,7 +5,7 @@ tags: ["tensorflow","tutorial", "tftcp"]
 mathjax: true
 ---
 
-*This post is the second of a series; click [here](https://jacobbuckman.com/post/tensorflow-the-confusing-parts-1/) for the previous post, or [here](https://jacobbuckman.com/categories/tftcp/) for a list of all posts in this series.*
+*This post is the second of a series; click [here](https://jacobbuckman.com/post/2018-06-25-tensorflow-the-confusing-parts-1/) for the previous post.*
 
 ## Naming and Scoping
 

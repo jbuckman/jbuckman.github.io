@@ -5,7 +5,7 @@ tags: ["tensorflow","tutorial"]
 mathjax: false
 ---
 
-In [Tensorflow: The Confusing Parts (1)](https://jacobbuckman.com/post/tensorflow-the-confusing-parts-1/), I described the abstractions underlying Tensorflow at a high level in an intuitive manner. In this follow-up post, I dig more deeply, and examine how these abstractions are actually implemented. Understanding these implementation details isn't necessarily essential to writing and using Tensorflow, but it allows us to inspect and debug computational graphs.
+In [Tensorflow: The Confusing Parts (1)](https://jacobbuckman.com/post/2018-06-25-tensorflow-the-confusing-parts-1/), I described the abstractions underlying Tensorflow at a high level in an intuitive manner. In this follow-up post, I dig more deeply, and examine how these abstractions are actually implemented. Understanding these implementation details isn't necessarily essential to writing and using Tensorflow, but it allows us to inspect and debug computational graphs.
 
 ## Inspecting Graphs
 
