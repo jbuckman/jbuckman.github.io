@@ -5,7 +5,7 @@ tags: ["tensorflow","tutorial", "tftcp"]
 mathjax: true
 ---
 
-*This post is the first of a series; click [here](https://jacobbuckman.com/post/2018-09-17-tensorflow-the-confusing-parts-2/) for the next post.*
+*This post is the first of a series; click [here](https://jacobbuckman.com/2018-09-17-tensorflow-the-confusing-parts-2/) for the next post.*
 
 [Click here to skip the intro and dive right in!](#understanding-tensorflow)
 
@@ -544,13 +544,13 @@ print sess.run(sum_node)
 
 Hopefully this post helped you get a better intuition for what Tensorflow is, how it works, and how to use it. At the end of the day, the concepts presented here are fundamental to all Tensorflow programs, but this is only scratching the surface. In your Tensorflow adventures, you will likely encounter all sorts of other fun things that you want to use: conditionals, iteration, distributed Tensorflow, variable scopes, saving & loading models, multi-graph, multi-session, and multi-core, data-loader queues, and much more. Many of these topics I will cover in future posts. But if you build on the ideas you learned here with the official documentation, some code examples, and just a pinch of deep learning magic, I’m sure you’ll be able to figure it out!
 
-For more detail on how these abstractions are implemented in Tensorflow, and how to interact with them, take a look at my [post on inspecting computational graphs](https://jacobbuckman.com/post/2018-08-05-graph-inspection/).
+For more detail on how these abstractions are implemented in Tensorflow, and how to interact with them, take a look at my [post on inspecting computational graphs](https://jacobbuckman.com/2018-08-05-graph-inspection/).
 
 Please give me feedback in the comments (or via email) if anything discussed in this guide was unclear. And if you enjoyed this post, let me know what I should cover next!
 
 Happy training!
 
-*This post is the first of a series; click [here](https://jacobbuckman.com/post/2018-09-17-tensorflow-the-confusing-parts-2/) for the next post.*
+*This post is the first of a series; click [here](https://jacobbuckman.com/2018-09-17-tensorflow-the-confusing-parts-2/) for the next post.*
 
 *Many thanks to Kathryn Rough, Katherine Lee, Sara Hooker, and Ludwig Schubert for all of their help and feedback when writing this post.*
 

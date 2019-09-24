@@ -63,20 +63,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2018-09-17-tensorflow-the-confusing-parts-2.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="75">
-                <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2018-08-05-graph-inspection.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="105">
-                <caret line="7" column="114" selection-start-line="7" selection-start-column="114" selection-end-line="7" selection-end-column="114" />
+              <first_editor relative-caret-position="47">
+                <caret line="7" column="81" selection-start-line="7" selection-start-column="81" selection-end-line="7" selection-end-column="81" />
               </first_editor>
               <second_editor />
             </state>
@@ -84,11 +72,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2018-08-05-graph-inspection.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="105">
+                <caret line="7" column="71" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="239">
-                <caret line="522" column="12" lean-forward="true" selection-start-line="522" selection-start-column="12" selection-end-line="522" selection-end-column="12" />
+              <first_editor relative-caret-position="134">
+                <caret line="515" column="1" lean-forward="true" selection-start-line="515" selection-start-column="1" selection-end-line="515" selection-end-column="1" />
               </first_editor>
               <second_editor />
             </state>
@@ -101,8 +101,9 @@
     <findStrings>
       <find>jacobbuckman.com</find>
       <find>/img</find>
-      <find>img</find>
       <find>jacobbuckman</find>
+      <find>img</find>
+      <find>post/</find>
     </findStrings>
     <replaceStrings>
       <replace>static/img</replace>
@@ -116,9 +117,9 @@
       <list>
         <option value="$PROJECT_DIR$/blog.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md" />
-        <option value="$PROJECT_DIR$/_posts/2018-09-17-tensorflow-the-confusing-parts-2.md" />
         <option value="$PROJECT_DIR$/_posts/2018-08-05-graph-inspection.md" />
+        <option value="$PROJECT_DIR$/_posts/2018-09-17-tensorflow-the-confusing-parts-2.md" />
+        <option value="$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md" />
       </list>
     </option>
   </component>
@@ -199,13 +200,13 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -258,16 +259,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="239">
-            <caret line="522" column="12" lean-forward="true" selection-start-line="522" selection-start-column="12" selection-end-line="522" selection-end-column="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-16-on-peer-review.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -276,21 +267,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-09-17-tensorflow-the-confusing-parts-2.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2018-08-05-graph-inspection.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <first_editor relative-caret-position="105">
+            <caret line="7" column="71" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-08-05-graph-inspection.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2018-09-17-tensorflow-the-confusing-parts-2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="105">
-            <caret line="7" column="114" selection-start-line="7" selection-start-column="114" selection-end-line="7" selection-end-column="114" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="47">
+            <caret line="7" column="81" selection-start-line="7" selection-start-column="81" selection-end-line="7" selection-end-column="81" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="134">
+            <caret line="515" column="1" lean-forward="true" selection-start-line="515" selection-start-column="1" selection-end-line="515" selection-end-column="1" />
           </first_editor>
           <second_editor />
         </state>
