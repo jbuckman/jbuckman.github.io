@@ -66,7 +66,7 @@ print two_node
 Tensor("Const:0", shape=(), dtype=int32)
 ```
 ###### Graph:
-{{< figure src="/static/img/tfcp1/fig1.png" numbered="true" width="300px">}}
+< figure src="/static/img/tfcp1/fig1.png" numbered="true" width="300px">
 
 Would you look at that! We got ourselves a node. It contains the constant 2. Shocking, I know, coming from a function called `tf.constant`. When we print the variable, we see that it returns a `tf.Tensor` object, which is a pointer to the node that we just created. To emphasize this, here’s another example:
 
