@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46e852db-af01-4e65-9a99-4e29b6234bf4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../personal-website/content/post/on-peer-review.md" beforeDir="false" afterPath="$PROJECT_DIR$/../personal-website/content/post/on-peer-review.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../personal-website/public" beforeDir="false" afterPath="$PROJECT_DIR$/../personal-website/public" afterDir="false" />
     </list>
@@ -34,13 +34,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="11" />
+          <entry key="html" value="15" />
           <entry key="md" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="11" />
+          <entry key="HTML" value="15" />
           <entry key="Markdown" value="37" />
         </counts>
       </usages-collector>
@@ -48,11 +48,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            <state relative-caret-position="135">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -81,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="166">
+              <first_editor relative-caret-position="224">
                 <caret line="546" column="36" selection-start-line="546" selection-start-column="36" selection-end-line="546" selection-end-column="36" />
               </first_editor>
               <second_editor />
@@ -103,6 +103,7 @@
       <find>img</find>
       <find>post/</find>
       <find>static/</find>
+      <find>{{&lt; figure src=&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>static/img</replace>
@@ -117,10 +118,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/blog.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/_posts/2018-08-05-graph-inspection.md" />
         <option value="$PROJECT_DIR$/_posts/2018-09-17-tensorflow-the-confusing-parts-2.md" />
         <option value="$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -253,13 +254,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-16-on-peer-review.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -291,10 +285,17 @@
     <entry file="file://$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="166">
+          <first_editor relative-caret-position="224">
             <caret line="546" column="36" selection-start-line="546" selection-start-column="36" selection-end-line="546" selection-end-column="36" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
