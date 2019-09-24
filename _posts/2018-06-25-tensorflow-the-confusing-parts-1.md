@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tensorflow: The Confusing Parts (1)
+title: Tensorflow, The Confusing Parts (1)
 tags: ["tensorflow","tutorial", "tftcp"]
 mathjax: true
 ---
