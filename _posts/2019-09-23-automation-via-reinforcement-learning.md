@@ -57,7 +57,7 @@ Additionally, over time, researchers will push forward by removing reductions on
 Of course, research into reduction-to-RL techniques is also valuable. There are many interesting research avenues around what reductions are useful, what sorts of tasks can be used as stand-in proxies for others, etc. For these sorts of studies, Atari may also be a good benchmark, and the question of performance on the original environment once again becomes the most essential question to answer. I just want to suggest disentangling the two wherever possible, and highlighting these distinctions.
 
 ### Conclusion
-Hope that makes sense! If there is any research that doesn’t fit nicely into this taxonomy, or you have other thoughts or disagreements, please reach out to me on Twitter @jacobmbuckman, I’d love to discuss!
+Hope that this perspective is valuable. If there is any research that doesn’t fit nicely into this taxonomy, or you have other thoughts or disagreements, please reach out to me on Twitter @jacobmbuckman, I’d love to discuss.
 
 *Thanks to Saurabh Kumar for feedback when writing this post.*
 
