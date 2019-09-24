@@ -51,7 +51,7 @@ Let’s walk through an example of how to build one. In the following figures, t
 import tensorflow as tf
 ```
 ###### Graph:
-![](/static/img/tfcp1/fig0.png | width=300)
+![](/static/img/tfcp1/fig0.png){:width="300px"}
 
 Predictably, just importing Tensorflow does not give us an interesting computation graph. Just a lonely, empty global variable. But what about when we call a Tensorflow operation?
 
