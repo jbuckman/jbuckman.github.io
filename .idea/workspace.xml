@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46e852db-af01-4e65-9a99-4e29b6234bf4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-08-06-test.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-09-23-aaa.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-09-23-automation-via-reinforcement-learning.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-09-23-automation-via-reinforcement-learning.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-09-23-automation-via-reinforcement-learning.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../personal-website/content/post/on-peer-review.md" beforeDir="false" afterPath="$PROJECT_DIR$/../personal-website/content/post/on-peer-review.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../personal-website/public" beforeDir="false" afterPath="$PROJECT_DIR$/../personal-website/public" afterDir="false" />
     </list>
@@ -26,14 +24,14 @@
         <counts>
           <entry key="gitignore" value="1" />
           <entry key="html" value="3" />
-          <entry key="md" value="9" />
+          <entry key="md" value="10" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="3" />
-          <entry key="Markdown" value="9" />
+          <entry key="Markdown" value="10" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="YAML" value="1" />
         </counts>
@@ -41,14 +39,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="21" />
-          <entry key="md" value="637" />
+          <entry key="md" value="639" />
           <entry key="yml" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="21" />
-          <entry key="Markdown" value="637" />
+          <entry key="Markdown" value="639" />
           <entry key="YAML" value="14" />
         </counts>
       </usages-collector>
@@ -56,92 +54,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="125" selection-start-line="9" selection-start-column="125" selection-end-line="9" selection-end-column="125" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="99" selection-start-line="99" selection-end-line="99" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2019-09-23-automation-via-reinforcement-learning.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="90">
-                <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2019-05-16-on-peer-review.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="138">
-                <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2018-09-17-tensorflow-the-confusing-parts-2.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="105">
-                <caret line="7" column="82" selection-start-line="7" selection-start-column="82" selection-end-line="7" selection-end-column="82" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2018-08-05-graph-inspection.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="180">
-                <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="159">
-                <caret line="250" column="4" selection-start-line="250" selection-start-column="4" selection-end-line="250" selection-end-column="4" />
+              <first_editor relative-caret-position="120">
+                <caret line="8" column="521" selection-start-line="8" selection-start-column="521" selection-end-line="8" selection-end-column="521" />
               </first_editor>
               <second_editor />
             </state>
@@ -182,12 +100,12 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/_posts/2019-09-24-automation-via-rl.md" />
         <option value="$PROJECT_DIR$/_posts/2019-09-23-automation-via-rl.md" />
-        <option value="$PROJECT_DIR$/_posts/2019-09-23-automation-via-reinforcement-learning.md" />
         <option value="$PROJECT_DIR$/_posts/2018-08-06-test.md" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_posts/2019-05-16-on-peer-review.md" />
         <option value="$PROJECT_DIR$/_posts/2019-09-23-aaa.md" />
         <option value="$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md" />
+        <option value="$PROJECT_DIR$/_posts/2019-09-23-automation-via-reinforcement-learning.md" />
       </list>
     </option>
   </component>
@@ -382,21 +300,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-09-23-automation-via-reinforcement-learning.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="90">
-            <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <first_editor relative-caret-position="3750">
+            <caret line="250" column="4" selection-start-line="250" selection-start-column="4" selection-end-line="250" selection-end-column="4" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2019-09-23-automation-via-reinforcement-learning.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="159">
-            <caret line="250" column="4" selection-start-line="250" selection-start-column="4" selection-end-line="250" selection-end-column="4" />
+          <first_editor relative-caret-position="120">
+            <caret line="8" column="521" selection-start-line="8" selection-start-column="521" selection-end-line="8" selection-end-column="521" />
           </first_editor>
           <second_editor />
         </state>
