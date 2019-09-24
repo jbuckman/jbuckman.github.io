@@ -1,6 +1,6 @@
 ---
 layout: post
-title: aaa
+title: Automation via Reinforcement Learning
 tags: ["reinforcement learning"]
 published: true
 mathjax: true

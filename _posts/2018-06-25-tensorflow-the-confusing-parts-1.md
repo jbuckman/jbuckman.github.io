@@ -248,7 +248,7 @@ All three nodes need to be evaluated to compute the value of `sum_node`. Crucial
 
 In contrast, consider the computation path of `three_node`:
 
-{{< figure src="/static/img/tfcp1/fig9.png){:width="300px"}
+![](/static/img/tfcp1/fig9.png){:width="300px"}
 
 Due to the graph structure, we don’t need to compute all of the nodes in order to evaluate the one we want! Because we don’t need to evaluate `placeholder_node` to evaluate `three_node`, running `sess.run(three_node)` doesn’t raise an exception.
 
