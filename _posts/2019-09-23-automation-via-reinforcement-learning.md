@@ -71,4 +71,4 @@ I hope that this perspective is valuable. If there is any research that doesn’
 
 [^4]: These are all the ones I noticed, but if you see another one, let me know!
 
-[^5]: Of course, in reality, πmeh may or may not actually exist for this specific setting (Pong & reductions of clipping + discount), but just bear with me for the sake of the example! There is no reason, in general, that this couldn’t happen.
+[^5]: Of course, in reality, $$\pi^{\text{meh}}$$ may or may not actually exist for this specific setting (Pong & reductions of clipping + discount), but just bear with me for the sake of the example! There is no reason, in general, that this couldn’t happen.
