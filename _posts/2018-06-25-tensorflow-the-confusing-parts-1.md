@@ -2,7 +2,7 @@
 layout: post
 title: Tensorflow: The Confusing Parts (1)
 tags: ["tensorflow","tutorial", "tftcp"]
-mathjax: false
+mathjax: true
 ---
 
 *This post is the first of a series; click [here](https://jacobbuckman.com/post/tensorflow-the-confusing-parts-2/) for the next post, or [here](https://jacobbuckman.com/categories/tftcp/) for a list of all posts in this series.*
