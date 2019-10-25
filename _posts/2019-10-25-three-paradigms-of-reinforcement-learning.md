@@ -40,7 +40,7 @@ Why does this argument hold, rather than fall victim to the equivalence describe
 
 Furthermore, this interpretation lets us understand *which* tasks we expect to improve in sample-efficiency when we switch to model-based reinforcement learning. Simply put, in tasks with simple dynamics but complex optimal policies, understanding of the dynamics is a more efficient approach than brute forcing the optimal policy. But crucially, note that this is not true of every task! Consider a modification to the city navigation example, where the agent’s observation space is augmented by GPS navigation directions. This is an example of a task where the optimal policy is simpler than the dynamics; thus, a task where model-free learning would be more sample-efficient.
 
-![](/static/img/three_paradigms/simple_city_gps.png){:width="450px"}
+![](/static/img/three_paradigms/simple_city_gps.png){:width="300px"}
 
 It’s easy to see intuitively that some MDPs are easier to solve model-based or model-free, but much work remains to understand this distinction rigorously. [A recent paper by Dong et al.](https://arxiv.org/abs/1910.05927) has begun to formalize this notion, proving that there exist many MDPs for which the policy and Q-function are more complex than the dynamics. Hopefully, future work will continue to build on these ideas, eventually painting a clear picture of how to characterize the difference.
 
@@ -48,7 +48,7 @@ It’s easy to see intuitively that some MDPs are easier to solve model-based or
 
 But model-based vs. model-free is only part of the picture. The navigation task above was amenable to model-learning because its dynamics were simple and straightforward. But in the real world, things are typically not so clean. Consider a variant of the same maze task, but rendered more realistically, as though the input pixels were provided by a camera:
 
-![](/static/img/three_paradigms/realistic_city.png){:width="450px"}
+![](/static/img/three_paradigms/realistic_city.png){:width="300px"}
 
 Although the task is fundamentally unchanged, it is far more difficult to learn a dynamics model in this environment. Since the state space is represented by pixels, a prediction of the next state requires that we predict how *every single pixel on the screen* changes in response to our actions. We need to predict pixel-by-pixel how the smoke floats up from the smokestacks, how the shadows flow across the ground, whether the football team in the stadium scores or not. Even if we *could* learn such a model (not an easy task for finite-capacity neural networks), we would require an enormous amount of data to generalize well. The real world is extraordinarily complex, and so any algorithm which attempts to model the real world with neural networks will suffer from extraordinarily poor sample efficiency.
 
