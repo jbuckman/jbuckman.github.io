@@ -138,13 +138,11 @@ But to fully demonstrate the potential of this approach, it still remains to be 
 
 We’ve discussed homomorphism-based RL as a new paradigm of reinforcement learning, and DeepMDPs as a first instantiation that is compatible with neural networks. Although we have centered the discussion around abstractions for state representation, there are many interesting future directions to explore. For example, HBRL could give a new perspective on the well-studied problems of action abstraction, temporal abstraction, and hierarchical abstraction.
 
-*If you are interested in studying one of these ideas, please reach out to [Carles](https://twitter.com/carlesgelada) and [Jacob](https://twitter.com/jacobmbuckman) -- we are always happy to chat!*
-
 #### Final Note on the DeepMDP Paper
 
 To any reader who read the DeepMDP paper before reading this blog post, we’d like to apologize. The exposition in this blog differs starkly from that of the paper, and serves as a much more cohesive presentation of the core ideas. It turns out that at the time of publication, we didn’t ourselves quite understand how this line of work fit into the broader context of reinforcement learning. Also, TBH, we ended up putting in so many bounds that there wasn’t space to explain much. Our bad!
 
-To cite this post, please use the following BibTeX:
+*If you are interested in studying these ideas, please reach out to [Carles](https://twitter.com/carlesgelada) and [Jacob](https://twitter.com/jacobmbuckman) -- we are always happy to chat! To cite this post, please use the following BibTeX:*
 ```
  @misc{blogpost,
   title={Three Paradigms of Reinforcement Learning},
