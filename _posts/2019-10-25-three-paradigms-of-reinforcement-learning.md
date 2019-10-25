@@ -142,7 +142,7 @@ We’ve discussed homomorphism-based RL as a new paradigm of reinforcement learn
 
 #### Final Note on the DeepMDP Paper
 
-To any reader who read the original DeepMDP paper, we’d like to apologize. The exposition in this blog differs starkly from that of the paper, and is a much more cohesive presentation of the core ideas. It turns out that at the time of publication, we didn’t ourselves quite understand how this line of work fit into the broader context of reinforcement learning. Also, TBH, we ended up putting in so many bounds that there wasn’t space to explain much. Our bad!
+To any reader who read the DeepMDP paper before reading this blog post, we’d like to apologize. The exposition in this blog differs starkly from that of the paper, and serves as a much more cohesive presentation of the core ideas. It turns out that at the time of publication, we didn’t ourselves quite understand how this line of work fit into the broader context of reinforcement learning. Also, TBH, we ended up putting in so many bounds that there wasn’t space to explain much. Our bad!
 
 To cite this post, please use the following BibTeX:
 ```
