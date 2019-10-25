@@ -62,7 +62,7 @@ We refer to this idea as *homomorphism-based RL* (HBRL). This represents a third
 
 Of course, just as we saw in our earlier discussion of MFRL vs. MBRL, HBRL is not always the best solution. For example, if we are attempting to solve a very simple environment (like the simplified city task from before), HBRL will generally require more data than MBRL, since the algorithm will require many datapoints just to realize that the best latent space is the state space itself. And of course, even in a realistic city environment, GPS directions will still result in model-free learning being more sample efficient than any alternative.
 
-![](/static/img/three_paradigms/realistic_city_gps.png){:width="300px"}
+![](/static/img/three_paradigms/realistic_city_gps.png){:width="300px" text-align="center"}
 
 And yet: when it comes to real-world tasks, it’s intuitively clear that the vast majority of them will resemble the realistic city task. The real world is a visually complex place, and “step-by-step” instructions are rarely given. Therefore, we believe that sample-efficient learning in real-world environments is likely to be hugely accelerated by progress in latent-model-based RL.
 
