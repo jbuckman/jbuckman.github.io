@@ -101,7 +101,7 @@ It’s intuitively clear how the second property is satisfied by the minimizatio
 
 However, it’s much less apparent that property (1) must be satisfied. To show that it is, we analyze the properties of a trained DeepMDP with the help of *bisimulation metrics*, a well-studied approach in representation learning for RL. Bisimulation metrics measure a notion of “behavioral similarity” between any two states. Under these metrics, the distance between two states is small if they possess similar distributions of both immediate and future rewards. Any two states that only differ by visual elements that don’t affect the dynamics of the game (such as the differing asteroid colors in the ASTEROIDS figure below), have bisimulation distance 0. Therefore, our first objective can be understood as learning an embedding function that respects bisimulation: in other words, an embedding function that only collapses states together when the bisimulation distance between them is 0. Somewhat surprisingly, we can mathematically guarantee that this will be the case for any embedding function that is learned by minimizing the DeepMDP objectives.
 
-![](/static/img/three_paradigms/bisimilar_asteroids.png){:width="300px"}
+![](/static/img/three_paradigms/bisimilar_asteroids.png){:width="450px"}
 
 ### Global vs Local Losses
 
