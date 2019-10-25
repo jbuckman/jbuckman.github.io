@@ -28,7 +28,7 @@ First, we want to highlight a principle that is core to the arguments on this po
 
 Consider the task of navigation in a city, which we pose as an RL problem. At the beginning of each episode a map is generated, and an initial position of the agent and a target are sampled. The state space is a top-down pixel representation of the city’s grid. To get a reward, the agent must travel from the start point to the target point by selecting up, down, left or right actions. Let’s consider what it would take to solve this MDP using both model-free and model-based techniques.
 
-![](/static/img/three_paradigms/simple_city.png){:width="300px"}
+![](/static/img/three_paradigms/simple_city.png){:width="450px"}
 
 For the model-free approach, we try to learn a value function: a neural net mapping from the state space directly to a value for each action. However, this will be fairly challenging to learn. The city is maze-like, and adding (or removing) a small shortcut, even one far from the agent or the target, could significantly alter the agent’s expected return. Therefore, two similar-seeming states could have dramatically different values. In other words, the value function is a highly complex function of the state. Since this value function is not at all simple, a large amount of data is required to approximate it with a neural network.
 
@@ -40,7 +40,7 @@ Why does this argument hold, rather than fall victim to the equivalence describe
 
 Furthermore, this interpretation lets us understand *which* tasks we expect to improve in sample-efficiency when we switch to model-based reinforcement learning. Simply put, in tasks with simple dynamics but complex optimal policies, understanding of the dynamics is a more efficient approach than brute forcing the optimal policy. But crucially, note that this is not true of every task! Consider a modification to the city navigation example, where the agent’s observation space is augmented by GPS navigation directions. This is an example of a task where the optimal policy is simpler than the dynamics; thus, a task where model-free learning would be more sample-efficient.
 
-![](/static/img/three_paradigms/simple_city_gps.png){:width="300px"}
+![](/static/img/three_paradigms/simple_city_gps.png){:width="450px"}
 
 It’s easy to see intuitively that some MDPs are easier to solve model-based or model-free, but much work remains to understand this distinction rigorously. [A recent paper by Dong et al.](https://arxiv.org/abs/1910.05927) has begun to formalize this notion, proving that there exist many MDPs for which the policy and Q-function are more complex than the dynamics. Hopefully, future work will continue to build on these ideas, eventually painting a clear picture of how to characterize the difference.
 
@@ -48,7 +48,7 @@ It’s easy to see intuitively that some MDPs are easier to solve model-based or
 
 But model-based vs. model-free is only part of the picture. The navigation task above was amenable to model-learning because its dynamics were simple and straightforward. But in the real world, things are typically not so clean. Consider a variant of the same maze task, but rendered more realistically, as though the input pixels were provided by a camera:
 
-![](/static/img/three_paradigms/realistic_city.png){:width="300px"}
+![](/static/img/three_paradigms/realistic_city.png){:width="450px"}
 
 Although the task is fundamentally unchanged, it is far more difficult to learn a dynamics model in this environment. Since the state space is represented by pixels, a prediction of the next state requires that we predict how *every single pixel on the screen* changes in response to our actions. We need to predict pixel-by-pixel how the smoke floats up from the smokestacks, how the shadows flow across the ground, whether the football team in the stadium scores or not. Even if we *could* learn such a model (not an easy task for finite-capacity neural networks), we would require an enormous amount of data to generalize well. The real world is extraordinarily complex, and so any algorithm which attempts to model the real world with neural networks will suffer from extraordinarily poor sample efficiency.
 
@@ -62,7 +62,7 @@ We refer to this idea as *homomorphism-based RL* (HBRL). This represents a third
 
 Of course, just as we saw in our earlier discussion of MFRL vs. MBRL, HBRL is not always the best solution. For example, if we are attempting to solve a very simple environment (like the simplified city task from before), HBRL will generally require more data than MBRL, since the algorithm will require many datapoints just to realize that the best latent space is the state space itself. And of course, even in a realistic city environment, GPS directions will still result in model-free learning being more sample efficient than any alternative.
 
-![](/static/img/three_paradigms/realistic_city_gps.png){:width="300px" align="middle"}
+![](/static/img/three_paradigms/realistic_city_gps.png){:width="450px" align="middle"}
 
 And yet: when it comes to real-world tasks, it’s intuitively clear that the vast majority of them will resemble the realistic city task. The real world is a visually complex place, and “step-by-step” instructions are rarely given. Therefore, we believe that sample-efficient learning in real-world environments is likely to be hugely accelerated by progress in latent-model-based RL.
 
