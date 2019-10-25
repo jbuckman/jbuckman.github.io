@@ -6,7 +6,7 @@ published: true
 mathjax: true
 ---
 
-#### *Co-authored by Carles Gelada and Jacob Buckman*
+##### *Co-authored by [Carles Gelada](https://twitter.com/carlesgelada) and [Jacob Buckman](https://twitter.com/jacobmbuckman)*
 
 Many researchers believe that model-based reinforcement learning (MBRL) is more sample-efficient that model-free reinforcement learning (MFRL). However, at a fundamental level, this claim is false. A more nuanced analysis shows that it *can* be the case that MBRL approaches are more sample-efficient than MFRL approaches when using neural networks, but only on certain tasks. Furthermore, we believe that model-based RL is only the beginning. Another family of algorithms, *homomorphism-based reinforcement learning* (HBRL), may hold the potential to provide further gains in sample-efficiency on tasks with high levels of irrelevant information, like visual distractors. In this post, we provide an intuitive justification for these ideas.
 
