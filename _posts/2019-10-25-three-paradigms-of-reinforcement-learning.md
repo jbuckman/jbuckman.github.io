@@ -133,15 +133,16 @@ Since DeepMDPs are fully compatible with neural networks, it is only natural tha
 
 But to fully demonstrate the potential of this approach, it still remains to be shown experimentally that using the model for planning can successfully solve challenging, visually-complex environments in a sample-efficient way. This is the subject of current work; we have some promising preliminary results that we hope to publish soon.
 
-### Note on the DeepMDP Paper
-
-To any reader who read the original DeepMDP paper, we’d like to briefly explain why the exposition in this blog differs so starkly from that of the paper. It turns out that at the time of publication, we didn’t ourselves quite understand why the work was important. Also, TBH, we ended up putting in so many bounds that there wasn’t space for much else.
 
 ### Conclusion
 
 We’ve discussed homomorphism-based RL as a new paradigm of reinforcement learning, and DeepMDPs as a first instantiation that is compatible with neural networks. Although we have centered the discussion around abstractions for state representation, there are many interesting future directions to explore. For example, HBRL could give a new perspective on the well-studied problems of action abstraction, temporal abstraction, and hierarchical abstraction.
 
 *If you are interested in studying one of these ideas, please reach out to [Carles](https://twitter.com/carlesgelada) and [Jacob](https://twitter.com/jacobmbuckman) -- we are always happy to chat!*
+
+#### Final Note on the DeepMDP Paper
+
+To any reader who read the original DeepMDP paper, we’d like to apologize. The exposition in this blog differs starkly from that of the paper, and is a much more cohesive presentation of the core ideas. It turns out that at the time of publication, we didn’t ourselves quite understand how this line of work fit into the broader context of reinforcement learning. Also, TBH, we ended up putting in so many bounds that there wasn’t space to explain much. Our bad!
 
 To cite this post, please use the following BibTeX:
 ```
@@ -154,7 +155,7 @@ To cite this post, please use the following BibTeX:
 ```
 
 
-[^0]: This principle echoes classic results in generalization theory, which state that the amount of data required to find a nearly-optimal function is proportional to the size of the function class that we are searching in. One really intriguing property of neural networks is that, when trained by SGD, they seem to be able to find solutions that generalize well, even when they are heavily overparameterized relative to the complexity of the task they are trying to solve. In other words, when it comes to data efficiency, the size of the function class we actually search over seems to somehow be less important than the “smallest reasonable class that we could have searched over” for this particular problem. Why is this the case? No idea! It has always seemed like magic to me. If anyone has any good reading material on the subject, please send it our way!
+[^0]: This principle echoes classic results in generalization theory, which state that the amount of data required to find a nearly-optimal function is proportional to the size of the function class that we are searching in. One really intriguing property of neural networks is that, when trained by SGD, they seem to be able to find solutions that generalize well, even when they are heavily overparameterized relative to the complexity of the task they are trying to solve. In other words, when it comes to data efficiency, the size of the function class we actually search over seems to somehow be less important than the “smallest reasonable class that we could have searched over” for this particular problem. Why is this the case? No idea! It has always seemed like magic to us. If anyone has any good reading material on the subject, please send it our way!
 
 [^1]: To the best of our knowledge this result has not been published, but feel free to reach out to Carles for a proof.
 
