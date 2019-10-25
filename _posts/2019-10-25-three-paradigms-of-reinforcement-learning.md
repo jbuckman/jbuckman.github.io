@@ -24,7 +24,7 @@ And yet, even once this equivalence is known, many researchers still have a powe
 
 First, we want to highlight a principle that is core to the arguments on this post, one that will be familiar to anyone who has trained a neural network. On almost any task, the amount of data required to train a neural network to a good performance is more-or-less proportional to the difficulty of the task, as measured by the complexity of the function which corresponds to the “right answer”[^0]. Training a neural network to predict a constant output for all inputs requires only a handful of data points; accurate classification on MNIST is achieved in the thousands of examples; ImageNET requires millions. 
 
-### A motivating example: city navigation
+### A Motivating Example: City Navigation
 
 Consider the task of navigation in a city, which we pose as an RL problem. At the beginning of each episode a map is generated, and an initial position of the agent and a target are sampled. The state space is a top-down pixel representation of the city’s grid. To get a reward, the agent must travel from the start point to the target point by selecting up, down, left or right actions. Let’s consider what it would take to solve this MDP using both model-free and model-based techniques.
 
@@ -36,7 +36,7 @@ For the model-free approach, we try to learn a value function: a neural net mapp
 
 The model-based approach is more intuitively close to how a human would understand the task. In this second approach, we train a neural network to approximate the rewards and transitions of the environment. Once an approximate model has been learned, the optimal policy can be extracted via planning (i.e., rollout futures from different actions using the model, and take the action with the highest expected return). From a generalization perspective, the benefits of using the model-based approach on this task are immediately apparent. The simple dynamics (i.e. move the agent in the direction of the action except if there is a wall) result in simple learning objectives for the transition and reward model. Since we are learning a simple function, we will not require very much data to achieve good performance, and will thus be more sample-efficient.
 
-### So what changed?
+### So What Changed?
 
 Why does this argument hold, rather than fall victim to the equivalence described above? The key is neural networks. The equivalence described by Parr (2008) exists only in the tabular and linear settings. When both the true value function and true dynamics are linear functions of the state space, it’s clear that neither is simpler to learn than the other! However, when our state-space is pixels and our function classes are neural networks, the complexity of the function that we choose to learn has a big impact on how many samples it takes to succeed. Any gains or losses in sample-efficiency are intimately tied to generalization behavior.
 
@@ -48,7 +48,7 @@ Furthermore, this interpretation lets us understand *which* tasks we expect to i
 
 It’s easy to see intuitively that some MDPs are easier to solve model-based or model-free, but much work remains to understand this distinction rigorously. [A recent paper by Dong et al.](https://arxiv.org/abs/1910.05927) has begun to formalize this notion, proving that there exist many MDPs for which the policy and Q-function are more complex than the dynamics. Hopefully, future work will continue to build on these ideas, eventually painting a clear picture of how to characterize the difference.
 
-### Modeling in a more realistic setting
+### Modeling in a More Realistic Setting
 
 But model-based vs. model-free is only part of the picture. The navigation task above was amenable to model-learning because its dynamics were simple and straightforward. But in the real world, things are typically not so clean. Consider a variant of the same maze task, but rendered more realistically, as though the input pixels were provided by a camera:
 
@@ -74,7 +74,7 @@ Of course, just as we saw in our earlier discussion of MFRL vs. MBRL, HBRL is no
 
 And yet: when it comes to real-world tasks, it’s intuitively clear that the vast majority of them will resemble the realistic city task. The real world is a visually complex place, and “step-by-step” instructions are rarely given. Therefore, we believe that sample-efficient learning in real-world environments is likely to be hugely accelerated by progress in latent-model-based RL.
 
-### Homomorphic Based RL and Latent Space Modeling
+### Homomorphism-Based RL vs. Latent-Space Modeling
 
 If you have been following recent trends in deep reinforcement learning, the idea of “learning an equivalent but simplified latent-space model” might seem familiar to you. Indeed, from a surface-level read, many recent works including [World Models (Ha et al)](https://worldmodels.github.io/), [PlaNet (Hafner et al)](https://arxiv.org/abs/1811.04551), and [SLAC (Lee et al)](https://arxiv.org/abs/1907.00953) seem to match our above definition of homomorphism-based RL. However, there is a crucial distinction.
 
@@ -100,7 +100,7 @@ Crucially, a DeepMDP is trained by the minimization of two objective functions, 
 ![](/static/img/three_paradigms/deepmdp_objectives.png){:width="600px"}
 {: refdef}
 
-### What guarantees can we obtain?
+### What Guarantees Can We Obtain?
 
 There are two valuable properties that are obtained by minimizing these objectives:
 
@@ -115,7 +115,7 @@ However, it’s much less apparent that property (1) must be satisfied. To show 
 ![](/static/img/three_paradigms/bisimilar_asteroids.png){:width="450px"}
 {: refdef}
 
-### Global vs Local Losses
+### Global vs. Local Losses
 
 Note that the objectives above are functions; they give us a loss for each state and an action. The MDP contains many states and actions, and in order to apply optimization algorithms, we need to compile these per-state-action losses into a single scalar loss value[^2]. In the paper, we began by studying the minimization of the *supremum* of all losses over the whole state-action space, which we term the *global DeepMDP losses*. We proved that when the global DeepMDP losses are minimized, two important things must be true. Firstly, the learned embedding function is guaranteed to respect bisimulation. Secondly, the DeepMDP is guaranteed to be an accurate model of the real environment.
 
@@ -133,7 +133,7 @@ Since DeepMDPs are fully compatible with neural networks, it is only natural tha
 
 But to fully demonstrate the potential of this approach, it still remains to be shown experimentally that using the model for planning can successfully solve challenging, visually-complex environments in a sample-efficient way. This is the subject of current work; we have some promising preliminary results that we hope to publish soon.
 
-### Note on the DeepMDP paper
+### Note on the DeepMDP Paper
 
 To any reader who read the original DeepMDP paper, we’d like to briefly explain why the exposition in this blog differs so starkly from that of the paper. It turns out that at the time of publication, we didn’t ourselves quite understand why the work was important. Also, TBH, we ended up putting in so many bounds that there wasn’t space for much else.
 
