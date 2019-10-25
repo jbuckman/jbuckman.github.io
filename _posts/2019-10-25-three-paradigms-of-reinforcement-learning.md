@@ -88,7 +88,7 @@ A DeepMDP consists of a set of three functions, each represented by a neural net
 
 Crucially, a DeepMDP is trained by the minimization of two objective functions, one for the reward $L_{\bar{\mathcal{R}}}(s,a)$ and one for the transition $L_{\bar{\mathcal{P}}}(s,a)$. Intuitively, given a state and an action, these functions measure the distance between the outcome of the real reward/transition function, and the outcome of the latent reward/transition function. These objectives are visualized below:
 
-![](/static/img/three_paradigms/deepmdp_objetcives.png){:width="600px"}
+![](/static/img/three_paradigms/deepmdp_objectives.png){:width="600px"}
 
 ### What guarantees can we obtain?
 
