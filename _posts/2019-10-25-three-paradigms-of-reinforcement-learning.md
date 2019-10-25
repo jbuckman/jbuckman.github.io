@@ -131,11 +131,11 @@ We’ve discussed homomorphism-based RL as a new paradigm of reinforcement learn
 
 To cite this post, please use the following bibtex:
 ```
-@misc{rlblogpost,
-    title={Three Paradigms of Reinforcement Learning},
-    author={Gelada, Carles and Buckman, Jacob},
+@misc{blogpost,
+ title={Three Paradigms of Reinforcement Learning},
+ author={Gelada, Carles and Buckman, Jacob},
  howpublished={\url{https://jacobbuckman.com/2019-10-25-three-paradigms-of-reinforcement-learning/}},
-    year={2019}
+ year={2019}
 }
 ```
 
