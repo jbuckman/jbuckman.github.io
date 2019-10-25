@@ -28,7 +28,9 @@ First, we want to highlight a principle that is core to the arguments on this po
 
 Consider the task of navigation in a city, which we pose as an RL problem. At the beginning of each episode a map is generated, and an initial position of the agent and a target are sampled. The state space is a top-down pixel representation of the city’s grid. To get a reward, the agent must travel from the start point to the target point by selecting up, down, left or right actions. Let’s consider what it would take to solve this MDP using both model-free and model-based techniques.
 
+{:refdef: style="text-align: center;"}
 ![](/static/img/three_paradigms/simple_city.png){:width="450px"}
+{: refdef}
 
 For the model-free approach, we try to learn a value function: a neural net mapping from the state space directly to a value for each action. However, this will be fairly challenging to learn. The city is maze-like, and adding (or removing) a small shortcut, even one far from the agent or the target, could significantly alter the agent’s expected return. Therefore, two similar-seeming states could have dramatically different values. In other words, the value function is a highly complex function of the state. Since this value function is not at all simple, a large amount of data is required to approximate it with a neural network.
 
@@ -40,7 +42,9 @@ Why does this argument hold, rather than fall victim to the equivalence describe
 
 Furthermore, this interpretation lets us understand *which* tasks we expect to improve in sample-efficiency when we switch to model-based reinforcement learning. Simply put, in tasks with simple dynamics but complex optimal policies, understanding of the dynamics is a more efficient approach than brute forcing the optimal policy. But crucially, note that this is not true of every task! Consider a modification to the city navigation example, where the agent’s observation space is augmented by GPS navigation directions. This is an example of a task where the optimal policy is simpler than the dynamics; thus, a task where model-free learning would be more sample-efficient.
 
+{:refdef: style="text-align: center;"}
 ![](/static/img/three_paradigms/simple_city_gps.png){:width="300px"}
+{: refdef}
 
 It’s easy to see intuitively that some MDPs are easier to solve model-based or model-free, but much work remains to understand this distinction rigorously. [A recent paper by Dong et al.](https://arxiv.org/abs/1910.05927) has begun to formalize this notion, proving that there exist many MDPs for which the policy and Q-function are more complex than the dynamics. Hopefully, future work will continue to build on these ideas, eventually painting a clear picture of how to characterize the difference.
 
@@ -48,7 +52,9 @@ It’s easy to see intuitively that some MDPs are easier to solve model-based or
 
 But model-based vs. model-free is only part of the picture. The navigation task above was amenable to model-learning because its dynamics were simple and straightforward. But in the real world, things are typically not so clean. Consider a variant of the same maze task, but rendered more realistically, as though the input pixels were provided by a camera:
 
+{:refdef: style="text-align: center;"}
 ![](/static/img/three_paradigms/realistic_city.png){:width="300px"}
+{: refdef}
 
 Although the task is fundamentally unchanged, it is far more difficult to learn a dynamics model in this environment. Since the state space is represented by pixels, a prediction of the next state requires that we predict how *every single pixel on the screen* changes in response to our actions. We need to predict pixel-by-pixel how the smoke floats up from the smokestacks, how the shadows flow across the ground, whether the football team in the stadium scores or not. Even if we *could* learn such a model (not an easy task for finite-capacity neural networks), we would require an enormous amount of data to generalize well. The real world is extraordinarily complex, and so any algorithm which attempts to model the real world with neural networks will suffer from extraordinarily poor sample efficiency.
 
@@ -90,7 +96,9 @@ A DeepMDP consists of a set of three functions, each represented by a neural net
 
 Crucially, a DeepMDP is trained by the minimization of two objective functions, one for the reward $L_{\bar{\mathcal{R}}}(s,a)$ and one for the transition $L_{\bar{\mathcal{P}}}(s,a)$. Intuitively, given a state and an action, these functions measure the distance between the outcome of the real reward/transition function, and the outcome of the latent reward/transition function. These objectives are visualized below:
 
+{:refdef: style="text-align: center;"}
 ![](/static/img/three_paradigms/deepmdp_objectives.png){:width="600px"}
+{: refdef}
 
 ### What guarantees can we obtain?
 
@@ -103,7 +111,9 @@ It’s intuitively clear how the second property is satisfied by the minimizatio
 
 However, it’s much less apparent that property (1) must be satisfied. To show that it is, we analyze the properties of a trained DeepMDP with the help of *bisimulation metrics*, a well-studied approach in representation learning for RL. Bisimulation metrics measure a notion of “behavioral similarity” between any two states. Under these metrics, the distance between two states is small if they possess similar distributions of both immediate and future rewards. Any two states that only differ by visual elements that don’t affect the dynamics of the game (such as the differing asteroid colors in the ASTEROIDS figure below), have bisimulation distance 0. Therefore, our first objective can be understood as learning an embedding function that respects bisimulation: in other words, an embedding function that only collapses states together when the bisimulation distance between them is 0. Somewhat surprisingly, we can mathematically guarantee that this will be the case for any embedding function that is learned by minimizing the DeepMDP objectives.
 
+{:refdef: style="text-align: center;"}
 ![](/static/img/three_paradigms/bisimilar_asteroids.png){:width="450px"}
+{: refdef}
 
 ### Global vs Local Losses
 
@@ -117,7 +127,9 @@ Unfortunately, there isn’t a connection between the local losses and bisimulat
 
 Since DeepMDPs are fully compatible with neural networks, it is only natural that we test them out on standard deep RL benchmarks. Thus far, we have only explored the representation-learning aspect of DeepMDPs. To do so, we applied a simple modification to a standard Atari 2600 agent: we selected an intermediate layer of the Q-function’s neural network to be the DeepMDP latent space, and added a reward and transition model which were trained using the local DeepMDP losses. Large performance increases can be observed on the majority of Atari 2600 games, which we attribute to the representation respecting the bisimulation metric (see Theorem 3 of our paper).
 
+{:refdef: style="text-align: center;"}
 ![](/static/img/three_paradigms/deepmdp_results.png){:width="900px"}
+{: refdef}
 
 But to fully demonstrate the potential of this approach, it still remains to be shown experimentally that using the model for planning can successfully solve challenging, visually-complex environments in a sample-efficient way. This is the subject of current work; we have some promising preliminary results that we hope to publish soon.
 
@@ -133,11 +145,11 @@ We’ve discussed homomorphism-based RL as a new paradigm of reinforcement learn
 
 To cite this post, please use the following bibtex:
 ```
-@misc{blogpost,
- title={Three Paradigms of Reinforcement Learning},
- author={Gelada, Carles and Buckman, Jacob},
- howpublished={\url{https://jacobbuckman.com/2019-10-25-three-paradigms-of-reinforcement-learning/}},
- year={2019}
+ @misc{blogpost,
+  title={Three Paradigms of Reinforcement Learning},
+  author={Gelada, Carles and Buckman, Jacob},
+  howpublished={\url{https://jacobbuckman.com/2019-10-25-three-paradigms-of-reinforcement-learning/}},
+  year={2019}
 }
 ```
 
