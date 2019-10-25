@@ -143,7 +143,7 @@ We’ve discussed homomorphism-based RL as a new paradigm of reinforcement learn
 
 *If you are interested in studying one of these ideas, please reach out to [Carles](https://twitter.com/carlesgelada) and [Jacob](https://twitter.com/jacobmbuckman) -- we are always happy to chat!*
 
-To cite this post, please use the following bibtex:
+To cite this post, please use the following BibTeX:
 ```
  @misc{blogpost,
   title={Three Paradigms of Reinforcement Learning},
