@@ -40,14 +40,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="21" />
-          <entry key="md" value="3706" />
+          <entry key="md" value="3714" />
           <entry key="yml" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="21" />
-          <entry key="Markdown" value="3706" />
+          <entry key="Markdown" value="3714" />
           <entry key="YAML" value="14" />
         </counts>
       </usages-collector>
@@ -59,8 +59,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2019-10-25-three-paradigms-of-reinforcement-learning.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="310">
-                <caret line="45" column="63" selection-start-line="45" selection-start-column="63" selection-end-line="45" selection-end-column="63" />
+              <first_editor relative-caret-position="187">
+                <caret line="78" column="344" selection-start-line="78" selection-start-column="344" selection-end-line="78" selection-end-column="344" />
               </first_editor>
               <second_editor />
             </state>
@@ -106,6 +106,7 @@
       <find>**</find>
       <find>including my own</find>
       <find>when our state-space</find>
+      <find>SLAC</find>
     </findStrings>
     <replaceStrings>
       <replace>static/img</replace>
@@ -143,7 +144,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -209,10 +210,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25559106" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34334764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -226,7 +227,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32871288" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -330,8 +331,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-10-25-three-paradigms-of-reinforcement-learning.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="310">
-            <caret line="45" column="63" selection-start-line="45" selection-start-column="63" selection-end-line="45" selection-end-column="63" />
+          <first_editor relative-caret-position="187">
+            <caret line="78" column="344" selection-start-line="78" selection-start-column="344" selection-end-line="78" selection-end-column="344" />
           </first_editor>
           <second_editor />
         </state>

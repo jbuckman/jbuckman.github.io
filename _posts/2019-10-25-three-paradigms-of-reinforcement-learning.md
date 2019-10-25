@@ -76,7 +76,7 @@ And yet: when it comes to real-world tasks, it’s intuitively clear that the va
 
 ### Homomorphism-Based RL vs. Latent-Space Modeling
 
-If you have been following recent trends in deep reinforcement learning, the idea of “learning an equivalent but simplified latent-space model” might seem familiar to you. Indeed, from a surface-level read, many recent works including [World Models (Ha et al)](https://worldmodels.github.io/), [PlaNet (Hafner et al)](https://arxiv.org/abs/1811.04551), and [SLAC (Lee et al)](https://arxiv.org/abs/1907.00953) seem to match our above definition of homomorphism-based RL. However, there is a crucial distinction.
+If you have been following recent trends in deep reinforcement learning, the idea of “learning an equivalent but simplified latent-space model” might seem familiar to you. Indeed, from a surface-level read, recent works like [World Models (Ha et al)](https://worldmodels.github.io/) and [PlaNet (Hafner et al)](https://arxiv.org/abs/1811.04551) seem to match our above definition of homomorphism-based RL. However, there is a crucial distinction.
 
 The core idea behind HBRL is that a *good* representation of the state does not need to include task-irrelevant information. If we force the latent space to encode arbitrary information about the state space -- for example, by minimizing a reconstruction loss -- we encounter difficulties in environments with complex state spaces (essentially the same difficulties encountered by MBRL). The aforementioned approaches all include either state-reconstruction or next-state-prediction losses, and so they are best characterized as doing MBRL with latent variables, *not* HBRL.
 
