@@ -62,7 +62,7 @@ We refer to this idea as *homomorphism-based RL* (HBRL). This represents a third
 
 Of course, just as we saw in our earlier discussion of MFRL vs. MBRL, HBRL is not always the best solution. For example, if we are attempting to solve a very simple environment (like the simplified city task from before), HBRL will generally require more data than MBRL, since the algorithm will require many datapoints just to realize that the best latent space is the state space itself. And of course, even in a realistic city environment, GPS directions will still result in model-free learning being more sample efficient than any alternative.
 
-![](/static/img/three_paradigms/realistic_city_gps.png){:width="300px" text-align="center"}
+![](/static/img/three_paradigms/realistic_city_gps.png){:width="300px" align="center"}
 
 And yet: when it comes to real-world tasks, it’s intuitively clear that the vast majority of them will resemble the realistic city task. The real world is a visually complex place, and “step-by-step” instructions are rarely given. Therefore, we believe that sample-efficient learning in real-world environments is likely to be hugely accelerated by progress in latent-model-based RL.
 
@@ -127,7 +127,7 @@ To any reader who read the original DeepMDP paper, we’d like to briefly explai
 
 We’ve discussed homomorphism-based RL as a new paradigm of reinforcement learning, and DeepMDPs as a first instantiation that is compatible with neural networks. Although we have centered the discussion around abstractions for state representation, there are many interesting future directions to explore. For example, HBRL could give a new perspective on the well-studied problems of action abstraction, temporal abstraction, and hierarchical abstraction.
 
-*If you are interested in studying one of these ideas, please reach out to [cgel@openai.com](https://twitter.com/carlesgelada) and [jacobbuckman@gmail.com](https://twitter.com/jacobmbuckman) -- we are always happy to chat!*
+*If you are interested in studying one of these ideas, please reach out to [Carles](https://twitter.com/carlesgelada) and [Jacob](https://twitter.com/jacobmbuckman) -- we are always happy to chat!*
 
 To cite this post, please use the following bibtex:
 ```
