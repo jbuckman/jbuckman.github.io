@@ -40,14 +40,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="21" />
-          <entry key="md" value="3714" />
+          <entry key="md" value="3811" />
           <entry key="yml" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="21" />
-          <entry key="Markdown" value="3714" />
+          <entry key="Markdown" value="3811" />
           <entry key="YAML" value="14" />
         </counts>
       </usages-collector>
@@ -59,8 +59,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2019-10-25-three-paradigms-of-reinforcement-learning.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="187">
-                <caret line="78" column="344" selection-start-line="78" selection-start-column="344" selection-end-line="78" selection-end-column="344" />
+              <first_editor relative-caret-position="142">
+                <caret line="111" column="220" selection-start-line="111" selection-start-column="220" selection-end-line="111" selection-end-column="220" />
               </first_editor>
               <second_editor />
             </state>
@@ -107,6 +107,9 @@
       <find>including my own</find>
       <find>when our state-space</find>
       <find>SLAC</find>
+      <find>functions</find>
+      <find>commuite</find>
+      <find>a well-stu</find>
     </findStrings>
     <replaceStrings>
       <replace>static/img</replace>
@@ -331,8 +334,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2019-10-25-three-paradigms-of-reinforcement-learning.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="187">
-            <caret line="78" column="344" selection-start-line="78" selection-start-column="344" selection-end-line="78" selection-end-column="344" />
+          <first_editor relative-caret-position="142">
+            <caret line="111" column="220" selection-start-line="111" selection-start-column="220" selection-end-line="111" selection-end-column="220" />
           </first_editor>
           <second_editor />
         </state>
