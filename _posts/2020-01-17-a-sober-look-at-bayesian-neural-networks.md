@@ -18,7 +18,7 @@ In discussions on Twitter, many researchers seem to believe that “Bayesian” 
 
 At its core, Bayes’s Rule is nothing more than a relationship between conditional probability distributions:
 
-$$Pr(A=a \mid B=b)=\frac{Pr(B=b \mid A=a) Pr(B=b)}{Pr(A=a)}$$
+$$Pr(A=a \mid B=b)=\frac{Pr(B=b \mid A=a) Pr(A=a)}{Pr(B=b)}$$
 
 This is a powerful, fundamental relationship, to be sure; but any conceptions of “belief updating” or “distributions over possible worlds” are nothing more than post-hoc interpretations.  Bayes’s Rule simply says that for any two non-independent random variables $A$ and $B$, seeing that $B$ took a specific value $b$ changes the distribution of the random variable $A$. In standard lingo, the term $$Pr(A=a)$$ is called the prior, $$Pr(B=b \mid A=a)$$ is the likelihood, and $$Pr(A=a \mid B=b)$$ is the posterior. This wording stems from the fact that we have an original (prior) distribution for the random variable $A$, and then use the observed $b$ to provide an updated distribution (the posterior).
 
