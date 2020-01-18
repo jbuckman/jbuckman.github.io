@@ -58,7 +58,7 @@ We do want to emphasize, though, that this section contains pure speculation. Al
 
 ## A Sober Look at Bayesian Neural Networks
 
-Good uncertainty estimates *must* be centered around the generalization properties of NNs. To have any guarantees that the uncertainties provided by BNNs are useful, we first need to understand what makes a specific neural network $$f_\theta$$ generalize well or generalize badly. That would allow us to define priors with which to perform Bayesian inference. But we simply don't have that understanding yet.
+Good uncertainty estimates *must* be centered around the generalization properties of NNs. To have any guarantees that the uncertainties provided by BNNs are useful, we first need to understand what makes a specific neural network $$f$$ generalize well or generalize badly. That would allow us to define priors with which to perform Bayesian inference. But we simply don't have that understanding yet.
 
 So viewed through this lens, BNNs with arbitrary priors are nothing more than an architectural decision. A BNN is just a neural network that maps its input to a distribution over outputs; the prior is just a hyperparameter of the model. Just making the network Bayesian bought us nothing. It will only be helpful if we find a good prior, and validate that we are actually doing accurate inference. If you personally believe that exploring this space of priors (similar to exploring the space of architectures or hyperparameters) is particularly promising, then that is a good reason to keep working on BNNs.
 
