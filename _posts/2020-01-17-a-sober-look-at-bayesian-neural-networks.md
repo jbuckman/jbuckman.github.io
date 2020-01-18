@@ -8,7 +8,7 @@ mathjax: true
 
 #### *by [Carles Gelada](https://twitter.com/carlesgelada) and [Jacob Buckman](https://twitter.com/jacobmbuckman)*
 
-*Context: About a month ago [Carles asserted on Twitter that Bayesian Neural Networks make no sense](https://twitter.com/carlesgelada/status/1208618401729568768). This generated lots of good discussion, including [a well-written response from Andrew Gordon Wilson](https://cims.nyu.edu/~andrewgw/caseforbdl/) defending BNNs. However, we feel that most responses missed the point of our critique. This blog post is a more thorough justification of our original arguments.*
+*Context: About a month ago [Carles asserted on Twitter that Bayesian Neural Networks make no sense](https://twitter.com/carlesgelada/status/1208618401729568768). This generated lots of good discussion, including [a thorough response from Andrew Gordon Wilson](https://cims.nyu.edu/~andrewgw/caseforbdl/) defending BNNs. However, we feel that most responses missed the point of our critique. This blog post is a more thorough justification of our original arguments.*
 
 Proponents of Bayesian neural networks often claim that trained BNNs output distributions which capture epistemic uncertainty. Epistemic uncertainty is incredibly valuable for a wide variety of applications, and we agree with the Bayesian approach in general. However, we argue that BNNs require highly informative priors to handle uncertainty. We show that if the prior does not distinguish between functions that generalize and functions that don’t, Bayesian inference *cannot* provide useful uncertainties. This puts into question the standard argument that “uninformative priors” are appropriate when the true prior distribution is unknown.
 
