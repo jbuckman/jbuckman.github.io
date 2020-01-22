@@ -4,7 +4,6 @@ title: Bayesian Neural Networks Need Not Concentrate
 tags: ["deep learning", "bayesian deep learning", "uncertainty estimation"]
 published: true
 mathjax: true
-invisible: true
 ---
 
 #### *by [Carles Gelada](https://twitter.com/carlesgelada) and [Jacob Buckman](https://twitter.com/jacobmbuckman)*
