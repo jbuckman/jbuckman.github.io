@@ -3,6 +3,7 @@ layout: post
 title: On Peer Review
 tags: ["academia","peer review","miscellaneous"]
 mathjax: false
+invisible: true
 ---
 
 In light of the [recent discussions](https://twitter.com/nlpmattg/status/1128319419376066560) on the *ACL reviewing process on Twitter, I want to share some thoughts.
