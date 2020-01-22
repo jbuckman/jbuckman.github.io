@@ -61,11 +61,11 @@ One intuitive way to understand the difference between $$f_{\theta^*}$$ and $$f_
 
 Now that we’ve defined these two functions, consider their relative probabilities under the posterior given data $D$. Assume we chose some prior $$q$$. We then see,
 
-$$Pr(f_{\theta^*} \mid D) = \frac{Pr(D \mid f_{\theta^*})q(f_{\theta^*})}{Pr(D)} = \frac{1 \cdot q(f_{\theta^*})}{Pr(D)} = \frac{q(f_{\theta^*})}{D}$$
+$$q(f_{\theta^*} \mid D) = \frac{Pr(D \mid f_{\theta^*})q(f_{\theta^*})}{Pr(D)} = \frac{1 \cdot q(f_{\theta^*})}{Pr(D)} = \frac{q(f_{\theta^*})}{Pr(D)}$$
 
 Similarly,
 
-$$Pr(f_{\theta_{C}} \mid D) = \frac{Pr(D \mid f_{\theta_{C}})q(f_{\theta_{C}})}{Pr(D)} = \frac{1 \cdot q(f_{\theta_{C}})}{Pr(D)} = \frac{q(f_{\theta_{C}})}{Pr(D)}$$
+$$q(f_{\theta_{C}} \mid D) = \frac{Pr(D \mid f_{\theta_{C}})q(f_{\theta_{C}})}{Pr(D)} = \frac{1 \cdot q(f_{\theta_{C}})}{Pr(D)} = \frac{q(f_{\theta_{C}})}{Pr(D)}$$
 
 Now it is clear why the standard Bayesian story is problematic when combined with neural networks. Although $$f_{\theta^*}$$ generalizes well, and $$f_{\theta_{C}}$$ generalizes poorly, **the data does not allow us to distinguish between these two in the posterior**. The relative posterior likelihood of these two networks is determined entirely by their prior likelihoods.
 
