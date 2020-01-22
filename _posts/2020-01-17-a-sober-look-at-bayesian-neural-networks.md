@@ -4,9 +4,12 @@ title: A Sober Look at Bayesian Neural Networks
 tags: ["deep learning", "bayesian deep learning", "uncertainty estimation"]
 published: true
 mathjax: true
+invisible: true
 ---
 
 #### *by [Carles Gelada](https://twitter.com/carlesgelada) and [Jacob Buckman](https://twitter.com/jacobmbuckman)*
+
+**WARNING: This is an old version of this blogpost, and if you are a Bayesian, it might make you angry. [Click here](https://jacobbuckman.com/2020-01-22-bayesian-neural-networks-need-not-concentrate/) for an updated post with the same content.**
 
 *Context: About a month ago [Carles asserted on Twitter that Bayesian Neural Networks make no sense](https://twitter.com/carlesgelada/status/1208618401729568768). This generated lots of good discussion, including [a thorough response from Andrew Gordon Wilson](https://cims.nyu.edu/~andrewgw/caseforbdl/) defending BNNs. However, we feel that most responses missed the point of our critique. This blog post is a more thorough justification of our original arguments.*
 
@@ -35,9 +38,9 @@ Or by finding the maximum a posteriori estimator,
 $$\dot{f}=\sup_f Pr(f \mid D)$$
 
 But even more interestingly, we can use the distribution to provide uncertainty: the distribution of what the particular outputs $$f^*(x)$$ *might* be. Given a test point $$x$$, we can output the probability that $$Pr(F^*(x)=y \mid D)$$. This can be very important; for example, in many sensitive applications, it is essential to abstain from making predictions when uncertain. Up to this point, Bayesian methods look very appealing.
-  
+
 But there is one core problem with the Bayesian framework. In practice, we never have access to the prior distribution $$Pr(f)$$! Who could ever claim to know the real-world distribution of functions that solve classification tasks? Not us, and certainly not Bayesians. Instead, BNNs simply choose an arbitrary prior distribution $$q(f)$$ over functions, and Bayesian inference is performed to compute $$q(f \mid D)$$. The question of whether $$q(f)$$ is close to the true distribution $$Pr(f)$$ is swept under the rug. In the face of this issue, some Bayesians justify the validity of BNN methods by claiming that choosing “uninformative” distributions for $$q(f)$$ is sound when the true distribution $$Pr(f)$$ is unknown. However, the quality of the uncertainties outputted by BNNs is completely dependent on the prior $$q(f)$$, so as we will show, questions about the mismatch of $$Pr(f)$$ and $$q(f)$$ should not be dismissed so quickly. Others take the opposite perspective, and claim that because neural networks convert the uninformative prior in weight space into a structured prior in function space, the prior is actually close enough to be good. But as we will also discuss, known properties of neural networks call that into question.
- 
+
 ## Uncertainties from Bayesian Neural Nets with Generalization-Agnostic Priors
 
 In order to show the profound importance of priors in Bayesian networks, we introduce *generalization-agnostic priors*. Performing Bayesian inference with such priors *cannot* reduce the uncertainty of $$f^*(x)$$ for any $$x\not\in D$$. This will show that, for the Bayesian framework to be useful to deep learning, the priors used *must* be connected with the generalization properties of neural networks, by assigning higher probability to functions that generalize well than to those that don't. To our knowledge, there is no current work to determine if current priors satisfy these necessary conditions, and in fact we provide some informal arguments for why it's likely that they don't.
@@ -46,7 +49,7 @@ Consider a dataset $$C=\{(x_i,y_i\}$$ which contains all the pairs in $$D$$ (i.e
 
 $$q(f^* \mid D) = \frac{q(D \mid f^*) \cdot q(f^*)}{q(D)} = \frac{1\cdot q(f^*)}{q(D)} \approx \frac{1\cdot q(f_\theta)}{q(D)} = q(f_\theta \mid D) $$
 
-By construction, $$f_\theta$$ yields the wrong output for some test point $$x$$, $$f^*(x) \not=f_\theta(x)$$. Thus, under a generalization-agnostic prior, no matter how big the dataset $$D$$ is, we will never be able to reduce the uncertainty on what the right output is. Clearly, for Bayesian inference to make sense, it's crucial that our priors are capable of distinguishing between functions that generalize well and functions that don't. 
+By construction, $$f_\theta$$ yields the wrong output for some test point $$x$$, $$f^*(x) \not=f_\theta(x)$$. Thus, under a generalization-agnostic prior, no matter how big the dataset $$D$$ is, we will never be able to reduce the uncertainty on what the right output is. Clearly, for Bayesian inference to make sense, it's crucial that our priors are capable of distinguishing between functions that generalize well and functions that don't.
 
 ## Are Current BNNs Generalization-Agnostic?
 
@@ -62,7 +65,7 @@ Good uncertainty estimates *must* be centered around the generalization properti
 
 So viewed through this lens, BNNs with arbitrary priors are neural networks with a particular architectural decision. A BNN is a neural function mapping each input to a distribution over outputs; the prior is a hyperparameter of the model. Making the network Bayesian bought us nothing. It will only be helpful if we find a good prior, and validate that we are actually doing accurate inference. If you personally believe that exploring this space of priors (similar to exploring the space of architectures or hyperparameters) is particularly promising, then that is a good reason to keep working on BNNs.
 
-But when a Bayesian tells you that BNNs provide good uncertainty estimates, that is equivalent to claiming that they have access to a good prior in weight or function space. We should ask, “what evidence are you providing that your priors are any good?” The onus is on the Bayesian community to demonstrate that they are. 
+But when a Bayesian tells you that BNNs provide good uncertainty estimates, that is equivalent to claiming that they have access to a good prior in weight or function space. We should ask, “what evidence are you providing that your priors are any good?” The onus is on the Bayesian community to demonstrate that they are.
 
 Regardless of whether you believe that we can find good generalization-aware priors, it’s important that we, as a field, stop ignoring the crucial importance that the prior plays in the Bayesian framework. We need to think critically and not be swayed by sloppy arguments like “uninformative priors are good under uncertainty.”
 
