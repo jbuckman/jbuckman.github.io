@@ -11,7 +11,7 @@ invisible: true
 
 Proponents of Bayesian neural networks often claim that trained BNNs output distributions which capture epistemic uncertainty. Epistemic uncertainty is incredibly valuable for a wide variety of applications, and we agree with the Bayesian approach in general. However, we argue that BNNs require highly informative priors to handle uncertainty. We show that if the prior does not distinguish between functions that generalize and functions that don’t, Bayesian inference *cannot* provide useful uncertainties. This puts into question the standard argument that “uninformative priors” are appropriate when the true prior distribution is unknown.
 
-## What is Bayesian Inference?
+## What Is Bayesian Inference?
 
 In discussions on Twitter, many researchers seem to believe that “Bayesian” is synonymous with “uncertainty-aware”, or that any algorithm that uses sets or distributions of outcomes must be Bayesian. We would like to make it clear that in our view, this is not a fair characterization. The Bayesian approach to uncertainty, which involves updating prior distributions into posterior distributions using Bayes’s Rule, is certainly one of the most popular approaches. But there are other, non-Bayesian approaches as well; for example, concentration inequalities are clearly non-Bayesian, but they allow us to compute confidence intervals and uncertainty sets.
 
@@ -91,12 +91,20 @@ No. Although in practice, BNNs *do* generalize to test points, and do seem to ou
 
 In order to claim that the uncertainties output by BNNs are valid, Bayesians must rigorously demonstrate that the distribution learned by a BNN actually resembles the true posterior. Initial experiments show that this is not the case: we are easily able to find two points where the first point has higher prior probability & data likelihood, yet the second point has higher posterior likelihood. This would not be possible if the BNN posterior were accurate. [Code is available in this repository.](https://github.com/jbuckman/bnn-blog-experiments) Again, however, this is merely a preliminary experiment, and not the full picture. More study is required.
 
-## A Sober Look at Bayesian Neural Networks
+## A Critical Look At Bayesian Neural Networks
 
 The Bayesian community has produced decades of important insights in machine learning, and is often viewed as one of the most rigorous sub-communities within ML. However, in our opinion, Bayesian neural networks have failed to live up to this ideal. The Bayesian community has not demonstrated that the distributions output by BNNs correspond well to the true posteriors. Without this guarantee, BNNs are no different from any other neural network which maps its inputs to a distribution over outputs; researchers should therefore avoid making the claim that the distribution output by a BNN encodes model uncertainty.
 
-Furthermore, we have demonstrated in this post that good uncertainty estimates *must* be centered around the generalization properties of NNs. To have any guarantees that the uncertainties provided by BNNs are useful, we first need to understand what makes specific neural network parameterizations generalize nicely or poorly. This is one of the most important questions in deep learning, but we as a field simply don't have that understanding yet. The Neural Tangent Kernel (which has a Bayesian flavor!) is one example of a promising approach to developing a true understanding of generalization. But until we have such an understanding, it seems unlikely that we will be able to design priors which leverage it.
+Furthermore, we have demonstrated in this post that good uncertainty estimates *must* be centered around the generalization properties of neural networks. To have any guarantees that the uncertainties provided by BNNs are useful, we first need to understand what makes specific neural network parameterizations generalize nicely or poorly. This is one of the most important questions in deep learning, but we as a field simply don't have that understanding yet. The Neural Tangent Kernel (which has a Bayesian flavor!) is one example of a promising approach to developing a true understanding of generalization. But until we have such an understanding, it seems unlikely that we will be able to design priors which leverage it.
 
 Regardless of whether you believe that we can find good generalization-sensitive priors, it’s important that we, as a field, stop ignoring the crucial importance that the prior plays in the Bayesian framework, and stop taking it for granted that BNNs are a sound way to compute uncertainties. We need to think about priors critically, evaluate posterior estimates rigorously, and refuse to be swayed by sloppy arguments like “uninformative priors are good under uncertainty.” Now, it goes without saying that if, at some point, BNNs provide state-of-the-art uncertainty estimates, that is reason enough to use them (especially in an empirically-driven field like deep learning). But it’s important to understand that, just as there are reasons BNNs hold promise, there are also clear theoretical reasons BNNs might *not* pan out as a research direction. Our hope with this post is that by highlighting these potential issues, we can steer BNN research in a better direction.
 
-*Many thanks to everyone who gave us feedback on the first version of this blog post. Hit us up on Twitter ([Carles](https://twitter.com/carlesgelada) and [Jacob](https://twitter.com/jacobmbuckman)) to continue the discussion!*
+*Many thanks to everyone who gave us feedback on the first version of this blog post. Hit us up on Twitter ([Carles](https://twitter.com/carlesgelada) and [Jacob](https://twitter.com/jacobmbuckman)) to continue the discussion! To cite this post, please use please use the following BibTeX:*
+```
+ @misc{blogpost,
+  title={Bayesian Neural Networks Need Not COncentrate},
+  author={Gelada, Carles and Buckman, Jacob},
+  howpublished={\url{https://jacobbuckman.com/2020-01-22-bayesian-neural-networks-need-not-concentrate/}},
+  year={2020}
+}
+```
