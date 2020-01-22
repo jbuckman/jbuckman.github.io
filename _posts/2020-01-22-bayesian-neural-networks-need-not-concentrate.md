@@ -71,7 +71,7 @@ Now it is clear why the standard Bayesian story is problematic when combined wit
 
 ## Can SGD Save Us?
 
-No, it cannot. It is true that $$f_{\theta_{C}}$$ is unlikely to be *found* by running SGD on dataset $$D$$. But that does not mean that it does not *exist*. The true Bayesian posterior -- which is the only object that has the useful properties we are after, e.g. uncertainty information -- does not care about what functions SGD finds. The **only** way we can have $$Pr(f_{\theta_{C}} \mid D) < Pr(f_{\theta^*} \mid D)$$ is when $$q(f_{\theta_{C}}) < q(f_{\theta^*})$$.
+No, it cannot. It is true that $$f_{\theta_{C}}$$ is unlikely to be *found* by running SGD on dataset $$D$$. But that does not mean that it does not *exist*. The true Bayesian posterior -- which is the only object that has the useful properties we are after, e.g. uncertainty information -- does not care about what functions SGD finds. The **only** way we can have $$q(f_{\theta_{C}} \mid D) < q(f_{\theta^*} \mid D)$$ is when $$q(f_{\theta_{C}}) < q(f_{\theta^*})$$.
 
 ## Bayesian Neural Networks Require Generalization-Sensitive Priors
 
