@@ -4,8 +4,10 @@ title: Blog
 ---
 <ul>
   {% for post in site.posts %}
+  {% if post.invisible == null %}
     <li class="spaced">
       <a href="{{ post.url }}">{{ post.title }}</a> {{ post.date | date_to_long_string }}
     </li>
+  {% endif %}
   {% endfor %}
 </ul>
