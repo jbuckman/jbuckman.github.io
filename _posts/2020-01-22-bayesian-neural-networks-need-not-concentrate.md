@@ -85,7 +85,7 @@ It's common to use simple priors for BNNs, e.g. independent Gaussian distributio
 
 However, this evidence is all circumstantial, and does not strike at the heart of the issue. As we demonstrated above, any Bayesian who claims “my posterior contains a distribution over the good solutions for this data” is implicitly claiming “my prior is generalization-sensitive.” This is a very strong claim, especially in the context of the simplicity of current priors. Could independent Gaussian weights really encode something so fundamental as generalization, even taking into account the architecture of the network? It’s possible, but it seems wise to remain skeptical. The onus is on the Bayesian community to perform the rigorous analysis and experimentation required to fully justify this claim.
 
-## Isn’t The Empirical Success Of BNNs Evidence Of Good Priors?
+## Is The Empirical Success Of BNNs Evidence Of Good Priors?
 
 No. Although in practice, BNNs *do* generalize to test points, and do seem to output reasonable uncertainty estimates, this does not immediately imply that they have generalization-sensitive priors. There is another piece to the puzzle: approximation. Computing $$q(f \mid D)$$ is a highly non-trivial task called Bayesian inference; a large community studies tractable approximations to this quantity. (For example, variational inference formulates the problem of computing $$q(f \mid D)$$ as an optimization problem.) The trickiness of computing $$q(f \mid D)$$ could actually be the key to why BNNs do something reasonable, despite their true posteriors being far too uncertain. They might not be learning anything close to the true posterior!
 
