@@ -7,19 +7,17 @@ mathjax: true
 invisible: true
 ---
 
-#### *[Jacob Buckman](https://twitter.com/jacobmbuckman) and by [Carles Gelada](https://twitter.com/carlesgelada)*
-
 This is a brief tutorial on the *neural tangent kernel* (NTK), which is one of the most popular recent approaches to understanding neural networks. Rather than walk through the derivation of NTK itself, this post focuses on how NTK fits into the broader conceptual space.
 
-Some backstory: a few months ago, we decided to take a look at the NTK literature and try to understand what is going on. This quest yielded many fruitful insights, but also left us with some open questions. The goal of this post is twofold: to provide a resource for people who wish to better understand NTK, and to get the opinions of experts on addressing our concerns.
+Some backstory: a few months ago, I decided to take a look at the NTK literature and try to understand what is going on. This quest yielded many fruitful insights, but also left me with some open questions. The goal of this post is twofold: to provide a resource for people who wish to better understand NTK, and to get the opinions of experts on addressing my concerns.
 
 ### What is NTK?
-The Neural Tangent Kernel is, at its core, a linear approximation to a neural network. Linear models are powerful and simple to understand, but rely very strongly on having a good feature space. We first go through some of the basic math of linear models, highlighting their limitations. We make the connection to kernel methods, which are simply one particular way of implementing linear models; they find the exact same solutions and, thus, suffer from the same limitations. This leads us to draw a surprising conclusion about the limitations of NTK: it cannot explain the behavior of neural networks, because the limitations of linear models prevent NTK from capturing the types of generalization we see from neural networks.
+The Neural Tangent Kernel is, at its core, a linear approximation to a neural network. Linear models are powerful and simple to understand, but rely very strongly on having a good feature space. We first go through some of the basic math of linear models, highlighting their limitations. We make the connection to kernel methods, which are simply one particular way of implementing linear models; they find the exact same solutions and, thus, suffer from the same limitations. Finally, we use these ideas to make a connection to NTK, and understand some of its properties.
 
 ### Linear Models
 We first provide a simple and general definition of linear methods.
 
-We have a space of inputs $x\in\chi$ and a target funciton $y:\chi\to\mathbb{R}$ (for simplicity we'll just assume the targets are real) and we'll have $k$ feature functions $f_k:\chi\to\mathbb{R}$. For ease of notation we can stack these real valued functions into $f(x) \in \mathbb{R}^k$. A *linear model*, parameterized by $\theta$, outputs a linear combination of these basis functions/vectors: $f(x)^T \theta = f_1(x) \theta_1 + ... +f_k(x) \theta_k$ for $\theta \in R^k$.
+We have a space of inputs $x\in\chi$ and a target function $y:\chi\to\mathbb{R}$ (for simplicity we'll just assume the targets are real) and we'll have $k$ feature functions $f_k:\chi\to\mathbb{R}$. For ease of notation we can stack these real valued functions into $f(x) \in \mathbb{R}^k$. A *linear model*, parameterized by $\theta$, outputs a linear combination of these basis functions/vectors: $f(x)^T \theta = f_1(x) \theta_1 + ... +f_k(x) \theta_k$ for $\theta \in R^k$.
 
 *Important note:* Some readers may be used to thinking about linearity in terms of a ``natural feature space'', e.g., linearity wrt the pixels of an image. In this post, we keep things a bit more abstract: there is no notion of a natural feature space. This means that it is not important whether $f_k$ is itself linear, or whether it is some more complicated nonlinear feature function. In fact, since $\chi$ need not even be a vector space, the question of whether $f_k$ is linear is not even meaningful in general. The only important thing is that the overall output is linear wrt $f_k$ and $\theta$.
 
@@ -72,6 +70,6 @@ Firstly, since NTK is a kernel method, and kernel methods are linear methods, th
 
 Secondly, how does NTK's performance compare against the canonical linearization of a standard NN, which we derived from the Taylor expansion in the previous section? The Taylor expansion algorithm is much easier to understand and implement, and won't suffer from the cubic cost of kernel methods, so it seems like that linearization should be at least compared, if not preferred. Since it is cheaper, it could be used to compare the performance of NN linearizations against standard NNs on complex datasets like ImageNet.
 
-We've not been able to find the answers to these questions in any of the existing NTK literature. We hope that the community can help us out here! These questions seem essential to motivate further study of NTK, since one possible outcome is that the answer to the first question is "no and no", and to the second question is "both linearizations perform about the same, and perform worse than regular NNs". If this is true, then it's not clear why one should study NTK at all.
+I've not been able to find the answers to these questions in any of the existing NTK literature. We hope that the community can help us out here! These questions seem essential to motivate further study of NTK, since one possible outcome is that the answer to the first question is "no and no", and to the second question is "both linearizations perform about the same, and perform worse than regular NNs". If this is true, then it's not clear why one should study NTK at all.
 
 [^0]: This argument applies for any continuous parameterized function.
