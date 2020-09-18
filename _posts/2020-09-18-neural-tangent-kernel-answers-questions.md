@@ -12,7 +12,7 @@ This is a brief tutorial on the *neural tangent kernel* (NTK), which is one of t
 
 Some backstory: a few months ago, we decided to take a look at the NTK literature and try to understand what is going on. This quest yielded many fruitful insights, but also left us with some open questions. The goal of this post is twofold: to provide a resource for people who wish to better understand NTK, and to get the opinions of experts on addressing our concerns.
 
-## What is NTK?
+### What is NTK?
 The Neural Tangent Kernel is, at its core, a linear approximation to a neural network. Linear models are powerful and simple to understand, but rely very strongly on having a good feature space. We first go through some of the basic math of linear models, highlighting their limitations. We make the connection to kernel methods, which are simply one particular way of implementing linear models; they find the exact same solutions and, thus, suffer from the same limitations. This leads us to draw a surprising conclusion about the limitations of NTK: it cannot explain the behavior of neural networks, because the limitations of linear models prevent NTK from capturing the types of generalization we see from neural networks.
 
 ### Linear Models
