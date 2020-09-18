@@ -2,12 +2,12 @@
 layout: post
 title: Neural Tangent Kernel&#58; Answers & Questions
 tags: ["deep learning", "ntk", "tutorial"]
-published: true
+published: false
 mathjax: true
 invisible: true
 ---
 
-#### *by [Carles Gelada](https://twitter.com/carlesgelada) and [Jacob Buckman](https://twitter.com/jacobmbuckman)*
+#### *[Jacob Buckman](https://twitter.com/jacobmbuckman) and by [Carles Gelada](https://twitter.com/carlesgelada)*
 
 This is a brief tutorial on the *neural tangent kernel* (NTK), which is one of the most popular recent approaches to understanding neural networks. Rather than walk through the derivation of NTK itself, this post focuses on how NTK fits into the broader conceptual space.
 
@@ -70,8 +70,8 @@ Our discussion up to this point has laid the groundwork for our questions about 
 
 Firstly, since NTK is a kernel method, and kernel methods are linear methods, there are some natural questions one should ask about NTK. Specifically, the questions one should ask about any linear method: (1) Does the feature space contain all the target functions we might want? (2) Does the feature space contain any bad solutions? If so, does the (implicit GD) regularization avoid such solutions? If it is not the case that NTK's implicit feature space has these desirable properties, it seems like it is a poor model for finite-width deep neural networks, which are interesting precisely *because* they are able to find good solutions in spite of the enormous size of their function class.
 
-Secondly, how does NTK's performance compare against the canonical linearization of a standard NN, which we derived from the Taylor expansion in the previous section? In particular, on complex datasets like ImageNet? The Taylor expansion algorithm is much easier to understand and implement, and won't suffer from the cubic cost of kernel methods, so it seems like that linearization should be at least compared, if not preferred.
+Secondly, how does NTK's performance compare against the canonical linearization of a standard NN, which we derived from the Taylor expansion in the previous section? The Taylor expansion algorithm is much easier to understand and implement, and won't suffer from the cubic cost of kernel methods, so it seems like that linearization should be at least compared, if not preferred. Since it is cheaper, it could be used to compare the performance of NN linearizations against standard NNs on complex datasets like ImageNet.
 
-We've not been able to find the answers to these questions in any of the existing NTK literature. We hope that the community can help us out here! Based on what we have seen, our current hypothesis is that the answer to the first question is "no and no", and the answer to the second question is "both linearizations perform the same, and perform worse than regular NNs". If this is true, then it's not clear why one would study NTK at all.
+We've not been able to find the answers to these questions in any of the existing NTK literature. We hope that the community can help us out here! These questions seem essential to motivate further study of NTK, since one possible outcome is that the answer to the first question is "no and no", and to the second question is "both linearizations perform about the same, and perform worse than regular NNs". If this is true, then it's not clear why one should study NTK at all.
 
 [^0]: This argument applies for any continuous parameterized function.
