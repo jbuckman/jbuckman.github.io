@@ -9,7 +9,7 @@ invisible: true
 
 #### *by [Carles Gelada](https://twitter.com/carlesgelada) and [Jacob Buckman](https://twitter.com/jacobmbuckman)*
 
-This is a brief tutorial on the *neural tangent kernel* (NTK), which is one of the most popular recent approaches to understanding neural networks. Rather than focus on the math of NTK itself, this post focuses on how NTK fits into the broader picture.
+This is a brief tutorial on the *neural tangent kernel* (NTK), which is one of the most popular recent approaches to understanding neural networks. Rather than walk through the derivation of NTK itself, this post focuses on how NTK fits into the broader conceptual space.
 
 Some backstory: a few months ago, we decided to take a look at the NTK literature and try to understand what is going on. This quest yielded many fruitful insights, but also left us with some open questions. The goal of this post is twofold: to provide a resource for people who wish to better understand NTK, and to get the opinions of experts on addressing our concerns.
 
