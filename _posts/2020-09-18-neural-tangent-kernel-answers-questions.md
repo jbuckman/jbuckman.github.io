@@ -4,6 +4,7 @@ title: Neural Tangent Kernel&#58; Answers & Questions
 tags: ["deep learning", "ntk", "tutorial"]
 published: true
 mathjax: true
+invisible: true
 ---
 
 #### *by [Carles Gelada](https://twitter.com/carlesgelada) and [Jacob Buckman](https://twitter.com/jacobmbuckman)*
