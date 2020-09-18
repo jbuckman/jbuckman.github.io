@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Neural Tangent Kernel: Answers & Questions"
+title: Neural Tangent Kernel&#58; Answers & Questions
 tags: ["deep learning", "ntk", "tutorial"]
 published: false
 mathjax: true
