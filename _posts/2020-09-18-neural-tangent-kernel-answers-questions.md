@@ -2,7 +2,7 @@
 layout: post
 title: Neural Tangent Kernel&#58; Answers & Questions
 tags: ["deep learning", "ntk", "tutorial"]
-published: false
+published: true
 mathjax: true
 ---
 
