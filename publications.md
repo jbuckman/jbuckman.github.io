@@ -6,6 +6,12 @@ title: Publications
 You can also browse my <a href="https://scholar.google.com/citations?user=IDSGZNYAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.
 <br />
 
+- **The Importance of Pessimism in Fixed-Dataset Policy Optimization**  
+	**Jacob Buckman**, Carles Gelada, Marc G. Bellemare.
+	ArXiv, September 2020.
+	[PDF](https://arxiv.org/abs/2009.06799){: .btn}
+	[Code](https://github.com/jbuckman/tiopifdpo){: .btn}
+
 - **DeepMDP: Learning Continuous Latent Space Models for Representation Learning**  
 	Carles Gelada, Saurabh Kumar, **Jacob Buckman**, Ofir Nachum, Marc G. Bellemare.
 	*International Conference on Machine Learning*, (ICML) 2019.  

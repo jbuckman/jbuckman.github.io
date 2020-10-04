@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46e852db-af01-4e65-9a99-4e29b6234bf4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_posts/2020-09-18-neural-tangent-kernel-answers-questions.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2020-09-18-neural-tangent-kernel-answers-questions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publications.md" beforeDir="false" afterPath="$PROJECT_DIR$/publications.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,14 +15,15 @@
     <session id="-1290099119">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -30,7 +32,7 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="18" />
           <entry key="jpg" value="4" />
-          <entry key="md" value="29" />
+          <entry key="md" value="30" />
           <entry key="png" value="4" />
           <entry key="yml" value="2" />
         </counts>
@@ -39,7 +41,7 @@
         <counts>
           <entry key="HTML" value="18" />
           <entry key="Image" value="8" />
-          <entry key="Markdown" value="29" />
+          <entry key="Markdown" value="30" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="YAML" value="2" />
         </counts>
@@ -47,14 +49,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="163" />
-          <entry key="md" value="9954" />
+          <entry key="md" value="10089" />
           <entry key="yml" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="163" />
-          <entry key="Markdown" value="9954" />
+          <entry key="Markdown" value="10089" />
           <entry key="YAML" value="31" />
         </counts>
       </usages-collector>
@@ -63,23 +65,11 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2020-09-18-neural-tangent-kernel-answers-questions.md">
+        <entry file="file://$PROJECT_DIR$/publications.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="228">
-                <caret line="14" column="572" selection-start-line="14" selection-start-column="572" selection-end-line="14" selection-end-column="572" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2020-01-17-a-sober-look-at-bayesian-neural-networks.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="132">
-                <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-end-line="7" />
+              <first_editor relative-caret-position="220">
+                <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
               </first_editor>
               <second_editor />
             </state>
@@ -157,6 +147,7 @@
         <option value="$PROJECT_DIR$/_drafts/2020-09-18-questions-about-ntk.md" />
         <option value="$PROJECT_DIR$/_drafts/2020-09-18-neural-tangent-kernel-answers-questions.md" />
         <option value="$PROJECT_DIR$/_posts/2020-09-18-neural-tangent-kernel-answers-questions.md" />
+        <option value="$PROJECT_DIR$/publications.md" />
       </list>
     </option>
   </component>
@@ -183,28 +174,6 @@
             <path>
               <item name="jbuckman.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="jbuckman.github.io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jbuckman.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbuckman.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="_posts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jbuckman.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbuckman.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jbuckman.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbuckman.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jbuckman.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbuckman.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="pdf" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -311,14 +280,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../personal-website/README.md" />
-    <entry file="file://$PROJECT_DIR$/publications.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2018-09-17-tensorflow-the-confusing-parts-2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -470,21 +431,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2020-01-17-a-sober-look-at-bayesian-neural-networks.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2020-09-18-neural-tangent-kernel-answers-questions.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="132">
-            <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-end-line="7" />
+          <first_editor relative-caret-position="202">
+            <caret line="14" column="572" selection-start-line="14" selection-start-column="572" selection-end-line="14" selection-end-column="572" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2020-09-18-neural-tangent-kernel-answers-questions.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2020-01-17-a-sober-look-at-bayesian-neural-networks.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="228">
-            <caret line="14" column="572" selection-start-line="14" selection-start-column="572" selection-end-line="14" selection-end-column="572" />
+          <first_editor relative-caret-position="132">
+            <caret line="6" column="15" selection-start-line="6" selection-end-line="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/publications.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="220">
+            <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
           </first_editor>
           <second_editor />
         </state>
