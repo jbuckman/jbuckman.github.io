@@ -78,11 +78,11 @@ The core issue is that the accepted wisdom conflates *data* with *information*.
 These two ideas again go hand-in-hand, so it is perhaps not surprising that people have failed to disentangle them.
 
 A simple example illustrates that these are distinct, even in the tabular setting.
-Consider a tabular bandit-like MDP with two arms, A and B, with returns in \[0, 1000\].
+Consider a tabular bandit-like MDP with two arms, A and B, with returns in \[-1000, 1000\].
 Our offline dataset contains the following pulls for A:
-\[500 500 500 500\].
+\[5, 5, 5, 5\].
 And the following pulls for B:
-\[620	-829	773	-131	-86	-617	-602	964	-429	-372	951	-709	766	-14	507	-758	947	879	917	905 \]
+\[620, -829, 73, -131, -86, -617, -62, 964, -429, -372, 951, -709, 766, -14, 507, -758, 947, 879 \]
 We've seen five times as many pulls for B as for A.
 Yet, we clearly know much more about the mean of A than that of B.[^1]
 Each pull of A is simply much more informative.
