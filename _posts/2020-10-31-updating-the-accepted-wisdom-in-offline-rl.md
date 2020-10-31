@@ -8,10 +8,10 @@ invisible: true
 ---
 
 Many people are becoming interested in "Offline RL" these days.
-I'm quite interested in it, too.
-For the past two years, Carles, Marc, and I have been thinking hard about this setting.
+I'm quite interested in it, too;
+for the past two years, I've been thinking hard about this setting, together with my collaborators Carles and Marc.
 In that time, the community has proposed many cool algorithms and run many insightful experiments.
-[Our recent paper](https://arxiv.org/abs/2009.06799) adds to this movement by presenting a rigorous, unified understanding of the fundamental issues underpinning the Offline RL setting, including a formal unification of existing approaches.
+[Our recent paper](https://arxiv.org/abs/2009.06799) adds to this growing body of work by providing a rigorous theoretical understanding of the fundamental issues underpinning the Offline RL setting, including a formal unification of existing approaches.
 
 In tackling the problem, the Offline RL community has developed a set of intuitions.
 Researchers have a sense of what works and what doesn't, of what problems exist, and what causes them.
