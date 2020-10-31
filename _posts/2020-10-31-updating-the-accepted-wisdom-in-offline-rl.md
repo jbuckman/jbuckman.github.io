@@ -134,8 +134,8 @@ Here's a high-level explanation of why; refer to [the paper](https://arxiv.org/a
 *Policy constraint:* Policy constraint approaches use a "vacuous" pessimism penalty of $V_{max}$, which is strictly worse than any possible epistemic uncertainty estimate.
 For any policy constraint approach, there is a corresponding uncertainty-based approach that has an equal-or-better suboptimality bound.
 
-*Lower-bound:* Recall that lower-bound approaches which are also pessimistic approaches simply have set the scaling hyperparameter of the pessimism penalty to 1.
-Our derivation makes it clear that the suboptimality is non-convex wrt this hyperparameter, and thus, in general, setting it to a value which is not 1 will be optimal.
+*Lower-bound:* Recall that lower-bound approaches which are also pessimistic approaches simply have set the scaling hyperparameter $\alpha=1$.
+Our derivation makes it clear that the suboptimality is non-convex wrt $\alpha$, and thus, in general, setting it to a value which is not 1 will be optimal.
 Lower-bound approaches are simply a less flexible version of uncertainty-based approaches.
 
 We also ran some empirical experiments in the paper, and the findings perfectly aligned with the predictions of our theory.
