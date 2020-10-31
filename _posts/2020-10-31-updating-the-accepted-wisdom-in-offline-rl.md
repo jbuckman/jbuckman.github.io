@@ -140,9 +140,10 @@ Our derivation makes it clear that the suboptimality is non-convex wrt this hype
 Lower-bound approaches are simply a less flexible version of uncertainty-based approaches.
 
 We also ran some empirical experiments in the paper, and the findings perfectly aligned with the predictions of our theory.
+However, these experiments were done in a tabular environment.
+This begs the question: if uncertainty-based approaches are fundamentally better, why is this not reflected in experiments on Atari?
 
-This result begs the question: if uncertainty-based approaches are fundamentally better, why is this not reflected in experiments on Atari?
-We discuss this in more detail in the paper, but the short of it is: nobody knows how to compute epistemic uncertainty with neural networks.
+We discuss this in more detail in the paper, but the short of it is: nobody knows how to compute epistemic uncertainty with neural networks, so nobody knows how to implement an uncertainty-based algorithm.
 Various approaches have been proposed which *attempt* to do this, and some do things which are qualitatively reasonable.
 But our derivation requires uncertainties where a very specific property holds, and at the end of the day, no existing approach to computing neural uncertainties is adequate.
 (By the way: concentration inequalities *do* give us rigorous uncertainties in the tabular setting, and in our tabular experiments, we *do* see uncertainty-based approaches outperforming the others -- just as predicted.)
