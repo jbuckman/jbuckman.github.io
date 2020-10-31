@@ -116,10 +116,10 @@ They then select a policy which is optimal according to this penalized Q-functio
 They, too, select a policy which is optimal according to this lower-bound Q-function.
 
 In our work, we show that these three approaches can be derived from a common framework, which we call *pessimsim*.
-A pessimistic Offline RL algorithm finds the optimal policy of a Q-function which has been penalized by a scaled "pessimsim penalty".
+A pessimistic Offline RL algorithm finds the optimal policy of a Q-function which has been penalized by a "pessimsim penalty", which is then rescaled by being multiplied by a hyperparameter α in \[0,1\].
 It is easy to see how this relates to the uncertainty-based algorithms above; those algorithms are simply a special case, which occurs when the pessimism penalty is derived from epistemic uncertainty.
 Furthermore, we prove in our paper that policy constraint methods are also a special case of a pessimism penalty, corresponding to the case where the pessimism penalty is $V_{max}$, the maximum possible value in the environment.
-Finally, our derivation requires that any pessimism penalty must have a special property: when the scaling factor is 1, the resulting penalized Q-function is also a lower-bound to the true Q-values of the environment, unifying the final category.
+Finally, our derivation requires that any pessimism penalty must have a special property: when α=1, the resulting penalized Q-function is also a lower-bound to the true Q-values of the environment, unifying the final category.
 Thus, all three approaches can be viewed as simply special cases of our more general framework.
 
 ### (4)
