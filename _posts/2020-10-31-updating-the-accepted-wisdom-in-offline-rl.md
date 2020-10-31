@@ -152,7 +152,7 @@ But our derivation requires uncertainties where a very specific property holds, 
 Right now, most research seems to be focused on policy constraint approaches.
 Many researchers focus on nuances of the algorithms, such as comparing the specific divergence function used to compute the constraint.
 While this knowledge may be useful in the short-term, we should be mindful of the fact that this work will likely eventually be wasted.
-Since uncertainty-based algorithms are fundamentally better, if effective algorithms of this type are ever developed, their performance will inevitably dominate that of penalty-based algorithms, rendering knowledge of their nuances irrelevant.
+Since uncertainty-based algorithms are fundamentally better, if effective algorithms of this type are ever developed, their performance will inevitably dominate that of policy constraint algorithms, rendering knowledge of the nuances of policy constraints irrelevant.
 
 ### (5)
 **Accepted Wisdom:** *Offline RL is important because for many real-world problems, it is difficult to collect data.*
