@@ -93,7 +93,7 @@ Neural networks can often generalize in bizarre and complex ways.
 Any data point can be informative of any other data point.
 No simple density-like or count-like technique captures the nuances of neural network generalization.
 
-Instead of "distribution shift", we need a more general notion: *generalization error*.
+Instead of "distribution shift", we need a more expressive notion: *generalization error*.
 We do not want our algorithms to constrain us to areas with high counts, but to areas with small generalization errors.
 This is a much more difficult task!
 It may be fine sometimes to use high-count as a proxy for low-error (the two often go together to some extent), but it is important that we correctly identify the true goal.
