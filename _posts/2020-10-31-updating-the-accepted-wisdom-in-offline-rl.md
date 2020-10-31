@@ -220,7 +220,7 @@ But it would also open up a path to solving countless other real-world RL proble
 
 Hopefully this post provided a helpful little update in your understanding of the Offline RL setting.
 In addition to containing the mathematical justification of the five points I discussed here, [our paper](https://arxiv.org/abs/2009.06799) also contains plenty of other insights.
-We spent a lot of time on the writing, so, it should hopefully be accessible to anyone in the field.
+We spent a lot of time on the writing, so, it should hopefully be pretty readable.
 As always, please hit me up via email or [on Twitter](https://twitter.com/jacobmbuckman) with any questions or comments!
 
 -----
