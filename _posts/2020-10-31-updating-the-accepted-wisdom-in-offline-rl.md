@@ -42,7 +42,8 @@ This idea is very nearly correct, but it misses the mark in a few subtle ways.
 Our work shows that overestimation can emerge even in tabular environments, where there is no approximation error at all.
 Furthermore, it's clear that preventing overestimation does not, alone, causally improve performance; we could subtract a large constant penalty from each value and thereby reduce overestimation, but this would not improve the learned policy.
 
-Instead, we provide a clearer lens through which to understand this phenomenon: fixed-points.
+If overestimation bias doesn't explain the issue, what does?
+We provide a new lens through which we can understand this phenomenon: fixed-points.
 Offline RL algorithms can be viewed as fixed-point-finding algorithms.
 Each time we apply an update to the Q-function, minimizing some error on the dataset, we move its values closer and closer to some fixed point, until eventually we converge.
 The performance of any Offline RL algorithm can be captured by considering its fixed point.[^0]
