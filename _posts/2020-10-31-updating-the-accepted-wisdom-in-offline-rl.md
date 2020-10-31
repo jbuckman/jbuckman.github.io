@@ -113,7 +113,7 @@ They then turn this divergence into a constraint, preventing the policy from sel
 *Uncertainty-based* methods are characterized by the fact that they compute the epistemic uncertainty of the Q-function, and use it to construct a penalized Q-function.
 They then select a policy which is optimal according to this penalized Q-function.
 *Lower-bound* approaches learn a Q-function which is guaranteed, with high probability, to be a lower-bound to the true Q-values of the environment.
-They select optimal policy according to this lower-bound Q-function.
+They, too, select a policy which is optimal according to this lower-bound Q-function.
 
 In our work, we show that these three approaches can be derived from a common framework, which we call *pessimsim*.
 A pessimistic Offline RL algorithm finds the optimal policy of a Q-function which has been penalized by a scaled "pessimsim penalty".
