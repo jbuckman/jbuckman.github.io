@@ -223,6 +223,8 @@ In addition to containing the mathematical justification of the five points I di
 We spent a lot of time on the writing, so, it should hopefully be accessible to anyone in the field.
 As always, please hit me up via email or [on Twitter](https://twitter.com/jacobmbuckman) with any questions or comments!
 
+-----
+
 [^0]: Well, almost...this assumes that we have enough compute power to converge all the way to the fixed point. In limited-compute settings, it may be fair to consider the "path" taken to get to the fixed point, perhaps by analyzing the rate at which it is approached. But, in keeping with [Sutton's "Bitter Lesson"](http://www.incompleteideas.net/IncIdeas/BitterLesson.html), I don't think it's too important to be concerned about this.
 [^1]: If not satisfied that we know more about the mean of A than B, increase the variance on B until convinced.
 [^2]: The three categories I describe correspond to sections 4.3, 4.4, and 4.5 in [Sergey Levine's Offline RL survey](https://arxiv.org/abs/2005.01643), respectively.
