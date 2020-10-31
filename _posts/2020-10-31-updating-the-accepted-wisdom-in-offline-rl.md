@@ -145,7 +145,7 @@ But our derivation requires uncertainties where a very specific property holds, 
 *How does this insight relate to current research?*
 Right now, most research seems to be focused on policy constraint approaches.
 Here's a partial list of recent policy constraint-like algorithms: [BCQ](https://arxiv.org/abs/1812.02900), [CRR](https://arxiv.org/abs/2006.15134), [SPIBB](https://arxiv.org/abs/1712.06924), [BEAR](https://arxiv.org/abs/1906.00949), [CQL](https://arxiv.org/abs/2006.04779), [KLC](https://arxiv.org/abs/1907.00456), [BRAC](https://arxiv.org/abs/1911.11361), [MBS-QI](https://arxiv.org/pdf/2007.08202.pdf).
-Many researchers focus on nuances of the implementations of these algorithms, such as comparing the specific divergence function used to compute the constraint.
+Many researchers focus on nuances of the implementations of these algorithms, such as the specific divergence function used to compute the constraint.
 While this knowledge may be useful in the short-term, we should be mindful of the fact that this work will likely eventually be wasted.
 Since uncertainty-based algorithms are fundamentally better, if effective algorithms of this type are ever developed, their performance will inevitably dominate that of policy constraint algorithms, rendering knowledge of the nuances of policy constraints irrelevant.
 
