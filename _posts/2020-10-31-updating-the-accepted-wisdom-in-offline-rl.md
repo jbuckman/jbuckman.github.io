@@ -127,9 +127,9 @@ Thus, all three approaches can be viewed as simply special cases of our more gen
 
 **Reality:** *Uncertainty-based approaches are fundamentally better than the other two.*
 
-This result may be surprising, since it is rare that strong negative theoretical results are available in deep learning.
-However, our paper makes it very clear.[^3]
-Also, for the empirical-minded among you, we back up these results with experiments which perfectly match the predictions of our theory.
+It is rare that strong negative theoretical results are available in deep learning, and this result is no exception.
+This is, at the moment, a conclusion that I reached while researching this topic, not yet a rigorous guarantee.
+However, the results in our paper make a very strong case for it.[^3]
 Here's a high-level explanation of why; refer to [the paper](https://arxiv.org/abs/2009.06799) for full justification.
 
 *Policy constraint:* Policy constraint approaches use a "vacuous" pessimism penalty of $V_{max}$, which is strictly worse than any possible epistemic uncertainty estimate.
@@ -138,6 +138,8 @@ For any policy constraint approach, there is a corresponding uncertainty-based a
 *Lower-bound:* Recall that lower-bound approaches which are also pessimistic approaches simply have set the scaling hyperparameter of the pessimism penalty to 1.
 Our derivation makes it clear that the suboptimality is non-convex wrt this hyperparameter, and thus, in general, setting it to a value which is not 1 will be optimal.
 Lower-bound approaches are simply a less flexible version of uncertainty-based approaches.
+
+We also ran some empirical experiments in the paper, and the findings perfectly aligned with the predictions of our theory.
 
 This result begs the question: if uncertainty-based approaches are fundamentally better, why is this not reflected in experiments on Atari?
 We discuss this in more detail in the paper, but the short of it is: nobody knows how to compute epistemic uncertainty with neural networks.
@@ -223,6 +225,6 @@ As always, please hit me up via email or [on Twitter](https://twitter.com/jacobm
 [^0]: Well, almost...this assumes that we have enough compute power to converge all the way to the fixed point. In limited-compute settings, it may be fair to consider the "path" taken to get to the fixed point, perhaps by analyzing the rate at which it is approached. But, in keeping with [Sutton's "Bitter Lesson"](http://www.incompleteideas.net/IncIdeas/BitterLesson.html), I don't think it's too important to be concerned about this.
 [^1]: If not satisfied that we know more about the mean of A than B, increase the variance on B until convinced.
 [^2]: The three categories I describe correspond to sections 4.3, 4.4, and 4.5 in [Sergey Levine's Offline RL survey](https://arxiv.org/abs/2005.01643), respectively.
-[^3]: An important caveat: I admittedly did not explicitly prove tightness in the paper, so all of my suboptimality results are merely upper-bounds. For most of the main results, tightness is not hard to show, but until I actually write it up, in theory it may still be possible for someone to come up with a tighter suboptimality bound such that my conclusions do not hold. If you have doubts, please be sure to check out the paper for yourself and come to your own opinion as to whether it is convincing, and let me know what you think!
+[^3]: The only thing really missing is explicit tightness proofs for our suboptiality upper-bounds. We see that uncertainty-based approaches have strictly tigher upper bounds, but comparing non-tight upper-bounds is not necessarily meaningful. For most of the main results, I expect that tightness is not hard to show, but until I actually write it up, in theory it may still be possible for someone to come up with a tighter suboptimality bound such that my conclusions do not hold. If you have doubts, please be sure to check out the paper for yourself and come to your own opinion as to whether it is convincing, and let me know what you think!
 [^4]: Though, when it comes down to it, I think that in the ultra-long term, many of these fields could be considerably improved by allowing an AI to control the exploration-exploitation trade-off. Of course, I don't think this is likely now, or in the near future. It would require massive theoretical breakthroughs (RL would need to actually work, for one), as well as massive societal changes (to ensure that the public trust in these systems is not shattered).
 [^5]: Actually, it's a bit more general than Offline RL. In the standard setup for Offline RL, we are basically doing pure exploitation: learning the policy that looks best *right now*, with no thought to how our further data collection might improve our policy down the line. If we are optimizing a policy as a subroutine of a store-then-optimize algorithm, we will likely want to choose an objective which captures both exploration and exploitation. That's one of the reasons why, in my paper, I prefer to call this setting "Fixed-Dataset Policy Optimization", which better captures the general case.
