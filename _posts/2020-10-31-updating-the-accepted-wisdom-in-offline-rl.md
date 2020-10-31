@@ -39,8 +39,9 @@ This theory notes that the neural networks we use to represent our Q-value somet
 Over time, this leads to the approximation errors getting propagated throughout the state space, leading to poor value estimates and sometimes to divergence.
 
 This idea is very nearly correct, but it misses the mark in a few subtle ways.
-Our work shows that overestimation can emerge even in tabular environments, where there is no approximation error at all.
+First of all, our paper shows that overestimation can emerge even in tabular environments, where there is no approximation error at all.
 Furthermore, it's clear that preventing overestimation does not, alone, causally improve performance; we could subtract a large constant penalty from each value and thereby reduce overestimation, but this would not improve the learned policy.
+Finally, overestimation bias doesn't explain why model-based Offline RL algorithms, which do not bootstrap, also suffer from overestimation and poor performance.
 
 If overestimation bias doesn't explain the issue, what does?
 We provide a new lens through which we can understand this phenomenon: fixed-points.
@@ -52,8 +53,8 @@ Different algorithms will have different fixed-points.
 
 When we take a DQN-like Offline RL algorithm, and look at its fixed point, we find something surprising.
 The the fixed-point Q-function is likely to be highly overestimated, and also likely to be terrible!
-In this way, we see that overestimation does not emerge from a process of "overestimation bias", where iterative updates cause approximation error to compound.
-Instead, it is a property of the fixed-point: it is built directly into the objective.
+In this way, we see that overestimation does not need to emerge from a process of "overestimation bias", where iterative updates cause approximation error to compound.
+It is a property of the fixed-point: it is built directly into the objective, regardless of what computational procedure we use to get there.
 We cannot improve the performance by reducing overestimation.
 We can only improve the performance by improving the quality of the fixed-point.
 It's possible to do either without doing the other, so it's important to think carefully about the distinction.
