@@ -81,8 +81,8 @@ Consider a tabular bandit-like MDP with two arms, A and B, with returns in \[-10
 Our offline dataset contains the following pulls for A:
 \[5, 5, 5, 5\].
 And the following pulls for B:
-\[620, -829, 73, -131, -86, -617, -62, 964, -429, -372, 951, -709, 766, -14, 507, -758, 947, 879 \]
-We've seen five times as many pulls for B as for A.
+\[620, -829, 73, -131, -86, -617, -62, 964, -429, -372, 951, -709, 766, -14, 507, -758, 947, 879 \].
+We've seen around five times as many pulls for B as for A.
 Yet, we clearly know much more about the mean of A than that of B.[^1]
 Each pull of A is simply much more informative.
 
