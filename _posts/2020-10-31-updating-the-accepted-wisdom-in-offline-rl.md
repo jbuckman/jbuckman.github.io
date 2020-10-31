@@ -60,8 +60,11 @@ It's possible to do either without doing the other, so it's important to think c
 (Although, they do often go hand-in-hand.)
 
 *How does this insight relate to current research?*
-Some recent papers, like [CQL](https://arxiv.org/abs/2006.04779), prove that they reduce overestimation, but do not prove that they improve the quality of the fixed point.
-Until such a property has been shown, we should not consider these algorithms to be theoretically justified.
+Many recent papers emphasize that they reduce overestimation, for example [CQL](https://arxiv.org/abs/2006.04779) emphasizes the fact that it claims to find a lower-bound to the true Q-values.
+However, we now see that this, alone, does not guarantee a performance improvement, as it does not necessarily imply an improvement in the quality of the fixed-point.
+(CQL does improve performance!
+It's only the explanation that is wrong.
+A closer look reveals that CQL improves performance because it constrains the learned policy to be close to the behavior policy.)
 
 ### (2)
 **Accepted Wisdom:** *Distributional shift is one of the central challenges of Offline RL.*
@@ -102,45 +105,37 @@ It may be fine sometimes to use high-count as a proxy for low-error (the two oft
 We should note that such approaches are unlikely to be optimal, since they are using counts as a proxy for generalization error.
 
 ### (3)
-**Accepted Wisdom:** *There are three distinct approaches to Offline RL, "policy constraint", "uncertainty-based", and "lower-bound".*
+**Accepted Wisdom:** *There are two distinct approaches to Offline RL, "policy constraint" and "uncertainty-based".*
 
-**Reality:** *There is a unifying framework, pessimism, which connects all of these algorithms.*
+**Reality:** *There is a single framework, pessimism, which allows us to derive all of these algorithms.*
 
-First, I'll briefly summarize each of these three types of methods.[^2]
+First, I'll briefly summarize the two categories.[^2]
 *Policy constraint* methods are characterized by the fact that they compute some divergence between the distribution of data in the batch, and the policy learned by the Offline RL algorithm.
 They then turn this divergence into a constraint, preventing the policy from selecting actions (or visiting states) for which the divergence from the data is too large.
 *Uncertainty-based* methods are characterized by the fact that they compute the epistemic uncertainty of the Q-function, and use it to construct a penalized Q-function.
 They then select a policy which is optimal according to this penalized Q-function.
-*Lower-bound* approaches learn a Q-function which is guaranteed, with high probability, to be a lower-bound to the true Q-values of the environment.
-They, too, select a policy which is optimal according to this lower-bound Q-function.
 
-In our work, we show that these three approaches can be derived from a common framework, which we call *pessimsim*.
-A pessimistic Offline RL algorithm finds the optimal policy of a Q-function which has been penalized by a "pessimsim penalty", which is then rescaled by being multiplied by a hyperparameter $\alpha$ in \[0,1\].
+In our work, we show that these two approaches can be derived from a common framework, which we call *pessimsim*.
+A pessimistic Offline RL algorithm finds the optimal policy of a Q-function which has been penalized by a "pessimsim penalty".
 It is easy to see how this relates to the uncertainty-based algorithms above; those algorithms are simply a special case, which occurs when the pessimism penalty is derived from epistemic uncertainty.
-Furthermore, we prove in our paper that policy constraint methods are also a special case of a pessimism penalty, corresponding to the case where the pessimism penalty is $V_{max}$, the maximum possible value in the environment.
-Finally, our derivation requires that any pessimism penalty must have a special property: when $\alpha=1$, the resulting penalized Q-function is also a lower-bound to the true Q-values of the environment, unifying the final category.
-Thus, all three approaches can be viewed as simply special cases of our more general framework.
+But, surprisingly, we prove in our paper that policy constraint methods are *also* a special case of a pessimism penalty, corresponding to the case where the pessimism penalty is $V_{max}$, the maximum possible value in the environment.
+Thus, both approaches can be viewed as simply special cases of our more general framework.
 
 ### (4)
-**Accepted Wisdom:** *The three approaches discussed in (3) are all equally promising research directions.*
+**Accepted Wisdom:** *The two approaches discussed in (3) are all equally promising research directions.*
 
-**Reality:** *Uncertainty-based approaches are fundamentally better than the other two.*
+**Reality:** *Uncertainty-based approaches are fundamentally better than policy constraint approaches.*
 
 It is rare that strong negative theoretical results are available in deep learning, and this result is no exception.
-This is, at the moment, a conclusion that I reached while researching this topic, not yet a rigorous guarantee.
+At the moment, this claim is a conclusion, not yet a rigorous guarantee.
 However, the results in our paper make a very strong case for it.[^3]
-Here's a high-level explanation of why; refer to [the paper](https://arxiv.org/abs/2009.06799) for full justification.
-
-*Policy constraint:* Policy constraint approaches use a "vacuous" pessimism penalty of $V_{max}$, which is strictly worse than any possible epistemic uncertainty estimate.
-For any policy constraint approach, there is a corresponding uncertainty-based approach that has an equal-or-better suboptimality bound.
-
-*Lower-bound:* Recall that lower-bound approaches which are also pessimistic approaches simply have set the scaling hyperparameter $\alpha=1$.
-Our derivation makes it clear that the suboptimality is non-convex wrt $\alpha$, and thus, in general, setting it to a value which is not 1 will be optimal.
-Lower-bound approaches are simply a less flexible version of uncertainty-based approaches.
+Essentially, this is because policy constraint approaches use a "vacuous" pessimism penalty of $V_{max}$, which is strictly worse than any possible epistemic uncertainty estimate.
+This makes the resulting algorithm quite a bit worse.
+For example, we show that policy constraint algorithms can never converge to the environment's optimal policy, even in the limit of infinite data.
 
 We also ran some empirical experiments in the paper, and the findings perfectly aligned with the predictions of our theory.
 However, these experiments were done in a tabular environment.
-This begs the question: if uncertainty-based approaches are fundamentally better, why is this not reflected in experiments on Atari?
+This begs the question: if uncertainty-based approaches are fundamentally better, why is this not reflected in non-tabular experiments?
 
 We discuss this in more detail in the paper, but the short of it is: nobody knows how to compute epistemic uncertainty with neural networks, so nobody knows how to implement an uncertainty-based algorithm.
 Various approaches have been proposed which *attempt* to do this, and some do things which are qualitatively reasonable.
@@ -149,7 +144,8 @@ But our derivation requires uncertainties where a very specific property holds, 
 
 *How does this insight relate to current research?*
 Right now, most research seems to be focused on policy constraint approaches.
-Many researchers focus on nuances of the algorithms, such as comparing the specific divergence function used to compute the constraint.
+Here's a partial list of recent policy constraint-like algorithms: [BCQ](https://arxiv.org/abs/1812.02900), [CRR](https://arxiv.org/abs/2006.15134), [SPIBB](https://arxiv.org/abs/1712.06924), [BEAR](https://arxiv.org/abs/1906.00949), [CQL](https://arxiv.org/abs/2006.04779), [KLC](https://arxiv.org/abs/1907.00456), [BRAC](https://arxiv.org/abs/1911.11361), [MBS-QI](https://arxiv.org/pdf/2007.08202.pdf).
+Many researchers focus on nuances of the implementations of these algorithms, such as comparing the specific divergence function used to compute the constraint.
 While this knowledge may be useful in the short-term, we should be mindful of the fact that this work will likely eventually be wasted.
 Since uncertainty-based algorithms are fundamentally better, if effective algorithms of this type are ever developed, their performance will inevitably dominate that of policy constraint algorithms, rendering knowledge of the nuances of policy constraints irrelevant.
 
@@ -226,7 +222,7 @@ As always, please hit me up via email or [on Twitter](https://twitter.com/jacobm
 
 [^0]: Well, almost...this assumes that we have enough compute power to converge all the way to the fixed point. In limited-compute settings, it may be fair to consider the "path" taken to get to the fixed point, perhaps by analyzing the rate at which it is approached. But, in keeping with [Sutton's "Bitter Lesson"](http://www.incompleteideas.net/IncIdeas/BitterLesson.html), I don't think it's too important to be concerned about this.
 [^1]: If not satisfied that we know more about the mean of A than B, increase the variance on B until convinced.
-[^2]: The three categories I describe correspond to sections 4.3, 4.4, and 4.5 in [Sergey Levine's Offline RL survey](https://arxiv.org/abs/2005.01643), respectively.
+[^2]: The two categories I describe correspond to sections 4.3 and 4.4 in [Sergey Levine's Offline RL survey](https://arxiv.org/abs/2005.01643), respectively. The survey also has a third category, Sec 4.3 "lower-bound" algorithms, but as discussed in (1), this is not a meaningful category, since lower-boundedness does not alone guarantee good performance. The only algorithm this is listed in this category us CQL, which, as I mentioned, is best understood as a policy constraint algorithm. 
 [^3]: The only thing really missing is explicit tightness proofs for our suboptiality upper-bounds. We see that uncertainty-based approaches have strictly tigher upper bounds, but comparing non-tight upper-bounds is not necessarily meaningful. For most of the main results, I expect that tightness is not hard to show, but until I actually write it up, in theory it may still be possible for someone to come up with a tighter suboptimality bound such that my conclusions do not hold. If you have doubts, please be sure to check out the paper for yourself and come to your own opinion as to whether it is convincing, and let me know what you think!
 [^4]: Though, when it comes down to it, I think that in the ultra-long term, many of these fields could be considerably improved by allowing an AI to control the exploration-exploitation trade-off. Of course, I don't think this is likely now, or in the near future. It would require massive theoretical breakthroughs (RL would need to actually work, for one), as well as massive societal changes (to ensure that the public trust in these systems is not shattered).
 [^5]: Actually, it's a bit more general than Offline RL. In the standard setup for Offline RL, we are basically doing pure exploitation: learning the policy that looks best *right now*, with no thought to how our further data collection might improve our policy down the line. If we are optimizing a policy as a subroutine of a store-then-optimize algorithm, we will likely want to choose an objective which captures both exploration and exploitation. That's one of the reasons why, in my paper, I prefer to call this setting "Fixed-Dataset Policy Optimization", which better captures the general case.
