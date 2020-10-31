@@ -51,14 +51,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="163" />
-          <entry key="md" value="40247" />
+          <entry key="md" value="40265" />
           <entry key="yml" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="163" />
-          <entry key="Markdown" value="40247" />
+          <entry key="Markdown" value="40265" />
           <entry key="YAML" value="31" />
         </counts>
       </usages-collector>
@@ -70,8 +70,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2020-10-31-updating-the-accepted-wisdom-in-offline-rl.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="74">
-                <caret line="219" lean-forward="true" selection-start-line="219" selection-end-line="219" />
+              <first_editor relative-caret-position="142">
+                <caret line="222" column="84" selection-start-line="222" selection-start-column="84" selection-end-line="222" selection-end-column="84" />
               </first_editor>
               <second_editor />
             </state>
@@ -494,8 +494,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2020-10-31-updating-the-accepted-wisdom-in-offline-rl.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="74">
-            <caret line="219" lean-forward="true" selection-start-line="219" selection-end-line="219" />
+          <first_editor relative-caret-position="142">
+            <caret line="222" column="84" selection-start-line="222" selection-start-column="84" selection-end-line="222" selection-end-column="84" />
           </first_editor>
           <second_editor />
         </state>
