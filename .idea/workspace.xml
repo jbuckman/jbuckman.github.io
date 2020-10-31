@@ -51,14 +51,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="163" />
-          <entry key="md" value="42530" />
+          <entry key="md" value="42535" />
           <entry key="yml" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="163" />
-          <entry key="Markdown" value="42530" />
+          <entry key="Markdown" value="42535" />
           <entry key="YAML" value="31" />
         </counts>
       </usages-collector>
@@ -70,8 +70,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2020-10-31-updating-the-accepted-wisdom-in-offline-rl.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="131">
-                <caret line="147" column="85" selection-start-line="147" selection-start-column="85" selection-end-line="147" selection-end-column="85" />
+              <first_editor relative-caret-position="132">
+                <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
               </first_editor>
               <second_editor />
             </state>
@@ -82,7 +82,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>footnote[^0]</find>
       <find>footnote</find>
       <find>**</find>
       <find>including my own</find>
@@ -112,6 +111,7 @@
       <find>accepted</find>
       <find>simply have set</find>
       <find>BCQ</find>
+      <find>comparing the</find>
     </findStrings>
     <replaceStrings>
       <replace>static/img</replace>
@@ -494,8 +494,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2020-10-31-updating-the-accepted-wisdom-in-offline-rl.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="131">
-            <caret line="147" column="85" selection-start-line="147" selection-start-column="85" selection-end-line="147" selection-end-column="85" />
+          <first_editor relative-caret-position="132">
+            <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
           </first_editor>
           <second_editor />
         </state>
