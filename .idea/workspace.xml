@@ -51,14 +51,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="163" />
-          <entry key="md" value="40265" />
+          <entry key="md" value="40310" />
           <entry key="yml" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="163" />
-          <entry key="Markdown" value="40265" />
+          <entry key="Markdown" value="40310" />
           <entry key="YAML" value="31" />
         </counts>
       </usages-collector>
@@ -70,8 +70,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2020-10-31-updating-the-accepted-wisdom-in-offline-rl.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="142">
-                <caret line="222" column="84" selection-start-line="222" selection-start-column="84" selection-end-line="222" selection-end-column="84" />
+              <first_editor relative-caret-position="187">
+                <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
               </first_editor>
               <second_editor />
             </state>
@@ -82,7 +82,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>a powerful</find>
       <find>not data coll</find>
       <find>the real ev</find>
       <find>OG</find>
@@ -112,6 +111,7 @@
       <find />
       <find>policy-</find>
       <find>α</find>
+      <find>access</find>
     </findStrings>
     <replaceStrings>
       <replace>static/img</replace>
@@ -494,8 +494,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2020-10-31-updating-the-accepted-wisdom-in-offline-rl.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="142">
-            <caret line="222" column="84" selection-start-line="222" selection-start-column="84" selection-end-line="222" selection-end-column="84" />
+          <first_editor relative-caret-position="187">
+            <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
           </first_editor>
           <second_editor />
         </state>

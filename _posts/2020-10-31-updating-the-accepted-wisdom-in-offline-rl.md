@@ -13,9 +13,8 @@ for the past two years, I've been thinking hard about this setting, together wit
 In that time, the community has proposed many cool algorithms and run many insightful experiments.
 [Our recent paper](https://arxiv.org/abs/2009.06799) adds to this growing body of work by providing a rigorous theoretical understanding of the fundamental issues underpinning the Offline RL setting, including a formal unification of existing approaches.
 
-In tackling the problem, the Offline RL community has developed a set of intuitions.
-Researchers have a sense of what works and what doesn't, of what problems exist, and what causes them.
-This is what one might call the the "accepted wisdom".
+In tackling the problem, the Offline RL community has converged on what one might call the "accepted wisdom".
+Researchers have certain intuitions about what works and what doesn't, of what problems exist, and what causes them.
 Pick up any paper on Offline RL, and you're likely to see many references to ideas which are accepted wisdom, often used to motivate their new algorithms.
 Although many of these ideas have not been totally proven, they are simple, intuitive, and have some empirical evidence behind them, so they are widely believed.
 One important contribution of our paper is that, for the first time, we have theoretical justification of many of the tenets of accepted wisdom.
