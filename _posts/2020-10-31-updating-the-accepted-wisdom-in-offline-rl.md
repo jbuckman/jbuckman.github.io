@@ -99,7 +99,7 @@ This is a much more difficult task!
 It may be fine sometimes to use high-count as a proxy for low-error (the two often go together to some extent), but it is important that we correctly identify the true goal.
 
 *How does this insight relate to current research?*
-[Many](https://arxiv.org/abs/1812.02900) [recent](https://arxiv.org/abs/1911.11361) [papers](https://arxiv.org/abs/2007.08202) use counts or density models to measure and constrain the policy.
+[Many](https://arxiv.org/abs/1812.02900) [recent](https://arxiv.org/abs/1911.11361) [papers](https://arxiv.org/abs/2007.08202) use counts or density models to measure state/action visitations and constrain the policy.
 We should note that such approaches are unlikely to be optimal, since they are using counts as a proxy for generalization error.
 
 ### (3)
@@ -108,7 +108,7 @@ We should note that such approaches are unlikely to be optimal, since they are u
 **Reality:** *There is a unifying framework, pessimism, which connects all of these algorithms.*
 
 First, I'll briefly summarize each of these three types of methods.[^2]
-*Policy-constraint* methods are characterized by the fact that they compute some divergence between the distribution of data in the batch, and the policy learned by the Offline RL algorithm.
+*Policy constraint* methods are characterized by the fact that they compute some divergence between the distribution of data in the batch, and the policy learned by the Offline RL algorithm.
 They then turn this divergence into a constraint, preventing the policy from selecting actions (or visiting states) for which the divergence from the data is too large.
 *Uncertainty-based* methods are characterized by the fact that they compute the epistemic uncertainty of the Q-function, and use it to construct a penalized Q-function.
 They then select a policy which is optimal according to this penalized Q-function.
@@ -118,7 +118,7 @@ They select optimal policy according to this lower-bound Q-function.
 In our work, we show that these three approaches can be derived from a common framework, which we call *pessimsim*.
 A pessimistic Offline RL algorithm finds the optimal policy of a Q-function which has been penalized by a scaled "pessimsim penalty".
 It is easy to see how this relates to the uncertainty-based algorithms above; those algorithms are simply a special case, which occurs when the pessimism penalty is derived from epistemic uncertainty.
-Furthermore, we prove in our paper that policy-constraint methods are also a special case of a pessimism penalty, corresponding to the case where the pessimism penalty is $V_{max}$, the maximum possible value in the environment.
+Furthermore, we prove in our paper that policy constraint methods are also a special case of a pessimism penalty, corresponding to the case where the pessimism penalty is $V_{max}$, the maximum possible value in the environment.
 Finally, our derivation requires that any pessimism penalty must have a special property: when the scaling factor is 1, the resulting penalized Q-function is also a lower-bound to the true Q-values of the environment, unifying the final category.
 Thus, all three approaches can be viewed as simply special cases of our more general framework.
 
@@ -132,8 +132,8 @@ However, our paper makes it very clear.[^3]
 Also, for the empirical-minded among you, we back up these results with experiments which perfectly match the predictions of our theory.
 Here's a high-level explanation of why; refer to [the paper](https://arxiv.org/abs/2009.06799) for full justification.
 
-*Policy-constraint:* Policy-constraint approaches use a "vacuous" pessimism penalty of $V_{max}$, which is strictly worse than any possible epistemic uncertainty estimate.
-For any policy-constraint approach, there is a corresponding uncertainty-based approach that has an equal-or-better suboptimality bound.
+*Policy constraint:* Policy constraint approaches use a "vacuous" pessimism penalty of $V_{max}$, which is strictly worse than any possible epistemic uncertainty estimate.
+For any policy constraint approach, there is a corresponding uncertainty-based approach that has an equal-or-better suboptimality bound.
 
 *Lower-bound:* Recall that lower-bound approaches which are also pessimistic approaches simply have set the scaling hyperparameter of the pessimism penalty to 1.
 Our derivation makes it clear that the suboptimality is non-convex wrt this hyperparameter, and thus, in general, setting it to a value which is not 1 will be optimal.
@@ -146,7 +146,7 @@ But our derivation requires uncertainties where a very specific property holds, 
 (By the way: concentration inequalities *do* give us rigorous uncertainties in the tabular setting, and in our tabular experiments, we *do* see uncertainty-based approaches outperforming the others -- just as predicted.)
 
 *How does this insight relate to current research?*
-Right now, most research seems to be focused on policy-constraint approaches.
+Right now, most research seems to be focused on policy constraint approaches.
 Many researchers focus on nuances of the algorithms, such as comparing the specific divergence function used to compute the constraint.
 While this knowledge may be useful in the short-term, we should be mindful of the fact that this work will likely eventually be wasted.
 Since uncertainty-based algorithms are fundamentally better, if effective algorithms of this type are ever developed, their performance will inevitably dominate that of penalty-based algorithms, rendering knowledge of their nuances irrelevant.
