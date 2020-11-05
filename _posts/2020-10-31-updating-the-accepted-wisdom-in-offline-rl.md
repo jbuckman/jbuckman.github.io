@@ -4,7 +4,6 @@ title: Updating the Accepted Wisdom in Offline RL
 tags: ["deep learning", "reinforcement learning"]
 published: true
 mathjax: true
-invisible: false
 ---
 
 Many people are becoming interested in "Offline RL" these days.
