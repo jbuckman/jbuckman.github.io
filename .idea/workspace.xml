@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46e852db-af01-4e65-9a99-4e29b6234bf4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_posts/2020-10-31-updating-the-accepted-wisdom-in-offline-rl.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2020-10-31-updating-the-accepted-wisdom-in-offline-rl.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +14,8 @@
     <session id="-1290099119">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="16" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
@@ -22,10 +23,11 @@
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -34,7 +36,7 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="21" />
           <entry key="jpg" value="4" />
-          <entry key="md" value="35" />
+          <entry key="md" value="38" />
           <entry key="png" value="4" />
           <entry key="yml" value="2" />
         </counts>
@@ -43,7 +45,7 @@
         <counts>
           <entry key="HTML" value="21" />
           <entry key="Image" value="8" />
-          <entry key="Markdown" value="35" />
+          <entry key="Markdown" value="38" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="YAML" value="2" />
         </counts>
@@ -51,38 +53,29 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="186" />
-          <entry key="md" value="42535" />
+          <entry key="md" value="62789" />
           <entry key="yml" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="186" />
-          <entry key="Markdown" value="42535" />
+          <entry key="Markdown" value="62789" />
           <entry key="YAML" value="31" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2020-10-31-updating-the-accepted-wisdom-in-offline-rl.md">
+        <entry file="file://$PROJECT_DIR$/_drafts/2020-11-29-conceptual-fundamentals-of-offline-rl.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="110">
-                <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <first_editor relative-caret-position="198">
+                <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-end-line="10" />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -163,6 +156,8 @@
         <option value="$PROJECT_DIR$/_posts/2020-10-31-rethinking-the-accepted-wisdom-in-offline-rl.md" />
         <option value="$PROJECT_DIR$/blog.html" />
         <option value="$PROJECT_DIR$/_posts/2020-10-31-updating-the-accepted-wisdom-in-offline-rl.md" />
+        <option value="$PROJECT_DIR$/_drafts/2020-11-29-fundamentals-of-offline-rl.md" />
+        <option value="$PROJECT_DIR$/_drafts/2020-11-29-conceptual-fundamentals-of-offline-rl.md" />
       </list>
     </option>
   </component>
@@ -172,7 +167,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="793" />
@@ -183,7 +178,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,11 +189,6 @@
               <item name="jbuckman.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="jbuckman.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="_drafts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jbuckman.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbuckman.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="_posts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jbuckman.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -216,6 +205,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -226,14 +216,14 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_drafts" />
+      <recent name="$PROJECT_DIR$/_posts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_posts" />
       <recent name="$PROJECT_DIR$/_drafts" />
       <recent name="$PROJECT_DIR$/static/pdf" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/_drafts" />
-      <recent name="$PROJECT_DIR$/_posts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -262,10 +252,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="793" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28397712" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29613733" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -279,7 +268,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3266762" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.28433734" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -436,16 +425,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2020-01-22-bayesian-neural-networks-need-not-concentrate.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="839">
-            <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -476,16 +455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_drafts/2020-09-18-neural-tangent-kernel-answers-questions.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="378">
-            <caret line="74" selection-start-line="74" selection-end-line="74" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -500,11 +469,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2020-01-22-bayesian-neural-networks-need-not-concentrate.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1826">
+            <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2020-10-31-updating-the-accepted-wisdom-in-offline-rl.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="110">
             <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_drafts/2020-09-18-neural-tangent-kernel-answers-questions.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="206">
+            <caret line="64" column="16" lean-forward="true" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_drafts/2020-11-29-conceptual-fundamentals-of-offline-rl.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="198">
+            <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-end-line="10" />
           </first_editor>
           <second_editor />
         </state>
