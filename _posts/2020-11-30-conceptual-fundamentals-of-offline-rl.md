@@ -4,7 +4,6 @@ title: Conceptual Fundamentals of Offline RL
 tags: ["deep learning", "reinforcement learning"]
 published: true
 mathjax: true
-invisible: true
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TaJ4P2Hyu3g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
