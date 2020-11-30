@@ -10,6 +10,8 @@ invisible: true
 View this blog post as a video here:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TaJ4P2Hyu3g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+===
+
 #### Introduction
 
 Hello friends.
@@ -200,5 +202,9 @@ As a proxy objective, a good $Q_D^\pi$ needs to avoid overestimation.
 We can implement this with penalized Bellman iteration.
 Penalties can be uncertainty-aware or proximal.
 Uncertainty-aware is better, but proximal is easier to implement.
+
+If you'd like to learn more, check out [my latest paper](https://jacobbuckman.com/static/pdf/tiopifdpo.pdf).
+
+---
 
 Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.com/jacobmbuckman) with any feedback or questions!
