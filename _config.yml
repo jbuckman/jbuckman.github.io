@@ -46,6 +46,7 @@ author:
   email: "jacobbuckman@gmail.com"
   github: jbuckman    # eg. daattali
   twitter: jacobmbuckman
+  youtube: UC6InkJuEeOMSUezDC2D0z8Q
 
 # Select which links to show in the footer
 footer-links-active:
@@ -61,7 +62,7 @@ footer-links-active:
   stackoverflow: false
   snapchat: false
   instagram: false
-  youtube: false
+  youtube: true
   spotify: false
   telephone: false
 
