@@ -25,7 +25,7 @@ The name "Offline RL" might make it seem like this setting is best understood as
 Actually, though, this comparison is a bit misleading: the core issues of RL, such as information gathering and the exploration-exploitation tradeoff, are completely absent in Offline RL.
 This setting is best understood as a variant of dynamic programming, where the environment is not fully known: "dynamic programming from a dataset".
 In regular DP, we are given an MDP $\langle S,A,R,P,\gamma \rangle$, and tasked with finding an optimal policy $\pi^*$.
-In Offline RL, we are given only part of an MDP, with the reward and transition functions missing: $\langle S,A,\_,\_,\gamma \rangle$
+In Offline RL, we are given only part of an MDP, with the reward and transition functions missing: $\langle S,A,?,?,\gamma \rangle$
 We are also given a dataset, $D$.
 
 So, how does this change things?
