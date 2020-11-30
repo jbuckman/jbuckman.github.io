@@ -53,14 +53,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="186" />
-          <entry key="md" value="63189" />
+          <entry key="md" value="63193" />
           <entry key="yml" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="186" />
-          <entry key="Markdown" value="63189" />
+          <entry key="Markdown" value="63193" />
           <entry key="YAML" value="31" />
         </counts>
       </usages-collector>
@@ -72,8 +72,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2020-11-30-conceptual-fundamentals-of-offline-rl.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="205">
-                <caret line="81" column="154" selection-start-line="81" selection-start-column="154" selection-end-line="81" selection-end-column="154" />
+              <first_editor relative-caret-position="207">
+                <caret line="81" column="66" selection-start-line="81" selection-start-column="66" selection-end-line="81" selection-end-column="66" />
               </first_editor>
               <second_editor />
             </state>
@@ -519,8 +519,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2020-11-30-conceptual-fundamentals-of-offline-rl.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="205">
-            <caret line="81" column="154" selection-start-line="81" selection-start-column="154" selection-end-line="81" selection-end-column="154" />
+          <first_editor relative-caret-position="207">
+            <caret line="81" column="66" selection-start-line="81" selection-start-column="66" selection-end-line="81" selection-end-column="66" />
           </first_editor>
           <second_editor />
         </state>

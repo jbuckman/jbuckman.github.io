@@ -79,7 +79,7 @@ For example, I might survey several of my friends who played sports last spring,
 Then, I pick the sport with the highest average rating (according to my friends).
 
 We wish to know: if the decision-maker chooses the $x \in X$ which maximizes $Z$, will my score be high according to $J$?
-Concretely, if we let $x^{\ast} = argmax_{x \in X} J(x)$ and $x^{\mypound} = argmax_{x \in X} Z(x)$, what will be the regret, $J(x^{\ast}) - J(x^{\mypound})$?
+Concretely, if we let $x^{\ast} = argmax_{x \in X} J(x)$ and $x^{z} = argmax_{x \in X} Z(x)$, what will be the regret, $J(x^{\ast}) - J(x^{z})$?
 Clearly, this regret will be expressed in terms of the similarity between the real objective and the proxy objective.
 If J and Z are identical, then the regret will be zero.
 But if they are not identical, then the relationship becomes more interesting:
