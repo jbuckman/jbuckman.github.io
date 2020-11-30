@@ -72,8 +72,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2020-11-30-conceptual-fundamentals-of-offline-rl.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="250">
-                <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+              <first_editor relative-caret-position="176">
+                <caret line="34" column="65" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
               </first_editor>
               <second_editor />
             </state>
@@ -84,8 +84,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>SLAC</find>
-      <find>functions</find>
       <find>commuite</find>
       <find>a well-stu</find>
       <find>was important</find>
@@ -114,6 +112,8 @@
       <find>^*</find>
       <find>&amp;ast</find>
       <find>\\*</find>
+      <find>\*</find>
+      <find>\ast</find>
     </findStrings>
     <replaceStrings>
       <replace>static/img</replace>
@@ -126,6 +126,8 @@
       <replace>&amp;ast</replace>
       <replace>\\*</replace>
       <replace>\*</replace>
+      <replace>\ast</replace>
+      <replace>^{\ast}</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -514,8 +516,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2020-11-30-conceptual-fundamentals-of-offline-rl.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="250">
-            <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+          <first_editor relative-caret-position="176">
+            <caret line="34" column="65" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
           </first_editor>
           <second_editor />
         </state>
