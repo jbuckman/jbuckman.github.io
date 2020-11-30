@@ -62,7 +62,7 @@ To understand the answer to this question, let's take a brief detour and think a
 Consider an extremely general decision-making problem setting.
 There is some set of choices $X$; for example, maybe it's what sport I should play this spring. 
 
-![Choices](/static/img/cfoorl/choices.png =250x)
+![Choices](/static/img/cfoorl/choices.png =20x)
 
 There is some objective $J$, which measures a quantity we care about; in this simplified example, it's a scalar that measures how much fun I will have.
 
