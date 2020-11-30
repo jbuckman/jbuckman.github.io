@@ -62,18 +62,18 @@ To understand the answer to this question, let's take a brief detour and think a
 Consider an extremely general decision-making problem setting.
 There is some set of choices $X$; for example, maybe it's what sport I should play this spring. 
 
-![Choices](/static/img/cfoorl/choices.png =20x)
+![Choices](/static/img/cfoorl/choices.png){:width="200px"}
 
 There is some objective $J$, which measures a quantity we care about; in this simplified example, it's a scalar that measures how much fun I will have.
 
-![Objective](/static/img/cfoorl/obj.png =250x)
+![Objective](/static/img/cfoorl/obj.png){:width="100px"}
 
 The goal is to choose the $x \in X$ which maximizes $J(x)$.
 However, the decision-maker doesn't have access to $J$.
 After all, I don't know exactly how much fun I will have doing each sport, and I have to decide what to sign up for *now*, so I can't try them out before making the decision.
 However, the decision maker *does* have access to some proxy objective $Z$, which will ideally be informative of $J$.
 
-![Proxy](/static/img/cfoorl/proxy.png =250x)
+![Proxy](/static/img/cfoorl/proxy.png){:width="100px"}
 
 For example, I might survey several of my friends who played sports last spring, and ask them to estimate how much fun they had.
 Then, I pick the sport with the highest average rating (according to my friends).
