@@ -24,7 +24,7 @@ To begin, let's take a look at the setting.
 The name "Offline RL" might make it seem like this setting is best understood as a variant of reinforcement learning.
 Actually, though, this comparison is a bit misleading: the core issues of RL, such as information gathering and the exploration-exploitation tradeoff, are completely absent in Offline RL.
 This setting is best understood as a variant of dynamic programming, where the environment is not fully known: "dynamic programming from a dataset".
-In regular DP, we are given an MDP $\langle S,A,R,P,\gamma \rangle$, and tasked with finding an optimal policy $\pi^*$.
+In regular DP, we are given an MDP $\langle S,A,R,P,\gamma \rangle$, and tasked with finding an optimal policy $\pi&ast$.
 In Offline RL, we are given only part of an MDP, with the reward and transition functions missing: $\langle S,A,?,?,\gamma \rangle$
 We are also given a dataset, $D$.
 
@@ -34,25 +34,25 @@ However, this equation relies on knowledge of $R$ and $P$, which are not availab
 The dataset contains transitions observed from the environment, which might give some useful information about $R$ and $P$.
 However, it also might not -- for example, in the case where the dataset is empty, or contains transitions from only a small subset of the overall state space.
 Thus, it's clear we need to temper our ambitions in this setting.
-Rather than attempting to recover the optimal policy $\pi^*$, our new goal is to find a "data-optimal" policy $\pi_D^*$, which scores as high as possible, but requires only the information in the dataset.
+Rather than attempting to recover the optimal policy $\pi&ast$, our new goal is to find a "data-optimal" policy $\pi_D&ast$, which scores as high as possible, but requires only the information in the dataset.
 Note that it's not obvious how best to do this.
 It's easy to propose solutions that seem reasonable; for example, we could use the dataset to compute maximum-likelihood estimates of the reward and transition functions, $R_D$ and $P_D$, and then use invoke the Bellman optimality equation on these approximations.
-But unlike in the dynamic programming case, the resulting policy $\pi_D^*$ is not guaranteed to be optimal in the true environment.
+But unlike in the dynamic programming case, the resulting policy $\pi_D&ast$ is not guaranteed to be optimal in the true environment.
 (In fact, as we will later see, this strategy is actually quite bad.)
 
 Thus, the most important questions in the Offline RL setting are very unlike those in the Dynamic Programming setting.
 In the dynamic programming setting, we know what we are "looking for".
-When we compare various DP algorithms, like policy iteration, value iteration, or policy-gradient, we already know that all of these approaches are looking for the same $\pi^*$.
+When we compare various DP algorithms, like policy iteration, value iteration, or policy-gradient, we already know that all of these approaches are looking for the same $\pi&ast$.
 Therefore, we ask questions like, is it guaranteed to find it? what is the convergence rate? what are the computational requirements?
 In contrast, in Offline RL, we *don't yet know what a good solution looks like*.
-The most important question in Offline RL is: what choice of $\pi_D^*$ will translate to good performance on the real environment?
+The most important question in Offline RL is: what choice of $\pi_D&ast$ will translate to good performance on the real environment?
 (Once we have this answered, then we can circle back around and study sample efficiency and whatnot.)
 So, let's see what we can say about this.
 
-Let's start by re-writing the dynamic programming formula for $\pi^*$ using the Bellman consistency equation, instead of the Bellman optimality equation: $\pi^* = argmax_\pi Q(\pi)$; $Q^\pi = R + \gamma P^\pi Q^\pi$.
+Let's start by re-writing the dynamic programming formula for $\pi&ast$ using the Bellman consistency equation, instead of the Bellman optimality equation: $\pi&ast = argmax_\pi Q(\pi)$; $Q^\pi = R + \gamma P^\pi Q^\pi$.
 In a slight abuse of notation, we're using $Q(\pi)$ to mean $Q^\pi(s_0)$.
 Rewriting it this way puts us into a nice framework that can be readily applied to Offline RL, too.
-We define $\pi_D^* = argmax_\pi Q_D(\pi)$.
+We define $\pi_D&ast = argmax_\pi Q_D(\pi)$.
 Now, the question reduces to: what is the best choice of $Q_D^\pi$?
 In other words, how should we estimate the value of a policy from data, in a way that leads to us selecting good policies?
 To understand the answer to this question, let's take a brief detour and think about a slightly more general one instead.
@@ -79,7 +79,7 @@ For example, I might survey several of my friends who played sports last spring,
 Then, I pick the sport with the highest average rating (according to my friends).
 
 We wish to know: if the decision-maker chooses the $x \in X$ which maximizes $Z$, will my score be high according to $J$?
-Concretely, if we let $x^* = argmax_{x \in X} J(x)$ and $x^# = argmax_{x \in X} Z(x)$, what will be the regret, $J(x^*) - J(x^#)$?
+Concretely, if we let $x&ast = argmax_{x \in X} J(x)$ and $x^# = argmax_{x \in X} Z(x)$, what will be the regret, $J(x&ast) - J(x^#)$?
 Clearly, this regret will be expressed in terms of the similarity between the real objective and the proxy objective.
 If J and Z are identical, then the regret will be zero.
 But if they are not identical, then the relationship becomes more interesting:
@@ -195,7 +195,7 @@ These experiments only proximal pessimism, because of the aforementioned issue a
 
 And that's all! Let's finish up with a little recap. *TLDR:*
 
-Offline RL is about choosing a policy, $\pi_D^*$, which is near-optimal.
+Offline RL is about choosing a policy, $\pi_D&ast$, which is near-optimal.
 We can reduce this to defining $Q_D^\pi$, then taking the argmax $π$.
 As a proxy objective, a good $Q_D^\pi$ needs to avoid overestimation.
 We can implement this with penalized Bellman iteration.
