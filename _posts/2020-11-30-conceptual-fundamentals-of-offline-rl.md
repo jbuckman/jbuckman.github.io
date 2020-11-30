@@ -98,8 +98,6 @@ Thanks to the second term, we could wind up with huge regret if our proxy overes
 This tells us something very important.
 When constructing a proxy objective (e.g. from data), we should intentionally construct it in such a way that large overestimations are impossible, so that the second term remains small.
 
-(End of detour.)
-
 #### Pessimism In Offline RL
 
 Okay, let's bring this back to Offline RL.
