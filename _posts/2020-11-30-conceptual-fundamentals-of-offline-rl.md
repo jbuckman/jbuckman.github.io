@@ -66,20 +66,20 @@ There is some set of choices $X$; for example, maybe it's what sport I should pl
 
 There is some objective $J$, which measures a quantity we care about; in this simplified example, it's a scalar that measures how much fun I will have.
 
-![Objective](/static/img/cfoorl/obj.png){:width="100px"}
+![Objective](/static/img/cfoorl/obj.png){:width="150px"}
 
 The goal is to choose the $x \in X$ which maximizes $J(x)$.
 However, the decision-maker doesn't have access to $J$.
 After all, I don't know exactly how much fun I will have doing each sport, and I have to decide what to sign up for *now*, so I can't try them out before making the decision.
 However, the decision maker *does* have access to some proxy objective $Z$, which will ideally be informative of $J$.
 
-![Proxy](/static/img/cfoorl/proxy.png){:width="100px"}
+![Proxy](/static/img/cfoorl/proxy.png){:width="150px"}
 
 For example, I might survey several of my friends who played sports last spring, and ask them to estimate how much fun they had.
 Then, I pick the sport with the highest average rating (according to my friends).
 
 We wish to know: if the decision-maker chooses the $x \in X$ which maximizes $Z$, will my score be high according to $J$?
-Concretely, if we let $x^{\ast} = argmax_{x \in X} J(x)$ and $x^# = argmax_{x \in X} Z(x)$, what will be the regret, $J(x^{\ast}) - J(x^#)$?
+Concretely, if we let $x^{\ast} = argmax_{x \in X} J(x)$ and $x^{\#} = argmax_{x \in X} Z(x)$, what will be the regret, $J(x^{\ast}) - J(x^{\#})$?
 Clearly, this regret will be expressed in terms of the similarity between the real objective and the proxy objective.
 If J and Z are identical, then the regret will be zero.
 But if they are not identical, then the relationship becomes more interesting:
