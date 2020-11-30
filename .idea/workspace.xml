@@ -72,8 +72,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2020-11-30-conceptual-fundamentals-of-offline-rl.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="412">
-                <caret line="207" column="3" selection-start-line="207" selection-start-column="3" selection-end-line="207" selection-end-column="3" />
+              <first_editor relative-caret-position="198">
+                <caret line="9" selection-start-line="9" selection-end-line="9" />
               </first_editor>
               <second_editor />
             </state>
@@ -511,8 +511,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2020-11-30-conceptual-fundamentals-of-offline-rl.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="412">
-            <caret line="207" column="3" selection-start-line="207" selection-start-column="3" selection-end-line="207" selection-end-column="3" />
+          <first_editor relative-caret-position="198">
+            <caret line="9" selection-start-line="9" selection-end-line="9" />
           </first_editor>
           <second_editor />
         </state>
