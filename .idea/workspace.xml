@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46e852db-af01-4e65-9a99-4e29b6234bf4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_drafts/2020-11-29-conceptual-fundamentals-of-offline-rl.md" beforeDir="false" afterPath="$PROJECT_DIR$/_drafts/2020-11-29-conceptual-fundamentals-of-offline-rl.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,14 +53,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="186" />
-          <entry key="md" value="62789" />
+          <entry key="md" value="63033" />
           <entry key="yml" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="186" />
-          <entry key="Markdown" value="62789" />
+          <entry key="Markdown" value="63033" />
           <entry key="YAML" value="31" />
         </counts>
       </usages-collector>
@@ -72,8 +72,8 @@
         <entry file="file://$PROJECT_DIR$/_drafts/2020-11-29-conceptual-fundamentals-of-offline-rl.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="198">
-                <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-end-line="10" />
+              <first_editor relative-caret-position="132">
+                <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
               </first_editor>
               <second_editor />
             </state>
@@ -199,7 +199,14 @@
               <item name="jbuckman.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="jbuckman.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="pdf" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jbuckman.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jbuckman.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="cfoorl" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -253,8 +260,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29613733" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29613733" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -268,7 +276,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.28433734" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.28433734" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -502,8 +510,8 @@
     <entry file="file://$PROJECT_DIR$/_drafts/2020-11-29-conceptual-fundamentals-of-offline-rl.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="198">
-            <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-end-line="10" />
+          <first_editor relative-caret-position="132">
+            <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
           </first_editor>
           <second_editor />
         </state>

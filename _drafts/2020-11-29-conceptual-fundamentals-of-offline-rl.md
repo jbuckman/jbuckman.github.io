@@ -4,10 +4,11 @@ title: Conceptual Fundamentals of Offline RL
 tags: ["deep learning", "reinforcement learning"]
 published: true
 mathjax: true
+invisible: true
 ---
 
 View this blog post as a video here:
-[video]()
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TaJ4P2Hyu3g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Introduction
 
@@ -59,14 +60,20 @@ To understand the answer to this question, let's take a brief detour and think a
 
 Consider an extremely general decision-making problem setting.
 There is some set of choices $X$; for example, maybe it's what sport I should play this spring. 
-[image]()
+
+![Choices](/static/img/cfoorl/choices.png)
+
 There is some objective $J$, which measures a quantity we care about; in this simplified example, it's a scalar that measures how much fun I will have.
-[image]()
+
+![Objective](/static/img/cfoorl/obj.png)
+
 The goal is to choose the $x \in X$ which maximizes $J(x)$.
 However, the decision-maker doesn't have access to $J$.
 After all, I don't know exactly how much fun I will have doing each sport, and I have to decide what to sign up for *now*, so I can't try them out before making the decision.
 However, the decision maker *does* have access to some proxy objective $Z$, which will ideally be informative of $J$.
-[image]()
+
+![Proxy](/static/img/cfoorl/proxy.png)
+
 For example, I might survey several of my friends who played sports last spring, and ask them to estimate how much fun they had.
 Then, I pick the sport with the highest average rating (according to my friends).
 
@@ -75,10 +82,14 @@ Concretely, if we let $x^* = argmax_{x \in X} J(x)$ and $x^# = argmax_{x \in X} 
 Clearly, this regret will be expressed in terms of the similarity between the real objective and the proxy objective.
 If J and Z are identical, then the regret will be zero.
 But if they are not identical, then the relationship becomes more interesting:
-[image]()
+
+![Bound](/static/img/cfoorl/subopt.png)
+
 Let's take a closer look and see on an intuitive level what this bound is saying.
 Regret will be small under a specific condition:
-[image]()
+
+![Annotated bound](/static/img/cfoorl/suboptanno.png)
+
 We see an interesting asymmetry between overestimations and underestimations.
 Underestimations are almost never a problem: all you need is for one good choice to not be underestimated, and the first term becomes small.
 But overestimations are a huge problem.
@@ -100,7 +111,9 @@ The space of choices, $X$, is the space of policies, $\Pi$.
 The objective, $J(\pi)$, is the expected return in the real environment, $Q_M(\pi)$.
 The proxy objective, $Z(\pi)$, is our estimate of the value of a policy from data, $Q_D(\pi)$.
 Substituting these values into the regret bound, we see:
-[image]()
+
+![Specific bound](/static/img/cfoorl/suboptspec.png)
+
 The asymmetry between overestimation and underestimation once again appears here; this needs to be reflected in $Q_D$.
 This motivates the design of *pessimistic* algorithms, which are constructed to prevent overestimations.
 
@@ -116,7 +129,9 @@ By rescaling this penalty by $\alpha$, we can constrain overestimation to be, gl
 This gives us a general definition for "pessimistic" approaches, which has both naive and lower-bound as special cases.
 
 A bit of algebra, and we can derive the regret of a pessimistic algorithm:
-[image]()
+
+![Pessimistic bound](/static/img/cfoorl/suboptpess.png)
+
 We now see the true importance of pessimism.
 By increasing $\alpha$, we "shrink" the overestimation, and increase the underestimation by the same amount.
 But since overestimation lives in a sup term (which is typically large), and underestimation lives in an inf term (which is typically small), this has the net effect of reducing overall regret.
@@ -148,7 +163,9 @@ Thus, although proximal algorithms are strictly worse than uncertainty-aware, mo
 
 All of these theoretical predictions can be readily observed in experiments.
 Here's some experiments on a gridworld where we compare the performance of different algorithms on datasets of various sizes.
-[image]()
+
+![Experiment 1](/static/img/cfoorl/expdata.png)
+
 We see the naive approach, the red line, converging to the optimal policy, but very slowly.
 The UA approach, in purple, converges to the same point, but much more quickly. Unless the dataset is overwhelimngly large, UA pessimism performs far better.
 The imitation approach, in green, does not converge, since the data-collection policy is constant.
@@ -158,7 +175,9 @@ Another set of experiments tests how the diversity of the dataset impacts the su
 The x-axis here corresponds to the $\epsilon$ in an $\epsilon$-greedy data collection policy.
 On the left, we see fully-random data collection; on the right, fully-optimal.
 All datasets are the same size, however.
-[image]()
+
+![Experiment 2](/static/img/cfoorl/expeps.png)
+
 We see the naive approach perform well when data is collected randomly, but poorly when it is collected deterministically -- even though in the latter case, all data comes from an optimal policy!
 This perfectly matches our theoretical prediction that the regret should be controlled mainly by the supremum of overestimaton error.
 When data is collected stochastically, we get a little information about every policy, so no policy is overestimated much.
@@ -166,7 +185,9 @@ But the more deteriministically it is collected, the more information we have on
 The other approaches all also clearly match the theory: imitation is better when the collection policy is closer to optimal, proximal algorithms show a slight improvement to imitation, and UA algorithms are good everywhere.
 
 We see similar results on experiments in a deep learning setting, in this case using MinAtar as the testbed:
-[image]()
+
+![Experiment 3](/static/img/cfoorl/expdl.png)
+
 These experiments only proximal pessimism, because of the aforementioned issue around implementing UA algorithms in deep learning.
 
 #### Conclusion
