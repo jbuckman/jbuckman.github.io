@@ -187,7 +187,8 @@ We see similar results on experiments in a deep learning setting, in this case u
 
 ![Experiment 3](/static/img/cfoorl/expdl.png)
 
-These experiments only proximal pessimism, because of the aforementioned issue around implementing UA algorithms in deep learning.
+These experiments only test proximal pessimism, because of the aforementioned issue around implementing UA algorithms in deep learning.
+We see basically the same trends as in the tabular case, if a bit less cleanly.
 
 #### Conclusion
 
