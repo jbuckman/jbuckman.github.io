@@ -8,7 +8,7 @@ You can also browse my <a href="https://scholar.google.com/citations?user=IDSGZN
 
 - **The Importance of Pessimism in Fixed-Dataset Policy Optimization**  
 	**Jacob Buckman**, Carles Gelada, Marc G. Bellemare.
-	ArXiv, September 2020.
+	*International Conference on Learning Representations*, (ICLR) 2021.
 	[PDF](https://arxiv.org/abs/2009.06799){: .btn}
 	[Code](https://github.com/jbuckman/tiopifdpo){: .btn}
 
