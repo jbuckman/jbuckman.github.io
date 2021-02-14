@@ -127,5 +127,5 @@ Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.co
 
 --
 
-[^0]: New to most readers, at least. I'm sure someone somewhere has said some similar idea at some point, but I've not seen it.
+[^0]: It's possible that someone somewhere has said some similar idea at some point, but as far as I know this is conceptual framework is original.
 [^1]: It is not the *only* possible technique, but it is the simplest, and the only one that people are using right now (for DRL). In tabular reinforcement learning, saving algorithms can be implemented without explicitly storing all transitions; for example, for any given state, we can simply record the count, the mean observed reward, and the mean observed next-state distribution, rather than a full list of individual transitions.
