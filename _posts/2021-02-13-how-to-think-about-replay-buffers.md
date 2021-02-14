@@ -6,8 +6,6 @@ published: true
 mathjax: false
 ---
 
-===
-
 The *replay memory*, or *replay buffer*, has been a staple of deep reinforcement learning algorithms since DQN, where it was first introduced.
 In brief, a replay memory is a data structure which temporarily saves the agent's observations, allowing our learning procedure to update on them multiple times.
 Although it is straightforward to implement and understand, the role of replay memory within the overall RL procedure is in many ways non-obvious.

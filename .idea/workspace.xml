@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46e852db-af01-4e65-9a99-4e29b6234bf4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_drafts/2021-02-13-how-to-think-about-replay-buffers.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2021-02-13-how-to-think-about-replay-buffers.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2021-02-13-how-to-think-about-replay-buffers.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +40,7 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="22" />
           <entry key="jpg" value="4" />
-          <entry key="md" value="49" />
+          <entry key="md" value="50" />
           <entry key="png" value="5" />
           <entry key="yml" value="3" />
         </counts>
@@ -50,7 +49,7 @@
         <counts>
           <entry key="HTML" value="22" />
           <entry key="Image" value="9" />
-          <entry key="Markdown" value="49" />
+          <entry key="Markdown" value="50" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="YAML" value="3" />
         </counts>
@@ -74,11 +73,11 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_drafts/2021-02-13-how-to-think-about-replay-buffers.md">
+        <entry file="file://$PROJECT_DIR$/_posts/2021-02-13-how-to-think-about-replay-buffers.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="110">
-                <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+              <first_editor relative-caret-position="154">
+                <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
               </first_editor>
               <second_editor />
             </state>
@@ -170,6 +169,7 @@
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/publications.md" />
         <option value="$PROJECT_DIR$/_drafts/2021-02-13-how-to-think-about-replay-buffers.md" />
+        <option value="$PROJECT_DIR$/_posts/2021-02-13-how-to-think-about-replay-buffers.md" />
       </list>
     </option>
   </component>
@@ -221,9 +221,9 @@
       <recent name="$PROJECT_DIR$/_drafts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_posts" />
       <recent name="$PROJECT_DIR$/_drafts" />
       <recent name="$PROJECT_DIR$/static/pdf" />
-      <recent name="$PROJECT_DIR$/_posts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -255,7 +255,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.31330472" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31330472" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -483,16 +483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2020-11-30-conceptual-fundamentals-of-offline-rl.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="22">
-            <caret line="6" selection-start-line="6" selection-end-line="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-10-25-three-paradigms-of-reinforcement-learning.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -513,11 +503,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_drafts/2021-02-13-how-to-think-about-replay-buffers.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2020-11-30-conceptual-fundamentals-of-offline-rl.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="110">
-            <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <first_editor relative-caret-position="132">
+            <caret line="6" selection-start-line="6" selection-end-line="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2021-02-13-how-to-think-about-replay-buffers.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="154">
+            <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           </first_editor>
           <second_editor />
         </state>
