@@ -38,14 +38,14 @@ Thus, the impact of replay memory on an algorithm can be seen by understanding t
 What are the strengths and weaknesses of each of these two types of algorithms?
 Let's contrast them across two important dimensions: compute efficiency and data efficiency.
 
-*Computational Efficiency.*
+**Computational Efficiency.**
 Streaming algorithms have a clear advantage when it comes to compute and memory requirements.
 A streaming algorithm never stores more than one observation at a time, so it requires very little memory.
 Also, it performs only one small update per interaction, so the speed of interaction is almost never bottlenecked by the speed of learning.
 In contrast, saving methods have enormous memory footprints, as the amount of data that needs to be stored grows with each interaction.
 And since training to convergence requires, in general, many updates, saving methods will typically use vastly more compute as well.
 
-*Data Efficiency.*
+**Data Efficiency.**
 Saving algorithms have the advantage when it comes to data efficiency (also called sample efficiency).
 Again, there's a clear intuitive justification for this: saving algorithms, which store all of their data and train on it a ton, are clearly "squeezing the most information" out of the data they have seen, and are more efficient as a result.
 One concrete difference we can identify is that the data efficiency of a streaming algorithm is highly dependent on how the learning is set up; for for example, if we choose a learning rate that is very small, streaming algorithms will require many more samples to reach the same performance.
