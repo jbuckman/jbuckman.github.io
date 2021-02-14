@@ -63,6 +63,7 @@ Data collection has no such law.
 Also, compute can easily be parallellized and distributed, and is (relatively) inexpensive to scale; there's plenty of good resources for dong so.
 Whereas data collection in real-world problems is very ad-hoc and problem dependent, often can be done no faster than the speed of reality, and is generally difficult and expensive to scale up.
 Our bottleneck is almost always going to be data collection, and so data efficiency is of greater importance.
+Thus, I believe that saving algorithms are likely to be more important for getting RL to work on real problems.
 
 If saving methods are so much more data-efficient, why do the techniques we use in practice look so much more like streaming algorithms?
 For example, the default hyperparameters on DQN update on each datapoint only an average of only eight times before discarding it.
