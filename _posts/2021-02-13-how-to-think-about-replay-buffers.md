@@ -105,8 +105,8 @@ Why not just fix it with off-policy corrections?
 
 The answer is that the distribution of data when sampling from the replay memory is *much worse* than just being off-policy.
 Firstly, the memory distribution has limited support, in the sense that any transitions that do not appear in the replay memory have 0 chance of being sampled, even if they have non-zero probability under some historical policy.
-Secondly, off-policy transition distributions are still assumed to consist of outcomes (i.e., the resulting reward and next state) which are IID conditioned on their inputs (the state and action). 
-In transitions sampled from the replay memory, this is not the case: if the same transition is sampled out of the buffer twice, its outcomes will also be the same twice, rather than being independent.
+Secondly, when sampling transitions from an off-policy distribution, it is still required that the outcomes (i.e., the resulting reward and next state) which are IID conditioned on their inputs (the state and action). 
+In transitions sampled from the replay memory, this is not the case: if the same transition is sampled out of the buffer twice, its outcomes will also be the same twice, rather than being independent samples from the underlying environment.
 This distribution does not match the definition of an off-policy data stream.
 
 Fortunately, it *does* match the definition of a saved dataset, as used in saving algorithms; thus motivating the perspective provided in the first half of this blog post.
