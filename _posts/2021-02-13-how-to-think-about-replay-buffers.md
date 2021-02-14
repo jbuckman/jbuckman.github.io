@@ -68,6 +68,7 @@ Thus, I believe that saving algorithms are likely to be more important for getti
 If saving methods are so much more data-efficient, why do the techniques we use in practice look so much more like streaming algorithms?
 For example, the default hyperparameters on DQN update on each datapoint only an average of only eight times before discarding it.
 Streaming algorithms have one final key advantage, one which is more subtle: all learning is done using an unbiased estimate of the true environment.
+
 Streaming data come from "fresh" samples every time, so it is impossible to mistake a good action for a bad action, or vice versa (in expectation).
 But saving algorithms, which reuse a single sample for learning many times, might get completely thrown off.
 Consider if an action is bad but high-variance, and we've only seen it once, but it got "lucky" and happened to appear to be very good.
