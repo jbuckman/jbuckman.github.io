@@ -117,7 +117,7 @@ By understanding an algorithm with replay memory as a saving algorithm, we can p
 
 #### Conclusion
 
-Hopefully this post convinced you that the saving-streaming spectrum is one of the most useful conceptual tools for understanding reinforcement learning.
+Hopefully this post convinced you that the **saving-streaming spectrum** is one of the most useful conceptual tools for understanding reinforcement learning.
 I personally believe that in order to get practical, sample-efficient, real-world-friendly RL, we will need to move away from the nearly-streaming algorithms we currently use, and towards saving algorithms instead.
 This will require significant progress in understanding [the issues endemic to saving algorithms](https://arxiv.org/abs/2009.06799), which, I believe, is deeply tied to understanding how to properly compute neural network uncertainties.
 
