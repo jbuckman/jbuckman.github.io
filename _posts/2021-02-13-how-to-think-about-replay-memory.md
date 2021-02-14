@@ -72,7 +72,7 @@ Streaming algorithms have one final key advantage, one which is more subtle: all
 Streaming data come from "fresh" samples every time, so it is impossible to mistake a good action for a bad action, or vice versa (in expectation).
 But saving algorithms, which reuse a single sample for learning many times, might get completely thrown off.
 Consider if an action is bad but high-variance, and we've only seen it once, but it got "lucky" and happened to appear to be very good.
-Our agent will think it is really good, and repeatedly update using that information, eventually converging to a policy which performs very badly in the real environment.
+Our agent will think it is genuinely good, and repeatedly update using that information, eventually converging to a policy which performs very badly in the real environment.
 We can, in theory, fix this by using uncertainty estimates, but nobody knows how to compute uncertainty estimates for neural networks.
 I wrote [an ICLR paper](https://arxiv.org/abs/2009.06799) on this issue, which is also summarized in [my last blog post](https://jacobbuckman.com/2020-11-30-conceptual-fundamentals-of-offline-rl/).
 
@@ -105,7 +105,8 @@ Why not just fix it with off-policy corrections?
 
 The answer is that the distribution of data when sampling from the replay memory is *much worse* than just being off-policy.
 Firstly, the memory distribution has limited support, in the sense that any transitions that do not appear in the replay memory have 0 chance of being sampled, even if they have non-zero probability under some historical policy.
-Secondly, when sampling transitions from an off-policy distribution, it is still required that the outcomes (i.e., the resulting reward and next state) which are IID conditioned on their inputs (the state and action). 
+This means we can't correct it to look on-policy.
+Secondly, when sampling transitions from an off-policy distribution, it is still required that the outcomes (i.e., the resulting reward and next state) are IID conditioned on their inputs (the state and action), from the distribution is given by the dynamics of the environment (i.e., the reward and transition functions). 
 In transitions sampled from the replay memory, this is not the case: if the same transition is sampled out of the buffer twice, its outcomes will also be the same twice, rather than being independent samples from the underlying environment.
 This distribution does not match the definition of an off-policy data stream.
 
@@ -125,7 +126,7 @@ This will require significant progress in understanding [the issues endemic to s
 
 Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.com/jacobmbuckman) with any feedback or questions!
 
---
+---
 
 [^0]: It's possible that someone somewhere has said some similar idea at some point, but as far as I know this is conceptual framework is original.
 [^1]: It is not the *only* possible technique, but it is the simplest, and the only one that people are using right now (for DRL). In tabular reinforcement learning, saving algorithms can be implemented without explicitly storing all transitions; for example, for any given state, we can simply record the count, the mean observed reward, and the mean observed next-state distribution, rather than a full list of individual transitions.
