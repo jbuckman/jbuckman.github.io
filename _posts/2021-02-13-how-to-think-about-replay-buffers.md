@@ -100,9 +100,10 @@ It turns out that collecting data on-policy is crucial to the theoretical conver
 If our data stream is arriving off-policy, we need to correct for the difference in distributions to make it *look* on-policy, or else we might fail to ever find anything.
 
 So, why do I claim that it is inappropriate to interpret the complications arising from a replay memory as off-policy issues?
-After all, it is sampled from a mix of historical policies, which are different from the current one, right?
+After all, the data in the replay memory is sampled from a mix of historical policies, which are different from the current one, right?
 Why not just fix it with off-policy corrections?
-The answer is that the distribution of data in the replay memory is *much worse* than just off-policy.
+
+The answer is that the distribution of data when sampling from the replay memory is *much worse* than just being off-policy.
 Firstly, the memory distribution has limited support, in the sense that any transitions that do not appear in the replay memory have 0 chance of being sampled, even if they have non-zero probability under some historical policy.
 Secondly, off-policy transition distributions are still assumed to consist of outcomes (i.e., the resulting reward and next state) which are IID conditioned on their inputs (the state and action). 
 In transitions sampled from the replay memory, this is not the case: if the same transition is sampled out of the buffer twice, its outcomes will also be the same twice, rather than being independent.
