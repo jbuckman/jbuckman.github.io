@@ -43,7 +43,7 @@ Streaming algorithms have a clear advantage when it comes to compute and memory 
 A streaming algorithm never stores more than one observation at a time, so it requires very little memory.
 Also, it performs only one small update per interaction, so the speed of interaction is almost never bottlenecked by the speed of learning.
 In contrast, saving methods have enormous memory footprints, as the amount of data that needs to be stored grows with each interaction.
-And since training to convergence requires, in general, many updates, saving methods will typically use vastly more compute as well.
+And since training to convergence may require many updates, saving methods will typically use vastly more compute as well.
 
 **Data Efficiency.**
 Saving algorithms have the advantage when it comes to data efficiency (also called sample efficiency).
