@@ -185,7 +185,7 @@ Machine learning has similar potential to change the course of humanity, both fo
 #### Bottom Line
 
 GPT-3 is not a chatbot, GPT-3 is a language model.
-Naively turning GPT-3 *into* a chatbot results in a bad chatbot, which can say some truly harmful stuff; many criticisms of GPT-3 are actually criticisms of this "naive GPT-3 chatbot".
+Naively turning GPT-3 *into* a chatbot results in a bad chatbot, which can say some harmful things; many criticisms of GPT-3 are actually criticisms of this "naive GPT-3 chatbot".
 If we want unbiased chatbots, we need research on how to use language models to make unbiased chatbots, *not* attempt to train unbiased language models.
 After all, unbiased language models fundamentally cannot be turned into unbiased chatbots.
 
