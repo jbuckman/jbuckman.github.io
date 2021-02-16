@@ -37,7 +37,7 @@ The takeaway: **preventing toxic words requires a model of toxic words.**
 ---
 
 A few days ago, one of my friends shared [this Reddit thread on GPT-3](https://www.reddit.com/r/MachineLearning/comments/li2afr/gpt3_is_bloodthirsty_i_guess_full_convo_below_it/) with me.
-For this random user, some seemingly mundane prompting led to GPT-3 becoming "bloodthirsty", with lines like:
+For this random Reddit user, some seemingly mundane prompting led to GPT-3 becoming "bloodthirsty", with lines like:
 
 > User: What is useful?
 > GPT-3: Killing people.
