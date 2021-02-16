@@ -148,8 +148,7 @@ This often introduces issues of fairness or bias, which we need to fix before de
 The solution is never "make the neural models worse" -- removing data, adding esoteric constraints, etc.
 Instead, researchers and practicioners should carefully study how the model is being utilized, and engineer the deployment step in a way that shuts down these issues.
 
-All of this to say: know thine enemy.
-We can't prevent what we don't understand.
+All of this to say: know thine enemy, for we can't prevent what we don't understand.
 And the same is true of neural networks.
 
 ---
