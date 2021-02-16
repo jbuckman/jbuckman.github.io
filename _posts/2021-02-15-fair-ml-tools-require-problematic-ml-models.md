@@ -7,8 +7,8 @@ mathjax: false
 ---
 
 When I was fourteen, my interest in video games began to intersect with my interest in programming.
-I would go through the files of computer games I played, in an idle attempt to gain some insight into how they worked.
-I mostly looked for plaintext config files, so that I could modify parameters to make my characters unbeatable.
+I would go through the files of computer games I played in an idle attempt to gain some insight into how they worked.
+I mostly looked for plaintext config files in order to modify parameters to make my characters unbeatable.
 Sometimes, I would find a texture file, and amuse myself by reskinning in-game objects in MS Paint.
 But my favorite discovery came from a game called League of Legends: a plaintext list containing hundreds of swear words.
 
