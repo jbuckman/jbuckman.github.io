@@ -117,7 +117,7 @@ Therefore, it's not appropriate to criticize a model on the basis that it *can* 
 (Many recent critiques from the FAT ML community have this flavor.)
 Instead, we should criticize those who *deploy* models in a way that does not adequately handle societal biases.
 
-#### Conclusion
+#### Summary
 
 GPT-3 is not a chatbot, GPT-3 is a language model.
 Naively turning GPT-3 *into* a chatbot results in a bad chatbot; many criticisms of GPT-3 are actually criticisms of this "naive GPT-3 chatbot".
