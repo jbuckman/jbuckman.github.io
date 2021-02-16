@@ -146,7 +146,7 @@ The only real solution is for our chatbot to have access to a strong model of ha
 ---
 
 Of course, there is a huge question left unanswered: *how do we do it?*
-Let's say someone follows my suggestion, and trains a language model, leaving all the racist data in the train set so that it has a good model of racist dialogue.
+Let's say someone follows my suggestion, and trains a language model with all the racist data left in the train set, so that it has a good model of racist dialogue.
 What next? How do we turn it into a never-racist chatbot?
 
 Unfortunately, I don't have the complete answer.
