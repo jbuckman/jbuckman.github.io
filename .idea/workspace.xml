@@ -57,14 +57,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="186" />
-          <entry key="md" value="110849" />
+          <entry key="md" value="114744" />
           <entry key="yml" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="186" />
-          <entry key="Markdown" value="110849" />
+          <entry key="Markdown" value="114744" />
           <entry key="YAML" value="39" />
         </counts>
       </usages-collector>
@@ -88,8 +88,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2021-02-15-fair-ml-tools-require-problematic-ml-models.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="360">
-                <caret line="151" column="5" selection-start-line="151" selection-start-column="5" selection-end-line="151" selection-end-column="5" />
+              <first_editor relative-caret-position="-307">
+                <caret line="153" column="193" selection-start-line="153" selection-start-column="193" selection-end-line="153" selection-end-column="193" />
               </first_editor>
               <second_editor />
             </state>
@@ -542,8 +542,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2021-02-15-fair-ml-tools-require-problematic-ml-models.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="360">
-            <caret line="151" column="5" selection-start-line="151" selection-start-column="5" selection-end-line="151" selection-end-column="5" />
+          <first_editor relative-caret-position="-307">
+            <caret line="153" column="193" selection-start-line="153" selection-start-column="193" selection-end-line="153" selection-end-column="193" />
           </first_editor>
           <second_editor />
         </state>
