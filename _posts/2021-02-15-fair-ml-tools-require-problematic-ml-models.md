@@ -112,17 +112,27 @@ This is the only way to guarantee that those biases are not present.
 Communication -- linguistic, verbal, visual -- is in many ways the greatest accomplishment of the human race.
 But the other side of the coin is that it has the potential to cause harm in myriad subtle ways.
 History is rife with examples.
-[A man was shot, and another hanged, because of the ambiguity around the phrase, "let him have it"](https://en.wikipedia.org/wiki/Derek_Bentley_case).
-[Seemingly ordinary](https://apnews.com/article/42939a95e2b694ec6262ff5949d910c9) [hand signs](https://thehill.com/blogs/blog-briefing-room/news/502975-california-man-fired-over-alleged-white-power-sign-says-he-was) can be interpreted as grave threats or insults.
-[The first major Indian uprising against the British was fought in part because of a misunderstanding about the type of grease used on bullets](https://en.wikipedia.org/wiki/Bite_the_cartridge).
-[A Swedish diplomat set back relations with Iran by exposing the soles of his shoes](https://metro.co.uk/2012/12/10/swedish-diplomat-insults-irans-president-by-exposing-soles-of-his-shoes-3310937/).
-[H&M faced massive backlash for putting a t-shirt with a racially insensitive slogan on a black child](https://www.nytimes.com/2018/01/08/business/hm-monkey.html); in almost any other context, the problematic slogan would be a perfectly innocuous phrase.
 
+A few years ago, [H&M faced massive backlash for putting a t-shirt with a racially insensitive slogan on a black child](https://www.nytimes.com/2018/01/08/business/hm-monkey.html); in almost any other context, the problematic slogan would be a perfectly innocuous phrase.
 Imagine training a language model on a dataset which has been completely and thoroughly scrubbed of racism, and setting up a chatbot which uses that model.
 Sometimes, users will tell the model stories about their children; the chatbot responds with a context-appropriate compliment.
 Very wholesome!
-Yet does it not seem reasonable that the chatbot might, at some point, describe a black child using the slogan from the H&M t-shirt?
-The upshot is that ignorance is not sufficient for prevention.
+Maybe it will describe one particularly brave child as "the fiercest lion on the savannah".
+Does it not seem reasonable that the chatbot might, at some point, describe a black child as "the coolest monkey in the jungle"?
+
+[A man was shot, and another hanged, because of the ambiguity around a phrase](https://en.wikipedia.org/wiki/Derek_Bentley_case).
+Does it not seem reasonable that a chatbot trained on bloodthirst-free data might suggest to the man with the gun that he "lets the officer have it"?
+
+[Seemingly ordinary](https://apnews.com/article/42939a95e2b694ec6262ff5949d910c9) [hand signs](https://thehill.com/blogs/blog-briefing-room/news/502975-california-man-fired-over-alleged-white-power-sign-says-he-was) can be interpreted as grave threats or insults.
+Does it not seem reasonable that a chatbot might use the "V" or "OK" emojis?
+
+[The first major Indian uprising against the British was fought in part because of a misunderstanding about the type of grease used on bullets](https://en.wikipedia.org/wiki/Bite_the_cartridge).
+How will a chatbot know not to suggest that a Muslim order a dish with pork, or describe to a Hindu the delicious taste of beef?
+
+[A Swedish diplomat set back relations with Iran by exposing the soles of his shoes, which is disrespectful](https://metro.co.uk/2012/12/10/swedish-diplomat-insults-irans-president-by-exposing-soles-of-his-shoes-3310937/).
+[The British did the same with China, because a tradition to honor their fallen was seen as an insensitive reference to a Chinese defeat](https://www.theguardian.com/politics/blog/2010/nov/10/david-cameron-poppy-china-michael-white).
+And so on.
+The upshot is that ignorance is not sufficient for harm prevention.
 There are many ways that text can cause harm, and even if a chatbot has never explicitly seen offensive writing, it is almost inevitable that it eventually will produce some.
 
 Sure, maybe we could hard-code our chatbot to avoid that one special case.
