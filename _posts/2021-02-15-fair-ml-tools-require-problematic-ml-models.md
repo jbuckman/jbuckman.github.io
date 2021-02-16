@@ -110,10 +110,12 @@ This is the only way to guarantee that those biases are not present.
 Here's an example that highlights the necessity of models learning about biases.
 A few years ago, [H&M faced massive backlash for putting a t-shirt with a racially insensitive slogan on a black child](https://www.nytimes.com/2018/01/08/business/hm-monkey.html).
 It was widely agreed that this was inappropriate, and that it caused significant harm.
+Yet, the racism in this scenario is somewhat subtle; in almost any other context, the problematic slogan would be a perfectly innocuous phrase.
+
 Imagine training a language model on a dataset which has been completely and thoroughly scrubbed of racism, and setting up a chatbot which uses that model.
 Sometimes, users will tell the model stories about their children; the chatbot responds with a context-appropriate compliment.
-It seems reasonable that the chatbot might at some point describe a black child using the slogan from the t-shirt (which on the surface seems like a perfectly innocuous phrase).
-To avoid this, our chatbot needs to have access to a strong model of racism,[^3] so it can identify it, and avoid causing this harm.
+It seems reasonable that the chatbot might at some point describe a black child using the slogan from the t-shirt.
+To avoid this, our chatbot needs to have access to a strong model of racism,[^3] so it can identify why that description would be inappropriate, and avoid causing this harm.
 
 Of course, there is a huge question left unanswered: *how do we do it?*
 Let's say someone follows my suggestion, and trains a language model, leaving all the racist data in the train set so that it has a good model of racist dialogue.
