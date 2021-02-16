@@ -110,7 +110,7 @@ This is the only way to guarantee that those biases are not present.
 ---
 
 Communication -- linguistic, verbal, visual -- is in many ways the greatest accomplishment of the human race.
-But as a consequence, it can cause harm in myriad subtle ways.
+But the other side of the coin is that it has the potential to cause harm in myriad subtle ways.
 History is rife with examples.
 [A man was shot, and another hanged, because of the ambiguity around the phrase, "let him have it"](https://en.wikipedia.org/wiki/Derek_Bentley_case).
 [Seemingly ordinary](https://apnews.com/article/42939a95e2b694ec6262ff5949d910c9) [hand signs](https://thehill.com/blogs/blog-briefing-room/news/502975-california-man-fired-over-alleged-white-power-sign-says-he-was) can be interpreted as grave threats or insults.
