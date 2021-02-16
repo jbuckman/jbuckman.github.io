@@ -91,7 +91,7 @@ But the priciples described above exactly transfer to topics of far greater conc
 For example, GPT-3 could just has easily have said something racist or sexist.
 Much criticism of large language models has centered around this fact, and with good reason.
 A chatbot with real users cannot sometimes say racist things. 
-This must be fixed before tools based on these models can be deployed on real-world.
+This must be addressed before tools based on these models can be deployed on real-world tasks.
 
 It is at this point that my reasoning leads to a perspective which may be surprising to some readers; to a certain degree, my conclusions contradict the consensus opinion of a subset of the FATML community.[^2]
 But these claims follow from the same principles as we've been using throughout this blog post:
