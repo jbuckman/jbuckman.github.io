@@ -98,7 +98,7 @@ It is unconscionable to deploy these models on any real-world tasks until these 
 
 It is at this point that my reasoning leads to a perspective which will likely be surprising to most readers.
 My conclusions directly contradict the current consensus of the FATML community.
-But these claims follow from the same principles as I've outlined throughout this blog post:
+But these claims follow from the same principles as we've been using throughout this blog post:
 
 **Any chatbot which is never sexist requires a model with an understanding of sexism.**
 
