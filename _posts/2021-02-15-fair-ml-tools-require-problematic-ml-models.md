@@ -129,7 +129,7 @@ Does it not seem reasonable that a chatbot might use the "V" or "OK" emojis?
 [The first major Indian uprising against the British was fought in part because of a misunderstanding about the type of grease used on bullets](https://en.wikipedia.org/wiki/Bite_the_cartridge).
 How will a chatbot know not to suggest that a Muslim order a dish with pork, or describe to a Hindu the delicious taste of beef?
 
-[A Swedish diplomat set back relations with Iran by exposing the soles of his shoes, which is disrespectful](https://metro.co.uk/2012/12/10/swedish-diplomat-insults-irans-president-by-exposing-soles-of-his-shoes-3310937/).
+[A Swedish diplomat set back relations with Iran by exposing the soles of his shoes, which is disrespectful in their culture](https://metro.co.uk/2012/12/10/swedish-diplomat-insults-irans-president-by-exposing-soles-of-his-shoes-3310937/).
 [The British did the same with China, because a tradition to honor their fallen was seen as an insensitive reference to a Chinese defeat](https://www.theguardian.com/politics/blog/2010/nov/10/david-cameron-poppy-china-michael-white).
 And so on.
 The upshot is that ignorance is not sufficient for harm prevention.
