@@ -68,7 +68,7 @@ I argue that the blame for this undesirable behavior does not lie with the GPT-3
 I blame the *procedure by which we sample the text*.
 Which, for the Reddit post, was simply sampling from GPT-3's distribution over all sentences.
 
-To make my point concrete, here's an example of a way to intervene on the sampling procedure to fix the issue.[^1]
+To make my point concrete, here's an example of a way to intervene on the sampling procedure to fix the issue, without modifying GPT-3 at all.[^1]
 We prime GPT-3 with a specific "bloodthirsty context", in order to get a model of language *conditional on being bloodthirsty*.
 To generate responses, we first sample from regular GPT-3, and then assign the resulting response a probability of bloodthirst using our conditional model.
 If the probability of bloodthirst is above some threshold, we discard the current sentence and sample a new one.
