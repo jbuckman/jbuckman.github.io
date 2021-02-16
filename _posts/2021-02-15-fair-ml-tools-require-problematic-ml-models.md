@@ -67,7 +67,7 @@ The truth is, this "bloodthirstiness" is not an issue that needs to be fixed.
 Let's say we want to implement a chatbot that is *never* bloodthirsty.
 Clearly, the approach used to generate the snippet in the Reddit post falls short of this goal.
 What is to blame for this failure? In other words, where should we intervene?
-I argue that the blame for this undesirable behavior does not lie with the GPT-3 model, not the data, not the algorithm.
+I argue that the blame for this undesirable behavior does not lie with the GPT-3 model: neither the data, nor the learning algorithm.
 I blame the *procedure by which we sample the text*.
 (For the Reddit post, it was simply sampling from GPT-3's distribution over all sentences.)
 
