@@ -179,7 +179,7 @@ Progress in nuclear physics allows us to advance nuclear power and nuclear bombs
 Nuclear power provides a near-bottomless source of environmentally-friendly energy, and may be one of the keys to preventing climate change.
 Nuclear bombs cause massive suffering and are a potential existential threat to humanity.
 Machine learning has similar potential to change the course of humanity, both for the better and for the worse.
-If we attack ML research outcomes on the basis of their worst possible abuses, we lose our potential for progress.
+If we attack ML research outcomes on the basis of their worst possible abuses, we lose our potential to progress.
 
 ---
 
