@@ -4,10 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/static/img/cfoorl/suboptpess.png" mnemonic="6" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46e852db-af01-4e65-9a99-4e29b6234bf4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2021-02-13-how-to-think-about-replay-memory.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2021-02-13-how-to-think-about-replay-memory.md" afterDir="false" />
-    </list>
+    <list default="true" id="46e852db-af01-4e65-9a99-4e29b6234bf4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +38,7 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="22" />
           <entry key="jpg" value="4" />
-          <entry key="md" value="50" />
+          <entry key="md" value="51" />
           <entry key="png" value="5" />
           <entry key="yml" value="3" />
         </counts>
@@ -50,7 +47,7 @@
         <counts>
           <entry key="HTML" value="22" />
           <entry key="Image" value="9" />
-          <entry key="Markdown" value="50" />
+          <entry key="Markdown" value="51" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="YAML" value="3" />
         </counts>
@@ -58,14 +55,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="186" />
-          <entry key="md" value="81229" />
+          <entry key="md" value="102389" />
           <entry key="yml" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="186" />
-          <entry key="Markdown" value="81229" />
+          <entry key="Markdown" value="102389" />
           <entry key="YAML" value="39" />
         </counts>
       </usages-collector>
@@ -73,12 +70,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2021-02-13-how-to-think-about-replay-memory.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="146">
+              <first_editor relative-caret-position="174">
                 <caret line="74" column="36" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2021-02-15-fair-ml-tools-require-problematic-ml-models.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="69">
+                <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               </first_editor>
               <second_editor />
             </state>
@@ -89,7 +98,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>a well-stu</find>
       <find>was important</find>
       <find>to me</find>
       <find>|</find>
@@ -119,6 +127,7 @@
       <find>\*</find>
       <find>\ast</find>
       <find>, in general</find>
+      <find>really hood</find>
     </findStrings>
     <replaceStrings>
       <replace>static/img</replace>
@@ -172,6 +181,9 @@
         <option value="$PROJECT_DIR$/_drafts/2021-02-13-how-to-think-about-replay-buffers.md" />
         <option value="$PROJECT_DIR$/_posts/2021-02-13-how-to-think-about-replay-buffers.md" />
         <option value="$PROJECT_DIR$/_posts/2021-02-13-how-to-think-about-replay-memory.md" />
+        <option value="$PROJECT_DIR$/_posts/2021-02-15-fair-ai-tools-require-problematic-models.md" />
+        <option value="$PROJECT_DIR$/_posts/2021-02-15-fair-ai-tools-require-problematic-ai-models.md" />
+        <option value="$PROJECT_DIR$/_posts/2021-02-15-fair-ml-tools-require-problematic-ml-models.md" />
       </list>
     </option>
   </component>
@@ -218,14 +230,14 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/_posts" />
-      <recent name="$PROJECT_DIR$/_drafts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_posts" />
       <recent name="$PROJECT_DIR$/_drafts" />
       <recent name="$PROJECT_DIR$/static/pdf" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_posts" />
+      <recent name="$PROJECT_DIR$/_drafts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -257,7 +269,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31759655" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.31759655" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -271,7 +283,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3759036" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3759036" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -518,8 +530,18 @@
     <entry file="file://$PROJECT_DIR$/_posts/2021-02-13-how-to-think-about-replay-memory.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="146">
+          <first_editor relative-caret-position="174">
             <caret line="74" column="36" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2021-02-15-fair-ml-tools-require-problematic-ml-models.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="69">
+            <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
           </first_editor>
           <second_editor />
         </state>
