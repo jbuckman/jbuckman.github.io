@@ -53,7 +53,7 @@ I don't think many serious AI researchers would react this way.
 No, more concerning to me is the second-most-common type of reaction, which was some variant of "this is unfortunate but expected behavior, and we can fix it by modifying the training procedure."
 Essentially: that this chatlog demonstrates that GPT-3 has some issues, but that these issues were predictable based on how GPT-3 was created.
 Optimism on whether it is fixable varied; so did people's intuitions about possible solutions.
-Some blamed the training data; they hypothesized that had OpenAI had used a more carefully-constructed corpus, this behavior would not emerge.
+Some blamed the training data; they hypothesized that had OpenAI used a more carefully-constructed corpus, this behavior would not have emerged.
 Others said that this issue stems from some algorithmic decisions made by OpenAI, and maybe would suggest some form of regularization or an alternative training objective.[^0]
 This is the position that many serious AI researchers have likely adopted.
 And it, too, is wrong.
