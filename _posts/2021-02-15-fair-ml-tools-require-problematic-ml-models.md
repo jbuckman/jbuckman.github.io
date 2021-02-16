@@ -114,7 +114,7 @@ But as a consequence, it can cause harm in myriad subtle ways.
 History is rife with examples.
 [A man was shot, and another hanged, because of the ambiguity around the phrase, "let him have it"](https://en.wikipedia.org/wiki/Derek_Bentley_case).
 [Seemingly ordinary](https://apnews.com/article/42939a95e2b694ec6262ff5949d910c9) [hand signs](https://thehill.com/blogs/blog-briefing-room/news/502975-california-man-fired-over-alleged-white-power-sign-says-he-was) can be interpreted as grave threats or insults.
-[The first Indian war of independence was fought in part because of a misunderstanding about the type of grease used on bullets](https://en.wikipedia.org/wiki/Bite_the_cartridge).
+[The first major Indian uprising against the British was fought in part because of a misunderstanding about the type of grease used on bullets](https://en.wikipedia.org/wiki/Bite_the_cartridge).
 [A Swedish diplomat set back relations with Iran by exposing the soles of his shoes](https://metro.co.uk/2012/12/10/swedish-diplomat-insults-irans-president-by-exposing-soles-of-his-shoes-3310937/).
 [H&M faced massive backlash for putting a t-shirt with a racially insensitive slogan on a black child](https://www.nytimes.com/2018/01/08/business/hm-monkey.html); in almost any other context, the problematic slogan would be a perfectly innocuous phrase.
 
