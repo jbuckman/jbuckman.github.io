@@ -64,7 +64,7 @@ And it, too, is wrong.
 The truth is, this "bloodthirstiness" is not an issue that needs to be fixed.
 **It is a desired behavior.**
 
-Consider what it would mean to implement a chatbot that is *never* bloodthirsty.
+Let's say we want to implement a chatbot that is *never* bloodthirsty.
 Clearly, the approach used to generate the snippet in the Reddit post falls short of this goal.
 What is to blame for this failure? In other words, where should we intervene?
 I argue that the blame for this undesirable behavior does not lie with the GPT-3 model, not the data, not the algorithm.
