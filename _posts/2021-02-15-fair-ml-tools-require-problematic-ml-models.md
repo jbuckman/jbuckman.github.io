@@ -198,6 +198,8 @@ I am engaging in good faith, and would love to have further good-faith discussio
 
 Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.com/jacobmbuckman) with any feedback or questions!
 
+*Many thanks to Julius Adebayo and Carles Gelada for giving me feedback on drafts of this post.*
+
 ---
 
 [^0]: Last year, there was a big, heated debate in the community over whether bias stems *just* from data, or *both* from data and algorithms. For the point I am making in this post, it does not matter which stance you take. I beg readers to please not derail discussion of my argument into a rehash of that debate.
