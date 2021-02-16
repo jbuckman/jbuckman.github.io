@@ -118,8 +118,7 @@ It was widely agreed that this was inappropriate, and that it caused significant
 Imagine training a language model on a dataset which has been completely and thoroughly scrubbed of racism, and setting up a chatbot which uses that model.
 Sometimes, users will tell the model stories about their children; the chatbot responds with a context-appropriate compliment.
 It seems reasonable that the chatbot might at some point describe a black child using the slogan from the t-shirt (which on the surface seems like a perfectly innocuous phrase).
-To avoid this, our chatbot needs to have access to a strong model of racism, so it can identify and avoid causing harm in this ways.[^3]
-
+To avoid this, our chatbot needs to have access to a strong model of racism, so it can identify it, and avoid causing harm in this way.[^3]
 
 #### Bottom Line
 
