@@ -135,8 +135,8 @@ And so on.
 The upshot is that ignorance is not sufficient for harm prevention.
 There are many ways that text can cause harm, and even if a chatbot has never explicitly seen offensive writing, it is almost inevitable that it eventually will produce some.
 
-Sure, maybe we could hard-code our chatbot to avoid that one special case.
-But what about the rest of the examples above?
+Sure, maybe we could hard-code our chatbot to avoid these few special cases.
+But this was just a small sample. What about everything else?
 We can't hard-code everything.
 Language is too broad in its scope, and cultural norms too subtle and varied to police effectively.
 (Not to mention that they change over time!)
