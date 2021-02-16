@@ -110,7 +110,7 @@ This is the only way to guarantee that those biases are not present.
 ---
 
 Communication -- linguistic, verbal, visual -- is in many ways the greatest accomplishment of the human race.
-But the other side of the coin is that it has the potential to cause harm in myriad subtle ways.
+But the other side of the coin is that many subtle expressions have the potential to cause dramatic harm.
 History is rife with examples.
 
 A few years ago, [H&M faced massive backlash for putting a t-shirt with a racially insensitive slogan on a black child](https://www.nytimes.com/2018/01/08/business/hm-monkey.html); in almost any other context, the problematic slogan would be a perfectly innocuous phrase.
