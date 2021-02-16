@@ -57,14 +57,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="186" />
-          <entry key="md" value="117353" />
+          <entry key="md" value="117380" />
           <entry key="yml" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="186" />
-          <entry key="Markdown" value="117353" />
+          <entry key="Markdown" value="117380" />
           <entry key="YAML" value="39" />
         </counts>
       </usages-collector>
@@ -76,8 +76,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2021-02-15-fair-ml-tools-require-problematic-ml-models.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="146">
-                <caret line="93" column="93" selection-start-line="93" selection-start-column="93" selection-end-line="93" selection-end-column="93" />
+              <first_editor relative-caret-position="211">
+                <caret line="120" column="77" selection-start-line="120" selection-start-column="77" selection-end-line="120" selection-end-column="77" />
               </first_editor>
               <second_editor />
             </state>
@@ -88,7 +88,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>(those trained on $</find>
       <find>bayes'</find>
       <find>We will use We</find>
       <find>from now on</find>
@@ -118,6 +117,7 @@
       <find>lobotomize</find>
       <find>identify it</find>
       <find>thanks</find>
+      <find>deployed</find>
     </findStrings>
     <replaceStrings>
       <replace>static/img</replace>
@@ -530,8 +530,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2021-02-15-fair-ml-tools-require-problematic-ml-models.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="146">
-            <caret line="93" column="93" selection-start-line="93" selection-start-column="93" selection-end-line="93" selection-end-column="93" />
+          <first_editor relative-caret-position="211">
+            <caret line="120" column="77" selection-start-line="120" selection-start-column="77" selection-end-line="120" selection-end-column="77" />
           </first_editor>
           <second_editor />
         </state>

@@ -118,7 +118,7 @@ Imagine training a language model on a dataset which has been completely and tho
 Sometimes, users will tell the model stories about their children; the chatbot responds with a context-appropriate compliment.
 Very wholesome!
 Maybe it will describe one particularly brave child as "the fiercest lion on the savannah".
-Does it not seem reasonable that the chatbot might, at some point, describe a black child as "the coolest monkey in the jungle"?
+Does it not seem reasonable that the chatbot, having never seen racism, might at some point describe a black child as "the coolest monkey in the jungle"?
 
 [A man was shot, and another hanged, because of the ambiguity around a phrase](https://en.wikipedia.org/wiki/Derek_Bentley_case).
 Does it not seem reasonable that a chatbot trained on bloodthirst-free data might suggest to the man with the gun that he "lets the officer have it"?
