@@ -170,7 +170,8 @@ A model with an understanding of sexism can be turned into a sexist chatbot; a m
 Therefore, it's not appropriate to criticize a model (or those who design/create it) on the basis that it *can* be produce unfair outcomes, when used poorly.
 Instead, we should criticize those who *deploy* models in a way that does not adequately handle societal biases (or those who enable them).[^3]
 There are already many examples of vision models which are worthy targets for this criticism: in the past few years, we have seen people deploy biased vision models which claim to detect criminality, sexuality, and more.
-It's important that we make sure that those who would deploy biased systems based on language models are aware that they cannot do so without consequences.
+Let's continue pushing back against these misuses.
+It's also important that we make sure that those who would deploy biased systems based on language models are aware that they cannot do so without consequences.
 But let's not jump the gun and criticize people for merely studying the models.
 
 It's worth pointing out that this phenomenon -- deciding whether to criticize the new technology, or those who abuse it -- is not unique to machine learning.
