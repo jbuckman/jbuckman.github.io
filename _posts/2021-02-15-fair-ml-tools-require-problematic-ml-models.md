@@ -93,7 +93,7 @@ Much criticism of large language models has centered around this fact, and with 
 A chatbot with real users cannot sometimes say racist things. 
 It is unconscionable to deploy these models on any real-world tasks until these issues are fixed.
 
-It is at this point that my reasoning leads to a perspective which will likely be surprising to most readers; as far as I can tell, my conclusions directly contradict the current consensus of the FATML community.
+It is at this point that my reasoning leads to a perspective which may be surprising to some readers; to a certain degree, my conclusions contradict the consensus opinion of a subset of the FATML community.[^2]
 But these claims follow from the same principles as we've been using throughout this blog post:
 
 **Any chatbot which is never sexist requires a model with an understanding of sexism.**
@@ -113,7 +113,7 @@ It was widely agreed that this was inappropriate, and that it caused significant
 Imagine training a language model on a dataset which has been completely and thoroughly scrubbed of racism, and setting up a chatbot which uses that model.
 Sometimes, users will tell the model stories about their children; the chatbot responds with a context-appropriate compliment.
 It seems reasonable that the chatbot might at some point describe a black child using the slogan from the t-shirt (which on the surface seems like a perfectly innocuous phrase).
-To avoid this, our chatbot needs to have access to a strong model of racism,[^2] so it can identify it, and avoid causing this harm.
+To avoid this, our chatbot needs to have access to a strong model of racism,[^3] so it can identify it, and avoid causing this harm.
 
 Of course, there is a huge question left unanswered: *how do we do it?*
 Let's say someone follows my suggestion, and trains a language model, leaving all the racist data in the train set so that it has a good model of racist dialogue.
@@ -122,12 +122,16 @@ Unfortunately, I of course don't have the complete answer. (It would be ludicrou
 I have some ideas -- for example, the technique I described in the last section (filtering using a racist-primed conditional probability model) is probably worth a shot.
 But I don't claim that idea is necessarily good!
 We still need a lot of careful research from the FATML community to figure out the best way to solve this incredibly important problem.
+In fact, many researchers are already working along the lines I propose here, and are making progress (see, for example, [He He et al 2019](https://arxiv.org/abs/1908.10763)).
 My main hope for this blog post is that it serves as a sort of negative result, ruling out approaches which involve learning unbiased models, and thus freeing up any researchers thinking about that direction to focus on more promising avenues.
 
 Finally, I'll conclude with one last corollary: **every language model which has the potential to be used fairly has the potential to be abused.**
 A model with an understanding of sexism can be turned into a sexist chatbot; a model with an understanding of racism can be turned into a racist chatbot; etc.
 Therefore, it's not appropriate to criticize a model (or those who design/create it) on the basis that it *can* be produce unfair outcomes, when used poorly.
-Instead, we should criticize those who *deploy* models in a way that does not adequately handle societal biases (or those who enable them).[^3]
+Instead, we should criticize those who *deploy* models in a way that does not adequately handle societal biases (or those who enable them).[^4]
+There are already many examples of vision models which are worthy targets for this criticism: in the past few years, we have seen people deploy biased vision models which claim to detect criminality, sexuality, and more.
+It's important that we make sure that those who would deploy biased language models are aware that they cannot do so without consequences.
+But let's not jump the gun.
 
 #### Bottom Line
 
@@ -136,12 +140,15 @@ Naively turning GPT-3 *into* a chatbot results in a bad chatbot, which can say s
 If we want unbiased chatbots, we need research on how to use language models to make unbiased chatbots, *not* attempt to train unbiased language models.
 After all, unbiased language models fundamentally cannot be turned into unbiased chatbots.
 
-This principle can also be stated more generally.
-
+This principle also applies to neural models more generally.
 Real-world tasks can be decomposed into first training a neural model, and then *using* that model to help solve the task.
 This often introduces issues of fairness or bias, which we need to fix before deployment.
 The solution is never "make the neural models worse" -- removing data, adding esoteric constraints, etc.
 Instead, researchers and practicioners should carefully study how the model is being utilized, and engineer the deployment step in a way that shuts down these issues.
+
+All of this to say: know thine enemy.
+We can't prevent what we don't understand.
+And the same is true of neural networks.
 
 ---
 
@@ -151,7 +158,7 @@ Unfortunately, this means that I find myself unavoidably associated with other c
 Therefore, I want to state in no uncertain terms: I wholeheartedly reject these perspectives.
 It is the responsibility of every researcher to ensure that their impact on the world is positive and prosocial.
 I have a deep respect for the goals of the FATML community, and believe that most members are aligned in their pursuit of those goals.
-Although they mean well, they have made a mistake, one that threatens to significantly set back progress towards those goals.
+Although they mean well, some researchers in the community have made a mistake, one that in my view threatens to significantly set back progress towards those goals.
 This blog post is my attempt to remedy that mistake; all criticism should be understood as purely academic.
 I am engaging in good faith, and would love to have further good-faith discussions of these issues with anyone who is interested.
 
@@ -164,5 +171,6 @@ Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.co
 
 [^0]: Last year, there was a big, heated debate in the community over whether bias stems *just* from data, or *both* from data and algorithms. For the point I am making in this post, it does not matter which stance you take. I beg readers to please not derail discussion of my argument into a rehash of that debate.
 [^1]: This, of course, is not the *only* way to fix the problem, or even necessarily the best way. It's just an example.
-[^2]: Sure, we could hard-code this one special case. But we can't hard-code everything. There is ample evidence that hand-engineering is terribly limited in its usefulness; language is best approached in a data-driven way. The only *general* solution is to learn a model of racist speech from data.
-[^3]: The main point I am trying to make here is only that we shouldn't be criticizing the model on the basis that it *could* be abused, we should be criticizing the *party that abused it*...and that only makes sense to do after it has actually been abused. But I don't intend to make broad assertions about who deserves blame if model misuse occurs; that could go a lot of different ways, and is very case-by-case. For example, I would totally approve of criticising someone who owns a potentially-dangerous model, if they give it away to a party that was not sufficiently vetted, who then uses it irresponsibly.
+[^2]: The community is not a monolith, and there are many people who agree with my position, too! I'm also not claiming to be the first person to ever say this stuff. Just a boy with a blog :-)
+[^3]: Sure, we could hard-code this one special case. But we can't hard-code everything. There is ample evidence that hand-engineering is terribly limited in its usefulness; language is best approached in a data-driven way. The only *general* solution is to learn a model of racist speech from data.
+[^4]: The main point I am trying to make here is only that we shouldn't be criticizing the model on the basis that it *could* be abused, we should be criticizing the *party that abused it*...and that only makes sense to do after it has actually been abused. But I don't intend to make broad assertions about who deserves blame if model misuse occurs; that could go a lot of different ways, and is very case-by-case. For example, I would totally approve of criticising someone who owns a potentially-dangerous model, if they give it away to a party that was not sufficiently vetted, who then uses it irresponsibly.
