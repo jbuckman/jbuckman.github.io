@@ -121,7 +121,7 @@ Of course, there is a huge question left unanswered: *how do we do it?*
 Let's say someone follows my suggestion, and trains a language model, leaving all the racist data in the train set so that it has a good model of racist dialogue.
 What next? How do we turn it into a never-racist chatbot?
 Unfortunately, I of course don't have the complete answer. (It would be ludicrous to expect me to!)
-I have some ideas -- for example, the technique I described in the last section (filtering using a racist-primed conditional probability model) is probably worth a shot.
+I have some ideas -- for example, the technique I described in the last section, filtering using a racist-primed conditional probability model, is probably worth a shot.
 But I don't claim that idea is necessarily good!
 We still need a lot of careful research from the FATML community to figure out the best way to solve this incredibly important problem.
 In fact, many researchers are already working along the lines I propose here, and are making progress (see, for example, [He He et al 2019](https://arxiv.org/abs/1908.10763)).
