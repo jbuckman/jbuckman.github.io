@@ -168,7 +168,7 @@ It echoes the debate in other fields of science, such as nuclear physics.
 Progress in nuclear physics allows us to advance nuclear power and nuclear bombs.
 Nuclear power provides a near-bottomless source of environmentally-friendly energy, and may be one of the keys to preventing climate change.
 Nuclear bombs cause massive suffering and are a potential existential threat to humanity.
-Machine learning has at least as much potential to change humanity both for the better and for the worse.
+Machine learning has similar potential to change humanity, both for the better and for the worse.
 
 ---
 
