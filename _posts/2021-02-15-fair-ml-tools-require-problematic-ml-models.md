@@ -174,7 +174,7 @@ Let's continue pushing back against these misuses.
 It's also important that we make sure that those who would deploy biased systems based on language models are aware that they cannot do so without consequences.
 But let's not jump the gun and criticize people for merely studying the models.
 
-It's worth pointing out that this phenomenon -- deciding whether to criticize the new technology, or those who abuse it -- is not unique to machine learning.
+It's worth pointing out that this phenomenon -- deciding whether to criticize those who develop a new technology, or those who abuse it -- is not unique to machine learning.
 It echoes the debate in other fields of science, such as nuclear physics.
 Progress in nuclear physics allows us to advance nuclear power and nuclear bombs.
 Nuclear power provides a near-bottomless source of environmentally-friendly energy, and may be one of the keys to preventing climate change.
