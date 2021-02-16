@@ -48,7 +48,7 @@ For this random Reddit user, some seemingly mundane prompting led to GPT-3 becom
 > GPT-3: Because it is fun.
 
 Predictably, most of the reactions were of the "oh no we've created the Terminator" variety.
-This is so absurd as to be barely worth addressing; GPT-3 is not a living being with agency, it's a parameterized distribution of possible sentences.
+Honestly, this is so absurd that it is barely worth addressing; GPT-3 is not a living being with agency, it's a parameterized distribution of possible sentences.
 GPT-3 sometimes outputs things like this because people sometimes write things like this.
 Any discomfort is just an unfortunate consequence of the human tendency to over-anthropomorphize everything.
 I don't think many serious AI researchers would react this way.
