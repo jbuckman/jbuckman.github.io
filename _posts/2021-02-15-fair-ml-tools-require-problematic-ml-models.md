@@ -123,7 +123,7 @@ To avoid this, our chatbot needs to have access to a strong model of racism, so 
 #### Bottom Line
 
 GPT-3 is not a chatbot, GPT-3 is a language model.
-Naively turning GPT-3 *into* a chatbot results in a bad chatbot; many criticisms of GPT-3 are actually criticisms of this "naive GPT-3 chatbot".
+Naively turning GPT-3 *into* a chatbot results in a bad chatbot, which might say some truly harmful stuff; many criticisms of GPT-3 are actually criticisms of this "naive GPT-3 chatbot".
 If we want unbiased chatbots, we need research on how to use language models to make unbiased chatbots, *not* attempt to train language models that don't learn biases.
 
 This principle can also be stated more generally.
