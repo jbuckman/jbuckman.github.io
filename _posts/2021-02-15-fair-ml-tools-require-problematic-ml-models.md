@@ -152,7 +152,7 @@ What next? How do we turn it into a never-racist chatbot?
 Unfortunately, I don't have the complete answer.
 Given that this is the key goal of a whole subfield of ML, it would be ludicrous to expect otherwise!
 However, the idea that it might be possible is not unpopular; many researchers in the FATML community are already working along these lines (see, for example, [He et al 2019](https://arxiv.org/abs/1908.10763)).
-My main hope for this blog post is that it serves as a sort of negative result, ruling out approaches which involve learning unbiased models, and thus freeing up any researchers thinking about that direction to focus on more promising avenues.
+My main hope for this blog post is that it serves as a sort of negative result, ruling out approaches which involve learning unbiased models, and thus freeing up any researchers currently thinking about that direction to focus on more promising avenues.
 
 With that said, let me share a couple of high-level ideas, just to give a sense of the solutions that I think might be possible.
 One example is the technique I described in the last section: filtering using a racist-primed conditional probability model.
