@@ -163,6 +163,8 @@ There are already many examples of vision models which are worthy targets for th
 It's important that we make sure that those who would deploy biased language models are aware that they cannot do so without consequences.
 But let's not jump the gun and criticize people for merely studying the models.
 
+---
+
 #### Bottom Line
 
 GPT-3 is not a chatbot, GPT-3 is a language model.
