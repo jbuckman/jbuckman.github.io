@@ -121,7 +121,7 @@ Maybe it will describe one particularly brave child as "the fiercest lion on the
 Does it not seem reasonable that the chatbot, having never seen racism, might at some point describe a black child as "the coolest monkey in the jungle"?
 
 [A man was shot, and another hanged, because of the ambiguity around a phrase](https://en.wikipedia.org/wiki/Derek_Bentley_case).
-Does it not seem reasonable that a chatbot trained on bloodthirst-free data might suggest to the man with the gun that he "lets the officer have it"?
+Does it not seem reasonable that a chatbot trained on bloodthirst-free data might suggest to the man with the gun that he "let the officer have it"?
 
 [Seemingly ordinary](https://apnews.com/article/42939a95e2b694ec6262ff5949d910c9) [hand signs](https://thehill.com/blogs/blog-briefing-room/news/502975-california-man-fired-over-alleged-white-power-sign-says-he-was) can be interpreted as grave threats or insults.
 Does it not seem reasonable that a chatbot might use the "V" or "OK" emojis?
