@@ -104,8 +104,8 @@ But these claims follow from the same principles as we've been using throughout 
 **Any chatbot which is never racist requires a model with an understanding of racism.**
 
 And so on, for all similar issues of fairness and bias.
-We should not lobotomize GPT-3 (or any other neural model) by removing examples of sexism and racism from its training data.
-In fact, this is directly counterproductive.
+Therefore, we should absolutely *not* lobotomize GPT-3 (or any other neural model) by removing examples of sexism and racism from its training data.
+Doing this is directly counterproductive.
 The more examples of sexism and racism it sees, the better it can model those behaviors, and the more certain we can be that a properly-constructed chatbot will avoid them.
 When researchers think about what biases are present in the data, we should do so with the goal of identifying societal biases that are *not* present in the data, and *collecting data that informs the model about them*.
 Then, we utilize the model in a way that prevents these biases from creeping into our application's output.
