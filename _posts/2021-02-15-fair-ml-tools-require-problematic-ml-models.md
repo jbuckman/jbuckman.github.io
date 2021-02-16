@@ -69,7 +69,7 @@ Clearly, the approach used to generate the snippet in the Reddit post falls shor
 What is to blame for this failure? In other words, where should we intervene?
 I argue that the blame for this undesirable behavior does not lie with the GPT-3 model: neither the data, nor the learning algorithm.
 I blame the *procedure by which we sample the text*.
-(For the Reddit post, it was simply sampling from GPT-3's distribution over all sentences.)
+Which, for the Reddit post, was simply sampling from GPT-3's distribution over all sentences.
 
 To make my point concrete, here's an example of a way to intervene on the sampling procedure to fix the issue.[^1]
 We prime GPT-3 with a specific "bloodthirsty context", in order to get a model of language *conditional on being bloodthirsty*.
