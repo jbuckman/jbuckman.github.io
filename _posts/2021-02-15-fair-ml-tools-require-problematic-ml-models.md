@@ -138,7 +138,7 @@ It is the responsibility of every researcher to ensure that their impact on the 
 I have a deep respect for the goals of the FATML community, and believe that most members are aligned in their pursuit of those goals.
 Although they mean well, they have made a mistake, one that threatens to significantly set back progress towards those goals.
 This blog post is my attempt to remedy that mistake; all criticism should be understood as purely academic.
-I am engaging in good faith, and would love to have further good-faith discussions of these issues with anyone who disagrees with the ideas I have put forth here.
+I am engaging in good faith, and would love to have further good-faith discussions of these issues with anyone who is interested.
 
 
 ---
