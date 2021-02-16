@@ -101,7 +101,6 @@ My conclusions directly contradict the current consensus of the FATML community.
 But these claims follow from the same principles as we've been using throughout this blog post:
 
 **Any chatbot which is never sexist requires a model with an understanding of sexism.**
-
 **Any chatbot which is never racist requires a model with an understanding of racism.**
 
 And so on, for all similar issues of fairness and bias.
