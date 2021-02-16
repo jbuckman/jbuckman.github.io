@@ -88,8 +88,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2021-02-15-fair-ml-tools-require-problematic-ml-models.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="412">
-                <caret line="158" column="299" selection-start-line="158" selection-start-column="299" selection-end-line="158" selection-end-column="299" />
+              <first_editor relative-caret-position="345">
+                <caret line="112" selection-start-line="112" selection-end-line="112" />
               </first_editor>
               <second_editor />
             </state>
@@ -542,8 +542,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2021-02-15-fair-ml-tools-require-problematic-ml-models.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="412">
-            <caret line="158" column="299" selection-start-line="158" selection-start-column="299" selection-end-line="158" selection-end-column="299" />
+          <first_editor relative-caret-position="345">
+            <caret line="112" selection-start-line="112" selection-end-line="112" />
           </first_editor>
           <second_editor />
         </state>

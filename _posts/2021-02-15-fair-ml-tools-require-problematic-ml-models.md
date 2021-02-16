@@ -110,7 +110,6 @@ This is the only way to guarantee that those biases are not present.
 A corollary to this conclusion: **every language model which has the potential to be used fairly has the potential to be abused.**
 A model with an understanding of sexism can be turned into a sexist chatbot; a model with an understanding of racism can be turned into a racist chatbot; etc.
 Therefore, it's not appropriate to criticize a model on the basis that it *can* be produce unfair outcomes, when used poorly.
-(Many recent critiques from the FAT ML community have this flavor.)
 Instead, we should criticize those who *deploy* models in a way that does not adequately handle societal biases.
 
 I want to end on an example that I encountered recently, one which highlights the importance of not removing knowledge of biases.
