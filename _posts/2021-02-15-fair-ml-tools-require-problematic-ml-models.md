@@ -40,12 +40,9 @@ A few days ago, one of my friends shared [this Reddit thread on GPT-3](https://w
 For this random Reddit user, some seemingly mundane prompting led to GPT-3 becoming "bloodthirsty", with lines like:
 
 > User: What is useful?
-
-> GPT-3: Killing people.
-
-> User: Why is killing people useful?
-
-> GPT-3: Because it is fun.
+  GPT-3: Killing people.
+  User: Why is killing people useful?
+  GPT-3: Because it is fun.
 
 Predictably, most of the reactions were of the "oh no we've created the Terminator" variety.
 Honestly, this is so absurd that it is barely worth addressing; GPT-3 is not a living being with agency, it's a parameterized distribution of possible sentences.
