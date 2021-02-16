@@ -198,7 +198,7 @@ I am engaging in good faith, and would love to have further good-faith discussio
 
 Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.com/jacobmbuckman) with any feedback or questions!
 
-*Many thanks to Julius Adebayo and Carles Gelada for giving me feedback on drafts of this post.*
+*Many thanks to Julius Adebayo and Carles Gelada for all of their help and feedback when writing this post.*
 
 ---
 
