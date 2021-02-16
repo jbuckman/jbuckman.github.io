@@ -121,7 +121,7 @@ Instead, we should criticize those who *deploy* models in a way that does not ad
 
 GPT-3 is not a chatbot, GPT-3 is a language model.
 Naively turning GPT-3 *into* a chatbot results in a bad chatbot; many criticisms of GPT-3 are actually criticisms of this "naive GPT-3 chatbot".
-To fix this, we need research on how to use language models to make unbiased chatbots, *not* research on how to lobotomize language models.
+If we want unbiased chatbots, we need research on how to use language models to make unbiased chatbots, *not* research on how to lobotomize language models.
 
 This principle can also be stated more generally.
 
