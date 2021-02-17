@@ -160,7 +160,7 @@ Due to the few-shot capabilities of large language models like GPT-3, such a con
 Another approach we might consider derives from reinforcement learning.
 We can place a reward model atop our language model, learning from human feedback what is and is not appropriate.
 Once again, the power of the underlying language model means that the reward signal can be well-captured in a small number of feedback samples.
-This has the added advantage of naturally updating our chatbot to as cultural norms change through time.
+This has the added advantage of naturally updating our chatbot as cultural norms change through time.
 Plus, many applications of language models will likely require reinforcement learning from human preferences anyways; this paradigm for preventing bias would naturally fit into those workflows.
 
 ---
