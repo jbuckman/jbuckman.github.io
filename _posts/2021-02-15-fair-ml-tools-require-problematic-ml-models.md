@@ -140,7 +140,7 @@ But this was just a small sample. What about everything else?
 We can't hard-code everything.
 Language is too broad in its scope, and cultural norms too subtle and varied to police effectively.
 (Not to mention that they change over time!)
-The last few years provide ample evidence that hand-engineering is terribly limited in its usefulness, and that language is best approached in a data-driven way.
+The last few years of progress in deep learning provide ample evidence that hand-engineering is terribly limited in its usefulness, and that language is best approached in a data-driven way.
 The only real solution is for our chatbot to have access to a strong model of harmful language, so it can identify why that description would be inappropriate, and avoid causing this harm.
 
 ---
