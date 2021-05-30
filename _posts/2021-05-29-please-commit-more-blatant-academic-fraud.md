@@ -24,7 +24,7 @@ There is plausible deniability -- oh, I simply forgot to include those seeds, I 
 It's difficult to bring ourselves to punish a well-meaning grad student for something that could plausibly have been a simple mistake, so we let these things slide, and slide and slide until they have become normalized.
 When standards are low, it's to no individual's advantage to hold themselves to a higher bar.
 Newcomers to the field see these things, they learn, and they imitate.
-Often, it is directly encouraged by mentors.
+Often, they are directly encouraged by mentors.
 A graduate student who publishes three papers a year is every professor's dream, so strategies for maximal paper output become lab culture.
 And when virtually every lab endorses a behavior, it becomes integrated into research standards of field.
 
