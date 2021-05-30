@@ -87,6 +87,8 @@ And when we do, the secrets to artificial intelligence will be waiting.
 
 Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.com/jacobmbuckman) with any feedback or questions!
 
+*Many thanks to Nitarshan Rajkumar for all of his help and feedback when writing this post.*
+
 ---
 
 [^0]: I am. [This paper](https://www.aclweb.org/anthology/D16-1254.pdf) is bullshit, [this paper](https://proceedings.neurips.cc/paper/2018/hash/f02208a057804ee16ac72ff4d3cec53b-Abstract.html) (a NeurIPS oral) is bullshit, [this paper](https://openreview.net/pdf?id=S18Su--CW) is complete bullshit, [this paper](http://proceedings.mlr.press/v97/gelada19a/gelada19a.pdf) is mostly good science but also has a sprinkling of bullshit. Apologies to my co-authors.
