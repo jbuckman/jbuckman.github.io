@@ -23,13 +23,13 @@
           <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="3" />
-          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="22" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -38,7 +38,7 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="22" />
           <entry key="jpg" value="4" />
-          <entry key="md" value="54" />
+          <entry key="md" value="56" />
           <entry key="png" value="5" />
           <entry key="yml" value="3" />
         </counts>
@@ -47,7 +47,7 @@
         <counts>
           <entry key="HTML" value="22" />
           <entry key="Image" value="9" />
-          <entry key="Markdown" value="54" />
+          <entry key="Markdown" value="56" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="YAML" value="3" />
         </counts>
@@ -55,14 +55,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="186" />
-          <entry key="md" value="117699" />
+          <entry key="md" value="132257" />
           <entry key="yml" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="186" />
-          <entry key="Markdown" value="117699" />
+          <entry key="Markdown" value="132257" />
           <entry key="YAML" value="39" />
         </counts>
       </usages-collector>
@@ -70,12 +70,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2021-02-15-fair-ml-tools-require-problematic-ml-models.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="193">
-                <caret line="162" column="62" selection-start-line="162" selection-start-column="62" selection-end-line="162" selection-end-column="62" />
+              <first_editor relative-caret-position="742">
+                <caret line="223" column="20" lean-forward="true" selection-start-line="223" selection-end-line="224" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_drafts/2021-05-29-please-commit-more-academic-fraud.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="84">
+                <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
               </first_editor>
               <second_editor />
             </state>
@@ -172,6 +184,8 @@
         <option value="$PROJECT_DIR$/_posts/2021-02-15-fair-ai-tools-require-problematic-models.md" />
         <option value="$PROJECT_DIR$/_posts/2021-02-15-fair-ai-tools-require-problematic-ai-models.md" />
         <option value="$PROJECT_DIR$/_posts/2021-02-15-fair-ml-tools-require-problematic-ml-models.md" />
+        <option value="$PROJECT_DIR$/_drafts/2021-05-29-please-commit-explicit-academic-fraud.md" />
+        <option value="$PROJECT_DIR$/_drafts/2021-05-29-please-commit-more-academic-fraud.md" />
       </list>
     </option>
   </component>
@@ -191,6 +205,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,13 +216,17 @@
             <path>
               <item name="jbuckman.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="jbuckman.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_drafts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jbuckman.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jbuckman.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="_posts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,14 +237,14 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_drafts" />
+      <recent name="$PROJECT_DIR$/_posts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_posts" />
       <recent name="$PROJECT_DIR$/_drafts" />
       <recent name="$PROJECT_DIR$/static/pdf" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/_posts" />
-      <recent name="$PROJECT_DIR$/_drafts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -255,8 +274,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31688127" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3211731" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -270,7 +290,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3759036" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.20120482" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -310,16 +330,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../personal-website/README.md" />
-    <entry file="file://$PROJECT_DIR$/_posts/2018-09-17-tensorflow-the-confusing-parts-2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="105">
-            <caret line="7" column="82" selection-start-line="7" selection-start-column="82" selection-end-line="7" selection-end-column="82" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2018-08-05-graph-inspection.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -524,11 +534,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-09-17-tensorflow-the-confusing-parts-2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="154">
+            <caret line="7" column="82" selection-start-line="7" selection-start-column="82" selection-end-line="7" selection-end-column="82" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2021-02-15-fair-ml-tools-require-problematic-ml-models.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="193">
-            <caret line="162" column="62" selection-start-line="162" selection-start-column="62" selection-end-line="162" selection-end-column="62" />
+          <first_editor relative-caret-position="742">
+            <caret line="223" column="20" lean-forward="true" selection-start-line="223" selection-end-line="224" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_drafts/2021-05-29-please-commit-more-academic-fraud.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="84">
+            <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
           </first_editor>
           <second_editor />
         </state>
