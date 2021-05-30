@@ -69,14 +69,22 @@ Undermining the credibility of computer science research is the best possible ou
 Widespread fraud would force us to re-strengthen our community's academic norms, transforming the way we do research, and improving our collective ability to progress humanity's knowledge.
 
 So this is a call to action: please commit more academic fraud.
+
 *Blatant* fraud.
 *Aggressive* fraud.
+
 Form more collusion rings!
+
 Blackmail your reviewers, bribe your ACs!
+
 Fudge your results -- or fabricate them entirely!
+
 (But don't skimp on the writing: your paper needs to be written in perfect academic English, formatted nicely, and tell an intuitive, plausible-sounding story.)
+
 Let's make explicit academic fraud commonplace enough to cast doubt into the minds of every scientist reading an AI paper.
 Overall, science will benefit.
+
+---
 
 Together, we can force the community to reckon with its own shortcomings, and develop stronger, better, and more scientific norms.
 It is a harsh treatment, to be sure -- a chemotherapy regimen that risks destroying us entirely.
