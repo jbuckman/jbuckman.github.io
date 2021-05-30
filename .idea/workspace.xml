@@ -4,7 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/static/img/cfoorl/suboptpess.png" mnemonic="6" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46e852db-af01-4e65-9a99-4e29b6234bf4" name="Default Changelist" comment="" />
+    <list default="true" id="46e852db-af01-4e65-9a99-4e29b6234bf4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/_posts/2021-05-29-please-commit-more-blatant-academic-fraud.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2021-05-29-please-commit-more-blatant-academic-fraud.md" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +40,7 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="22" />
           <entry key="jpg" value="4" />
-          <entry key="md" value="56" />
+          <entry key="md" value="57" />
           <entry key="png" value="5" />
           <entry key="yml" value="3" />
         </counts>
@@ -47,7 +49,7 @@
         <counts>
           <entry key="HTML" value="22" />
           <entry key="Image" value="9" />
-          <entry key="Markdown" value="56" />
+          <entry key="Markdown" value="57" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="YAML" value="3" />
         </counts>
@@ -55,14 +57,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="186" />
-          <entry key="md" value="132257" />
+          <entry key="md" value="132262" />
           <entry key="yml" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="186" />
-          <entry key="Markdown" value="132257" />
+          <entry key="Markdown" value="132262" />
           <entry key="YAML" value="39" />
         </counts>
       </usages-collector>
@@ -83,11 +85,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_drafts/2021-05-29-please-commit-more-academic-fraud.md">
+        <entry file="file://$PROJECT_DIR$/_posts/2021-05-29-please-commit-more-blatant-academic-fraud.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="84">
-                <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+              <first_editor relative-caret-position="88">
+                <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
               </first_editor>
               <second_editor />
             </state>
@@ -186,6 +188,7 @@
         <option value="$PROJECT_DIR$/_posts/2021-02-15-fair-ml-tools-require-problematic-ml-models.md" />
         <option value="$PROJECT_DIR$/_drafts/2021-05-29-please-commit-explicit-academic-fraud.md" />
         <option value="$PROJECT_DIR$/_drafts/2021-05-29-please-commit-more-academic-fraud.md" />
+        <option value="$PROJECT_DIR$/_posts/2021-05-29-please-commit-more-blatant-academic-fraud.md" />
       </list>
     </option>
   </component>
@@ -276,7 +279,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3211731" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3211731" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -439,16 +442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_drafts/2020-09-18-neural-tangent-kernel-answers-questions.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="206">
-            <caret line="64" column="16" lean-forward="true" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/img/cfoorl/expdata.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -554,11 +547,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_drafts/2021-05-29-please-commit-more-academic-fraud.md">
+    <entry file="file://$PROJECT_DIR$/_drafts/2020-09-18-neural-tangent-kernel-answers-questions.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="84">
-            <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <first_editor relative-caret-position="132">
+            <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-end-line="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2021-05-29-please-commit-more-blatant-academic-fraud.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="88">
+            <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
           </first_editor>
           <second_editor />
         </state>
