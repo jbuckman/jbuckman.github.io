@@ -16,7 +16,7 @@ Running a big hyperparameter sweep on your proposed approach but using the defau
 Cherry-picking examples where your model looks good, or cherry-picking whole datasets to test on, where you've confirmed your model's advantage.
 Making up new problem settings, new datasets, new objectives in order to claim victory on an empty playing field.
 Proclaiming that your work is a "promising first step" in your introduction, despite being fully aware that nobody will ever build on it.
-Submitting a paper to a conference because it's got a decent shot at acceptance, and you don't want the time spent on it to be wasted, even though you've since realized that the core ideas aren't quite correct.
+Submitting a paper to a conference because it's got a decent shot at acceptance and you don't want the time you spent on it go to waste, even though you've since realized that the core ideas aren't quite correct.
 
 The problem with this sort of low-key fraud is that it's insidious, it's subtle.
 In many ways, a fraudulent action is indistinguishable from a simple mistake.
