@@ -72,15 +72,10 @@ So this is a call to action: **please commit more academic fraud**.
 
 *Blatant* fraud.
 *Aggressive* fraud.
-
 Form more collusion rings!
-
 Blackmail your reviewers, bribe your ACs!
-
 Fudge your results -- or fabricate them entirely!
-
 (But don't skimp on the writing: your paper needs to be written in perfect academic English, formatted nicely, and tell an intuitive, plausible-sounding story.)
-
 Let's make explicit academic fraud commonplace enough to cast doubt into the minds of every scientist reading an AI paper.
 Overall, science will benefit.
 
