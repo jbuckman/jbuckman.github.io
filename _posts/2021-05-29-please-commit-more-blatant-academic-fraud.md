@@ -63,7 +63,7 @@ And we must ensure that explicit suggestions to modify one's science in the serv
 
 Prof. Littman says that collusion rings threaten the integrity of computer science research.
 I agree with him.
-*And I am looking forward to the day it makes good on that threat.*
+*And I am looking forward to the day they makes good on that threat.*
 Undermining the credibility of computer science research is the best possible outcome for the field, since the institution in its current form does not deserve the credibility that it has.
 Widespread fraud would force us to re-strengthen our community's academic norms, transforming the way we do research, and improving our collective ability to progress humanity's knowledge.
 
