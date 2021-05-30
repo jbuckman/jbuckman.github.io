@@ -74,6 +74,8 @@ Form more collusion rings!
 Blackmail your reviewers, bribe your ACs!
 Fudge your results -- or fabricate them entirely!
 (But don't skimp on the writing: your paper needs to be written in perfect academic English, formatted nicely, and tell a beautiful, plausible story.)
+Let's make explicit academic fraud commonplace enough to cast doubt into the minds of every scientist reading an AI paper.
+Overall, science will benefit.
 
 Together, we can force the community to reckon with its own shortcomings, and develop stronger, better, and more scientific norms.
 It is a harsh treatment, to be sure -- a chemotherapy regimen that risks destroying us entirely.
