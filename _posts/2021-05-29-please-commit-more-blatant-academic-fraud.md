@@ -54,7 +54,7 @@ The most notable thing about the collusion ring is not that it was more fraudule
 
 This surfaces the fundamental tension between good science and career progression buried deep at the heart of academia.
 Most researchers are to some extent "career researchers", motivated by the power and prestige that rewards those who excel in the academic system, rather than idealistic pursuit of scientific truth.
-Well-respected senior figures are no exception. (In fact, due to selection effects, I suspect most are even more career-motivated than is typical.)
+Well-respected senior figures are no exception to this. (In fact, due to selection effects, I suspect most are even more career-motivated than is typical.)
 We must come to terms with the fact that, since the incentives for career progression are not perfectly aligned with good science, almost any action motivated by career progression will interfere with your ability to discover a truth about reality.
 We must encourage a norm of introspection, of probing one's own motivations, where any non-scientific benefits are viewed with the deepest suspicion.
 And we must ensure that explicit suggestions to modify one's science in the service of one's career -- "you need to do X to be published", "you need to publish Y to graduate", "you need to avoid criticizing Z to get hired" -- carry social penalties as severe as a suggestion of plagiarism or fraud.
