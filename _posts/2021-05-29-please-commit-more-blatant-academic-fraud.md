@@ -76,7 +76,7 @@ Fudge your results -- or fabricate them entirely!
 (But don't skimp on the writing: your paper needs to be written in perfect academic English, formatted nicely, and tell a beautiful, plausible story.)
 
 Together, we can force the community to reckon with its own shortcomings, and develop stronger, better, and more scientific norms.
-It is a harsh treatment, to be sure -- a chemotherapy treatment that risks destroying us entirely.
+It is a harsh treatment, to be sure -- a chemotherapy regimen that risks destroying us entirely.
 But this is our best shot at destroying the cancer that has infected our community, condemning us to a slow death.
 I believe with all my heart that we can make it through this challenge and emerge stronger than ever.
 And when we do, the secrets to artificial intelligence will be waiting.
