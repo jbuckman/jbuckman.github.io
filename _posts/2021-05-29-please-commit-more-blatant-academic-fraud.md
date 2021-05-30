@@ -68,8 +68,8 @@ Undermining the credibility of computer science research is the best possible ou
 Widespread fraud would force us to re-strengthen our community's academic norms, transforming the way we do research, and improving our collective ability to progress humanity's knowledge.
 
 So this is a call to action: please commit more academic fraud.[^1]
-**Blatant** fraud.
-**Aggressive** fraud.
+*Blatant* fraud.
+*Aggressive* fraud.
 Form more collusion rings!
 Blackmail your reviewers, bribe your ACs!
 Fudge your results -- or fabricate them entirely!
