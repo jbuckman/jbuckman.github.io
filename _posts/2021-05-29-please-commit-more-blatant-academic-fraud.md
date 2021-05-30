@@ -45,7 +45,7 @@ It would, of course, be quite difficult to actually distinguish the papers publi
 But the mere *possibility* that any given paper was published through fraud forces people to engage more skeptically with *all* published work.
 Readers are forced to act more like reviewers, weighing the evidence presented against their priors, attempting to identify ways in which surprising conclusions could be the result of fraud -- explicit or subtle -- rather than fact.
 People will apply additional scrutiny to deal with explicit forms of fraud like collusion rings, but in doing so will also develop a sensitivity to the more subtle forms of fraud that are already endemic to the community.
-This will, in turn, put pressure on authors to produce work which can withstand such scrutiny; meaningful results obtained without any fraud at all, leading to publications with genuine scientific merit.
+This will, in turn, put pressure on authors to produce work which can withstand such scrutiny; results obtained without any fraud at all, leading to publications with genuine scientific merit.
 
 That same harsh light is also cast on ourselves, on our motivations.
 This situation seems to have evoked in many researchers feelings of empathy.
