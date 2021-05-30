@@ -49,7 +49,8 @@ This will, in turn, put pressure on authors to produce work which can withstand 
 
 That same harsh light is also cast on ourselves, on our motivations.
 This situation seems to have evoked in many researchers feelings of empathy.
-To many, these actions are understandable; such an occurrence was inevitable; everyone does this, just more discreetly.
+These actions are understandable; such an occurrence was inevitable; everyone does this, just more discreetly.
+We are not surprised that people behave unscientifically in order to get their papers published; we are surprised that someone was willing to take it this far.
 The most notable thing about the collusion ring is not that it was more fraudulent than is typical, but that the fraud was more *intentional*.
 
 This surfaces the fundamental tension between good science and career progression buried deep at the heart of academia.
