@@ -26,7 +26,7 @@ When standards are low, it's to no individual's advantage to hold themselves to 
 Newcomers to the field see these things, they learn, and they imitate.
 Often, they are directly encouraged by mentors.
 A graduate student who publishes three papers a year is every professor's dream, so strategies for maximal paper output become lab culture.
-And when virtually every lab endorses a behavior, it becomes integrated into research standards of field.
+And when virtually every lab endorses certain behaviors, they become integral to the research standards of the field.
 
 But worst of all: because everybody is complicit in this subtle fraud, nobody is willing to acknowledge its existence.
 Who would be such a hypocrite as to condemn in others, behaviors they can see clearly in themselves?
