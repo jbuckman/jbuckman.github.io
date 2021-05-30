@@ -67,7 +67,7 @@ I agree with him.
 Undermining the credibility of computer science research is the best possible outcome for the field, since the institution in its current form does not deserve the credibility that it has.
 Widespread fraud would force us to re-strengthen our community's academic norms, transforming the way we do research, and improving our collective ability to progress humanity's knowledge.
 
-So this is a call to action: please commit more academic fraud.[^1]
+So this is a call to action: please commit more academic fraud.
 *Blatant* fraud.
 *Aggressive* fraud.
 Form more collusion rings!
@@ -92,4 +92,3 @@ Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.co
 ---
 
 [^0]: I am. [This paper](https://www.aclweb.org/anthology/D16-1254.pdf) is bullshit, [this paper](https://proceedings.neurips.cc/paper/2018/hash/f02208a057804ee16ac72ff4d3cec53b-Abstract.html) (a NeurIPS oral) is bullshit, [this paper](https://openreview.net/pdf?id=S18Su--CW) is complete bullshit, [this paper](http://proceedings.mlr.press/v97/gelada19a/gelada19a.pdf) is mostly good science but also has a sprinkling of bullshit. Apologies to my co-authors.
-[^1]: I have never committed academic fraud and I do not intend to; just publishing this blog post has tested the limits of my courage. But I hope that there are researchers out there who are braver than I, and I hope that this message can reach them.
