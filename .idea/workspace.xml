@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46e852db-af01-4e65-9a99-4e29b6234bf4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_posts/2021-05-29-please-commit-more-blatant-academic-fraud.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2021-05-29-please-commit-more-blatant-academic-fraud.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +38,7 @@
         <counts>
           <entry key="Gemfile" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="22" />
+          <entry key="html" value="23" />
           <entry key="jpg" value="4" />
           <entry key="md" value="57" />
           <entry key="png" value="5" />
@@ -47,7 +47,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="22" />
+          <entry key="HTML" value="23" />
           <entry key="Image" value="9" />
           <entry key="Markdown" value="57" />
           <entry key="PLAIN_TEXT" value="2" />
@@ -56,14 +56,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="186" />
+          <entry key="html" value="305" />
           <entry key="md" value="133186" />
           <entry key="yml" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="186" />
+          <entry key="HTML" value="305" />
           <entry key="Markdown" value="133186" />
           <entry key="YAML" value="39" />
         </counts>
@@ -72,14 +72,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2021-05-29-please-commit-more-blatant-academic-fraud.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="223">
+              <first_editor relative-caret-position="365">
                 <caret line="78" selection-start-line="78" selection-end-line="78" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="295" selection-start-line="9" selection-start-column="295" selection-end-line="9" selection-end-column="295" />
             </state>
           </provider>
         </entry>
@@ -154,7 +163,6 @@
         <option value="$PROJECT_DIR$/_posts/2020-01-17-bnns-make-no-sense.md" />
         <option value="$PROJECT_DIR$/_posts/2020-01-17-a-sober-look-at-bayesian-neural-networks.md" />
         <option value="$PROJECT_DIR$/_layouts/post.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/_drafts/2020-08-22-rethinking-the-taxonomy-of-uncertainties.md" />
         <option value="$PROJECT_DIR$/_drafts/2020-09-18-questions-about-ntk.md" />
         <option value="$PROJECT_DIR$/_drafts/2020-09-18-neural-tangent-kernel-answers-questions.md" />
@@ -177,6 +185,7 @@
         <option value="$PROJECT_DIR$/_drafts/2021-05-29-please-commit-explicit-academic-fraud.md" />
         <option value="$PROJECT_DIR$/_drafts/2021-05-29-please-commit-more-academic-fraud.md" />
         <option value="$PROJECT_DIR$/_posts/2021-05-29-please-commit-more-blatant-academic-fraud.md" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -208,11 +217,6 @@
               <item name="jbuckman.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="jbuckman.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="_drafts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jbuckman.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbuckman.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="_posts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -267,7 +271,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3211731" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3211731" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -281,7 +285,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.20120482" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.20120482" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -433,13 +437,6 @@
     <entry file="file://$PROJECT_DIR$/static/img/cfoorl/expdata.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -548,10 +545,17 @@
     <entry file="file://$PROJECT_DIR$/_posts/2021-05-29-please-commit-more-blatant-academic-fraud.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="223">
+          <first_editor relative-caret-position="365">
             <caret line="78" selection-start-line="78" selection-end-line="78" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="295" selection-start-line="9" selection-start-column="295" selection-end-line="9" selection-end-column="295" />
         </state>
       </provider>
     </entry>
