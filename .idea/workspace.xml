@@ -76,8 +76,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2021-05-29-please-commit-more-blatant-academic-fraud.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="371">
-                <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+              <first_editor relative-caret-position="223">
+                <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
               </first_editor>
               <second_editor />
             </state>
@@ -88,7 +88,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>nothing more than</find>
       <find>just</find>
       <find>jacob.j</find>
       <find>jacob.jpg</find>
@@ -118,6 +117,7 @@
       <find>even more</find>
       <find>it is di</find>
       <find>outcomes</find>
+      <find>makes good</find>
     </findStrings>
     <replaceStrings>
       <replace>static/img</replace>
@@ -543,8 +543,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2021-05-29-please-commit-more-blatant-academic-fraud.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="371">
-            <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+          <first_editor relative-caret-position="223">
+            <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
           </first_editor>
           <second_editor />
         </state>
