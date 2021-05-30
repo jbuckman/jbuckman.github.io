@@ -4,7 +4,6 @@ title: Please Commit More Blatant Academic Fraud
 tags: ["deep learning", "rant", "peer review"]
 published: true
 mathjax: false
-invisible: true
 ---
 
 This week, I was thrilled to read about [the first well-documented case of explicit academic fraud in the artificial intelligence community](https://cacm.acm.org/magazines/2021/6/252840-collusion-rings-threaten-the-integrity-of-computer-science-research/fulltext#FNA).

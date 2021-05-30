@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46e852db-af01-4e65-9a99-4e29b6234bf4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2021-05-29-please-commit-more-blatant-academic-fraud.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2021-05-29-please-commit-more-blatant-academic-fraud.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,23 +72,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2021-05-29-please-commit-more-blatant-academic-fraud.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="365">
-                <caret line="78" selection-start-line="78" selection-end-line="78" />
+              <first_editor relative-caret-position="371">
+                <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="295" selection-start-line="9" selection-start-column="295" selection-end-line="9" selection-end-column="295" />
             </state>
           </provider>
         </entry>
@@ -184,8 +175,8 @@
         <option value="$PROJECT_DIR$/_posts/2021-02-15-fair-ml-tools-require-problematic-ml-models.md" />
         <option value="$PROJECT_DIR$/_drafts/2021-05-29-please-commit-explicit-academic-fraud.md" />
         <option value="$PROJECT_DIR$/_drafts/2021-05-29-please-commit-more-academic-fraud.md" />
-        <option value="$PROJECT_DIR$/_posts/2021-05-29-please-commit-more-blatant-academic-fraud.md" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/_posts/2021-05-29-please-commit-more-blatant-academic-fraud.md" />
       </list>
     </option>
   </component>
@@ -271,7 +262,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3211731" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3211731" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -285,7 +276,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.20120482" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.20120482" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -542,20 +533,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2021-05-29-please-commit-more-blatant-academic-fraud.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="365">
-            <caret line="78" selection-start-line="78" selection-end-line="78" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="295" selection-start-line="9" selection-start-column="295" selection-end-line="9" selection-end-column="295" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2021-05-29-please-commit-more-blatant-academic-fraud.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="371">
+            <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
