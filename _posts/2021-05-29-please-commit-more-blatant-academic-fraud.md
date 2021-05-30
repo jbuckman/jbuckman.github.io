@@ -11,7 +11,7 @@ This week, I was thrilled to read about [the first well-documented case of expli
 I hope that this is the beginning of a trend, and that other researchers will be inspired by their example and follow up by engaging in even more blatant forms of fraud in the future.
 
 Explicit academic fraud is, of course, the natural extension of the sort of mundane, day-to-day fraud that most academics in our community commit on a regular basis.
-Trying that shiny new algorithm out on a half-dozen seeds, and then only reporting the best few.
+Trying that shiny new algorithm out on a couple dozen seeds, and then only reporting the best few.
 Running a big hyperparameter sweep on your proposed approach but using the defaults for the baseline.
 Cherry-picking examples where your model looks good, or cherry-picking whole datasets to test on, where you've confirmed your model's advantage.
 Making up new problem settings, new datasets, new objectives in order to claim victory on an empty playing field.
