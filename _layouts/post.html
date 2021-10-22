@@ -3,6 +3,16 @@ layout: base
 ---
 
 {% include header.html type="post" %}
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
 {% include mathjax.html %}
 
 <div class="container">
