@@ -2,8 +2,8 @@
 layout: post
 title: Abstraction Enables Thought
 tags: ["science"]
-published: false
-mathjax: false
+published: true
+mathjax: true
 ---
 
 #### *by [Jacob Buckman](https://twitter.com/jacobmbuckman) and [Carles Gelada](https://twitter.com/carlesgelada)*
@@ -42,7 +42,7 @@ Newton famously said, "If I have seen further, it is by standing on the shoulder
 
 Respect for the scientists who have come before us is natural and healthy. But sometimes I feel it goes too far. It would be impossible to progress as scientist without leveraging the good abstractions developed by those who came before us, but recognizing and replacing bad abstractions is an important part of scientific progress also. Newton stood on the shoulders of Descartes, but he had a very different relationship with Aristotle.
 
-Currently, over the course of a scientific education, most time is spent teaching students about *specific* abstractions, which are time-tested and reality-approved. For example, in physics class, we learn about "atoms" and "charge" and "magnetism", and that $F=ma$. But much less time is spent on the meta-question: what is it *about* these ideas that makes them so powerful? How might one have been able to tell, without the benefit of hindsight, which ideas would end up winning?
+Currently, over the course of a scientific education, most time is spent teaching students about *specific* abstractions, which are time-tested and reality-approved. For example, in physics class, we learn about "atoms" and "charge" and "magnetism", and that $$F=ma$$. But much less time is spent on the meta-question: what is it *about* these ideas that makes them so powerful? How might one have been able to tell, without the benefit of hindsight, which ideas would end up winning?
 
 This question is of vital importance to anybody doing scientific research. At the cutting edge, most abstractions are no older than a few decades, and it is not at all obvious which ones will pan out. As a researcher, there are two choices: either choose an existing framework and work within it to derive results, or create a new set of abstractions and demonstrate their usefulness. In both cases, it is crucial to have the ability to distinguish between good abstractions and bad ones.
 
