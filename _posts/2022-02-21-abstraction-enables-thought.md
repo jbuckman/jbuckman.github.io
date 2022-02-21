@@ -56,9 +56,12 @@ I've also found it helpful to think about the propagation of *bad* abstractions.
 
 Of course, just because an abstraction is propagated via one of these methods doesn't *necessarily* mean that it is bad. But it does make it more likely to be bad, due to ["explaining away"](https://www.eecs.qmul.ac.uk/~norman/BBNs/The_notion_of__explaining_away__evidence.htm). If many people are using some abstraction, it is either because it is useful, or for some other reason. If a particular idea clearly propagates due to one of the above reasons, then it is less likely to also be useful.
 
+---
 
 #### Addendum
 In the coming months, I will be writing about some specific abstractions in current ML, both the good and the bad. I'm hoping this post helps to motivate the importance of that type of discussion.[^2]
+
+---
 
 [^1]: This is not an exhaustive list, of course.
 [^2]: I often find myself forced to defend the idea that is ever useful to critique an abstraction *at all*. This tends to derail my specific critiques!
