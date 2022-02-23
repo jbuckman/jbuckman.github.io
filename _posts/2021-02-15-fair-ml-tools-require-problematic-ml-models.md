@@ -126,7 +126,7 @@ Does it not seem reasonable that a chatbot trained on bloodthirst-free data migh
 [Seemingly ordinary](https://apnews.com/article/42939a95e2b694ec6262ff5949d910c9) [hand signs](https://thehill.com/blogs/blog-briefing-room/news/502975-california-man-fired-over-alleged-white-power-sign-says-he-was) can be interpreted as grave threats or insults.
 Does it not seem reasonable that a chatbot might use the "V" or "OK" emojis?
 
-[The first major Indian uprising against the British was fought in part because of a misunderstanding about the type of grease used on bullets](https://en.wikipedia.org/wiki/Bite_the_cartridge).
+[The first major Indian uprising against the British was fought in part because of a misunderstanding about the type of grease used on bullets](https://military-history.fandom.com/wiki/Bite_the_cartridge).
 How will a chatbot know not to suggest that a Muslim order a dish with pork, or describe to a Hindu the delicious taste of beef?
 
 [A Swedish diplomat set back relations with Iran by exposing the soles of his shoes, which is disrespectful in their culture](https://metro.co.uk/2012/12/10/swedish-diplomat-insults-irans-president-by-exposing-soles-of-his-shoes-3310937/).
