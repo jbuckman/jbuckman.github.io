@@ -48,6 +48,8 @@ This question is of vital importance to anybody doing scientific research. At th
 
 How can we do this? I don't have a perfect answer. I don't think any one does. But I do spend a lot of time thinking about it. Personally, the two main heuristics I use are utility and aesthetics. Did this abstraction help me understand an idea? Solve a problem? Explain a concept? Does this abstraction naturally translate into code? Into math? Does this abstraction allow me to describe things cleanly, or does almost every situation require caveats? Does this abstraction categorize things neatly, or are many things difficult to place? I suspect most scientists are primarily guided by these sorts of subjective heuristics.
 
+#### How Bad Abstractions Propagate
+
 I've also found it helpful to think about the propagation of *bad* abstractions. That is -- if some concepts are not useful, why might they still continue to exist? Here are some reasons:[^1]
 
 * **History.** Many ideas are initially developed separately, and it takes some time until the connections between them can be seen. This means that for relatively new ideas, there are often artificial distinctions drawn between fundamentally equivalent concepts. Be suspicious of abstractions that involve superficial distinctions on recent ideas, e.g., "there are three types of X..."
@@ -55,6 +57,16 @@ I've also found it helpful to think about the propagation of *bad* abstractions.
 * **Incentives.** Many incentives exist in academia that encourage niche (i.e. poorly abstracted) knowledge. For example, writing a paper full of impenetrable domain-specific terminology conveys an aura of competence; "inventing" a new sub-field of study helps build an academic brand and curate prestige. In these situations, failing to realize that you have a bad abstraction is incentivized, and you should never underestimate the ability of humans to ignore what is inconvenient. Be suspicious of abstractions that are introduced as a specific special case of a more well-known idea.
 
 Of course, just because an abstraction is propagated via one of these methods doesn't *necessarily* mean that it is bad. But it does make it more likely to be bad, due to ["explaining away"](https://www.eecs.qmul.ac.uk/~norman/BBNs/The_notion_of__explaining_away__evidence.htm). If many people are using some abstraction, it is either because it is useful, or for some other reason. If a particular idea clearly propagates due to one of the above reasons, then it is less likely to also be useful.
+
+#### Lindy Abstractions
+
+Another heuristic that can be helpful in identifying good abstractions is [Lindy's law](https://en.wikipedia.org/wiki/Lindy_effect), which states that a good estimate of the remaining lifespan of a non-perishable item is its past lifespan. In other words, an abstraction that has been around for a long time and seen a lot of use is more likely to continue to stick around than one that is relatively fresh. It's reasonable to focus on learning more time-tested (and battle-tested) abstractions, which are more likely to contain genuinely deep insight.
+
+One major criticism I have of college education was that it is severely lacking in the context required to make these sorts of "Lindyness" judgement calls. In a typical undergraduate lecture, the course material is simply presented as raw fact. I remember one semester going from an algebra lecture to a linguistics lecture to a software engineering lecture; these three classes had roughly the same presentation style and workload, and I was expected to internalize the abstractions in all three. There was no acknowledgement of the fact that one of these classes contained ideas that had been developed over the course of hundreds of years by thousands of people, and formed the backbone of an enormous amount of real-world technology; while another was developed within the last century and only ever used by a handful of academics; and the last was teaching ideas that had been developed only a decade prior by one team at a big tech company.
+
+Once again, the fact that their material is much less proven does not *necessarily* mean that the abstractions presented in the latter two classes are less important. But with the benefit of hindsight, I can now say that in this case, they were; if I could do undergrad again, I would shift most of my time towards subjects like math, whose ideas have proven to be more durable and fundamental. Lindy's law is a good way to predict which ideas these will be.
+
+A final comment: when applying this law, be mindful of scale. We've discussed some abstractions that are ancient and immensely powerful (like counting); many others are more modern (like atoms, random variables, or evolution), but have proven themselves in many different arenas, both theoretically and empircally. Compared to these titans of tried-and-true, there is almost no difference between an idea that was proposed ten years ago and one that was proposed yesterday. So, don't use Lindy's law as carte-blanche justification for the status quo. Invoke it only if the abstraction in question truly deserves it.
 
 ---
 
