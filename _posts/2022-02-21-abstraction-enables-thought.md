@@ -68,6 +68,13 @@ Once again, the fact that their material is much less proven does not *necessari
 
 A final comment: when applying this law, be mindful of scale. We've discussed some abstractions that are ancient and immensely powerful (like counting); many others are more modern (like atoms, random variables, or evolution), but have proven themselves in many different arenas, both theoretically and empircally. Compared to these titans of tried-and-true, there is almost no difference between an idea that was proposed ten years ago and one that was proposed yesterday. So, don't use Lindy's law as carte-blanche justification for the status quo. Invoke it only if the abstraction in question truly deserves it.
 
+### The Social Value of Shared Abstractions
+
+Even if we identify that a particular abstraction is bad, it doesn't mean we should discard it immediately. Communication between individuals is only possible on a substrate of shared abstraction. Even if we have chosen to discard this abstraction as a model of *reality*, it's still worth keeping around as a model of how *other people* think. This will allow you to continue to engage with the community, participate in discussions, and interpret prior literature.
+
+But when ingesting new information, we can get in the habit of mapping from the bad abstraction into a better one, and work with the improved version. If we have made the correct call, we will be rewarded with clearer thinking, deeper insight, and a richer set of connections to other areas. And of course, once we have convinced ourselves of the value of this new way of thinking, we should share our insights with others. Eventually, we will bring the whole community on board.
+
+
 ---
 
 #### Addendum
