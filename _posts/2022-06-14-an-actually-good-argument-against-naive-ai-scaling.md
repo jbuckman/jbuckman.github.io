@@ -1,12 +1,12 @@
 ---
 layout: post
 title: An Actually-Good Argument Against Naive AI Scaling
-tags: ["deep learning", "rant", "peer review"]
+tags: ["deep learning", "scaling", "AGI"]
 published: true
 mathjax: false
 ---
 
-The past few days have seen a back-and-forth between two men with four first names ([Scott Alexander](https://astralcodexten.substack.com/) and [Gary Marcus](https://garymarcus.substack.com/)) on the topic of AI scaling
+The past few days have seen a back-and-forth between [Scott Alexander](https://astralcodexten.substack.com/) and [Gary Marcus](https://garymarcus.substack.com/) on the topic of AI scaling
 ([post1](https://astralcodexten.substack.com/p/my-bet-ai-size-solves-flubs?s=r),
 [post2](https://garymarcus.substack.com/p/what-does-it-mean-when-an-ai-fails?s=r),
 [post3](https://astralcodexten.substack.com/p/somewhat-contra-marcus-on-ai-scaling?s=r),
