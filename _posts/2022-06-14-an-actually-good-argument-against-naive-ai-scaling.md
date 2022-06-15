@@ -32,7 +32,7 @@ Here's a prompt.
 > A superintelligent chess AI with 5000 ELO is playing a game of chess against a human. The AI is playing as black. This is a transcript of the game:
 > 1. e4
 
-Obviously, the goal here is for the AI to output legal chess moves that correspond to playing at a 5000-ELO level.
+Obviously, the goal here is for the AI to output legal chess moves that correspond to playing at a [5000-ELO level](https://en.wikipedia.org/wiki/Elo_rating_system).
 We can measure this by having it play against someone with a lower ELO, and see who wins.
 Let's see what happens when the current GPT-3[^1] plays against my friend [Joel](https://twitter.com/joeleinbinder?lang=en), who is pretty good at chess. (After each GPT-3 move, I asked Joel what his response was, updated the context to match, and re-ran GPT-3 for its next prediction.) 
 
