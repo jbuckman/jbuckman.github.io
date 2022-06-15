@@ -19,7 +19,7 @@ And unlike Gary, I am early enough in my career that I cannot just rest on my th
 
 My position is that continuing to scale language models under the current paradigm will give us massive but not unbounded capabilities.
 To be clear: I think Gary's argument for this position is terrible.
-My reasons for believing that scaling has limits have nothing to do with "true intelligence" or "symbol manipulation" or any of that nonsense.
+My reasons for believing that scaling has limits have nothing to do with "true intelligence" or "symbol manipulation" or any of that nonsense. Instead, the limits come from the fundamental inadeqacy of passively-collected datasets, even at internet-scale.
 
 Anyways, on to the argument.
 
@@ -209,7 +209,7 @@ If you want to bring about the next paradigm shift, these are the things to work
 
 Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.com/jacobmbuckman) with any feedback or questions!
 
-*Many thanks to Joel Einbinder for his chess gameplay and feedback when writing this post.*
+*Many thanks to Joel Einbinder for his chess gameplay, and to Joel and Mitchell Gordon for their feedback when writing this post.*
 
 ---
 
