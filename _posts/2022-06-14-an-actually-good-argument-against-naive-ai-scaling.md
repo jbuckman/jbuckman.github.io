@@ -15,7 +15,7 @@ Specifically, the debate is whether scaled-up language models in the style of GP
 
 Why should you listen to me, a random guy on the internet, rather than one of these well-known public intellectuals?
 Unlike Scott, I have been an active AI researcher for half a decade, and [published many well-cited papers in top AI conferences](https://scholar.google.com/citations?user=IDSGZNYAAAAJ&hl=en&oi=ao).[^0]
-And unlike Dr. Marcus, I am early enough in my career that I cannot just rest on my thought-leader laurels; if I want to be successful, I still need to modify my beliefs in response to evidence, instead of just repeating the same tired talking-points to my established audience.
+And unlike Dr. Marcus, I am early enough in my career that I do not have any attachment to particular positions; if I want to be successful, I still need to modify my beliefs in response to evidence, instead of just repeating the same talking-points to my established audience.
 
 My position is that continuing to scale language models under the current paradigm will give us massive but not unbounded capabilities.
 To be clear: I think Dr. Marcus's argument for this position is terrible.
