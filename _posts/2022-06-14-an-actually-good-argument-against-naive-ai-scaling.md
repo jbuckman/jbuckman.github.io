@@ -18,7 +18,7 @@ Unlike Scott, I have been an active AI researcher for half a decade, and [publis
 And unlike Dr. Marcus, I am early enough in my career that I do not have any attachment to particular positions; if I want to be successful, I still need to modify my beliefs in response to evidence, instead of just repeating the same talking-points to my established audience.
 
 My position is that continuing to scale language models under the current paradigm will give us massive but not unbounded capabilities.
-To be clear: I think Dr. Marcus's argument for this position is terrible.
+To be clear: I think Dr. Marcus's argument for this position is terrible, and [I explain why in this follow-up post](https://jacobbuckman.com/2022-06-15-the-one-where-i-rebut-gary-marcus/).
 My reasons for believing that scaling has limits have nothing to do with "true intelligence" or "symbol manipulation" or any of that nonsense. Instead, the limits come from the fundamental inadeqacy of passively-collected datasets, even at internet-scale.
 
 In other words: the internet is the bottleneck. Anyways, on to the argument.
