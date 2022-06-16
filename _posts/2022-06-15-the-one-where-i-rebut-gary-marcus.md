@@ -90,7 +90,7 @@ I don't think so; a more fair characterization is that they have an incomplete u
 Another obvious example of humans making mistakes is optical illusions.
 Does one's perception of an [infinite staircase](https://en.wikipedia.org/wiki/Penrose_stairs) reflect a lack of understanding of physical reasoning?
 In certain contexts, [humans even have adversarial examples](https://arxiv.org/abs/1802.08195).
-If we choose to believe in the syllogysm, and Dr. Marcus were to apply his same degree of rigorous error-probing to humans, he'd quickly find that they are incapable of "truly understanding" as well.
+If we choose to believe in the syllogysm, and Dr. Marcus were to apply his same degree of rigorous error-probing to humans[^1], he'd quickly find that they are incapable of "truly understanding" as well.
 
 ---
 
@@ -103,7 +103,7 @@ I would need to see an experiment with the following attributes.
 - Train a neural network to convergence on this data.
 - Find that the AI does not match human performance on new data (sampled from the same data-stream as it was trained on).
 
-If someone is able to find an experimental setting where this holds, even when the scaling-is-all-you-need crew has tried their best and deepest network, *that* would be a strong argument for the inadequacy of modeling.[^1]
+If someone is able to find an experimental setting where this holds, even when the scaling-is-all-you-need crew has tried their best and deepest network, *that* would be a strong argument for the inadequacy of modeling.[^2]
 I've never seen this occur, and right now, I lean towards believing such a setting does not exist.
 But I have pretty high uncertainty around that claim; the main thing informing my views is that many times, I *predicted* this would happen, and was wrong.
 If someone is able to find such a setting please tell me, I would love to see it!
@@ -118,4 +118,6 @@ Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.co
 
 [^0]: For concreteness, I will be focusing on his arguments here, but [as he points out](https://garymarcus.substack.com/p/does-ai-really-need-a-paradigm-shift?s=r), there are many people making these sorts of arguments. This rebuttal is directed at all of them.
 
-[^1]: Also disqualified are examples where the limitations of the AI models are purely technical, e.g. because the contexts are too big. As I mentioned last time, these are fundamental and important technical issues, but clearly fall within the current paradigm, so do not serve as argument against it.
+[^1]: Most likely, humans would not make the *same* errors as neural networks. But certainly they would make some.
+
+[^2]: Also disqualified are examples where the limitations of the AI models are purely technical, e.g. because the contexts are too big. As I mentioned last time, these are fundamental and important technical issues, but clearly fall within the current paradigm, so do not serve as argument against it.
