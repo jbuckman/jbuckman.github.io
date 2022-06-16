@@ -69,7 +69,7 @@ Adversarial examples are a bit harder to find in discrete spaces like text strin
 Dr. Marcus's claim that he can find errors in any future GPT is both true and vacuous.
 If we can find adversarial examples for relatively-simple domains like character recognition on greyscale images, of course we can find them for arbitrary behavior on arbitrary text strings.
 Adversarial examples exist for all current models at all scales, and it will be a major breakthrough when somebody discovers how to defeat them; this is deeply connected to the question of why neural networks generalize at all, and I predict it will be approximately as challenging.
-A dedicated error-finder can always find an error.
+Until then, a dedicated error-finder can always find an error.
 As far as I can tell, nobody really doubts this, not even team scaling-is-all-you-need.
 
 But it *does not follow* from this fact that scaled-up neural models cannot solve tasks like physical or biological reasoning, when "solve" is defined in a reasonable, pragmatic way.
@@ -79,7 +79,7 @@ This holds all the way up to the limit of total understanding.
 
 It is now hopefully clear why I say Dr. Marcus's argument proves too much.
 There are two options.
-We can either believe in the syllogism, and be forced to conclude that OCR is not solved due to its adversarial examples, despite wide commercial adtoption and near-perfect performance on all inputs it sees.
+We can either believe in the syllogism, and be forced to conclude that OCR is not solved due to its adversarial examples, despite wide commercial adtoption and near-perfect performance on all inputs.
 Or we can reject the syllogism, and conclude that Dr. Marcus's hand-crafted adversarial examples are not good evidence for a lack of understanding.
 
 ---
@@ -90,7 +90,7 @@ I don't think so; a more fair characterization is that they have an incomplete u
 Another obvious example of humans making mistakes is optical illusions.
 Does one's perception of an [infinite staircase](https://en.wikipedia.org/wiki/Penrose_stairs) reflect a lack of understanding of physical reasoning?
 In certain contexts, [humans even have adversarial examples](https://arxiv.org/abs/1802.08195).
-If Dr. Marcus applied his same argument to humans, he'd quickly find that they are incapable of "truly understanding" as well.
+If we choose to believe in the syllogysm, and Dr. Marcus were to apply his same degree of rigorous error-probing to humans, he'd quickly find that they are incapable of "truly understanding" as well.
 
 ---
 
