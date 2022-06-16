@@ -21,7 +21,7 @@ My position is that continuing to scale language models under the current paradi
 To be clear: I think Dr. Marcus's argument for this position is terrible.
 My reasons for believing that scaling has limits have nothing to do with "true intelligence" or "symbol manipulation" or any of that nonsense. Instead, the limits come from the fundamental inadeqacy of passively-collected datasets, even at internet-scale.
 
-Anyways, on to the argument.
+In other words: the internet is the bottleneck. Anyways, on to the argument.
 
 ---
 
