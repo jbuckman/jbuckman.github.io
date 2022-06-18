@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/static/img/cfoorl/suboptpess.png" mnemonic="6" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46e852db-af01-4e65-9a99-4e29b6234bf4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="46e852db-af01-4e65-9a99-4e29b6234bf4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -189,6 +187,7 @@
       <updated>1569300085679</updated>
       <workItem from="1655225250713" duration="2425000" />
       <workItem from="1655227953986" duration="28000" />
+      <workItem from="1655433488574" duration="3000" />
     </task>
     <servers />
   </component>

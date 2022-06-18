@@ -45,7 +45,7 @@ Furthermore, this is one area where scaling does not seem to help very much.
 Big or small, they exist all the same.
 
 Fundamentally, the issue at play is that the input space for these models is simply too large.
-Consider an image classification task, with 64x64 greyscale 8-bit inputs: there are 256\^(64\*64) ≈ *1e10000* possible images.
+Consider an image classification task, with 64x64 greyscale 8-bit inputs: there are 256^(64\*64) ≈ *1e10000* possible images.
 Even if we train it on a massive dataset of a billion data points, we're still 9991 orders of magnitude away from complete coverage.
 There are *so many* possible inputs that it is unreasonable to expect a model to be able to get them all right; this means it will get some of them wrong.
 Some of these errors happen to be "adjacent" to train-set images, and the name we give to these errors are adversarial examples.
@@ -116,7 +116,7 @@ Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.co
 
 ---
 
-[^0]: For concreteness, I will be focusing on his arguments here, but [as he points out](https://garymarcus.substack.com/p/does-ai-really-need-a-paradigm-shift?s=r), there are many people making these sorts of arguments. This rebuttal is directed at all of them.
+[^0]: For concreteness, I will be focusing on his arguments; but [as he points out](https://garymarcus.substack.com/p/does-ai-really-need-a-paradigm-shift?s=r), there are many people making these sorts of arguments. This rebuttal is directed at all of them.
 
 [^1]: Most likely, humans would not make the *same* errors as neural networks. But certainly they would make some.
 
