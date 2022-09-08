@@ -70,7 +70,7 @@ But we should also reverse this: take a look at active learning, in order to imp
 People have been studying these algorithms for years, and haven't unleashed a superintelligence.
 Why?
 Mainly, the answer is that current active learning algorithms are bad, and as a result self-improvement happens quite slowly.
-Self-improvement at a slow enough pace is not dangerous, or even very impressive.
+Self-improvement at a slow enough pace is not dangerous, or even particularly impressive.
 
 But this begs a second question: *why* is it slow, when everything else is so fast?
 Sure, algorithms are bad, but shouldn't they bianually double in speed alongside everything else, following Moore's Law?
