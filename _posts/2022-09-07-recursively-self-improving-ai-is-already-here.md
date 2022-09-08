@@ -54,7 +54,7 @@ Imagine if you opened up GPT-3 and, in a surprising role reversal, *it* gave *yo
 "Jane has eight apples. Charlie ate half of her apples. Now Jane has"-
 A small text box pops up on your screen.
 You dutifully type "four", and press enter.
-This brand new context/next-word pair gets dumped into a giant data warehouse, alongside thousands of similarly-collected pairs, and also the original GPT-3 dataset (i.e. assorted text scraped from the internet).
+This brand new context/next-word pair gets dumped into a giant data warehouse, alongside thousands of similarly-collected pairs, and also alongside the original GPT-3 dataset (i.e. assorted text scraped from the internet).
 Overnight, OpenAI finetunes GPT-3 on this new, enlarged dataset, and tomorrow, GPT-3 has become capable of doing math with apples.
 
 ---
@@ -62,12 +62,12 @@ Overnight, OpenAI finetunes GPT-3 on this new, enlarged dataset, and tomorrow, G
 What's the takeaway here?
 
 One possible reaction is to project your intuitions about recursively self-improving AI onto active learning algorithms, and become concerned.
-People have been running and studying these algorithms for years, unknowingly mere inches from a world-ending singularity.
+People have been studying these algorithms for years, unknowingly mere inches from a world-ending singularity.
 If more progress is made here, it could all be over.
 (More seriously: active learning is pretty underappreciated, given how fundamental it is, and it would be good to see more people tackling it seriously.)
 
 But we should also reverse this: take a look at active learning, in order to improve your intuitions about recursively self-improving AI.
-People have been running and studying these algorithms for years, and haven't unleashed a superintelligence.
+People have been studying these algorithms for years, and haven't unleashed a superintelligence.
 Why?
 Mainly, the answer is that current active learning algorithms are bad, and as a result self-improvement happens quite slowly.
 Self-improvement at a slow enough pace is not dangerous, or even very impressive.
