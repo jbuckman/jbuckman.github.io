@@ -82,8 +82,12 @@ Since everything else *is* accelerated, this step will always eventually become 
 
 ---
 
-Oh, and by the way -- solving active learning is *hard*.
-Good luck!
+One final thought.
+This bottleneck should make you a bit skeptical of "sudden takeoff" narratives.
+Data-gathering will always need to be a process of real-world interaction, and that process will necessarily be slow (relative to compute speeds).
+Active learning can certainly get much more efficient than it is now, but it seems plausible that there are limits on how quickly it is possible learn.
+An agent that already knows a lot might still need to see a certain amount of data, ruling out various counterfactuals, in order to reach the correct conclusions.
+Recursive self-improvement alone is nothing to be afraid of.
 
 ---
 
