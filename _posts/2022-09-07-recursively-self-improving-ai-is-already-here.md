@@ -27,9 +27,9 @@ Hopefully this picture of recursive self-improvement is generic and natural enou
 
 Now, let's connect this to active learning.
 
-The key thing to understand is that a machine learning function is based on *both code and data*.
-(Unlike in traditional programming, which is based only on code.)
-The "code" part defines the architecture, any input and output transformations, etc.
+The key thing to understand is that a machine learning program is based on *both code and data*.
+(Unlike in traditional programming, in which a program is based only on code.)
+The "code" part of a machine learning program specifies the architecture, input and output transformations, etc.
 But the actual neural network -- the executable function -- is reliant upon the dataset, too.
 After all, that's where the weights come from: they are the result of running an optimizer against the dataset, and so will depend upon the choice of dataset.
 The learning algorithm is analogous to the compiler, in that it transforms a specification into an executable.
