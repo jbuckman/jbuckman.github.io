@@ -73,7 +73,7 @@ Mainly, the answer is that current active learning algorithms are bad, and as a 
 Self-improvement at a slow enough pace is not dangerous, or even particularly impressive.
 
 But this begs a second question: *why* is it slow, when everything else is so fast?
-Sure, algorithms are bad, but shouldn't they bianually double in speed alongside everything else, following Moore's Law?
+No matter how bad the current algorithms are, shouldn't the overall process still bianually double in speed alongside everything else, following Moore's Law?
 The answer is no, thanks to that pesky step 3: "get feedback".
 For most real-world problems, getting feedback is a real-world activity.
 Some examples are getting a human label (GPT-3), a physical reaction (robotic control), or an artist drawing an image (DALLE-2).
