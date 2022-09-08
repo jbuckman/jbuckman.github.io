@@ -52,6 +52,7 @@ What would it look like to apply active learning to GPT-3, thereby transforming 
 
 Imagine if you opened up GPT-3 and, in a surprising role reversal, *it* gave *you* a prompt.
 "Jane has eight apples. Charlie ate half of her apples. Now Jane has"-
+
 A small text box pops up on your screen.
 You dutifully type "four", and press enter.
 This brand new context/next-word pair gets dumped into a giant data warehouse, alongside thousands of similarly-collected pairs, and also alongside the original GPT-3 dataset (i.e. assorted text scraped from the internet).
