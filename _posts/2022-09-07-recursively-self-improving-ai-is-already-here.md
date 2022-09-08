@@ -25,7 +25,7 @@ Hopefully this picture of recursive self-improvement is generic and natural enou
 
 ---
 
-Now, let's see connect this to active learning.
+Now, let's connect this to active learning.
 
 The key thing to understand is that a machine learning function is based on *both code and data*.
 (Unlike in traditional programming, which is based only on code.)
