@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Recursively Self-Improving AI Is Here
+title: Recursively Self-Improving AI Is Already Here
 tags: ["deep learning", "scaling", "AGI"]
 published: true
 mathjax: false
