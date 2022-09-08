@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46e852db-af01-4e65-9a99-4e29b6234bf4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_posts/2022-09-07-recursively-self-improving-ai-is-already-here.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2022-09-07-recursively-self-improving-ai-is-already-here.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -191,7 +192,7 @@
       <workItem from="1655225250713" duration="2425000" />
       <workItem from="1655227953986" duration="28000" />
       <workItem from="1655433488574" duration="3000" />
-      <workItem from="1662607147301" duration="4449000" />
+      <workItem from="1662607147301" duration="4567000" />
     </task>
     <servers />
   </component>
