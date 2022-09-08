@@ -38,7 +38,7 @@ The learning algorithm is analogous to the compiler, in that it transforms a spe
 
 Furthermore, note that this setup gives us a straightforward way to improve the function.
 Since our executable is specified by our code + dataset, an improvement to *either* of these two aspects represents an improvement in the overall function.
-So there's no need to change the code.
+So there's no need to ever change the code.
 We can just add data to the dataset.[^0]
 
 ![](/static/img/rsiai/fig2.png){:width="300px"}
