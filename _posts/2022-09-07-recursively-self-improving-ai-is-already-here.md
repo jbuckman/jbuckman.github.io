@@ -81,7 +81,6 @@ Since these activities rely on non-computational actions, they are not sped up b
 Since everything else *is* accelerated, this step will always eventually become the bottleneck of the whole process.
 
 ---
-
 One final thought.
 Recursive self-improvement alone is nothing to fear.
 This bottleneck should make you a bit skeptical of "sudden takeoff" narratives.
