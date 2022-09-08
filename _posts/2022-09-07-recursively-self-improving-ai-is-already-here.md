@@ -7,7 +7,7 @@ mathjax: false
 ---
 
 ...and it is called [active learning](https://en.wikipedia.org/wiki/Active_learning_(machine_learning)), and it's not very impressive.
-The reduction is pretty simple.
+The connection is pretty simple to see.
 
 ---
 
