@@ -17,7 +17,9 @@ To start, there's some code.
 It gets compiled into an executable function.
 This is then evaluated, giving some score or feedback signal (this is the thing that is improving).
 Based on the feedback signal, the executable writes some new code...
+
 ![](/static/img/rsiai/fig0.png){:width="300px"}
+
 A process which repeats ad infinitum.
 Hopefully this picture of recursive self-improvement is generic and natural enough to be uncontroversial.
 
