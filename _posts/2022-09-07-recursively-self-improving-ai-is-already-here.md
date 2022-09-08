@@ -32,7 +32,7 @@ The key thing to understand is that a machine learning function is based on *bot
 The "code" part defines the architecture, any input and output transformations, etc.
 But the actual neural network -- the executable function -- is reliant upon the dataset, too.
 After all, that's where the weights come from: they are the result of running an optimizer against the dataset, and so will depend upon the choice of dataset.
-The learning algorithm is analogous to the compiler, in that it takes the elements that specify the function, and transforms them into an executable.
+The learning algorithm is analogous to the compiler, in that it transforms a specification into an executable.
 
 ![](/static/img/rsiai/fig1.png){:width="300px"}
 
