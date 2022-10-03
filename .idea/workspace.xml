@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46e852db-af01-4e65-9a99-4e29b6234bf4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_posts/2022-09-07-recursively-self-improving-ai-is-already-here.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2022-09-07-recursively-self-improving-ai-is-already-here.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,13 +159,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/jacob/PycharmProjects/jbuckman.github.io/_posts",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jacob/PycharmProjects/jbuckman.github.io/_posts&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_posts" />
@@ -191,7 +191,8 @@
       <workItem from="1655225250713" duration="2425000" />
       <workItem from="1655227953986" duration="28000" />
       <workItem from="1655433488574" duration="3000" />
-      <workItem from="1662607147301" duration="6098000" />
+      <workItem from="1662607147301" duration="6706000" />
+      <workItem from="1663075521846" duration="17000" />
     </task>
     <servers />
   </component>
