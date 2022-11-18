@@ -259,7 +259,7 @@ A bit of algebra leads to the conclusion that $$\sum_{i=1}^j \mathbb{P}(X_i \neq
 
 Next, we just need to analyze the truncated sequence.
 We know that the expectation and variance for truncated variables exist, and for any particular sum of $$j$$ variables truncated at level $$b_j$$, some more algebra tells us that the expectation $$\mathbf{E}[\sum_{i=1}^j T(X_i, b_j)] = j (\log_2 j + \log_2 \log_2 j)$$, which we can denote as $$\mu_j$$.
-After checking some conditions, can use [Chebyshev’s inequality](https://en.wikipedia.org/wiki/Chebyshev%27s_inequality) to bound the probability that the actual sum deviates from this mean by a factor of more than $$b_j$$, leading to the conclusion that $$\frac{|\mu_j - \sum_{i=1}^j T(X_i, b_j)|}{b_j}) \overset{P}\to 0$$ as $$j \to \infty$$.
+After checking some conditions, we can use [Chebyshev’s inequality](https://en.wikipedia.org/wiki/Chebyshev%27s_inequality) to bound the probability that the actual sum deviates from this mean by a factor of more than $$b_j$$, leading to the conclusion that $$\frac{|\mu_j - \sum_{i=1}^j T(X_i, b_j)|}{b_j}) \overset{P}\to 0$$ as $$j \to \infty$$.
 
 Since both (1) the truncated sequences converge in probability to the real sequence, and (2) the deviations of the sum of the real sequence converge in probability to 0, we can conclude that the deviations of the sum of the *real* sequence converge in probability to 0.
 Thus, for a real sequence of length $$n$$, we have $$\frac{|\mu_n - \sum_{i=1}^n X_i|}{b_n} \overset{P}\to 0$$ as $$n \to \infty$$.
