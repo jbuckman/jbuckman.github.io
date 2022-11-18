@@ -2,7 +2,7 @@
 layout: post
 title: On The Road From St. Petersburg
 tags: ["statistics", "probability", "theory", "paradox"]
-published: true
+published: false
 mathjax: true
 ---
 
@@ -126,7 +126,7 @@ There are many brilliant people, especially in engineering and finance, who will
 But I am not so sure.
 
 This essay began as my attempt to restore my trust in expected value as a decision-making philosophy.
-In the end, I instead found myself abandoning expected value entirely in favor of a different approach, one that is just as elegant and powerful as expectation maximization, but better behaved and more philosophically grounded.
+In the end, I instead found myself abandoning it entirely in favor of a different approach.
 But – I’m getting ahead of myself.
 First, let’s take a moment to properly motivate what exactly we are searching for.
 
@@ -135,10 +135,8 @@ First, let’s take a moment to properly motivate what exactly we are searching 
 Maximizing expected value is **not rational**.
 
 Now, this is not to say that it is *irrational*, necessarily.
-There are many situations in which the rational thing to do is to take the action with the highest expected value.
 My point here is only that “EV-max action” and “rational action” are not synonymous.
-The most rational action to take is the one that leads to the best outcome.
-The EV-max action is the result of a particular mathematical computation.
+The most rational action to take is the one that leads to the best outcome, whereas the EV-max action is the result of a particular mathematical computation.
 It is absolutely *possible* that these two objects are isomorphic: that the EV-max action is always also the most rational.
 But this is certainly not obvious a priori, and needs to be carefully justified.
 
@@ -227,20 +225,22 @@ our total payout for $$n$$ plays is $$\sum_{i=1}^{n} X_i$$.
 
 ### Basic coin flip.
 
-In the first game, the player flips a fair coin which pays out \\$10 for heads and \\$0 for tails.
+*The player flips a fair coin which pays out \\$10 for heads and \\$0 for tails.*
+
 The expected value of any given round $$\mathbb{E}[X_i] = 0.5(10) + 0.5(0) = 5$$ for all $i$.
 Since this is finite, the weak law of large numbers tells us that $$\frac{1}{n} \sum_{i=1}^{n} X_i \overset{p}{\to} \mathbb{E}[X_i]$$ as $$n \to \infty$$.
 We can rearrange to get $$\sum_{i=1}^{n} X_i \overset{P}{\to} n\mathbb{E}[X_i] = 5n$$.
-As a realizable-value maximizer, I should be willing to pay $5 per round of play.
+As a realizable-value maximizer, I should be willing to pay up to $5 per round of play.
 
 As expected, this coincides with the solution given by expected value.
 
 ### Doubling game.
 
-The player flips a fair coin until it comes up tails.
-If the first flip is a tails, the payout is $2, and for each heads seen, the payout doubles.
+*The player flips a fair coin until it comes up tails.
+If the first flip is a tails, the payout is $2, and for each heads seen, the payout doubles.*
+
 As we saw above, $$\mathbb{E}[X_i] = \sum_{n=1}^{\infty} 2^{n}\left(\frac{1}{2^{n}}\right) = \sum_{n=1}^{\infty} 1 = \infty$$.
-But as it turns out, $$\sum_{i=1}^{n} X_i \overset{p}{\to} n \log_2 n$$.
+But as it turns out, $$\sum_{i=1}^{n} X_i \overset{P}{\to} n \log_2 n$$.
 The math here is a bit more involved, so I’ll just give the high-level intuition of the analysis.
 If you are comfortable with probability theory, [a rigorous proof is given by Dunnet in his textbook (Example 2.2.16)](https://services.math.duke.edu/~rtd/PTE/PTE5_011119.pdf#page=73), or more explicitly [in Sebastien Roch's lecture notes](https://people.math.wisc.edu/~roch/grad-prob/gradprob-notes4.pdf#page62).
 
@@ -258,8 +258,8 @@ For each level $$b_j$$, we truncate the first $j$ terms of our sequence of $$X_i
 A bit of algebra leads to the conclusion that $$\sum_{i=1}^j \mathbb{P}(X_i \neq T(X_i, b_j)) \to 0$$ as $$j \to \infty$$, meaning that we eventually see that there is almost no chance that any variable will get truncated.
 
 Next, we just need to analyze the truncated sequence.
-We know that the expectation and variance for truncated variables exist, and for any particular sum of $$j$$ variables truncated at level $$b_j$$, some more algebra tells us that the expectation $$\mathbf{E}[\sum_{i=1}^j T(X_i, b_j)] = j (\log_2 j + \log_2 \log_2 j)$$, which we can denote as $$\mu_j$$.
-After checking some conditions, we can use [Chebyshev’s inequality](https://en.wikipedia.org/wiki/Chebyshev%27s_inequality) to bound the probability that the actual sum deviates from this mean by a factor of more than $$b_j$$, leading to the conclusion that $$\frac{|\mu_j - \sum_{i=1}^j T(X_i, b_j)|}{b_j}) \overset{P}\to 0$$ as $$j \to \infty$$.
+We know that the expectation and variance for truncated variables exist, and for any particular sum of $$j$$ variables truncated at level $$b_j$$, some more algebra tells us that the expectation $$\mathbb{E}[\sum_{i=1}^j T(X_i, b_j)] = j (\log_2 j + \log_2 \log_2 j)$$, which we can denote as $$\mu_j$$.
+After checking some conditions, we can use [Chebyshev’s inequality](https://en.wikipedia.org/wiki/Chebyshev%27s_inequality) to bound the probability that the actual sum deviates from this mean by a factor of more than $$b_j$$, leading to the conclusion that $$\frac{|\mu_j - \sum_{i=1}^j T(X_i, b_j)|}{b_j} \overset{P}\to 0$$ as $$j \to \infty$$.
 
 Since both (1) the truncated sequences converge in probability to the real sequence, and (2) the deviations of the sum of the real sequence converge in probability to 0, we can conclude that the deviations of the sum of the *real* sequence converge in probability to 0.
 Thus, for a real sequence of length $$n$$, we have $$\frac{|\mu_n - \sum_{i=1}^n X_i|}{b_n} \overset{P}\to 0$$ as $$n \to \infty$$.
@@ -285,26 +285,26 @@ Just to confirm, I ran a simulation ([code here](/static/files/petersburg/stpete
 
 A bit noisy, but overall pretty convincing.
 
-### Consecutive wagers.
+### Wagering game.
 
-The player has a bankroll of $$b$$ dollars, and wagers $$z$$ dollars. 
-The player flip a coin, which comes up heads with probability $$p$$.
+*The player has a bankroll of $$b$$ dollars, and wagers $$fb$$ dollars where $$0 \leq f \leq 1$$. 
+The player flips a coin, which comes up heads with probability $$p$$.
 If heads, the wager is multiplied by some factor $$1+w$$ for $$w > 0$$.
-If tails, the wager is reduced by some factor $$1 - l$$, where $$0 < l \leq 1$$.
+If tails, the wager is reduced by some factor $$1 - l$$, where $$0 < l \leq 1$$.*
 
 The expected value of each round of this game is $$pzw - (1-p)zl = z(pw - (1-p)l)$$.
 So, as long as $$pw > (1-p)l$$, each round has an expected value which is linear in the bet size, and the expected value is maximized by betting everything.
 
-What value is realized by that strategy?
+What value is realized by the strategy of always betting everything?
 Let $$H_n$$ be the number of heads seen after $$n$$ rounds, and so $$n - H_n$$ gives the number of tails.
 This means that the bankroll $$b_n = b_0(1+w)^{H_n}(1-l)^{n-H_n}$$ at timestep $$n$$, where $$b_0$$ gives the initial bankroll.
-Since $$\mathbb{E}[H_n] = np$$, the law of large numbers tells us that $$|H_n - np| \overset{P}\to 0$$ as $$n \to \infty$$.
+Since $$\mathbb{E}[\frac{H_n}{n}] = p$$, whithe law of large numbers tells us that $$|H_n - np| \overset{P}\to 0$$ as $$n \to \infty$$.
 Thus, for the bankroll $$b_n$$,
 
 $$b_n = b_0(1+w)^{H_n}(1-l)^{n-H_n} \overset{P}\to b_0(1+w)^{np}(1-l)^{n(1-p)} = b_0\left((1+w)^{p}(1-l)^{(1-p)}\right)^{n}$$
 
 as $$n \to \infty$$.
-And so we see, if $$(1+w)^{p}(1-l)^{(1-p)} < 1$$, then $$b_i \overset{P}\to 0$$.
+And so we see, if $$(1+w)^{p}(1-l)^{(1-p)} < 1$$, then $$b_n \overset{P}\to 0$$.
 
 In summary, EV says to take the bet if $$\frac{pw}{(1-p)l} > 1$$, and RV says to take the bet if $$(1+w)^{p}(1-l)^{(1-p)} > 1$$.
 Unfortunately, these two conditions do not always agree.
@@ -326,6 +326,8 @@ All we need to do is choose the $$f$$ which maximizes this value, which can be d
 The solution, $$f^* = \frac{p}{l} - \frac{1-p}{w}$$, is the formula for the famous [Kelly Criterion](https://en.wikipedia.org/wiki/Kelly_criterion).
 
 One last interesting property to note: EV and RV agree when $$f$$ is very small.
+This means that we only need to take RV into account when wagering a non-insignificant fraction of our bankroll.
+For tiny bets, reasoning with EV is sufficient.
 To see this, we need to use the fact that $$\log x+1 \approx x$$ for $$x \approx 0$$.
 Recall that EV says that we should take the bet when $$\frac{pw}{(1-p)l} > 1$$, and RV says that we should take the bet when $$(1+fw)^{p}(1-fl)^{(1-p)} > 1$$.
 Now, when $$f \approx 0$$, we have $$fw \approx 0$$ and $$-fl \approx 0$$, so:
@@ -349,8 +351,6 @@ and then rearrange:
 $$\frac{pw}{(1-p)l} > 1$$
 
 to get an equivalent condition which, you'll note, is identical to the condition as for when a bet has positive EV.
-This means that we only need to take RV into account when wagering a non-insignificant fraction of our bankroll.
-For tiny bets, reasoning with EV is sufficient.
 
 ---
 
@@ -423,6 +423,10 @@ I’m just pointing out that it is cool that using these ideas as first principl
 
 Hopefully, those of you who are still with me are on board with the idea that we should be maximizing realizable value instead of expected value.
 And for those that aren’t – I am excited to hear your counter-arguments.
+
+The final question is: how does this change our decision-making?
+In general, I think the proper rule of thumb is to avoid taking any bets that have negative RV.
+Just as was the case with EV, 
 
 That being said, I would be surprised if realizable-value maximization is the end of the story when it comes to decision-making frameworks.
 Most likely, it has its own subtle issues, and given enough time, a paradox will rear its ugly head once more.
