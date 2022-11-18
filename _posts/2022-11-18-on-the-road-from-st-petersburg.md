@@ -330,7 +330,7 @@ To see this, we need to use the fact that $$\log x+1 \approx x$$ for $$x \approx
 Recall that EV says that we should take the bet when $$\frac{pw}{(1-p)l} > 1$$, and RV says that we should take the bet when $$(1+fw)^{p}(1-fl)^{(1-p)} > 1$$.
 Now, when $$f \approx 0$$, we have $$fw \approx 0$$ and $$-fl \approx 0$$, so:
 
-$$\log (1+fw)^{p}(1-fl)^{(1-p)} = p\log(1+fw) + (1-p)\log(1-fl) \approx p(fw) - (1-p)(fl)$$.
+$$\log \left( (1+fw)^{p}(1-fl)^{(1-p)} \right) = p\log(1+fw) + (1-p)\log(1-fl) \approx p(fw) - (1-p)(fl)$$.
 
 Starting with the condition for when a consecutive bet has positive RV:
 
