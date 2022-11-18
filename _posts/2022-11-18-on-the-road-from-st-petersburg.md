@@ -195,7 +195,7 @@ A real resolution requires the introduction of a new decision-making framework.
 
 # Maximize The Realizable Value
 
-Here is my proposal: * take the action that maximizes the **realizable value** *.
+Here is my proposal: *take the action that maximizes the **realizable value***.
 
 The realizable value[^4] of a bet is the amount of money that you are guaranteed to end up winning if you play enough times.
 It is an outcome whose probability gets more and more likely the more rounds you play.
@@ -227,7 +227,7 @@ our total payout for $$n$$ plays is $$\sum_{i=1}^{n} X_i$$.
 In the first game, I flip a fair coin which pays out \\$10 for heads and \\$0 for tails.
 The expected value of any given round $$\mathbb{E}[X_i] = 0.5(10) + 0.5(0) = 5$$ for all $i$.
 Since this is finite, the weak law of large numbers tells us that $$\frac{1}{n} \sum_{i=1}^{n} X_i \overset{p}{\to} \mathbb{E}[X_i]$$ as $$n \to \infty$$.
-We can rearrange to get $$\sum_{i=1}^{n} X_i \overset{P}{\to} n*\mathbb{E}[X_i] = 5n$$.
+We can rearrange to get $$\sum_{i=1}^{n} X_i \overset{P}{\to} n\mathbb{E}[X_i] = 5n$$.
 As a realizable-value maximizer, I should be willing to pay $5 per round of play.
 
 As expected, this coincides with the solution given by expected value.
@@ -241,12 +241,12 @@ But as it turns out, $$\sum_{i=1}^{n} X_i \overset{p}{\to} n \log_2 n$$.
 The math here is a bit more involved, so I’ll just give the high-level intuition of the analysis.
 If you are comfortable with probability theory, [a rigorous proof is given by Dunnet in his textbook (Example 2.2.16)](https://services.math.duke.edu/~rtd/PTE/PTE5_011119.pdf#page=73), or more clearly [here](https://people.math.wisc.edu/~roch/grad-prob/gradprob-notes4.pdf#page62).
 
-The key tool here is our ability to *truncate* a random variable, meaning clip its value to 0 if it falls outside of a certain range.
+The key tool is our ability to *truncate* a random variable, meaning clip its value to 0 if it falls outside of a certain range.
 Truncation is helpful for this sort of problem because, once we have truncated, the expectation is guaranteed to be nice and bounded.
-Denote the truncation of a random variable $$X$$ to the level $$b$$ as $$T(X, b) = X \cdot \mathbf{1}_{|X|<b}$$ (where $$\mathbf{1}$$ denotes the indicator function that is equal to 1 if its condition is true, otherwise 0).
+Denote the truncation of a random variable $$X$$ to the level $$b$$ as $$T(X, b) = X \cdot \mathbb{1}_{|X|<b}$$ (where $$\mathbb{1}$$ denotes the indicator function that is equal to 1 if its condition is true, otherwise 0).
 
-What’s cool about truncation is that truncating a random variable does nothing, if the value of that variable turns out to be less than the truncation threshold.
-By gradually increasing the truncation threshold, we can make it less and less likely that truncations happen at all.
+What’s cool about truncation is that truncating a random variable does nothing if the value of that variable turns out to be less than the truncation threshold.
+By gradually increasing the truncation threshold, we can make it less and less likely that truncations have any effect at all.
 Therefore, we can understand our sequence of $$X_i$$s as the *limit* of a sequence of sequence-of-truncated-$$X_i$$s, where the truncation levels get less and less strict.
 As the truncation threshold grows, we end up with almost no probability that any variable actually gets impacted.
 
@@ -255,7 +255,7 @@ For each level $$b_j$$, we truncate the first $j$ terms of our sequence of $$X_i
 A bit of algebra leads to the conclusion that $$\sum_{i=1}^j \mathbb{P}(X_i \neq T(X_i, b_j)) \to 0$$ as $$j \to \infty$$, meaning that we eventually see that there is almost no chance that any variable will get truncated.
 
 Next, we just need to analyze the truncated sequence.
-We know that the expectation and variance for truncated variables both exist, and for any particular sum of $$j$$ variables truncated at level $$b_j$$, some more algebra tells us that the expectation $$\mathbf{E}[\sum_{i=1}^j T(X_i, b_j)] = j (\log_2 j + \log_2 \log_2 j)$$, which we can denote as $$\mu_j$$.
+We know that the expectation and variance for truncated variables exist, and for any particular sum of $$j$$ variables truncated at level $$b_j$$, some more algebra tells us that the expectation $$\mathbf{E}[\sum_{i=1}^j T(X_i, b_j)] = j (\log_2 j + \log_2 \log_2 j)$$, which we can denote as $$\mu_j$$.
 After checking some conditions, can use [Chebyshev’s inequality](https://en.wikipedia.org/wiki/Chebyshev%27s_inequality) to bound the probability that the actual sum deviates from this mean by a factor of more than $$b_j$$, leading to the conclusion that $$\frac{|\mu_j - \sum_{i=1}^j T(X_i, b_j)|}{b_j}) \overset{P}\to 0$$ as $$j \to \infty$$.
 
 Since both (1) the truncated sequences converge in probability to the real sequence, and (2) the deviations of the sum of the real sequence converge in probability to 0, we can conclude that the deviations of the sum of the *real* sequence converge in probability to 0.
@@ -278,7 +278,7 @@ And the answer elegantly synthesizes our two intuitions – that on one hand, th
 
 Just to confirm, I ran a simulation ([code here](/static/files/petersburg/stpetersburg.py)) of two billion doubling games, computing the mean reward per game over time:
 
-![](/static/img/petersburg/doubling.png){:width="400px"}
+![](/static/img/petersburg/doubling.png){:width="700px"}
 
 A bit noisy, but overall pretty convincing.
 
