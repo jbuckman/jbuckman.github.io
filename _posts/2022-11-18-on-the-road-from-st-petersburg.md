@@ -102,7 +102,7 @@ To this day, I am still paying off the debt I accrued on the road from St. Peter
 
 ---
 
-# On Expected Value
+## Expected Value
 
 Should one always choose the action with the highest expected value?
 
@@ -149,7 +149,7 @@ Unless you've breathed air, you’d never know you’re swimming in it.
 
 ---
 
-# The St. Petersburg Paradox
+## The St. Petersburg Paradox
 
 The [St. Petersburg paradox ](https://en.wikipedia.org/wiki/St._Petersburg_paradox) is a well-known statistical conundrum, one that is closely connected to the plight of its fictional citizens in my story.
 The paradox concerns a particular gamble, which I'll call the *doubling game*.
@@ -193,7 +193,7 @@ A real resolution requires the introduction of a new decision-making framework.
 
 ---
 
-# Maximize The Realizable Value
+## Maximize The Realizable Value
 
 Here is my proposal: *take the action that maximizes the **realizable value***.
 
@@ -331,7 +331,7 @@ Another sign of a good framework is if it explains the world well.
 One would expect a good decision-making rule to pop up in all sorts of places, being used implicitly, even before being formally understood.
 I want to highlight a few places where I’ve noticed that reality coincides with the dictums of realizable-value maximization.
 
-#### Gambling
+### Gambling
 
 We’ve just discussed how the Kelly Criterion can be derived through the lens of maximizing realizable value.
 Interestingly, as far as I can tell, the original motivation was nothing of the sort.
@@ -344,7 +344,7 @@ I’ve always found the Kelly Criterion to be a beautiful strategy, but I was ne
 I think it’s amazing that the framework of realizable-value maximization serves to motivate it from first principles.
 Also, it’s a widely-used approach, vouched for by professional investors and gamblers alike; the fact that it coincides with the optimal realized value is a strong point in favor of the practical usefulness of this framework.
 
-#### Psychology
+### Psychology
 
 It’s conventional wisdom in economics that humans have logarithmic utility functions.
 [Empirical experiments seem to generally corroborate this, although it is possible a different functional form may be a somewhat better fit](https://www.jstor.org/stable/1422419).
@@ -365,11 +365,11 @@ It may be coarse, but overall, I think it’s pretty reasonable to model life as
 We know that logarithmic utility maximization is identical to following a Kelly strategy in the specific setting in which that strategy is applicable, and it is very likely that it has connections to RV-max in general.
 So by living according to logarithmic utility, we are able to realize the most wealth over our lifetimes, and survive and reproduce.
 
-#### Venture Capital
+### Venture Capital
 
 The real-world asset class that is most similar in structure to the doubling game is probably early-stage startups.
 Something like 90% of startups fail, and become worthless.
-Some small fraction manage to break even for their investors.
+Some small number manage to break even for their investors.
 But a tiny fraction of them double, and double, and double again in value, producing enormous, outsized returns.
 
 If we assume that investing in a startup really is akin to playing the doubling game, and that VC firms are doing a good job acting in their own self-interest, the framework of realizable-value maximization makes some predictions.
