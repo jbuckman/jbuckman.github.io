@@ -56,6 +56,7 @@ Evelyn greeted me next.
 She made 1,000₽, then lost it all…including the 500₽ she started with.
 Everett was less lucky; his first flip was a tails, and I grew 10,000₽ wealthier.
 But saddest of all was poor Everly, who began her game with a handful of coins, amassed a fortune of billions of rubles, and then lost it all in an instant.
+
 Nobody ever walked away from my game, or wagered even a single coin less than the sum total of their personal wealth.
 After all, the dictums of EV maximization held that to do so would be irrational.
 And so, with each participant, I flipped my coin until they lost, and pocketed their initial wager.
@@ -99,7 +100,7 @@ Sometimes he won, sometimes he lost, always the boy wagered but a single 10₽ c
 By the time the sun rose to free me from the game, he had taken everything I won in the city, and much more besides.
 To this day, I am still paying off the debt I accrued on the road from St. Petersburg.
 
-## On Expected Value
+# On Expected Value
 
 Should one always choose the action with the highest expected value?
 
@@ -112,16 +113,18 @@ Simply map each outcome to a scalar measure of value, estimate the probabilities
 As a rational-minded person myself, I see the appeal of this perspective.
 Expected value maximization is incredibly helpful at synthesizing disorganized information in an uncertain world into a unified picture with a clear set of preferences.
 
-But in this essay, I want to question the validity of this approach.
+But in this essay, I want to probe the validity of this approach.
 Maximizing expected value can prescribe actions that seem wildly unintuitive.
 Why is there this huge difference between the actions suggested by our intuitions and by our mathematics?
 And when we encounter a situation where their recommendations conflict, which one should we listen to?
 There are many brilliant people, especially in engineering and finance, who will answer this question in no uncertain terms.
+
 “The higher-EV play is the correct one. Your irrational fears are holding you back.”
-But I am not so certain.
+
+But I am not so sure.
 
 This essay began as my attempt to restore my trust in expected value as a decision-making philosophy.
-In the end, I instead found myself abandoning expected value entirely in favor of a slightly different approach, one that is just as elegant and powerful as expectation maximization, but better behaved and more philosophically grounded.
+In the end, I instead found myself abandoning expected value entirely in favor of a different approach, one that is just as elegant and powerful as expectation maximization, but better behaved and more philosophically grounded.
 But – I’m getting ahead of myself.
 First, let’s take a moment to properly motivate what exactly we are searching for.
 
@@ -142,7 +145,7 @@ For someone who has spent their whole life deeply embedded in the EV-max framewo
 Like the fish in the David Foster Wallace essay who asks: “What the hell is water?”
 Unless you've breathed air, you’d never know you’re swimming in it.
 
-## The St. Petersburg Paradox
+# The St. Petersburg Paradox
 
 The [St. Petersburg paradox ](https://en.wikipedia.org/wiki/St._Petersburg_paradox) is a well-known statistical conundrum, one that is closely connected to the plight of its fictional citizens in my story.
 The paradox concerns a particular gamble, which I'll call the *doubling game*.
@@ -155,17 +158,18 @@ The first time it lands tails, you take the money in the pot and the game ends.
 
 What is the most that a rational gambler should be willing to pay to play this game?
 According to the expected-value framework, the answer is the expected value of the game.
-We can compute this easily, by partitioning the outcomes based on the number of heads. 
-There is a $$\frac{1}{2}$$ chance of seeing one flip (if the first flip is tails), a $$\frac{1}{4}$$ chance of seeing exactly two flips (heads, then tails), a $$\frac{1}{8}$$ chance of seeing exactly three flips...the pattern is clear, the chance of seeing $$n$$ flips is $$\frac{1}{2^{n}}$$.
+We can compute this easily, by partitioning the outcomes based on the number of flips. 
+There is a $$\frac{1}{2}$$ chance of seeing exactly one flip (if the first flip is tails), a $$\frac{1}{4}$$ chance of seeing exactly two flips (heads, then tails), a $$\frac{1}{8}$$ chance of seeing exactly three flips...the pattern is clear, the chance of seeing $$n$$ flips is $$\frac{1}{2^{n}}$$.
 And what are the values of these outcomes?
 $$2,4,8,16,...$$so $$n$$ flips nets $$2^{n}$$ dollars.
-Marginalizing, we see that the expected value is $$\sum_{n=1}^{\inf} 2^{n}\left(\frac{1}{2^{n}}\right) = \sum_{n=1}^{\inf} 1 = \inf$$.
+Marginalizing, we see that the expected value is $$\sum_{n=1}^{\infty} 2^{n}\left(\frac{1}{2^{n}}\right) = \sum_{n=1}^{\infty} 1 = \infty$$.
 Hmm.
 
-Now, "infinity" is not really a number, so one must generally be a bit careful reasoning about results which include infinities, but in this instance, the conclusion can be straightforwardly understood as "the expectation is larger than any finite number".
+Now, "infinity" is not really a number, so one must generally be a bit careful reasoning about results which include infinities.
+In this instance, the conclusion can be straightforwardly understood as "the expectation is larger than any finite number".
 So the answer to our question is: a rational gambler will be willing to pay any finite amount of dollars to play this game.
 
-Of course, paying $1,000,000,000 to pay this game is obviously a stupid thing to do.
+Of course, paying $1,000,000,000 to pay this game seems like quite a stupid thing to do.
 Hence: paradox.
 
 ---
@@ -173,7 +177,7 @@ Hence: paradox.
 To be honest, I don't think "paradox" is quite the right word here.
 There's no *fundamental* inconsistency at play.
 This is just an example of a situation where the expected-value framework is ineffective.
-Choosing to play the doubling game with a buy-in of $1,000,000,000 *really does* optimize your expected value, and *also* loses you money.
+Choosing to play the doubling game with a buy-in of $1,000,000,000 *really does* have positive expected value, and *also* loses you money.
 There's nothing paradoxical about the fact that some decision-making frameworks are bad, sometimes.
 It only *feels* like a paradox to those fish who have never noticed the water.
 
@@ -183,7 +187,7 @@ But I find these to be very unsatisfying.
 They merely assume away the existence of situations that would be problematic, without addressing the fundamental issue.
 A real resolution requires the introduction of a new decision-making framework.
 
-## Maximize The Realizable Value
+# Maximize The Realizable Value
 
 Here is my proposal: * take the action that maximizes the **realizable value** *.
 
@@ -390,95 +394,11 @@ Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.co
 ---
 
 [^0]: If you are finding this hard to accept, one thing that might be helpful in understanding my position is to consider how you would argue in favor of expected-value maximization to someone with a *worse* philosophy.
-To this end, let me introduce Paul.
 
-Paul is what I call a potential-maximizer: he believes in always taking the action with the highest potential value.
-That is to say, if some action has multiple outcomes, Paul values it at the value of the highest.
-Consider, for example, a fair coin-flip that will earn $10 on heads, and $0 on tails.
-Paul identifies the value of this game as $10, and is willing to pay up to $10 for the opportunity to play.
-Similarly, given a choice between two fair coins -- the first with payouts of $10/$0 and the second with payouts of $9/$7 -- Paul will select the first coin.
+[^1]: The most widely-known resolution is actually described in [the paper that originally introduced the paradox](https://www.jstor.org/stable/1909829). This resolution introduces the idea of *utility functions*. The motivation behind utility theory is that the goal of a gambler is not to maximize the amount of dollars he earns; it's to maximize his quality of life. For example, the $1,000,000th dollar you earn is probably less useful to you than the $100th dollar. Mathematically, it is simply a nonlinear monotonic transformation that maps from the amount of dollars you have in your bank account to the amount of “utility” those dollars bring you. How does this idea resolve the St. Petersburg paradox? Any concave utility function, such as log or root, ensures that payoff for getting a large numbers of heads grows more slowly than the probabilities drop, so the expected value of the payoff becomes bounded. For example, using square-root utility, the sum becomes $$\sum_{n=1}^{\inf} \sqrt{2^{n}}\left(\frac{1}{2^{n}}\right) \approx $$. As a decision-making framework, I found this quite unsatisfying for two reasons. Firstly, it is much less elegant than expected-value maximization, because of the introduction of a free parameter: the choice of utility function.  Out of the infinitude of monotonic functions, which one should I select?  The choice is ultimately arbitrary, and I don’t like the idea of my universal decision-making framework relying on this sort of arbitrary decision. Secondly, many choices of utility function do not even fully resolve the paradox. Any invertible utility function can be "canceled out" with a corresponding change to the rewards. For example, if I am using square-root utility, my expected value on the classic doubling game is bounded, as we just saw. But what if I am given the opportunity to pay $1,000,000,000 to play a variant of the doubling game where the payout for $$n$$ heads is $$(2^{n})^2$$ dollars? The expected value becomes $$\sum_{n=1}^{\inf} \sqrt((2^{n})^2)\left(\frac{1}{2^{n}}\right) = \sum_{n=1}^{\inf} 1 = \inf$$, and I am right back where I started: willing to pay any finite amount of money for this chance at infinite utility. This is fixable by mandating bounded utility, but that seems silly.
 
-Hopefully, you and I are agreed that “potential-value maximization” is fundamentally a pretty dumb idea.
-It throws away a bunch of important info; expected-value maximization is clearly going to lead to better outcomes.
-But if Paul is unwilling to abandon his frame, it becomes impossible to convince him.
-To illustrate, here’s an imagined dialog where Evan, who believes in expected-value maximization, might try to convince Paul that he's using a bad frame.
+[^2]: This resolution argues that expectation is not *truly* infinite, because the counterparty can default on their payout. In other words, if I ever managed to hit a miraculous streak of heads that nets me $1,000,000,000,000, I may still earn only $1,000,000 if that's all the money that my counterparty has available. With this assumption (which is in fact identical mathematically to upper-bounded utility), the expectation value becomes bounded once again. Unfortunately, this is not a resolution at all. The reason is that a sufficiently-large finite bankroll has all the same flaws as the infinite one. For any given entry fee (for example, $1,000,000) we can always construct a scenario where a counterparty has a sufficiently-large bankroll (in this case, $$2^{1000001}$$) for the game to have positive expected value. Thus, even when the bankroll of the counterparty is required to be finite, we can still find situations where expected-value maximization will choose to play the doubling game at arbitrarily-high entrance fees.
 
-*Paul.* I would choose the first coin, because it has potential value of $10, whereas the second coin has potential value of only $9.
+[^3]: It's challenging to argue that one decision-making framework is superior to another, because it's a fundamentally philosophical issue. *Within* the context of a specific framework, it's straightforward to identify which *choices* are superior. Indeed, that's the whole purpose of a framework, which is at its core nothing more than a way of inducing a ranking over choices. But comparing *between* frameworks is an entirely different ballgame. There's no external, objective metric that will tell us which is the best. We're forced to invoke subjective arguments: about which frameworks make the most sense, seem like they work well, or just "feel right". For people who consider themselves objective, rational decision-makers, this can be an uncomfortable realization. Even if choices are rational *within* the context of their preferred framework, they are ultimately reliant on the subjective decision to utilize that framework at all. Now, don't confuse my point with some postmodern "everything is the same, all approaches are valid" nonsense. But we need to accept the fact that we will not be able to show which framework is preferrable with any purely numerical proof. The argument will have some subjective elements, as science and philosophy often do. In this case, the argument I’m making in favor of this approach relies on elegance, universality, naturalness, and alignment with intuitions.
 
-*Evan.* Clearly you are making the wrong call. The expected value of the second coin is $8, whereas the expected value of the first is only $5.
-
-*Paul.* ...so what? The important thing to look at is potential value.
-
-*Evan.* No, you're missing something. Potential value is a good heuristic, and it might work in some situations, but it doesn't capture the complete picture. You need to consider what happens when you *don't* get the best flip. If you take into account all outcomes, you'll see that on average, you get less money from the first coin.
-
-*Paul.* Okay, it seems reasonable to want to take other outcomes into account. But imagine you followed through on this logic and chose the second coin. You might get more good flips, sure, but you'll *never* earn $10. You're leaving potential value on the table! At the end of the day, when we measure the potential value of our choice, we see that the first coin is better, and so that's the rational action to pick, even if it seems unintuitive.
-
-*Evan.* But--...okay, look. Imagine you took the first coin, and I took the second coin, and we each played the game for a hundred rounds. We agree on the math: I am likely to end up with around $700, and you are likely to end up with around $500. Doesn't that clearly show that the second coin is superior?
-
-*Paul.* We agree that the math is valid -- it's just not showing what you want it to show. Sure, in some universes, I'll end up with less. But there is a universe out there where I have $1000, which is strictly more money than you would have in *any* universe. So, theoretically, I've chosen the best option.
-
-*Evan.* Okay, you know what, let's just actually flip them. Here, take a coin...flip...and now let's tally the results: I have $697, and you have $550. Don't you see now? I win.
-
-*Paul.* Sure, but I got unlucky. There's a universe out there where I made $1000. That version of me is gloating right now. This outcome doesn't undermine my approach at all.
-
-*Evan.* Unlucky? If anything, you got *lucky*! You made $50 more than you were expected to!
-
-*Paul.* But I made $450 less than I potentially could have. Just unlucky.
-
-...very unproductive.
-My goal with this piece is similar to Evan’s goal in the dialog above, but one level beyond.
-Evan wanted to introduce EV in place of something worse, whereas I want to abandon EV in favor of something better.
-I include Paul to illustrate how *not* to defend EV.
-If you find yourself reaching to defend EV using an argument that Paul could use to defend PV, stop and consider whether you are truly leaving your frame.
-
-[^1]: The most widely-known resolution is actually described in [the paper that originally introduced the paradox](https://www.jstor.org/stable/1909829).
-This resolution introduces the idea of *utility functions*.
-The motivation behind utility theory is that the goal of a gambler is not to maximize the amount of dollars he earns; it's to maximize his quality of life.
-For example, the $1,000,000th dollar you earn is probably less useful to you than the $100th dollar.
-Mathematically, it is simply a nonlinear monotonic transformation that maps from the amount of dollars you have in your bank account to the amount of “utility” those dollars bring you.
-
-How does this idea resolve the St. Petersburg paradox?
-Any concave utility function, such as log or root, ensures that payoff for getting a large numbers of heads grows more slowly than the probabilities drop, so the expected value of the payoff becomes bounded.
-For example, using square-root utility, the sum becomes $$\sum_{n=1}^{\inf} \sqrt{2^{n}}\left(\frac{1}{2^{n}}\right) \approx $$.
-
-As a decision-making framework, I found this quite unsatisfying for two reasons.
-Firstly, it is much less elegant than expected-value maximization, because of the introduction of a free parameter: the choice of utility function.
-Out of the infinitude of monotonic functions, which one should I select?
-The choice is ultimately arbitrary, and I don’t like the idea of my universal decision-making framework relying on this sort of arbitrary decision.
-
-Secondly, many choices of utility function do not even fully resolve the paradox.
-Any invertible utility function can be "canceled out" with a corresponding change to the rewards.
-For example, if I am using square-root utility, my expected value on the classic doubling game is bounded, as we just saw.
-But what if I am given the opportunity to pay $1,000,000,000 to play a variant of the doubling game where the payout for $$n$$ heads is $$(2^{n})^2$$ dollars?
-The expected value becomes $$\sum_{n=1}^{\inf} \sqrt((2^{n})^2)\left(\frac{1}{2^{n}}\right) = \sum_{n=1}^{\inf} 1 = \inf$$, and I am right back where I started: willing to pay any finite amount of money for this chance at infinite utility.
-This is fixable by mandating bounded utility, but that seems silly.
-
-[^2]: This resolution argues that expectation is not *truly* infinite, because the counterparty can default on their payout.
-In other words, if I ever managed to hit a miraculous streak of heads that nets me $1,000,000,000,000, I may still earn only $1,000,000 if that's all the money that my counterparty has available.
-With this assumption (which is in fact identical mathematically to upper-bounded utility), the expectation value becomes bounded once again.
-
-Unfortunately, this is not a resolution at all.
-The reason is that a sufficiently-large finite bankroll has all the same flaws as the infinite one.
-For any given entry fee (for example, $1,000,000) we can always construct a scenario where a counterparty has a sufficiently-large bankroll (in this case, $$2^{1000001}$$) for the game to have positive expected value.
-Thus, even when the bankroll of the counterparty is required to be finite, we can still find situations where expected-value maximization will choose to play the doubling game at arbitrarily-high entrance fees.
-
-[^3]: It's challenging to argue that one decision-making framework is superior to another, because it's a fundamentally philosophical issue.
-*Within* the context of a specific framework, it's straightforward to identify which *choices* are superior.
-Indeed, that's the whole purpose of a framework, which is at its core nothing more than a way of inducing a ranking over choices.
-
-But comparing *between* frameworks is an entirely different ballgame.
-There's no external, objective metric that will tell us which is the best.
-We're forced to invoke subjective arguments: about which frameworks make the most sense, seem like they work well, or just "feel right".
-For people who consider themselves objective, rational decision-makers, this can be an uncomfortable realization.
-Even if choices are rational *within* the context of their preferred framework, they are ultimately reliant on the subjective decision to utilize that framework at all.
-
-Now, don't confuse my point with some postmodern "everything is the same, all approaches are valid" nonsense.
-But we need to accept the fact that we will not be able to show which framework is preferrable with any purely numerical proof.
-The argument will have some subjective elements, as science and philosophy often do.
-In this case, the argument I’m making in favor of this approach relies on elegance, universality, naturalness, and alignment with intuitions.
-
-[^4]: If you haven’t heard this term before, it’s because I made it up.
-I want to be clear about something: my approach is closely related to many extremely well-studied problems in probability theory, and I’m not claiming that any of the ideas I discuss here are really novel.
-For example, all of the proofs that I include already appear in textbooks.
-But I haven't seen anybody set things up from quite this same angle, and this choice of resolution is not mainstream (e.g., it isn't explained on Wikipedia).
-There doesn't seem to already be a widely-used word for what I am describing, so academic norms be damned, I reserve the right to coin my own terminology for use on my personal blog.
+[^4]: If you haven’t heard this term before, it’s because I made it up.  I want to be clear about something: my approach is closely related to many extremely well-studied problems in probability theory, and I’m not claiming that any of the ideas I discuss here are really novel. For example, all of the proofs that I include already appear in textbooks. But I haven't seen anybody set things up from quite this same angle, and this choice of resolution is not mainstream (e.g., it isn't explained on Wikipedia). There doesn't seem to already be a widely-used word for what I am describing, so academic norms be damned, I reserve the right to coin my own terminology for use on my personal blog.
