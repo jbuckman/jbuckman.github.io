@@ -242,7 +242,7 @@ If the first flip is a tails, the payout is $2, and for each heads seen, the pay
 As we saw above, $$\mathbb{E}[X_i] = \sum_{n=1}^{\infty} 2^{n}\left(\frac{1}{2^{n}}\right) = \sum_{n=1}^{\infty} 1 = \infty$$.
 But as it turns out, $$\sum_{i=1}^{n} X_i \overset{p}{\to} n \log_2 n$$.
 The math here is a bit more involved, so I’ll just give the high-level intuition of the analysis.
-If you are comfortable with probability theory, [a rigorous proof is given by Dunnet in his textbook (Example 2.2.16)](https://services.math.duke.edu/~rtd/PTE/PTE5_011119.pdf#page=73), or more clearly [here](https://people.math.wisc.edu/~roch/grad-prob/gradprob-notes4.pdf#page62).
+If you are comfortable with probability theory, [a rigorous proof is given by Dunnet in his textbook (Example 2.2.16)](https://services.math.duke.edu/~rtd/PTE/PTE5_011119.pdf#page=73), or more explicitly [in Sebastien Roch's lecture notes](https://people.math.wisc.edu/~roch/grad-prob/gradprob-notes4.pdf#page62).
 
 The key tool is our ability to *truncate* a random variable, meaning clip its value to 0 if it falls outside of a certain range.
 Truncation is helpful for this sort of problem because, once we have truncated, the expectation is guaranteed to be nice and bounded.
