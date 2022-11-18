@@ -222,7 +222,7 @@ In each scenario, we are invited to play a particular game for $$n$$ rounds, and
 $$X_i$$ denotes the random variable that refers to the outcome of the $$i$$th round, so
 our total payout for $$n$$ plays is $$\sum_{i=1}^{n} X_i$$.
 
-#### Basic coin flip.
+### Basic coin flip.
 
 In the first game, I flip a fair coin which pays out \\$10 for heads and \\$0 for tails.
 The expected value of any given round $$\mathbb{E}[X_i] = 0.5(10) + 0.5(0) = 5$$ for all $i$.
@@ -232,7 +232,7 @@ As a realizable-value maximizer, I should be willing to pay $5 per round of play
 
 As expected, this coincides with the solution given by expected value.
 
-#### Doubling game.
+### Doubling game.
 
 I flip a fair coin until it comes up tails.
 If the first flip is a tails, the payout is $2, and for each heads seen, the payout doubles.
@@ -282,7 +282,7 @@ Just to confirm, I ran a simulation ([code here](/static/files/petersburg/stpete
 
 A bit noisy, but overall pretty convincing.
 
-#### Consecutive wagers.
+### Consecutive wagers.
 
 You have a bankroll of $$b$$ dollars, and wager $$z$$ dollars. 
 I flip a coin, which comes up heads with probability $$p$$.
@@ -319,9 +319,11 @@ That’s a big improvement already.
 But could he have done even better?
 
 In fact, this analysis reveals a straightforward way to identify an optimal betting strategy, one which maximizes value realized per round.
-If the bet in each round were $$z_n = f b_n$$ for some fraction $$0 \leq f \leq 1$$, such that the payoff for winning decreases to $$fw$$ and the penalty for losing decreases to $$fl$$, wealth converges to $$b_n \overset{P}\to b_0\left((1+fw)^{p}(1-fl)^{(1-p)}\right)^{n}$$ as $$n \to \infty$$.
+If the bet in each round were $$z_n = f b_n$$ for some fraction $$0 \leq f \leq 1$$, such that the payoff for winning decreases to $$fw$$ and the penalty for losing decreases to $$fl$$, we see $$b_n \overset{P}\to b_0\left((1+fw)^{p}(1-fl)^{(1-p)}\right)^{n}$$ as $$n \to \infty$$.
 All we need to do is choose the $$f$$ which maximizes this value, which can be done by setting its derivative equal to zero, and solving the resulting equation.
 The solution, $$f^* = \frac{p}{l} - \frac{1-p}{w}$$, is the formula for the famous [Kelly Criterion](https://en.wikipedia.org/wiki/Kelly_criterion).
+
+---
 
 ## Connections
 
