@@ -297,10 +297,10 @@ Let $$H_n$$ be the number of heads seen after $$n$$ rounds, and so $$n - H_n$$ g
 This means that the bankroll $$b_n = b_0(1+w)^{H_n}(1-l)^{n-H_n}$$ at timestep $$n$$, where $$b_0$$ gives the initial bankroll.
 Since $$\mathbb{E}[H_n] = np$$, the law of large numbers tells us that $$|H_n - np| \overset{P}\to 0$$ as $$n \to \infty$$.
 Thus, the bankroll
-\begin{align*}
+\begin{align}
 b_n &= b_0(1+w)^{H_n}(1-l)^{n-H_n} \overset{P}\to &b_0(1+w)^{np}(1-l)^{n(1-p)} \\
     &                                             &= b_0((1+w)^{p}(1-l)^{(1-p)})^{n}
-\end{align*}
+\end{align}
 as $$n \to \infty$$.
 And so we see, if $$(1+w)^{p}(1-l)^{(1-p)} < 1$$, then $$b_i \overset{P}\to 0$$.
 
@@ -314,12 +314,12 @@ They would not have lost their money had they had aimed to maximize their realiz
 (To strengthen your intuition, it's worth thinking about how it is possible for the distribution of outcomes to have both infinite expected value, and zero realizable value.
 What must the distribution look like?)
 
-Tenmothy, of course, wagered in such a way as to effectively force the “basic coin flip” game instead, so he was able to realize earnings of $$1.2n$$, meaning his realized wealth will grow linearly as long as the game continues.
+Tenmothy, of course, wagered in such a way as to effectively force the “basic coin flip” game instead, so he was able to realize earnings of $$1.2n$$, meaning his realized wealth grew linearly as long as the game continued.
 That’s a big improvement already.
 But could he have done even better?
 
 In fact, this analysis reveals a straightforward way to identify an optimal betting strategy, one which maximizes value realized per round.
-If the bet in each round were $$z_n = f b_n$$ for some fraction $$0 \leq f \leq 1$$, such that the payoff for winning decreases to $$fw$$ and the penalty for losing decreases to $$fl$$, wealth converges to $$b_n \overset{P}\to b_0((1+fw)^{p}(1-fl)^{(1-p)})^{n}$$ as $$n \to \infty$$.
+If the bet in each round were $$z_n = f b_n$$ for some fraction $$0 \leq f \leq 1$$, such that the payoff for winning decreases to $$fw$$ and the penalty for losing decreases to $$fl$$, wealth converges to $$b_n \overset{P}\to b_0\left((1+fw)^{p}(1-fl)^{(1-p)}\right)^{n}$$ as $$n \to \infty$$.
 All we need to do is choose the $$f$$ which maximizes this value, which can be done by setting its derivative equal to zero, and solving the resulting equation.
 The solution, $$f^* = \frac{p}{l} - \frac{1-p}{w}$$, is the formula for the famous [Kelly Criterion](https://en.wikipedia.org/wiki/Kelly_criterion).
 
