@@ -328,7 +328,10 @@ The solution, $$f^* = \frac{p}{l} - \frac{1-p}{w}$$, is the formula for the famo
 One last interesting connection is that when $$f$$ is very small -- that is, your wager is tiny compared to your bankroll -- EV and RV agree.
 To see this, we need to use the fact that $$\log x+1 \approx x$$ for $$x \approx 0$$.
 Recall that EV says that we should take the bet when $$\frac{pw}{(1-p)l} > 1$$, and RV says that we should take the bet when $$(1+fw)^{p}(1-fl)^{(1-p)} > 1$$.
-Now, when $$f \approx 0$$, we see $$fw \approx 0$$ and $$-fl \approx 0$$, so $$\log (1+fw)^{p}(1-fl)^{(1-p)} = p\log(1+fw) + (1-p)\log(1-fl) \approx p(fw) - (1-p)(fl)$$.
+Now, when $$f \approx 0$$, we see $$fw \approx 0$$ and $$-fl \approx 0$$, so:
+
+$$\log (1+fw)^{p}(1-fl)^{(1-p)} = p\log(1+fw) + (1-p)\log(1-fl) \approx p(fw) - (1-p)(fl)$$.
+
 Starting with the condition for RV, $$(1+fw)^{p}(1-fl)^{(1-p)} > 1$$, we can take the log of both sides, $$\log \left( (1+fw)^{p}(1-fl)^{(1-p)} \right) > 0$$, substitute our approximation, $$p(fw) - (1-p)(fl) > 0$$, and then rearrange to get $$\frac{pw}{(1-p)l} > 1$$, which is precisely the condition for EV.
 So even if we are doing repeated bets, we only need to take RV into account when wagering a non-insignificant fraction of our total bankroll.
 
