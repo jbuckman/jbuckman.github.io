@@ -100,6 +100,8 @@ Sometimes he won, sometimes he lost, always the boy wagered but a single 10₽ c
 By the time the sun rose to free me from the game, he had taken everything I won in the city, and much more besides.
 To this day, I am still paying off the debt I accrued on the road from St. Petersburg.
 
+---
+
 # On Expected Value
 
 Should one always choose the action with the highest expected value?
@@ -145,6 +147,8 @@ For someone who has spent their whole life deeply embedded in the EV-max framewo
 Like the fish in the David Foster Wallace essay who asks: “What the hell is water?”
 Unless you've breathed air, you’d never know you’re swimming in it.
 
+---
+
 # The St. Petersburg Paradox
 
 The [St. Petersburg paradox ](https://en.wikipedia.org/wiki/St._Petersburg_paradox) is a well-known statistical conundrum, one that is closely connected to the plight of its fictional citizens in my story.
@@ -169,7 +173,7 @@ Now, "infinity" is not really a number, so one must generally be a bit careful r
 In this instance, the conclusion can be straightforwardly understood as "the expectation is larger than any finite number".
 So the answer to our question is: a rational gambler will be willing to pay any finite amount of dollars to play this game.
 
-Of course, paying $1,000,000,000 to pay this game seems like quite a stupid thing to do.
+Of course, paying \\$1,000,000,000 to pay this game seems like quite a stupid thing to do.
 Hence: paradox.
 
 ---
@@ -177,7 +181,7 @@ Hence: paradox.
 To be honest, I don't think "paradox" is quite the right word here.
 There's no *fundamental* inconsistency at play.
 This is just an example of a situation where the expected-value framework is ineffective.
-Choosing to play the doubling game with a buy-in of $1,000,000,000 *really does* have positive expected value, and *also* loses you money.
+Choosing to play the doubling game with a buy-in of \\$1,000,000,000 *really does* have positive expected value, and *also* loses you money.
 There's nothing paradoxical about the fact that some decision-making frameworks are bad, sometimes.
 It only *feels* like a paradox to those fish who have never noticed the water.
 
@@ -187,6 +191,8 @@ But I find these to be very unsatisfying.
 They merely assume away the existence of situations that would be problematic, without addressing the fundamental issue.
 A real resolution requires the introduction of a new decision-making framework.
 
+---
+
 # Maximize The Realizable Value
 
 Here is my proposal: * take the action that maximizes the **realizable value** *.
@@ -194,7 +200,7 @@ Here is my proposal: * take the action that maximizes the **realizable value** *
 The realizable value[^4] of a bet is the amount of money that you are guaranteed to end up winning if you play enough times.
 It is an outcome whose probability gets more and more likely the more rounds you play.
 It is defined using a well-understood concept from probability theory known as [convergence in probability](https://en.wikipedia.org/wiki/Convergence_of_random_variables#Convergence_in_probability).
-Concretely, if the outcome of a bet converges in probability to some number $X, then that bet is said to have a “realizable value of $X”.
+Concretely, if the outcome of a bet converges in probability to some number X, then that bet is said to have a “realizable value of X”.
 
 If you’ve never studied probability theory, you might be a bit confused by how this definition is different from expected value; intuitively, it feels like it might just be a different way of expressing the same concept.
 Indeed, the difference between the two is subtle.
@@ -218,7 +224,7 @@ our total payout for $$n$$ plays is $$\sum_{i=1}^{n} X_i$$.
 
 #### Basic coin flip.
 
-In the first game, I flip a fair coin which pays out $10 for heads and $0 for tails.
+In the first game, I flip a fair coin which pays out \\$10 for heads and \\$0 for tails.
 The expected value of any given round $$\mathbb{E}[X_i] = 0.5(10) + 0.5(0) = 5$$ for all $i$.
 Since this is finite, the weak law of large numbers tells us that $$\frac{1}{n} \sum_{i=1}^{n} X_i \overset{p}{\to} \mathbb{E}[X_i]$$ as $$n \to \infty$$.
 We can rearrange to get $$\sum_{i=1}^{n} X_i \overset{P}{\to} n*\mathbb{E}[X_i] = 5n$$.
@@ -259,7 +265,7 @@ Plugging in $$\mu_n = n (\log_2 n + \log_2 \log_2 n)$$ and $$b_n = n \log_2 n$$ 
 Whew.
 Let’s marinate for a moment on the implications of this result.
 It seems that in the doubling game, the realizable value *per round* grows with the number of rounds being played.
-If you’re only playing 1000 rounds of the game, the amount that you are willing to spend per round is $$1000 \log_2 1000 \approx 10000$$, so you value each round at $10.
+If you’re only playing 1000 rounds of the game, the amount that you are willing to spend per round is $$1000 \log_2 1000 \approx 10000$$, so you value each round at \\$10.
 But if you are playing 100,000 rounds, then suddenly you value each round at $20!
 It’s as though this game has an inherent economy of scale.
 The more times you play, the more valuable each play becomes.
@@ -375,6 +381,8 @@ In contrast, smaller firms are more likely to invest in founders with a smaller,
 I’m sure VCs have perfectly reasonable justifications.
 I’m just pointing out that it is cool that using these ideas as first principles can also explain it, in spite of the theory not being intentionally constructed to do so.)
 
+---
+
 ## Conclusion
 
 Hopefully, those of you who are still with me are on board with the idea that we should be maximizing realizable value instead of expected value.
@@ -395,9 +403,9 @@ Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.co
 
 [^0]: If you are finding this hard to accept, one thing that might be helpful in understanding my position is to consider how you would argue in favor of expected-value maximization to someone with a *worse* philosophy.
 
-[^1]: The most widely-known resolution is actually described in [the paper that originally introduced the paradox](https://www.jstor.org/stable/1909829). This resolution introduces the idea of *utility functions*. The motivation behind utility theory is that the goal of a gambler is not to maximize the amount of dollars he earns; it's to maximize his quality of life. For example, the \\$1,000,000th dollar you earn is probably less useful to you than the \\$100th dollar. Mathematically, it is simply a nonlinear monotonic transformation that maps from the amount of dollars you have in your bank account to the amount of “utility” those dollars bring you. <br><br>How does this idea resolve the St. Petersburg paradox? Any concave utility function, such as log or root, ensures that payoff for getting a large numbers of heads grows more slowly than the probabilities drop, so the expected value of the payoff becomes bounded. For example, using square-root utility, the sum becomes $$\sum_{n=1}^{\infty} \sqrt{2^{n}}\left(\frac{1}{2^{n}}\right) \approx 2.41$$. <br><br>As a decision-making framework, I found this quite unsatisfying for two reasons. Firstly, it is much less elegant than expected-value maximization, because of the introduction of a free parameter: the choice of utility function.  Out of the infinitude of monotonic functions, which one should I select?  The choice is ultimately arbitrary, and I don’t like the idea of my universal decision-making framework relying on this sort of arbitrary decision. <br><br>Secondly, many choices of utility function do not even fully resolve the paradox. Any invertible utility function can be "canceled out" with a corresponding change to the rewards. For example, if I am using square-root utility, my expected value on the classic doubling game is bounded, as we just saw. But what if I am given the opportunity to pay $1,000,000,000 to play a variant of the doubling game where the payout for $$n$$ heads is $$(2^{n})^2$$ dollars? The expected value becomes $$\sum_{n=1}^{\infty} \sqrt((2^{n})^2)\left(\frac{1}{2^{n}}\right) = \sum_{n=1}^{\infty} 1 = \infty$$, and I am right back where I started: willing to pay any finite amount of money for this chance at infinite utility. This is fixable by mandating bounded utility, but that seems silly.
+[^1]: The most widely-known resolution is actually described in [the paper that originally introduced the paradox](https://www.jstor.org/stable/1909829). This resolution introduces the idea of *utility functions*. The motivation behind utility theory is that the goal of a gambler is not to maximize the amount of dollars he earns; it's to maximize his quality of life. For example, the \\$1,000,000th dollar you earn is probably less useful to you than the \\$100th dollar. Mathematically, it is simply a nonlinear monotonic transformation that maps from the amount of dollars you have in your bank account to the amount of “utility” those dollars bring you. <br><br>How does this idea resolve the St. Petersburg paradox? Any concave utility function, such as log or root, ensures that payoff for getting a large numbers of heads grows more slowly than the probabilities drop, so the expected value of the payoff becomes bounded. For example, using square-root utility, the sum becomes $$\sum_{n=1}^{\infty} \sqrt{2^{n}}\left(\frac{1}{2^{n}}\right) \approx 2.41$$. <br><br>As a decision-making framework, I found this quite unsatisfying for two reasons. Firstly, it is much less elegant than expected-value maximization, because of the introduction of a free parameter: the choice of utility function.  Out of the infinitude of monotonic functions, which one should I select?  The choice is ultimately arbitrary, and I don’t like the idea of my universal decision-making framework relying on this sort of arbitrary decision. <br><br>Secondly, many choices of utility function do not even fully resolve the paradox. Any invertible utility function can be "canceled out" with a corresponding change to the rewards. For example, if I am using square-root utility, my expected value on the classic doubling game is bounded, as we just saw. But what if I am given the opportunity to pay \\$1,000,000,000 to play a variant of the doubling game where the payout for $$n$$ heads is $$(2^{n})^2$$ dollars? The expected value becomes $$\sum_{n=1}^{\infty} \sqrt((2^{n})^2)\left(\frac{1}{2^{n}}\right) = \sum_{n=1}^{\infty} 1 = \infty$$, and I am right back where I started: willing to pay any finite amount of money for this chance at infinite utility. This is fixable by mandating bounded utility, but that seems silly.
 
-[^2]: This resolution argues that expectation is not *truly* infinite, because the counterparty can default on their payout. In other words, if I ever managed to hit a miraculous streak of heads that nets me \\$1,000,000,000,000, I may still earn only \\$1,000,000 if that's all the money that my counterparty has available. With this assumption (which is in fact identical mathematically to upper-bounded utility), the expectation value becomes bounded once again. <br><br>Unfortunately, this is not a resolution at all. The reason is that a sufficiently-large finite bankroll has all the same flaws as the infinite one. For any given entry fee (for example, $1,000,000) we can always construct a scenario where a counterparty has a sufficiently-large bankroll (in this case, $$2^{1000001}$$) for the game to have positive expected value. Thus, even when the bankroll of the counterparty is required to be finite, we can still find situations where expected-value maximization will choose to play the doubling game at arbitrarily-high entrance fees.
+[^2]: This resolution argues that expectation is not *truly* infinite, because the counterparty can default on their payout. In other words, if I ever managed to hit a miraculous streak of heads that nets me \\$1,000,000,000,000, I may still earn only \\$1,000,000 if that's all the money that my counterparty has available. With this assumption (which is in fact identical mathematically to upper-bounded utility), the expectation value becomes bounded once again. <br><br>Unfortunately, this is not a resolution at all. The reason is that a sufficiently-large finite bankroll has all the same flaws as the infinite one. For any given entry fee (for example, \\$1,000,000) we can always construct a scenario where a counterparty has a sufficiently-large bankroll (in this case, $$2^{1000001}$$) for the game to have positive expected value. Thus, even when the bankroll of the counterparty is required to be finite, we can still find situations where expected-value maximization will choose to play the doubling game at arbitrarily-high entrance fees.
 
 [^3]: It's challenging to argue that one decision-making framework is superior to another, because it's a fundamentally philosophical issue. *Within* the context of a specific framework, it's straightforward to identify which *choices* are superior. Indeed, that's the whole purpose of a framework, which is at its core nothing more than a way of inducing a ranking over choices. <br><br>But comparing *between* frameworks is an entirely different ballgame. There's no external, objective metric that will tell us which is the best. We're forced to invoke subjective arguments: about which frameworks make the most sense, seem like they work well, or just "feel right". For people who consider themselves objective, rational decision-makers, this can be an uncomfortable realization. Even if choices are rational *within* the context of their preferred framework, they are ultimately reliant on the subjective decision to utilize that framework at all. <br><br>Now, don't confuse my point with some postmodern "everything is the same, all approaches are valid" nonsense. Some frameworks really are better than others. But we need to accept the fact that we will not be able to show which framework is preferrable with any purely numerical proof. The argument will have some subjective elements, as science and philosophy often do. In this case, the argument I’m making in favor of this approach relies on elegance, universality, naturalness, and alignment with intuitions.
 
