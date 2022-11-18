@@ -308,10 +308,10 @@ And so we see, if $$(1+w)^{p}(1-l)^{(1-p)} < 1$$, then $$b_i \overset{P}\to 0$$.
 
 In summary, EV says to take the bet if $$\frac{pw}{(1-p)l} > 1$$, and RV says to take the bet if $$(1+w)^{p}(1-l)^{(1-p)} > 1$$.
 Unfortunately, these two conditions do not always agree.
-For example, when $$p = .5, w = .6, l = .5$$, we see $$\frac{pw}{(1-p)l} = 1.2 > 1$$, while $$(1+w)^{p}(1-l)^{(1-p)} \approx .89 < 1$$.
+For example, when $$p = .5, w = .6, l = .5$$, we see $$\frac{pw}{(1-p)l} = \frac{.5(.6)}{.5(.5)} = 1.2 > 1$$, while $$(1+w)^{p}(1-l)^{(1-p)} = (1.6)^{.5}(.5)^{.5} \approx .89 < 1$$.
 
 This result explains trouble for the citizens of St. Petersburg in the story at the beginning of this essay, who were offered a bet with $$p = .5, w = 1.2, l = 1$$.
-$$\frac{pw}{(1-p)l} = 1.2 > 1$$, so they took the bet, but $$(1+w)^{p}(1-l)^{(1-p)} = 0$$, so their realized outcome was $0.
+$$\frac{pw}{(1-p)l} = \frac{.5(1.2)}{.5(1)} = 1.2 > 1$$, so they took the bet, but $$(1+w)^{p}(1-l)^{(1-p)} = (1+1.2)^{.5}(1-1)^{.5} = 0$$, so their realized outcome was $0.
 They would not have lost their money had they had aimed to maximize their realizable value instead of their expected value.
 (To strengthen your intuition, it's worth thinking about how it is possible for the distribution of outcomes to have both infinite expected value, and zero realizable value.
 What must the distribution look like?)
@@ -324,6 +324,13 @@ In fact, this analysis reveals a straightforward way to identify an optimal bett
 If the bet in each round were $$z_n = f b_n$$ for some fraction $$0 \leq f \leq 1$$, such that the payoff for winning decreases to $$fw$$ and the penalty for losing decreases to $$fl$$, we see $$b_n \overset{P}\to b_0\left((1+fw)^{p}(1-fl)^{(1-p)}\right)^{n}$$ as $$n \to \infty$$.
 All we need to do is choose the $$f$$ which maximizes this value, which can be done by setting its derivative equal to zero, and solving the resulting equation.
 The solution, $$f^* = \frac{p}{l} - \frac{1-p}{w}$$, is the formula for the famous [Kelly Criterion](https://en.wikipedia.org/wiki/Kelly_criterion).
+
+One last interesting connection is that when $$f$$ is very small -- that is, your wager is tiny compared to your bankroll -- EV and RV agree.
+To see this, we need to use the fact that $$\log x+1 \approx x$$ for $$x \approx 0$$.
+Recall that EV says that we should take the bet when $$\frac{pw}{(1-p)l} > 1$$, and RV says that we should take the bet when $$(1+fw)^{p}(1-fl)^{(1-p)} > 1$$.
+Now, when $$f \approx 0$$, we see $$fw \approx 0$$ and $$-fl \approx 0$$, so $$\log (1+fw)^{p}(1-fl)^{(1-p)} = p\log(1+fw) + (1-p)\log(1-fl) \approx p(fw) - (1-p)(fl)$$.
+Starting with the condition for RV, $$(1+fw)^{p}(1-fl)^{(1-p)} > 1$$, we can take the log of both sides, $$\log \left( (1+fw)^{p}(1-fl)^{(1-p)} \right) > 0$$, substitute our approximation, $$p(fw) - (1-p)(fl) > 0$$, and then rearrange to get $$\frac{pw}{(1-p)l} > 1$$, which is precisely the condition for EV.
+So even if we are doing repeated bets, we only need to take RV into account when wagering a non-insignificant fraction of our total bankroll.
 
 ---
 
