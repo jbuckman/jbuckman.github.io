@@ -155,13 +155,16 @@ The [St. Petersburg paradox ](https://en.wikipedia.org/wiki/St._Petersburg_parad
 The paradox concerns a particular gamble, which I'll call the *doubling game*.
 
 Here are the rules.
-I begin by placing $2 in a pot.
-I then begin to repeatedly flip a fair coin.
-Each time it lands heads, I double the amount of money in the pot.
-The first time it lands tails, you take the money in the pot and the game ends.
+The game begins with $2 in the pot.
+The player repeatedly flips a fair coin.
+Each time it lands heads, the amount of money in the pot doubles.
+The first time it lands tails, the player is given the money in the pot, and the game ends.
 
 What is the most that a rational gambler should be willing to pay to play this game?
-According to the expected-value framework, the answer is the expected value of the game.
+Clearly, the answer is at least $2, because that's the minimum payout.
+But we will sometimes see a long sequence of heads, and the payout will be much higher, so perhaps we should be willing to pay more.
+
+According to the expected-value framework, the amount that a gambler should be willing to pay is equal to the expected value of the game.
 We can compute this easily, by partitioning the outcomes based on the number of flips. 
 There is a $$\frac{1}{2}$$ chance of seeing exactly one flip (if the first flip is tails), a $$\frac{1}{4}$$ chance of seeing exactly two flips (heads, then tails), a $$\frac{1}{8}$$ chance of seeing exactly three flips...the pattern is clear, the chance of seeing $$n$$ flips is $$\frac{1}{2^{n}}$$.
 And what are the values of these outcomes?
@@ -224,7 +227,7 @@ our total payout for $$n$$ plays is $$\sum_{i=1}^{n} X_i$$.
 
 ### Basic coin flip.
 
-In the first game, I flip a fair coin which pays out \\$10 for heads and \\$0 for tails.
+In the first game, the player flips a fair coin which pays out \\$10 for heads and \\$0 for tails.
 The expected value of any given round $$\mathbb{E}[X_i] = 0.5(10) + 0.5(0) = 5$$ for all $i$.
 Since this is finite, the weak law of large numbers tells us that $$\frac{1}{n} \sum_{i=1}^{n} X_i \overset{p}{\to} \mathbb{E}[X_i]$$ as $$n \to \infty$$.
 We can rearrange to get $$\sum_{i=1}^{n} X_i \overset{P}{\to} n\mathbb{E}[X_i] = 5n$$.
@@ -234,7 +237,7 @@ As expected, this coincides with the solution given by expected value.
 
 ### Doubling game.
 
-I flip a fair coin until it comes up tails.
+The player flips a fair coin until it comes up tails.
 If the first flip is a tails, the payout is $2, and for each heads seen, the payout doubles.
 As we saw above, $$\mathbb{E}[X_i] = \sum_{n=1}^{\infty} 2^{n}\left(\frac{1}{2^{n}}\right) = \sum_{n=1}^{\infty} 1 = \infty$$.
 But as it turns out, $$\sum_{i=1}^{n} X_i \overset{p}{\to} n \log_2 n$$.
@@ -284,10 +287,10 @@ A bit noisy, but overall pretty convincing.
 
 ### Consecutive wagers.
 
-You have a bankroll of $$b$$ dollars, and wager $$z$$ dollars. 
-I flip a coin, which comes up heads with probability $$p$$.
-If heads, your money is multiplied by some factor $$1+w$$ for $$w > 0$$.
-If tails, your money is reduced by some factor $$1 - l$$, where $$0 < l \leq 1$$.
+The player has a bankroll of $$b$$ dollars, and wagers $$z$$ dollars. 
+The player flip a coin, which comes up heads with probability $$p$$.
+If heads, the wager is multiplied by some factor $$1+w$$ for $$w > 0$$.
+If tails, the wager is reduced by some factor $$1 - l$$, where $$0 < l \leq 1$$.
 
 The expected value of each round of this game is $$pzw - (1-p)zl = z(pw - (1-p)l)$$.
 So, as long as $$pw > (1-p)l$$, each round has an expected value which is linear in the bet size, and the expected value is maximized by betting everything.
