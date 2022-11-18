@@ -169,8 +169,8 @@ A real resolution to the St. Petersburg paradox requires the introduction of a n
 
 Here is my proposal: *take the action that maximizes the **realizable value***.
 
-The realizable value[^4] of a bet is the amount of money that you are guaranteed to end up winning if you play enough times.
-It is an outcome whose probability gets more and more likely the more rounds you play.
+The realizable value[^4] of a bet is the amount of money that you will end up winning if you play enough times.
+In other words, it is an outcome whose probability gets more and more likely the more times you play the bet.
 It is defined using a well-understood concept from probability theory known as [convergence in probability](https://en.wikipedia.org/wiki/Convergence_of_random_variables#Convergence_in_probability).
 Concretely, if the outcome of a bet converges in probability to some number X, then that bet is said to have a “realizable value of X”.
 
@@ -180,16 +180,34 @@ In fact, for all bets with *finite* expected value, the [weak law of large numbe
 This means that the realizable value of any bet with finite expected value is its expected value!
 Thus, all of your intuitions from expected-value maximization carry over to realizable-value maximization.
 
-But when a bet has *infinite* expected value, as occurs in the St. Petersburg paradox, the two frameworks typically come to different conclusions about what actions to take.
-As we’ve discussed, expected-value maximization concludes that one should play at any price.
-But realizable-value maximization gives an actual reasonable answer, explaining precisely how many dollars one should be willing to pay for the opportunity to play a certain number of times.
+But when a bet has *infinite* expected value, the two frameworks sometimes come to different conclusions about what actions to take.
+For example, this is the case in the St. Petersburg paradox, as well as in my story about Expectsibirsk.
 
-Personally, I find this to be quite compelling evidence in favor of this approach.
-This new principle matches up perfectly with EV in all the situations we know that EV feels correct, and gives a new answer in precisely those situations where EV does something weird.
+Personally, I find this to be quite cool: this new principle matches up perfectly with EV in all the situations we know that EV feels correct, and gives a new answer in precisely those situations where EV does something weird.
 But it’s not as though I carved out specific exceptions: this approach is unified and very natural, but just happens to do exactly what we would want.
 Isn’t that elegant?
 
-Let’s walk through some examples of realizable value in action.
+---
+
+Before we go on, I want to build a bit of intuition as far as what it might look like when the expected value and realized value are not the same.
+On the surface, it seems a bit surprising that this is possible.
+How can the two be different?
+How can we *on average* make an infinite amount of money, but still *be guaranteed to make* a finite amount of money?
+
+The archetypal setup for this weirdness is when some extremely-unlikely outcomes have massive value.
+For example, consider playing many rounds of a 50/50 2.2x-or-nothing bet, like the one I offered in Expectsibirsk, starting with a bet of \\$1.
+After 100 rounds, the chance that you have exactly 0 dollars is $$1-(.5)^{100} \approx 1-10^{-30}$$.
+But!
+If you *do* find yourself with some money, then you will have made $$2.2^{100} \approx 10^{34}$$ dollars.
+Since, as you play more rounds, the amount of money that you *could* make is growing faster than the likelihood of that outcome is *falling*, the expected value of this strategy grows infinitely as more rounds are played.
+But the chance that you walk away with nothing is still growing to approach 100%, and in the end, that's always what happens.
+
+So if you are acting to maximize expected value, like the citizens of Expectsibirsk in my story, you would play this game.
+But if you were acting to maximize realizable value, you would not.
+
+---
+
+Next, let’s walk through some examples of realizable value in action.
 In each scenario, we are invited to play a particular game for $$n$$ rounds, and ask: what is a fair price-per-round to pay?
 $$X_i$$ denotes the random variable that refers to the outcome of the $$i$$th round, so
 our total payout for $$n$$ plays is $$\sum_{i=1}^{n} X_i$$.
@@ -265,11 +283,12 @@ If tails, the wager is reduced by some factor $$1 - l$$, where $$0 < l \leq 1$$.
 
 The expected value of each round of this game is $$pzw - (1-p)zl = z(pw - (1-p)l)$$.
 So, as long as $$pw > (1-p)l$$, each round has an expected value which is linear in the bet size, and the expected value is maximized by betting everything.
+In fact, thanks to linearity of expectation, it's possible to prove that this also holds true for sequential bets: when $$pw > (1-p)l$$, we maximize the expected value after $$n$$ rounds by betting everything, every time.
 
-What value is realized by the strategy of always betting everything?
+What value is realized by this strategy of always betting everything?
 Let $$H_n$$ be the number of heads seen after $$n$$ rounds, and so $$n - H_n$$ gives the number of tails.
 This means that the bankroll $$b_n = b_0(1+w)^{H_n}(1-l)^{n-H_n}$$ at timestep $$n$$, where $$b_0$$ gives the initial bankroll.
-Since $$\mathbb{E}[\frac{H_n}{n}] = p$$, whithe law of large numbers tells us that $$|H_n - np| \overset{P}\to 0$$ as $$n \to \infty$$.
+Since $$\mathbb{E}[\frac{H_n}{n}] = p$$, the law of large numbers tells us that $$|H_n - np| \overset{P}\to 0$$ as $$n \to \infty$$.
 Thus, for the bankroll $$b_n$$,
 
 $$b_n = b_0(1+w)^{H_n}(1-l)^{n-H_n} \overset{P}\to b_0(1+w)^{np}(1-l)^{n(1-p)} = b_0\left((1+w)^{p}(1-l)^{(1-p)}\right)^{n}$$
