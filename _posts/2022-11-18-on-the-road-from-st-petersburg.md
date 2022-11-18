@@ -348,7 +348,7 @@ and then rearrange:
 
 $$\frac{pw}{(1-p)l} > 1$$
 
-to get an equivalent condition, which is exactly the condition as for when a bet has positive EV.
+to get an equivalent condition which, you'll note, is identical to the condition as for when a bet has positive EV.
 This means that we only need to take RV into account when wagering a non-insignificant fraction of our bankroll.
 For tiny bets, reasoning with EV is sufficient.
 
