@@ -303,7 +303,7 @@ $$b_n = b_0(1+w)^{H_n}(1-l)^{n-H_n} \overset{P}\to b_0(1+w)^{np}(1-l)^{n(1-p)} =
 as $$n \to \infty$$.
 And so we see, if $$(1+w)^{p}(1-l)^{(1-p)} < 1$$, then $$b_i \overset{P}\to 0$$.
 
-So, EV says to take the bet if $$\frac{pw}{(1-p)l} > 1$$, and RV says to take the bet if $$(1+w)^{p}(1-l)^{(1-p)} > 1$$.
+In summary, EV says to take the bet if $$\frac{pw}{(1-p)l} > 1$$, and RV says to take the bet if $$(1+w)^{p}(1-l)^{(1-p)} > 1$$.
 Unfortunately, these two conditions do not always agree.
 For example, when $$p = .5, w = .6, l = .5$$, we see $$\frac{pw}{(1-p)l} = 1.2 > 1$$, while $$(1+w)^{p}(1-l)^{(1-p)} \approx .89 < 1$$.
 
@@ -313,7 +313,7 @@ They would not have lost their money had they had aimed to maximize their realiz
 (To strengthen your intuition, it's worth thinking about how it is possible for the distribution of outcomes to have both infinite expected value, and zero realizable value.
 What must the distribution look like?)
 
-Tenmothy, of course, wagered in such a way as to effectively force the “basic coin flip” game instead, so he was able to realize earnings of $$1.2n$$, meaning his realized wealth grew linearly as long as the game continued.
+Tenmothy, of course, wagered in such a way as to play the “basic coin flip” game instead, so he was able to realize earnings of $$1.2n$$, meaning his realized wealth grew linearly as long as the game continued.
 That’s a big improvement already.
 But could he have done even better?
 
