@@ -297,10 +297,10 @@ Let $$H_n$$ be the number of heads seen after $$n$$ rounds, and so $$n - H_n$$ g
 This means that the bankroll $$b_n = b_0(1+w)^{H_n}(1-l)^{n-H_n}$$ at timestep $$n$$, where $$b_0$$ gives the initial bankroll.
 Since $$\mathbb{E}[H_n] = np$$, the law of large numbers tells us that $$|H_n - np| \overset{P}\to 0$$ as $$n \to \infty$$.
 Thus, the bankroll
-\begin{align}
+\begin{align\\*}
 b_n &= b_0(1+w)^{H_n}(1-l)^{n-H_n} \overset{P}\to &b_0(1+w)^{np}(1-l)^{n(1-p)} \\
     &                                             &= b_0((1+w)^{p}(1-l)^{(1-p)})^{n}
-\end{align}
+\end{align\\*}
 as $$n \to \infty$$.
 And so we see, if $$(1+w)^{p}(1-l)^{(1-p)} < 1$$, then $$b_i \overset{P}\to 0$$.
 
