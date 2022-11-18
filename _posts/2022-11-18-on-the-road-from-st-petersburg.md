@@ -328,7 +328,7 @@ The solution, $$f^* = \frac{p}{l} - \frac{1-p}{w}$$, is the formula for the famo
 One last interesting property to note: EV and RV agree when $$f$$ is very small.
 To see this, we need to use the fact that $$\log x+1 \approx x$$ for $$x \approx 0$$.
 Recall that EV says that we should take the bet when $$\frac{pw}{(1-p)l} > 1$$, and RV says that we should take the bet when $$(1+fw)^{p}(1-fl)^{(1-p)} > 1$$.
-Now, when $$f \approx 0$$, we see $$fw \approx 0$$ and $$-fl \approx 0$$, so:
+Now, when $$f \approx 0$$, we have $$fw \approx 0$$ and $$-fl \approx 0$$, so:
 
 $$\log (1+fw)^{p}(1-fl)^{(1-p)} = p\log(1+fw) + (1-p)\log(1-fl) \approx p(fw) - (1-p)(fl)$$.
 
