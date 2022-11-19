@@ -296,7 +296,7 @@ If tails, the wager is reduced by some factor $$1 - l$$, where $$0 < l \leq 1$$.
 The expected value of each round of this game is $$pfbw - (1-p)fbl = fb(pw - (1-p)l)$$.
 So, as long as $$pw > (1-p)l$$, each round has an expected value which is linear in the bet size, and so the expected value is maximized by betting everything.
 (Otherwise, the bet is expected to lose money, and value is maximized by betting nothing.)
-In fact, thanks to linearity of expectation, it's possible to prove that this also holds true for sequential bets: when $$pw > (1-p)l$$, or, equivalently $$\frac{pw}{(1-p)l} > 1$$, we maximize the expected value after $$n$$ rounds by betting everything, every time.
+In fact, thanks to linearity of expectation, it's possible to prove that this also holds true for sequential bets: when $$pw > (1-p)l$$, or equivalently, $$\frac{pw}{(1-p)l} > 1$$, we maximize the expected value after $$n$$ rounds by betting everything, every time.
 
 What value is realized by this strategy of always betting everything?
 Let $$H_n$$ be the number of heads seen after $$n$$ rounds, and so $$n - H_n$$ gives the number of tails.
