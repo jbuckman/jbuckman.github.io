@@ -207,12 +207,12 @@ How can the two be different?
 How can we *on average* make an infinite amount of money, but still *be guaranteed to* make a finite amount of money?
 
 The archetypal setup for this weirdness is when some extremely-unlikely outcomes have massive value.
-For example, consider playing many rounds of a 50/50 2.2x-or-nothing bet, like the one I offered in Expectsibirsk, starting with a bet of \\$1.
+For example, consider playing many rounds of a 50/50 2.2x-all-or-nothing bet, like the one I offered in Expectsibirsk, starting with \\$1.
 After 100 rounds, the chance that you have exactly 0 dollars is $$1-(.5)^{100} \approx 1-10^{-30}$$.
 But!
 If you *do* find yourself with some money, then you will have made $$2.2^{100} \approx 10^{34}$$ dollars.
-Since, as you play more rounds, the amount of money that you *could* make is growing faster than the likelihood of that outcome is *falling*, the expected value of this strategy grows infinitely as more rounds are played.
-But the chance that you walk away with nothing is still growing to approach 100%, and in the end, that's always what happens.
+Since, in each round, the amount of money that you *could* make is growing faster than the likelihood of that outcome is decreasing, the expected value of this strategy grows infinitely as more rounds are played.
+But the chance that you walk away with nothing is also growing to approach 100%, and in the end, that's always what happens.
 
 So if you are acting to maximize expected value, like the citizens of Expectsibirsk in my story, you would play this game.
 But if you were acting to maximize realizable value, you would not.
