@@ -204,7 +204,7 @@ Isn’t that elegant?
 Before we go on, let's build a bit of intuition as far as what it might look like when the expected value and realized value are not the same.
 On the surface, it seems a bit surprising that this is possible.
 How can the two be different?
-How can we *on average* make an infinite amount of money, but still *be guaranteed to make* a finite amount of money?
+How can we *on average* make an infinite amount of money, but still *be guaranteed to* make a finite amount of money?
 
 The archetypal setup for this weirdness is when some extremely-unlikely outcomes have massive value.
 For example, consider playing many rounds of a 50/50 2.2x-or-nothing bet, like the one I offered in Expectsibirsk, starting with a bet of \\$1.
