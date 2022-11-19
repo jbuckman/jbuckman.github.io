@@ -191,7 +191,7 @@ This means that the realizable value of any bet with finite expected value is ba
 Thus, all of your intuitions from expected-value maximization carry over to realizable-value maximization.
 
 But when a bet has *infinite* expected value, the two frameworks sometimes come to different conclusions about what actions to take.
-For example, this is the case in the St. Petersburg paradox, as well as in my story about Expectsibirsk.
+This true for the St. Petersburg paradox, and also plays an important role in my story about Expectsibirsk.
 In a moment, we'll walk through these examples in more detail.
 
 Personally, I find it to be quite cool that RV matches up perfectly with EV in all the situations we know that EV feels correct, and gives a new answer in precisely those situations where EV does something weird.
