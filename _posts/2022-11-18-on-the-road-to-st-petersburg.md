@@ -432,7 +432,7 @@ We each have a single bankroll maintained over the course of our lifetime, and i
 Similarly, whereas expected value can always be computed for a single play of a game, realizable value forces us to consider that the value is dependent on the amount of times we will be able to play it. 
 It is simply not possible to make good decisions when each individual bet is considered in isolation.
 
-However, in most day-to-day situations, I think that it is unlikely that you need to change much.
+However, in most day-to-day situations, it is unlikely that you need to change much.
 As we have seen, EV and RV make identical recommendations when the wager is a small fraction of the total bankroll.
 Small risks can therefore be understood perfectly well through the conventional lens of EV.
 But major investments or life-changing decisions need to be considered differently.
