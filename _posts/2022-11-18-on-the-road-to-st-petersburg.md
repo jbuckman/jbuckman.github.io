@@ -442,7 +442,7 @@ In situations where you will probably be thinking very hard about what to do, re
 
 Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.com/jacobmbuckman) with any feedback or questions!
 
-*Many thanks to David Buckman, [Warfa Jibril](https://twitter.com/warfajibril), [Joel Einbinder](https://twitter.com/joeleinbinder), and [Carles Gelada](https://twitter.com/carlesgelada) for their ideas and feedback.*
+*Many thanks to David Buckman, [Carles Gelada](https://twitter.com/carlesgelada), [Warfa Jibril](https://twitter.com/warfajibril), [Joel Einbinder](https://twitter.com/joeleinbinder), and [Tony Pezzullo](https://twitter.com/tonypezzz) for their ideas and feedback.*
 
 ---
 
