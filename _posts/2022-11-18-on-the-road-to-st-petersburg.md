@@ -2,7 +2,7 @@
 layout: post
 title: On The Road To St. Petersburg
 tags: ["statistics", "probability", "theory", "paradox"]
-published: false
+published: true
 mathjax: true
 ---
 
@@ -169,13 +169,25 @@ A real resolution to the St. Petersburg paradox requires the introduction of a n
 
 Here is my proposal: *take the action that maximizes the **realizable value***.
 
-The realizable value[^4] of a bet is the amount of money that you will end up winning if you play enough times.
-In other words, it is an outcome whose probability gets more and more likely the more times you play the bet.
+The realizable value[^4] of a bet, or RV, is the amount of money that you will end up winning if you play enough times.
+In other words, it is an outcome whose probability gets more and more likely, the more times you play the bet.
 It is defined using a well-understood concept from probability theory known as [convergence in probability](https://en.wikipedia.org/wiki/Convergence_of_random_variables#Convergence_in_probability).
-Concretely, if the outcome of a bet converges in probability to some number X, then that bet is said to have a “realizable value of X”.
+If the outcome of repeatedly taking a bet $$X$$ converges in probability to some number $$z$$, then that bet is said to have a “realizable value of $$z$$”, and denoted $$\mathbb{R}[X] = z$$.
 
-If you’ve never studied probability theory, you might be a bit confused by how this definition is different from expected value; intuitively, it feels like it might just be a different way of expressing the same concept.
-Indeed, the difference between the two is subtle.
+By deciding whether or not to take a bet based on its realizable value, we are essentially reasoning about what would happen if we played the bet repeatedly.
+However, it's still perfectly coherent to apply this decision rule to bets that are just encountered once.
+The rule obeyed by RV is, "I should play this bet now if I would be happy to play it forever."
+
+One important distinction to draw is that while expected value is a property of an *individual* wager, convergence in probability is actually a property of a *sequence* of wagers, $$\sum_{i=1}^{n} X_i \overset{P}\to z$$.
+So realizable value is fundamentally sequential.
+When we refer to the realizable value of a single wager $$X$$, keep in mind that this is merely shorthand for the situation where each $$X_i$$ is an identical copy of $$X$$.
+In general, it's not the case that all the $$X_i$$ need to be the same (and in such cases we therefore would be reasoning about about the value realized by a sequence $$\mathbb{R}[X]$$).
+
+---
+
+If you’ve never studied probability theory, you might be a bit confused by how this definition of realizable value is different from expected value. 
+Intuitively, it feels like it might just be a different way of expressing the same concept.
+The difference between the two is subtle.
 In fact, for all bets with *finite* expected value, the [weak law of large numbers](https://en.wikipedia.org/wiki/Law_of_large_numbers#Weak_law) tells us that these two concepts *are* exactly the same: the outcome will converge in probability to its expected value.
 This means that the realizable value of any bet with finite expected value is its expected value!
 Thus, all of your intuitions from expected-value maximization carry over to realizable-value maximization.
@@ -189,7 +201,7 @@ Isn’t that elegant?
 
 ---
 
-Before we go on, I want to build a bit of intuition as far as what it might look like when the expected value and realized value are not the same.
+Before we go on, let's build a bit of intuition as far as what it might look like when the expected value and realized value are not the same.
 On the surface, it seems a bit surprising that this is possible.
 How can the two be different?
 How can we *on average* make an infinite amount of money, but still *be guaranteed to make* a finite amount of money?
@@ -283,36 +295,36 @@ If tails, the wager is reduced by some factor $$1 - l$$, where $$0 < l \leq 1$$.
 
 The expected value of each round of this game is $$pzw - (1-p)zl = z(pw - (1-p)l)$$.
 So, as long as $$pw > (1-p)l$$, each round has an expected value which is linear in the bet size, and the expected value is maximized by betting everything.
-In fact, thanks to linearity of expectation, it's possible to prove that this also holds true for sequential bets: when $$pw > (1-p)l$$, we maximize the expected value after $$n$$ rounds by betting everything, every time.
+In fact, thanks to linearity of expectation, it's possible to prove that this also holds true for sequential bets: when $$pw > (1-p)l$$, or, equivalently $$\frac{pw}{(1-p)l} > 1$$, we maximize the expected value after $$n$$ rounds by betting everything, every time.
 
 What value is realized by this strategy of always betting everything?
 Let $$H_n$$ be the number of heads seen after $$n$$ rounds, and so $$n - H_n$$ gives the number of tails.
 This means that the bankroll $$b_n = b_0(1+w)^{H_n}(1-l)^{n-H_n}$$ at timestep $$n$$, where $$b_0$$ gives the initial bankroll.
-Since $$\mathbb{E}[\frac{H_n}{n}] = p$$, the law of large numbers tells us that $$|H_n - np| \overset{P}\to 0$$ as $$n \to \infty$$.
-Thus, for the bankroll $$b_n$$,
+Since $$\mathbb{E}[\frac{H_n}{n}] = p$$, the law of large numbers tells us that $$|\frac{H_n}{n} - p| \overset{P}\to 0$$ as $$n \to \infty$$.
+We can use this fact to show convergence in probability of the average log-wealth.
+For the bankroll $$b_n$$,
 
-$$b_n = b_0(1+w)^{H_n}(1-l)^{n-H_n} \overset{P}\to b_0(1+w)^{np}(1-l)^{n(1-p)} = b_0\left((1+w)^{p}(1-l)^{(1-p)}\right)^{n}$$
+$$\frac{\log b_n}{n} = \frac{\log b_0}{n} + \frac{H_n}{n} \log (1+w) + (1 - \frac{H_n}{n}) \log(1-l) \overset{P}\to p \log (1+w) + (1 - p) \log(1-l)$$
 
 as $$n \to \infty$$.
-And so we see, if $$(1+w)^{p}(1-l)^{(1-p)} < 1$$, then $$b_n \overset{P}\to 0$$.
+From here, we can use an epsilon-delta argument to verify that $$\frac{\log b_n}{n} \overset{P}\to z$$ implies that $$b_n \overset{P}\to 0$$ if $$z < 0$$ and $$b_n \overset{P}\to \infty$$ if $$z > 0$$
+And so we see, if and only if $$(1+w)^{p}(1-l)^{(1-p)} > 1$$, then this strategy will realize gains.
 
-In summary, EV says to take the bet if $$\frac{pw}{(1-p)l} > 1$$, and RV says to take the bet if $$(1+w)^{p}(1-l)^{(1-p)} > 1$$.
+In summary, EV says to bet it all if $$\frac{pw}{(1-p)l} > 1$$, and RV says to bet it all if $$(1+w)^{p}(1-l)^{(1-p)} > 1$$.
 Unfortunately, these two conditions do not always agree.
 For example, when $$p = .5, w = .6, l = .5$$, we see $$\frac{pw}{(1-p)l} = \frac{.5(.6)}{.5(.5)} = 1.2 > 1$$, while $$(1+w)^{p}(1-l)^{(1-p)} = (1.6)^{.5}(.5)^{.5} \approx .89 < 1$$.
 
 This result explains trouble for the citizens of St. Petersburg in the story at the beginning of this essay, who were offered a bet with $$p = .5, w = 1.2, l = 1$$.
 $$\frac{pw}{(1-p)l} = \frac{.5(1.2)}{.5(1)} = 1.2 > 1$$, so they took the bet, but $$(1+w)^{p}(1-l)^{(1-p)} = (1+1.2)^{.5}(1-1)^{.5} = 0$$, so their realized outcome was $0.
 They would not have lost their money had they had aimed to maximize their realizable value instead of their expected value.
-(To strengthen your intuition, it's worth thinking about how it is possible for the distribution of outcomes to have both infinite expected value, and zero realizable value.
-What must the distribution look like?)
 
 Tenmothy, of course, wagered in such a way as to play the “basic coin flip” game instead, so he was able to realize earnings of $$1.2n$$, meaning his realized wealth grew linearly as long as the game continued.
 That’s a big improvement already.
 But could he have done even better?
 
-In fact, this analysis reveals a straightforward way to identify an optimal betting strategy, one which maximizes value realized per round.
-If the bet in each round were $$z_n = f b_n$$ for some fraction $$0 \leq f \leq 1$$, such that the payoff for winning decreases to $$fw$$ and the penalty for losing decreases to $$fl$$, we see $$b_n \overset{P}\to b_0\left((1+fw)^{p}(1-fl)^{(1-p)}\right)^{n}$$ as $$n \to \infty$$.
-All we need to do is choose the $$f$$ which maximizes this value, which can be done by setting its derivative equal to zero, and solving the resulting equation.
+In fact, our analysis reveals a straightforward way to identify an optimal betting strategy.
+If the bet in each round were $$z_n = f b_n$$ for some fraction $$0 \leq f \leq 1$$, such that the payoff for winning decreases to $$fw$$ and the penalty for losing decreases to $$fl$$, we see $$\frac{\log b_n}{n} \overset{P}\to p \log (1+fw) + (1 - p) \log(1-fl)$$ as $$n \to \infty$$.
+To identify the strategy with the fastest growth rate, all we need to do is choose the $$f$$ which maximizes this value, which can be done by setting its derivative equal to zero and solving the resulting equation.
 The solution, $$f^* = \frac{p}{l} - \frac{1-p}{w}$$, is the formula for the famous [Kelly Criterion](https://en.wikipedia.org/wiki/Kelly_criterion).
 
 One last interesting property to note: EV and RV agree when $$f$$ is very small.
@@ -320,9 +332,6 @@ This means that we only need to take RV into account when wagering a non-insigni
 For tiny bets, reasoning with EV is sufficient.
 To see this, we need to use the fact that $$\log x+1 \approx x$$ for $$x \approx 0$$.
 Recall that EV says that we should take the bet when $$\frac{pw}{(1-p)l} > 1$$, and RV says that we should take the bet when $$(1+fw)^{p}(1-fl)^{(1-p)} > 1$$.
-Now, when $$f \approx 0$$, we have $$fw \approx 0$$ and $$-fl \approx 0$$, so:
-
-$$\log \left( (1+fw)^{p}(1-fl)^{(1-p)} \right) = p\log(1+fw) + (1-p)\log(1-fl) \approx p(fw) - (1-p)(fl)$$.
 
 Starting with the condition for when a consecutive bet has positive RV:
 
@@ -332,7 +341,11 @@ we can take the log of both sides:
 
 $$\log \left( (1+fw)^{p}(1-fl)^{(1-p)} \right) > 0$$
 
-substitute in our approximation:
+Now, using the fact that $$f \approx 0$$, we have $$fw \approx 0$$ and $$-fl \approx 0$$, so:
+
+$$\log \left( (1+fw)^{p}(1-fl)^{(1-p)} \right) = p\log(1+fw) + (1-p)\log(1-fl) \approx p(fw) - (1-p)(fl)$$.
+
+Substitute this approximation into our inequality:
 
 $$p(fw) - (1-p)(fl) > 0$$
 
@@ -340,7 +353,7 @@ and then rearrange:
 
 $$\frac{pw}{(1-p)l} > 1$$
 
-to get an equivalent condition which, you'll note, is identical to the condition as for when a bet has positive EV.
+and we've shown that the condition for when a bet has positive RV is identical to the condition for when a bet has positive EV, when $$f$$ is sufficiently small.
 
 ---
 
@@ -361,13 +374,13 @@ These are perfectly valid goals, but they fall short as complete decision-making
 
 I’ve always found the Kelly Criterion to be a beautiful strategy, but I was never quite at ease with its ad-hoc-ness.
 I think it’s amazing that the framework of realizable-value maximization serves to motivate it from first principles.
-Also, it’s a widely-used approach, vouched for by professional investors and gamblers alike; the fact that it coincides with the optimal realized value is a strong point in favor of the practical usefulness of this framework.
+Also, the Kelly Criterion is a widely-used approach, vouched for by professional investors and gamblers alike; the fact that it coincides with the optimal realized value is a strong point in favor of the practical usefulness of this framework.
 
 ### Psychology
 
 It’s conventional wisdom in economics that humans have logarithmic utility functions.
-[Empirical experiments seem to generally corroborate this, although it is possible a different functional form may be a somewhat better fit](https://www.jstor.org/stable/1422419).
 This is, for example, the motivation given by Kelly to maximize log-wealth in the first place.
+[Empirical experiments seem to mostly corroborate this, although it is possible a different functional form may be a somewhat better fit](https://www.jstor.org/stable/1422419).
 Economists simply accept logarithmic utility as a premise, and build from there.
 
 With realizable-value maximization in mind, this perspective reverses.
@@ -384,32 +397,9 @@ It may be coarse, but overall, I think it’s pretty reasonable to model life as
 We know that logarithmic utility maximization is identical to following a Kelly strategy in the specific setting in which that strategy is applicable, and it is very likely that it has connections to RV-max in general.
 So by living according to logarithmic utility, we are able to realize the most wealth over our lifetimes, and survive and reproduce.
 
-### Venture Capital
-
-The real-world asset class that is most similar in structure to the doubling game is probably early-stage startups.
-Something like 90% of startups fail, and become worthless.
-Some small number manage to break even for their investors.
-But a tiny fraction of them double, and double, and double again in value, producing enormous, outsized returns.
-
-If we assume that investing in a startup really is akin to playing the doubling game, and that VC firms are doing a good job acting in their own self-interest, the framework of realizable-value maximization makes some predictions.
-We discussed earlier how the game has an inherent “economy of scale”: the more rounds we play, the more valuable each one becomes.
-For a VC, playing more rounds means investing in more companies.
-This means that we would expect to see VC firms whose strategy relies mostly on capturing unicorns spending a ton of money on a lot of different companies – and, conversely, that the most well-funded VCs are more likely to center their strategy around capturing unicorns.
-This is because their capital gives them a competitive edge in entering those sorts of rounds.
-An organization with enough capital to leverage the implicit economy of scale by buying stakes in many companies is willing to put more money into each company than their rivals, outbidding them.
-
-If we look at the field of current VCs, this pattern is precisely what we see.
-The largest, most well-funded organizations, like SoftBank and Tiger Capital, are the ones whose strategies are most reliant on capturing unicorns.
-These firms put money into thousands of startups each year in the hopes of getting one or two massive successes, like WeWork or Uber.
-In contrast, smaller firms are more likely to invest in founders with a smaller, more concrete goal, and a good balance sheet.
-
-(Now, this is not to say that realizable-value theory is the *only* way to explain this.
-I’m sure VCs have perfectly reasonable justifications.
-I’m just pointing out that it is cool that using these ideas as first principles can also explain it, in spite of the theory not being intentionally constructed to do so.)
-
 ---
 
-## Conclusions
+## Conclusion
 
 We've seen the problems with expected value, and how realized value naturally resolves them.
 But does this mean realized value is a better decision-making framework than expected value?
@@ -424,7 +414,7 @@ We're forced to invoke subjective arguments: about which frameworks make the mos
 For people who consider themselves objective, rational decision-makers, this can be an uncomfortable realization.
 
 Personally, I am sold on the idea of maximizing realizable value instead of expected value.
-I find it elegant, natural, and feel it aligns well with intuitions.
+I find it elegant, natural, and well-aligned with my intuitions.
 Hopefully, those of you who are still with me at this point are also on board.
 And for those that aren’t – I am excited to hear your counter-arguments.
 
@@ -437,6 +427,7 @@ When that happens, I will be right there alongside everyone else striving to rep
 The final question is: how does understanding realizable value impact our decision-making?
 
 The biggest change is that we need to view our decisions more holistically.
+Expected value considers each bet in isolation, but realizable value considers each bet as just one member of a long sequence.
 We each have a single bankroll maintained over the course of our lifetime, and in order to maximize its value, we need to place each wager on the basis of how it will affect us, long-term.
 Similarly, whereas expected value can always be computed for a single play of a game, realizable value forces us to consider that the value is dependent on the amount of times we will be able to play it. 
 It is simply not possible to make good decisions when each individual bet is considered in isolation.
@@ -444,11 +435,8 @@ It is simply not possible to make good decisions when each individual bet is con
 However, in most day-to-day situations, I think that it is unlikely that you need to change much.
 As we have seen, EV and RV make identical recommendations when the wager is a small fraction of the total bankroll.
 Small risks can therefore be understood perfectly well through the conventional lens of EV.
-But for major investments or life-changing decisions, situations where you will be thinking very hard about the proper outcome, realizable value is the proper concept to think about.
-
-But if it takes time to fully incorporate this new mindset, that's okay too.
-The road to St. Petersburg is long.
-Our journey is only beginning.
+But major investments or life-changing decisions need to be considered differently.
+In situations where you will probably be thinking very hard about what to do, realizable value is the proper concept to think about.
 
 ---
 
@@ -462,4 +450,4 @@ Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.co
 
 [^2]: This resolution argues that expectation is not *truly* infinite, because the counterparty can default on their payout. In other words, if I ever managed to hit a miraculous streak of heads that nets me \\$1,000,000,000,000, I may still earn only \\$1,000,000 if that's all the money that my counterparty has available. With this assumption (which is in fact identical mathematically to upper-bounded utility), the expectation value becomes bounded once again. <br><br>Unfortunately, this is not a resolution at all. The reason is that a sufficiently-large finite bankroll has all the same flaws as the infinite one. For any given entry fee (for example, \\$1,000,000) we can always construct a scenario where a counterparty has a sufficiently-large bankroll (in this case, $$2^{1000001}$$) for the game to have positive expected value. Thus, even when the bankroll of the counterparty is required to be finite, we can still find situations where expected-value maximization will choose to play the doubling game at arbitrarily-high entrance fees.
 
-[^4]: If you haven’t heard this term before, it’s because I made it up.  I want to be clear about something: my approach is closely related to many extremely well-studied problems in probability theory, and I’m not claiming that any of the ideas I discuss here are really novel. For example, all of the proofs that I include already appear in textbooks. But I haven't seen anybody set things up from quite this same angle, and this choice of resolution is not mainstream (e.g., it isn't explained on Wikipedia). There doesn't seem to already be a widely-used word for what I am describing, so academic norms be damned, I reserve the right to coin my own terminology for use on my personal blog.
+[^4]: If you haven’t heard this term before, it’s because I made it up.  I want to be clear about something: my approach is closely related to many extremely well-studied problems in probability theory, and I’m not claiming that any of the ideas I discuss here are really novel. For example, all of the proofs that I include already appear in textbooks. But I haven't seen anybody put the pieces together into a complete decision-making framework, and my resolution to the St. Petersburg paradox, while somewhat known, is certainly not mainstream (e.g., it isn't explained on Wikipedia). There doesn't seem to already be a widely-used way to refer to the ideas I am describing, so I think it is reasonable to coin some new terminology here.
