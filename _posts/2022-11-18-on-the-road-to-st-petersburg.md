@@ -269,8 +269,8 @@ Plugging in $$\mu_n = n (\log_2 n + \log_2 \log_2 n)$$ and $$t_n = n \log_2 n$$ 
 Whew.
 Let’s marinate for a moment on the implications of this result.
 It seems that in the doubling game, the realizable value *per round* grows with the number of rounds being played.
-If you’re only playing 1000 rounds of the game, the amount that you are willing to spend per round is $$1000 \log_2 1000 \approx 10000$$, so you value each round at \\$10.
-But if you are playing 100,000 rounds, then suddenly you value each round at $20!
+If you’re only playing 1000 rounds of the game, the amount that you are willing to spend is $$1000 \log_2 1000$$, so you value each round at $$\log_2 1000 \approx$$\\$10.
+But if you are playing 100,000 rounds, then suddenly you value each round at $$\log_2 1000000 \approx$$\\$20!
 It’s as though this game has an inherent economy of scale.
 The more times you play, the more valuable each play becomes.
 
@@ -280,7 +280,7 @@ We used a generic, first-principles approach, not anything problem-specific, and
 We ended up with a concrete answer, assigning a specific numerical value.
 And the answer elegantly synthesizes our two intuitions – that on one hand, the game has the potential to be extremely valuable, but on the other hand, a single play is not worth much.
 
-Just to confirm, I ran a simulation ([code here](/static/files/petersburg/stpetersburg.py)) of two billion doubling games, computing the mean reward per game over time:
+To double-check this result, I ran a simulation ([code here](/static/files/petersburg/stpetersburg.py)) of two billion doubling games, computing the mean reward per game over time:
 
 ![](/static/img/petersburg/doubling.png){:width="700px"}
 
