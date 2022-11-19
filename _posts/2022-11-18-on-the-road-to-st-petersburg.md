@@ -319,7 +319,7 @@ This result explains trouble for the citizens of St. Petersburg in the story at 
 $$\frac{pw}{(1-p)l} = \frac{.5(1.2)}{.5(1)} = 1.2 > 1$$, so they took the bet, but $$(1+w)^{p}(1-l)^{(1-p)} = (1+1.2)^{.5}(1-1)^{.5} = 0$$, so their realized outcome was $0.
 They would not have lost their money had they had aimed to maximize their realizable value instead of their expected value.
 
-Tenmothy, of course, wagered in such a way as to play the “basic coin flip” game instead, so he was able to realize earnings of $$1.2n$$, meaning his realized wealth grew linearly as long as the game continued.
+Tenjamin, of course, wagered in such a way as to play the “basic coin flip” game instead, so he was able to realize earnings of $$1.2n$$, meaning his realized wealth grew linearly as long as the game continued.
 That’s a big improvement already.
 But could he have done even better?
 
