@@ -311,16 +311,18 @@ as $$n \to \infty$$.
 From here, we can use an epsilon-delta argument to verify that $$\frac{\log b_n}{n} \overset{P}\to z$$ implies that $$b_n \overset{P}\to 0$$ if $$z < 0$$ and $$b_n \overset{P}\to \infty$$ if $$z > 0$$
 And so we see, if and only if $$(1+w)^{p}(1-l)^{(1-p)} > 1$$, then this strategy will realize gains.
 
-In summary, EV says to bet it all if $$\frac{pw}{(1-p)l} > 1$$, and RV says to bet it all if $$(1+w)^{p}(1-l)^{(1-p)} > 1$$.
+In summary, EV says to bet it all if $$\frac{pw}{(1-p)l} > 1$$, whereas RV says to bet it all only if $$(1+w)^{p}(1-l)^{(1-p)} > 1$$.
 Unfortunately, these two conditions do not always agree.
 For example, when $$p = .5, w = .6, l = .5$$, we see $$\frac{pw}{(1-p)l} = \frac{.5(.6)}{.5(.5)} = 1.2 > 1$$, while $$(1+w)^{p}(1-l)^{(1-p)} = (1.6)^{.5}(.5)^{.5} \approx .89 < 1$$.
 
 This result explains trouble for the citizens of St. Petersburg in the story at the beginning of this essay, who were offered a bet with $$p = .5, w = 1.2, l = 1$$.
-$$\frac{pw}{(1-p)l} = \frac{.5(1.2)}{.5(1)} = 1.2 > 1$$, so they took the bet, but $$(1+w)^{p}(1-l)^{(1-p)} = (1+1.2)^{.5}(1-1)^{.5} = 0$$, so their realized outcome was $0.
+$$\frac{pw}{(1-p)l} = \frac{.5(1.2)}{.5(1)} = 1.2 > 1$$, so they chose to bet all of their money, but $$(1+w)^{p}(1-l)^{(1-p)} = (1+1.2)^{.5}(1-1)^{.5} = 0$$, so their realized outcome was $0.
 They would not have lost their money had they had aimed to maximize their realizable value instead of their expected value.
 
-Tenjamin, of course, wagered in such a way as to play the “basic coin flip” game instead, so he was able to realize earnings of $$1.2n$$, meaning his realized wealth grew linearly as long as the game continued.
-That’s a big improvement already.
+Of course, these conditions say nothing about the value of the game, only about the value of the bet-it-all strategy.
+By betting differently, it is still sometimes possible to win.
+For example, Tenjamin wagered in such a way as to play the “basic coin flip” game, so he was able to realize earnings of $$1.2n$$: his realized wealth grew linearly as long as the game continued.
+That’s already a big improvement over earnings of -\\$$$b$$.
 But could he have done even better?
 
 In fact, our analysis reveals a straightforward way to identify an optimal betting strategy.
