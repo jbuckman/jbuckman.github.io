@@ -57,7 +57,7 @@ But saddest of all was poor Everly, who began her game with a handful of coins, 
 Nobody ever walked away from my game, or wagered even a single coin less than the sum total of their personal wealth.
 After all, the dictums of EV maximization held that to do so would be irrational.
 And so, with each participant, I flipped my coin until they lost, and pocketed their initial wager.
-As night fell, I carefully packed away my earnings and slipped out of town, before the mobs of newly destitute could locate the source of their newfound destitution.
+As night fell, I carefully packed away my earnings and slipped out of town, before the mobs of newly destitute could locate the source of their woes.
 
 But on the road out of Expectsibirsk, I encountered a boy dressed in rags.
 He recognized me by my garb as a gambling man, and requested that I allow him to tempt his fortune.
