@@ -176,7 +176,7 @@ If the ratio between the outcome of repeatedly taking a bet $$X$$, and some expr
 
 By deciding whether or not to take a bet based on its realizable value, we are essentially reasoning about what would happen if we played the bet repeatedly.
 However, it's still perfectly coherent to apply this decision rule to bets that are just encountered once.
-The philosophy endorsed by a maximizer of RV is "I should play this bet now if I would be happy to play it forever."
+The philosophy endorsed by an RV maximizer is "I should play this bet now if I would be happy to play it forever."
 
 One important subtlety to note is that while expected value is a property of an *individual* wager, convergence in probability is actually a property of a *sequence* of wagers.
 When if refer to the realizable value of a wager $$X$$, keep in mind that this is merely shorthand for the realizable value of a sequence of $$X_{1..n}$$ where each $$X_i$$ is an identical copy of $$X$$.
