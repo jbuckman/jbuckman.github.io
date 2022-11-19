@@ -23,7 +23,7 @@ One fine afternoon, I set up my booth in the city of Expectsibirsk, a legendary 
 A man named Evan wandered over with 100₽ in his pocket.
 Upon reading the rules, Evan performed the following calculation.
 
-“For every ruble wagered, there is a 50% chance of winning 1.10₽, and a 50% chance of losing 1₽.
+“For every ruble wagered, there is a 50% chance of winning 1.20₽, and a 50% chance of losing 1₽.
 In expectation, this will net 0.10₽ per ruble wagered.
 The expected value improves with each ruble, so the more rubles wagered, the better.
 So, I wager all 100₽.”
