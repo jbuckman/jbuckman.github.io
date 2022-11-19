@@ -154,14 +154,13 @@ To be honest, I don't think "paradox" is even quite the right description here.
 There's no *fundamental* inconsistency at play.
 This is just an example of a situation where the expected-value framework is ineffective.
 Choosing to play the doubling game with a buy-in of \\$1,000,000,000 *really does* have positive expected value, and *really does* lose you money.
-There's nothing paradoxical about the fact that a decision-making frameworks can be bad, sometimes.
-Many people treat expected-value maximization with something akin to reverence, elevating it as the pinnacle of rational behavior.
-But at the end of the day, it's just a decision-making rule.
+There's nothing paradoxical about the fact that a decision-making framework can be bad, sometimes.
+Many people treat expected-value maximization with something akin to reverence, elevating it as the pinnacle of rational behavior; but at the end of the day, it's just a decision-making rule.
 And is it a paradox when a decision-making rule like "go with your gut" leads to losing money in some situations?
-Of course not -- it is just a bad rule.
+Of course not -- "go with your gut" is just a bad rule.
 And it turns out that expected value is similarly flawed, although its issues are far more rare and subtle.
 
-A real resolution to the St. Petersburg paradox requires the introduction of a new decision-making framework.
+A real resolution to the St. Petersburg paradox requires an improved decision-making framework.
 
 ---
 
