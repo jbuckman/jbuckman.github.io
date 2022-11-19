@@ -186,7 +186,7 @@ In general, it's not the case that all the $$X_i$$ need to be the same.
 If you’ve never studied probability theory, you might be a bit confused by how this definition of realizable value is different from the familiar notion of expected value. 
 Maybe it feels like just an unnecessarily-complicated way of expressing the same concept.
 This is a reasonable first impression, because the difference between the two frameworks is subtle.
-In fact, for all bets with *finite* expected value, the [weak law of large numbers](https://en.wikipedia.org/wiki/Law_of_large_numbers#Weak_law) tells us that these two concepts *are* exactly the same: the average of repeated bets will converge in probability to its expected value.
+In fact, for all bets with *finite* expected value, the [weak law of large numbers](https://en.wikipedia.org/wiki/Law_of_large_numbers#Weak_law) tells us that these two concepts *are* exactly the same: the long-run average payout of a repeated bet will converge in probability to its expected value.
 This means that the realizable value of any bet with finite expected value is basically just its expected value!
 Thus, all of your intuitions from expected-value maximization carry over to realizable-value maximization.
 
