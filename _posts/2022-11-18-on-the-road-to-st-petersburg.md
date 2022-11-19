@@ -322,7 +322,7 @@ They would not have lost their money had they had aimed to maximize their realiz
 Of course, these conditions are not about the value of the game itself, only about the value of the bet-it-all strategy.
 By betting differently, it is still sometimes possible to win.
 For example, Tenjamin wagered in such a way as to play the “basic coin flip” game, so he was able to realize earnings of $$1.2n$$: his realized wealth grew linearly as long as the game continued.
-That’s already a big improvement over earnings of -\\$$$b$$.
+That’s already a big improvement over earnings of -\$$$b$$.
 But could he have done even better?
 
 In fact, our analysis reveals a straightforward way to identify an optimal betting strategy.
