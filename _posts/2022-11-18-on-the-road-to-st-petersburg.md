@@ -316,10 +316,10 @@ Unfortunately, these two conditions do not always agree.
 For example, when $$p = .5, w = .6, l = .5$$, we see $$\frac{pw}{(1-p)l} = \frac{.5(.6)}{.5(.5)} = 1.2 > 1$$, while $$(1+w)^{p}(1-l)^{(1-p)} = (1.6)^{.5}(.5)^{.5} \approx .89 < 1$$.
 
 This result explains trouble for the citizens of St. Petersburg in the story at the beginning of this essay, who were offered a bet with $$p = .5, w = 1.2, l = 1$$.
-$$\frac{pw}{(1-p)l} = \frac{.5(1.2)}{.5(1)} = 1.2 > 1$$, so they chose to bet all of their money, but $$(1+w)^{p}(1-l)^{(1-p)} = (1+1.2)^{.5}(1-1)^{.5} = 0$$, so their realized outcome was $0.
+Plugging into the EV condition gives $$\frac{pw}{(1-p)l} = \frac{.5(1.2)}{.5(1)} = 1.2 > 1$$, so they chose to bet all of their money, but $$(1+w)^{p}(1-l)^{(1-p)} = (1+1.2)^{.5}(1-1)^{.5} = 0$$, so their realized outcome was \\$0.
 They would not have lost their money had they had aimed to maximize their realizable value instead of their expected value.
 
-Of course, these conditions say nothing about the value of the game, only about the value of the bet-it-all strategy.
+Of course, these conditions are not about the value of the game itself, only about the value of the bet-it-all strategy.
 By betting differently, it is still sometimes possible to win.
 For example, Tenjamin wagered in such a way as to play the “basic coin flip” game, so he was able to realize earnings of $$1.2n$$: his realized wealth grew linearly as long as the game continued.
 That’s already a big improvement over earnings of -\\$$$b$$.
