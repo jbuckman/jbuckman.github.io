@@ -393,9 +393,9 @@ It’s a reasonable assumption that wealth is generally helpful for survival, es
 This implies that evolutionary pressures should have instilled in us good instincts for accumulating wealth over the course of our lives.
 Obviously, genetics are not fine-grained enough to instill theoretical knowledge of realizable-value maximization.
 But what it *can* do is give us instincts that, when followed, allow us to *implement* a RV-maximization algorithm.
-Which, of course, explains why we have logarithmic utility.
+Which, perhaps, explains why humans have logarithmic utility.
 
-It may be coarse, but overall, I think it’s pretty reasonable to model life as a big, long-horizon repeated betting game, all played against the same bankroll.
+It may be a coarse model, but overall, I think it’s pretty reasonable to view life as a big, long-horizon repeated betting game, always played using the same bankroll.
 We know that logarithmic utility maximization is identical to following a Kelly strategy in the specific setting in which that strategy is applicable, and it is very likely that it has connections to RV-max in general.
 So by living according to logarithmic utility, we are able to realize the most wealth over our lifetimes, and survive and reproduce.
 
