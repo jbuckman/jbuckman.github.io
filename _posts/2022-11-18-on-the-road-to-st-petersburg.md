@@ -228,7 +228,7 @@ our average payout for $$n$$ plays is $$\frac{1}{n} \sum_{i=1}^{n} X_i$$.
 *The player flips a fair coin which pays out \\$10 for heads and \\$0 for tails.*
 
 The expected value of any round $$\mathbb{E}[X_i] = 0.5(10) + 0.5(0) = 5$$ for all $$i$$.
-Since this is finite, the weak law of large numbers tells us that $$\sum_{i=1}^{n} \frac{X_i}{n} \overset{P}{\to} \mathbb{E}[X_i]$$ as $$n \to \infty$$, or equivalently, $$\sum_{i=1}^{n} \frac{X_i}{n\mathbb{E}[X_i]} \overset{P}{\to} 1$$.
+Since this is finite, the weak law of large numbers tells us that $$|\mathbb{E}[X_i] - \sum_{i=1}^{n} \frac{X_i}{n}| \overset{P}{\to} 0$$ as $$n \to \infty$$, or equivalently, $$\sum_{i=1}^{n} \frac{X_i}{n\mathbb{E}[X_i]} \overset{P}{\to} 1$$.
 So $$\mathbb{R}[X_{1..n}] = 5n$$.
 As a realizable-value maximizer, I should be willing to pay up to $5 per round of play.
 
