@@ -172,30 +172,30 @@ Here is my proposal: *take the action that maximizes the **realizable value***.
 The realizable value[^4] of a bet, or RV, is the amount of money that you will end up winning if you play enough times.
 In other words, it is an outcome whose probability gets more and more likely, the more times you play the bet.
 It is defined using a well-understood concept from probability theory known as [convergence in probability](https://en.wikipedia.org/wiki/Convergence_of_random_variables#Convergence_in_probability).
-If the outcome of repeatedly taking a bet $$X$$ converges in probability to some number $$z$$, then that bet is said to have a “realizable value of $$z$$”, and denoted $$\mathbb{R}[X] = z$$.
+If the ratio between the outcome of repeatedly taking a bet $$X$$, and some expression $$z$$, converges in probability to 1, then that bet is said to have a “realizable value of $$z$$”, and denoted $$\mathbb{R}[X_{1..n}] = z$$.
 
 By deciding whether or not to take a bet based on its realizable value, we are essentially reasoning about what would happen if we played the bet repeatedly.
 However, it's still perfectly coherent to apply this decision rule to bets that are just encountered once.
 The rule obeyed by RV is, "I should play this bet now if I would be happy to play it forever."
 
-One important distinction to draw is that while expected value is a property of an *individual* wager, convergence in probability is actually a property of a *sequence* of wagers, $$\frac{1}{n} \sum_{i=1}^{n} X_i \overset{P}\to z$$.
-So realizable value is fundamentally sequential.
-When we refer to the realizable value of a single wager $$X$$, keep in mind that this is merely shorthand for the situation where each $$X_i$$ is an identical copy of $$X$$.
-In general, it's not the case that all the $$X_i$$ need to be the same, and in such cases we therefore would be reasoning about about the value realized by a sequence $$\mathbb{R}[X_{1..n}]$$.
+One important subtlety to note is that while expected value is a property of an *individual* wager, convergence in probability is actually a property of a *sequence* of wagers.
+When if refer to the realizable value of a wager $$X$$, keep in mind that this is merely shorthand for the realizable value of a sequence of $$X_{1..n}$$ where each $$X_i$$ is an identical copy of $$X$$.
+But in general, it's not the case that all the $$X_i$$ need to be the same.
 
 ---
 
 If you’ve never studied probability theory, you might be a bit confused by how this definition of realizable value is different from expected value. 
-Intuitively, it feels like it might just be a different way of expressing the same concept.
+Intuitively, it feels like it might just be an unnecessarily-complicated way of expressing the same concept you're already familiar with.
 The difference between the two is subtle.
-In fact, for all bets with *finite* expected value, the [weak law of large numbers](https://en.wikipedia.org/wiki/Law_of_large_numbers#Weak_law) tells us that these two concepts *are* exactly the same: the outcome will converge in probability to its expected value.
-This means that the realizable value of any bet with finite expected value is its expected value!
+In fact, for all bets with *finite* expected value, the [weak law of large numbers](https://en.wikipedia.org/wiki/Law_of_large_numbers#Weak_law) tells us that these two concepts *are* exactly the same: the average of repeated bets will converge in probability to its expected value.
+This means that the realizable value of any bet with finite expected value is basically just its expected value!
 Thus, all of your intuitions from expected-value maximization carry over to realizable-value maximization.
 
 But when a bet has *infinite* expected value, the two frameworks sometimes come to different conclusions about what actions to take.
 For example, this is the case in the St. Petersburg paradox, as well as in my story about Expectsibirsk.
+In a moment, we'll walk through these examples in more detail.
 
-Personally, I find this to be quite cool: this new principle matches up perfectly with EV in all the situations we know that EV feels correct, and gives a new answer in precisely those situations where EV does something weird.
+Personally, I find it to be quite cool that RV matches up perfectly with EV in all the situations we know that EV feels correct, and gives a new answer in precisely those situations where EV does something weird.
 But it’s not as though I carved out specific exceptions: this approach is unified and very natural, but just happens to do exactly what we would want.
 Isn’t that elegant?
 
@@ -221,15 +221,16 @@ But if you were acting to maximize realizable value, you would not.
 
 Next, let’s walk through some examples of realizable value in action.
 In each scenario, we are invited to play a particular game for $$n$$ rounds, and ask: what is a fair price-per-round to pay?
-$$X_i$$ denotes the random variable that refers to the outcome of the $$i$$th round, so
+In each example, $$X_i$$ denotes the random variable that refers to the outcome of the $$i$$th round, so
 our average payout for $$n$$ plays is $$\frac{1}{n} \sum_{i=1}^{n} X_i$$.
 
 ### Basic coin flip.
 
 *The player flips a fair coin which pays out \\$10 for heads and \\$0 for tails.*
 
-The expected value of any given round $$\mathbb{E}[X_i] = 0.5(10) + 0.5(0) = 5$$ for all $i$.
-Since this is finite, the weak law of large numbers tells us that $$\frac{1}{n} \sum_{i=1}^{n} X_i \overset{p}{\to} \mathbb{E}[X_i]$$ as $$n \to \infty$$, so $$\mathbb{R}[X] = 5$$.
+The expected value of any round $$\mathbb{E}[X_i] = 0.5(10) + 0.5(0) = 5$$ for all $$i$$.
+Since this is finite, the weak law of large numbers tells us that $$\sum_{i=1}^{n} \frac{X_i}{n} \overset{p}{\to} \mathbb{E}[X_i]$$ as $$n \to \infty$$, or equivalently, $$\sum_{i=1}^{n} \frac{X_i}{n\mathbb{E}[X_i]} \overset{p}{\to} 1$$.
+So $$\mathbb{R}[X_{1..n}] = 5n$$.
 As a realizable-value maximizer, I should be willing to pay up to $5 per round of play.
 
 Of course, since everything is finite, this coincides with the solution given by expected value.
@@ -240,7 +241,7 @@ Of course, since everything is finite, this coincides with the solution given by
 If the first flip is a tails, the payout is $2, and for each heads seen, the payout doubles.*
 
 As we saw above, $$\mathbb{E}[X_i] = \sum_{n=1}^{\infty} 2^{n}\left(\frac{1}{2^{n}}\right) = \sum_{n=1}^{\infty} 1 = \infty$$.
-But as it turns out, $$\mathbb{R}[X_{1..n}] = \log_2 n$$.
+But as it turns out, $$\mathbb{R}[X_{1..n}] = n \log_2 n$$.
 The math here is a bit more involved, so I’ll just give the high-level intuition of the analysis.
 If you are comfortable with probability theory, [a rigorous proof is given by Dunnet in his textbook (Example 2.2.16)](https://services.math.duke.edu/~rtd/PTE/PTE5_011119.pdf#page=73), or more explicitly [in Sebastien Roch's lecture notes](https://people.math.wisc.edu/~roch/grad-prob/gradprob-notes4.pdf#page62).
 
@@ -263,7 +264,7 @@ After checking some conditions, we can use [Chebyshev’s inequality](https://en
 
 Since both (1) the truncated sequences converge in probability to the real sequence, and (2) the deviations of the sum of the real sequence converge in probability to 0, we can conclude that the deviations of the sum of the *real* sequence converge in probability to 0.
 Thus, for a real sequence of length $$n$$, we have $$\frac{|\mu_n - \sum_{i=1}^n X_i|}{t_n} \overset{P}\to 0$$ as $$n \to \infty$$.
-Plugging in $$\mu_n = n (\log_2 n + \log_2 \log_2 n)$$ and $$t_n = n \log_2 n$$ and doing a bit more algebra gives $$\sum_{i=1}^n X_i \overset{P}\to n \log_2 n$$, and thus, $$\mathbb{R}[X_{1..n}] = \log_2 n$$.
+Plugging in $$\mu_n = n (\log_2 n + \log_2 \log_2 n)$$ and $$t_n = n \log_2 n$$ and doing a bit more algebra gives $$\sum_{i=1}^n \frac{X_i}{n \log_2 n} \overset{P}\to 1$$, and thus, $$\mathbb{R}[X_{1..n}] = n \log_2 n$$.
 
 Whew.
 Let’s marinate for a moment on the implications of this result.
@@ -307,7 +308,7 @@ For the bankroll $$b_n$$,
 $$\frac{\log b_n}{n} = \frac{\log b_0}{n} + \frac{H_n}{n} \log (1+w) + (1 - \frac{H_n}{n}) \log(1-l) \overset{P}\to p \log (1+w) + (1 - p) \log(1-l)$$
 
 as $$n \to \infty$$.
-From here, we can use an epsilon-delta argument to verify that $$\frac{\log b_n}{n} \overset{P}\to z$$ implies that $$b_n \overset{P}\to 0$$ if $$z < 0$$ and $$b_n \overset{P}\to \infty$$ if $$z > 0$$.
+From here, we can use an epsilon-delta argument to verify that $$\frac{\log b_n}{n} \overset{P}\to z$$ implies that $$b_n \overset{P}\to 0$$ if $$z < 0$$, so its realized value is \$$$-b_0$$.
 And so we see that this strategy will realize gains if and only if $$(1+w)^{p}(1-l)^{(1-p)} > 1$$.
 
 In summary, EV says to bet it all if $$\frac{pw}{(1-p)l} > 1$$, whereas RV says to bet it all only if $$(1+w)^{p}(1-l)^{(1-p)} > 1$$.
@@ -321,7 +322,7 @@ They would not have lost their money had they had aimed to maximize their realiz
 Of course, these conditions are not about the value of the game itself, only about the value of the bet-it-all strategy.
 By betting differently, it is still sometimes possible to win.
 For example, Tenjamin wagered in such a way as to play the “basic coin flip” game, so he was able to realize earnings of $$1.2n$$: his realized wealth grew linearly as long as the game continued.
-That’s already a big improvement over earnings of -\$$$b$$.
+That’s already a big improvement over earnings of -\$$$b_0$$.
 But could he have done even better?
 
 In fact, our analysis reveals a straightforward way to identify an optimal betting strategy.
@@ -335,7 +336,7 @@ For tiny bets, reasoning with EV is sufficient.
 To see this, we need to use the fact that $$\log x+1 \approx x$$ for $$x \approx 0$$.
 Recall that EV says that we should take the bet when $$\frac{pw}{(1-p)l} > 1$$, and RV says that we should take the bet when $$(1+fw)^{p}(1-fl)^{(1-p)} > 1$$.
 
-Starting with the condition for when a consecutive bet has positive RV:
+Starting with the condition for when the wagering game has positive RV:
 
 $$(1+fw)^{p}(1-fl)^{(1-p)} > 1$$
 
