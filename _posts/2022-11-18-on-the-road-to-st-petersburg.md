@@ -181,7 +181,7 @@ The rule obeyed by RV is, "I should play this bet now if I would be happy to pla
 One important distinction to draw is that while expected value is a property of an *individual* wager, convergence in probability is actually a property of a *sequence* of wagers, $$\sum_{i=1}^{n} X_i \overset{P}\to z$$.
 So realizable value is fundamentally sequential.
 When we refer to the realizable value of a single wager $$X$$, keep in mind that this is merely shorthand for the situation where each $$X_i$$ is an identical copy of $$X$$.
-In general, it's not the case that all the $$X_i$$ need to be the same (and in such cases we therefore would be reasoning about about the value realized by a sequence $$\mathbb{R}[X]$$).
+In general, it's not the case that all the $$X_i$$ need to be the same, and in such cases we therefore would be reasoning about about the value realized by a sequence $$\mathbb{R}[X_{1..n}]$$.
 
 ---
 
@@ -230,7 +230,7 @@ our total payout for $$n$$ plays is $$\sum_{i=1}^{n} X_i$$.
 
 The expected value of any given round $$\mathbb{E}[X_i] = 0.5(10) + 0.5(0) = 5$$ for all $i$.
 Since this is finite, the weak law of large numbers tells us that $$\frac{1}{n} \sum_{i=1}^{n} X_i \overset{p}{\to} \mathbb{E}[X_i]$$ as $$n \to \infty$$.
-We can rearrange to get $$\sum_{i=1}^{n} X_i \overset{P}{\to} n\mathbb{E}[X_i] = 5n$$.
+We can rearrange to get $$\sum_{i=1}^{n} X_i \overset{P}{\to} n\mathbb{E}[X_i] = 5n$$, so $$\mathbb{R}[X_{1..n}] = 5n$$.
 As a realizable-value maximizer, I should be willing to pay up to $5 per round of play.
 
 As expected, this coincides with the solution given by expected value.
@@ -241,7 +241,7 @@ As expected, this coincides with the solution given by expected value.
 If the first flip is a tails, the payout is $2, and for each heads seen, the payout doubles.*
 
 As we saw above, $$\mathbb{E}[X_i] = \sum_{n=1}^{\infty} 2^{n}\left(\frac{1}{2^{n}}\right) = \sum_{n=1}^{\infty} 1 = \infty$$.
-But as it turns out, $$\sum_{i=1}^{n} X_i \overset{P}{\to} n \log_2 n$$.
+But as it turns out, $$\mathbb{R}[X_{1..n}] = n \log_2 n$$.
 The math here is a bit more involved, so I’ll just give the high-level intuition of the analysis.
 If you are comfortable with probability theory, [a rigorous proof is given by Dunnet in his textbook (Example 2.2.16)](https://services.math.duke.edu/~rtd/PTE/PTE5_011119.pdf#page=73), or more explicitly [in Sebastien Roch's lecture notes](https://people.math.wisc.edu/~roch/grad-prob/gradprob-notes4.pdf#page62).
 
@@ -254,17 +254,17 @@ By gradually increasing the truncation threshold, we can make it less and less l
 Therefore, we can understand our sequence of $$X_i$$s as the *limit* of a sequence of sequence-of-truncated-$$X_i$$s, where the truncation levels get less and less strict.
 As the truncation threshold grows, we end up with almost no probability that any variable actually gets impacted.
 
-Concretely, define a sequence of truncation levels $$b_j = j \log_2 j$$.
-For each level $$b_j$$, we truncate the first $j$ terms of our sequence of $$X_i$$.
-A bit of algebra leads to the conclusion that $$\sum_{i=1}^j \mathbb{P}(X_i \neq T(X_i, b_j)) \to 0$$ as $$j \to \infty$$, meaning that we eventually see that there is almost no chance that any variable will get truncated.
+Concretely, define a sequence of truncation levels $$t_j = j \log_2 j$$.
+For each level $$t_j$$, we truncate the first $j$ terms of our sequence of $$X_i$$.
+A bit of algebra leads to the conclusion that $$\sum_{i=1}^j \mathbb{P}(X_i \neq T(X_i, t_j)) \to 0$$ as $$j \to \infty$$, meaning that we eventually see that there is almost no chance that any variable will get truncated.
 
 Next, we just need to analyze the truncated sequence.
-We know that the expectation and variance for truncated variables exist, and for any particular sum of $$j$$ variables truncated at level $$b_j$$, some more algebra tells us that the expectation $$\mathbb{E}[\sum_{i=1}^j T(X_i, b_j)] = j (\log_2 j + \log_2 \log_2 j)$$, which we can denote as $$\mu_j$$.
-After checking some conditions, we can use [Chebyshev’s inequality](https://en.wikipedia.org/wiki/Chebyshev%27s_inequality) to bound the probability that the actual sum deviates from this mean by a factor of more than $$b_j$$, leading to the conclusion that $$\frac{|\mu_j - \sum_{i=1}^j T(X_i, b_j)|}{b_j} \overset{P}\to 0$$ as $$j \to \infty$$.
+We know that the expectation and variance for truncated variables exist, and for any particular sum of $$j$$ variables truncated at level $$t_j$$, some more algebra tells us that the expectation $$\mathbb{E}[\sum_{i=1}^j T(X_i, t_j)] = j (\log_2 j + \log_2 \log_2 j)$$, which we can denote as $$\mu_j$$.
+After checking some conditions, we can use [Chebyshev’s inequality](https://en.wikipedia.org/wiki/Chebyshev%27s_inequality) to bound the probability that the actual sum deviates from this mean by a factor of more than $$t_j$$, leading to the conclusion that $$\frac{|\mu_j - \sum_{i=1}^j T(X_i, t_j)|}{t_j} \overset{P}\to 0$$ as $$j \to \infty$$.
 
 Since both (1) the truncated sequences converge in probability to the real sequence, and (2) the deviations of the sum of the real sequence converge in probability to 0, we can conclude that the deviations of the sum of the *real* sequence converge in probability to 0.
-Thus, for a real sequence of length $$n$$, we have $$\frac{|\mu_n - \sum_{i=1}^n X_i|}{b_n} \overset{P}\to 0$$ as $$n \to \infty$$.
-Plugging in $$\mu_n = n (\log_2 n + \log_2 \log_2 n)$$ and $$b_n = n \log_2 n$$ and doing a bit more algebra gives the final result: $$\sum_{i=1}^n X_i \overset{P}\to n \log_2 n$$.
+Thus, for a real sequence of length $$n$$, we have $$\frac{|\mu_n - \sum_{i=1}^n X_i|}{t_n} \overset{P}\to 0$$ as $$n \to \infty$$.
+Plugging in $$\mu_n = n (\log_2 n + \log_2 \log_2 n)$$ and $$t_n = n \log_2 n$$ and doing a bit more algebra gives the final result: $$\sum_{i=1}^n X_i \overset{P}\to n \log_2 n$$.
 
 Whew.
 Let’s marinate for a moment on the implications of this result.
