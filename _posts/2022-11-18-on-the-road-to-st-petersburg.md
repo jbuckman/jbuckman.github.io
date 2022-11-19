@@ -179,8 +179,8 @@ However, it's still perfectly coherent to apply this decision rule to bets that 
 The philosophy endorsed by an RV maximizer is "I should play this bet now if I would be happy to play it forever."
 
 One important subtlety to note is that while expected value is a property of an *individual* wager, convergence in probability is actually a property of a *sequence* of wagers.
-When if refer to the realizable value of a wager $$X$$, keep in mind that this is merely shorthand for the realizable value of a sequence of $$X_{1..n}$$ where each $$X_i$$ is an identical copy of $$X$$.
-But in general, it's not the case that all the $$X_i$$ need to be the same.
+When we refer to the realizable value of a wager $$X$$, keep in mind that this is merely shorthand for the realizable value of a sequence of $$X_{1..n}$$ where each $$X_i$$ is an identical copy of $$X$$.
+In general, it's not the case that all the $$X_i$$ need to be the same.
 
 ---
 
