@@ -150,7 +150,7 @@ and default risk.[^2]
 But I find these to be very unsatisfying.
 They merely assume away the existence of situations that would be problematic, without addressing the fundamental issue.
 
-To be honest, I don't think "paradox" is even quite the right word here.
+To be honest, I don't think "paradox" is even quite the right description here.
 There's no *fundamental* inconsistency at play.
 This is just an example of a situation where the expected-value framework is ineffective.
 Choosing to play the doubling game with a buy-in of \\$1,000,000,000 *really does* have positive expected value, and *really does* lose you money.
