@@ -178,7 +178,7 @@ By deciding whether or not to take a bet based on its realizable value, we are e
 However, it's still perfectly coherent to apply this decision rule to bets that are just encountered once.
 The rule obeyed by RV is, "I should play this bet now if I would be happy to play it forever."
 
-One important distinction to draw is that while expected value is a property of an *individual* wager, convergence in probability is actually a property of a *sequence* of wagers, $$\sum_{i=1}^{n} X_i \overset{P}\to z$$.
+One important distinction to draw is that while expected value is a property of an *individual* wager, convergence in probability is actually a property of a *sequence* of wagers, $$\frac{1}{n} \sum_{i=1}^{n} X_i \overset{P}\to z$$.
 So realizable value is fundamentally sequential.
 When we refer to the realizable value of a single wager $$X$$, keep in mind that this is merely shorthand for the situation where each $$X_i$$ is an identical copy of $$X$$.
 In general, it's not the case that all the $$X_i$$ need to be the same, and in such cases we therefore would be reasoning about about the value realized by a sequence $$\mathbb{R}[X_{1..n}]$$.
@@ -222,18 +222,17 @@ But if you were acting to maximize realizable value, you would not.
 Next, let’s walk through some examples of realizable value in action.
 In each scenario, we are invited to play a particular game for $$n$$ rounds, and ask: what is a fair price-per-round to pay?
 $$X_i$$ denotes the random variable that refers to the outcome of the $$i$$th round, so
-our total payout for $$n$$ plays is $$\sum_{i=1}^{n} X_i$$.
+our average payout for $$n$$ plays is $$\frac{1}{n} \sum_{i=1}^{n} X_i$$.
 
 ### Basic coin flip.
 
 *The player flips a fair coin which pays out \\$10 for heads and \\$0 for tails.*
 
 The expected value of any given round $$\mathbb{E}[X_i] = 0.5(10) + 0.5(0) = 5$$ for all $i$.
-Since this is finite, the weak law of large numbers tells us that $$\frac{1}{n} \sum_{i=1}^{n} X_i \overset{p}{\to} \mathbb{E}[X_i]$$ as $$n \to \infty$$.
-We can rearrange to get $$\sum_{i=1}^{n} X_i \overset{P}{\to} n\mathbb{E}[X_i] = 5n$$, so $$\mathbb{R}[X_{1..n}] = 5n$$.
+Since this is finite, the weak law of large numbers tells us that $$\frac{1}{n} \sum_{i=1}^{n} X_i \overset{p}{\to} \mathbb{E}[X_i]$$ as $$n \to \infty$$, so $$\mathbb{R}[X] = 5$$.
 As a realizable-value maximizer, I should be willing to pay up to $5 per round of play.
 
-As expected, this coincides with the solution given by expected value.
+Of course, since everything is finite, this coincides with the solution given by expected value.
 
 ### Doubling game.
 
@@ -241,7 +240,7 @@ As expected, this coincides with the solution given by expected value.
 If the first flip is a tails, the payout is $2, and for each heads seen, the payout doubles.*
 
 As we saw above, $$\mathbb{E}[X_i] = \sum_{n=1}^{\infty} 2^{n}\left(\frac{1}{2^{n}}\right) = \sum_{n=1}^{\infty} 1 = \infty$$.
-But as it turns out, $$\mathbb{R}[X_{1..n}] = n \log_2 n$$.
+But as it turns out, $$\mathbb{R}[X_{1..n}] = \log_2 n$$.
 The math here is a bit more involved, so I’ll just give the high-level intuition of the analysis.
 If you are comfortable with probability theory, [a rigorous proof is given by Dunnet in his textbook (Example 2.2.16)](https://services.math.duke.edu/~rtd/PTE/PTE5_011119.pdf#page=73), or more explicitly [in Sebastien Roch's lecture notes](https://people.math.wisc.edu/~roch/grad-prob/gradprob-notes4.pdf#page62).
 
@@ -264,7 +263,7 @@ After checking some conditions, we can use [Chebyshev’s inequality](https://en
 
 Since both (1) the truncated sequences converge in probability to the real sequence, and (2) the deviations of the sum of the real sequence converge in probability to 0, we can conclude that the deviations of the sum of the *real* sequence converge in probability to 0.
 Thus, for a real sequence of length $$n$$, we have $$\frac{|\mu_n - \sum_{i=1}^n X_i|}{t_n} \overset{P}\to 0$$ as $$n \to \infty$$.
-Plugging in $$\mu_n = n (\log_2 n + \log_2 \log_2 n)$$ and $$t_n = n \log_2 n$$ and doing a bit more algebra gives the final result: $$\sum_{i=1}^n X_i \overset{P}\to n \log_2 n$$.
+Plugging in $$\mu_n = n (\log_2 n + \log_2 \log_2 n)$$ and $$t_n = n \log_2 n$$ and doing a bit more algebra gives $$\sum_{i=1}^n X_i \overset{P}\to n \log_2 n$$, and thus, $$\mathbb{R}[X_{1..n}] = \log_2 n$$.
 
 Whew.
 Let’s marinate for a moment on the implications of this result.
