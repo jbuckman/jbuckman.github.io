@@ -230,8 +230,8 @@ our average payout for $$n$$ plays is $$\frac{1}{n} \sum_{i=1}^{n} X_i$$.
 The expected value of any round $$\mathbb{E}[X_i] = 0.5(10) + 0.5(0) = 5$$ for all $$i$$.
 Since this is finite, the weak law of large numbers tells us that $$\left| \mathbb{E}[X_i] - \sum_{i=1}^{n} \frac{X_i}{n} \right| \overset{P}{\to} 0$$ as $$n \to \infty$$, or equivalently, $$\sum_{i=1}^{n} \frac{X_i}{n\mathbb{E}[X_i]} \overset{P}{\to} 1$$.
 So $$\mathbb{R}[X_{1..n}] = 5n$$.
-As a realizable-value maximizer, I should be willing to pay up to $5 per round of play.
 
+As a realizable-value maximizer, I should be willing to pay up to $5 per round of play.
 Of course, this coincides with the solution given by expected value.
 
 ### Doubling game.
@@ -279,7 +279,7 @@ We used a generic, first-principles approach, not anything problem-specific, and
 We ended up with a concrete answer, assigning a specific numerical value.
 And the answer elegantly synthesizes our two intuitions – that on one hand, the game has the potential to be extremely valuable, but on the other hand, a single play is not worth much.
 
-To double-check this result, I ran a simulation ([code here](/static/files/petersburg/stpetersburg.py)) of two billion doubling games, computing the mean reward per game over time:
+To double-check this result, I ran a simulation ([code](/static/files/petersburg/stpetersburg.py)) of two billion doubling games, computing the mean reward per game over time:
 
 ![](/static/img/petersburg/doubling.png){:width="700px"}
 
