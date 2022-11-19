@@ -196,7 +196,7 @@ For example, this is the case in the St. Petersburg paradox, as well as in my st
 In a moment, we'll walk through these examples in more detail.
 
 Personally, I find it to be quite cool that RV matches up perfectly with EV in all the situations we know that EV feels correct, and gives a new answer in precisely those situations where EV does something weird.
-But it’s not as though I carved out specific exceptions: this approach is unified and very natural, but just happens to do exactly what we would want.
+But it’s not as though I carved out specific exceptions: this approach is unified and natural, but just happens to do exactly what we would want.
 Isn’t that elegant?
 
 ---
