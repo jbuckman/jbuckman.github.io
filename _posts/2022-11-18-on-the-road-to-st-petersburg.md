@@ -219,7 +219,7 @@ But if you were acting to maximize realizable value, you would not.
 ---
 
 Next, let’s walk through some examples of realizable value in action.
-In each scenario, we are invited to play a particular game for $$n$$ rounds, and ask: what is a fair price-per-round to pay?
+In each scenario, we are invited to play a particular game for $$n$$ rounds, and ask: what is the fair price?
 In each example, $$X_i$$ denotes the random variable that refers to the outcome of the $$i$$th round, so
 our average payout for $$n$$ plays is $$\frac{1}{n} \sum_{i=1}^{n} X_i$$.
 
