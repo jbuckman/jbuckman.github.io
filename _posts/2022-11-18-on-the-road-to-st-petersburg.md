@@ -26,7 +26,7 @@ Upon reading the rules, Evan performed the following calculation.
 “For every ruble wagered, there is a 50% chance of winning 1.20₽, and a 50% chance of losing 1₽.
 In expectation, this will net 0.10₽ per ruble wagered.
 The expected value improves with each ruble, so the more rubles wagered, the better.
-So, I wager all 100₽.”
+I wager all 100₽.”
 
 I flipped my coin and…heads!
 Now, Evan had 220₽.
