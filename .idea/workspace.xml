@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="46e852db-af01-4e65-9a99-4e29b6234bf4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2022-11-18-on-the-road-to-st-petersburg.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2022-11-18-on-the-road-to-st-petersburg.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publications.md" beforeDir="false" afterPath="$PROJECT_DIR$/publications.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pdf/JacobBuckmanCV.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/static/pdf/JacobBuckmanCV_old.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,11 +182,11 @@
       <recent name="$PROJECT_DIR$/_drafts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/pdf" />
       <recent name="$PROJECT_DIR$/static/files/petersburg" />
       <recent name="$PROJECT_DIR$/static/img/petersburg" />
       <recent name="$PROJECT_DIR$/_posts" />
       <recent name="$PROJECT_DIR$/_drafts" />
-      <recent name="$PROJECT_DIR$/static/pdf" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -206,6 +207,7 @@
       <workItem from="1663075521846" duration="17000" />
       <workItem from="1668751212313" duration="1870000" />
       <workItem from="1668753385100" duration="18178000" />
+      <workItem from="1669241860873" duration="259000" />
     </task>
     <servers />
   </component>
