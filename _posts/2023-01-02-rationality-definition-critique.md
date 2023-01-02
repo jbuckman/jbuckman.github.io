@@ -31,9 +31,9 @@ But if, in the process of systematization, the original task becomes “corrupte
 
 ---
 
-[A follow-up question](https://www.thelastrationalist.com/rationality-is-not-systematized-winning.html), to be explored: why don’t rationalists win?
+[A follow-up question](https://www.thelastrationalist.com/rationality-is-not-systematized-winning.html): why don’t rationalists win?
 
-Rationality is king when a task can be easily systematized, with little risk of corruption. This is most true in any closed system with well-defined rules, such as chess or mathematics; it also works surprisingly well for many natural situations, which materializes as reductionism. It is least true in situations with many complex, poorly-understood, chaotically-interacting components, such as social customs in a society. In such situations, rational actions are often far worse on the true task than traditional or intuitive actions. When your model is poor, applying more reasoning will just cause you to stray further from optimality.
+Rationality is king when a task can be easily systematized, with little risk of corruption. This is most true in any closed system with well-defined rules, such as chess or mathematics; it also often works surprisingly well in the natural world, as evidenced by the predictive power of reductionism. It is least true in situations with many complex, poorly-understood, chaotically-interacting components, such as social customs in a society. In such situations, rational actions are often far worse on the true task than traditional or intuitive actions. When your model is poor, applying more reasoning will just cause you to stray further from optimality.
 
 Compared to a rational actor, a traditional actor is much less likely to make a field-changing breakthrough, like a new scientific discovery. But the flip side of this is that they are also much less likely to radically redesign the economy in a flawed way and destroy the lives of millions. (The best books to learn more about this topic are The Secret To Our Success by Henrich, and Seeing Like A State by Scott.)
 
