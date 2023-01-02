@@ -112,7 +112,7 @@ I genuinely don't understand it.
 Am I missing something? What is going on?
 
 I naturally have a rational disposition, and am an AI researcher, so my circles often tend to be rationalist-adjacent.
-But I'm not worried about an AGI takeover, and I'm not an effective altruist[^1], and in general would not consider myself a member of the rationalist community.
+But I'm not worried about an imminent AGI takeover, and I'm not an effective altruist[^1], and in general would not consider myself a member of the rationalist community.
 I'm put off by what feels like an enormous blind-spot at its heart.
 Rationalists are willing to consider any idea seriously, except for the idea that they should not take ideas so seriously.
 
