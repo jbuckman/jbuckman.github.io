@@ -64,7 +64,7 @@ Putting the object-level question of the true reason for the collapse[^0] aside,
 There is an underlying assumption that taking 2.1x-or-nothing bets is a virtuous ideal; that we should all aspire to overcome our fears, surpass our animal instincts, and execute perfectly EV-maxing decision-making in our own lives.
 
 But this is a fundamentally confused position.
-SBF acted rationally, in that he took actions that seemed optimal within his chosen framework of expected value maximization; however, there is nothing inherently correct about that choice of framework.
+SBF acted rationally, in that he took actions that seemed optimal within his chosen framework of expected value maximization. However, there is nothing inherently correct about that choice of framework.
 As I explain in [this essay](https://jacobbuckman.com/2022-11-18-on-the-road-to-st-petersburg/), the field of statistics has progressed in its understanding beyond naive expected-value maximization, and in a more modern framework, 2.1x-or-nothing bets are very irrational indeed.
 
 To me, the FTX debacle is a perfect parable about why fully committing to rationally-derived conclusions is a terrible idea.
