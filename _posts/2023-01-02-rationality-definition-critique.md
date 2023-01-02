@@ -113,7 +113,7 @@ The only distinction is that for EAs, the positive feelings come from a self-per
 
 Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.com/jacobmbuckman) with any feedback or questions!
 
-*Many thanks to [Tony Pezzullo](https://www.linkedin.com/in/tonypezzullo) for his feedback on this post.*
+*Many thanks to [Tony Pezzullo](https://twitter.com/tonypezzz) for his feedback on this post.*
 
 ---
 
