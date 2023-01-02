@@ -88,7 +88,7 @@ Don't dismiss the conflict out-of-hand because "it makes no sense".
 Instead, search hard for a way to modify your behavior to satisfy both tradition *and* rationality, or at the very least, find a compromise between the two.
 In doing so, you leverage knowledge that is not legible enough to be incorporated neatly, and can be clued in to potential limitations of your current rational framework.
 
-Now, I am not claiming pure reason is always flawed.
+I am not claiming pure reason is always flawed.
 Sometimes, traditions that make no sense are also genuinely bad -- for example, maybe they solved a problem that no longer exists.
 It's absolutely possible to use rational thought to improve on the old ways.
 But one must do so slowly and carefully, and constantly be on the lookout for reasons to revise your framework in the direction indicated by irrationality.
