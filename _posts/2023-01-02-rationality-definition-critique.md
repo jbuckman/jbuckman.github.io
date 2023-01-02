@@ -117,4 +117,4 @@ Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.co
 
 ---
 
-[^0]: Indeed, [subsequent interviews](https://www.vox.com/future-perfect/23462333/sam-bankman-fried-ftx-cryptocurrency-effective-altruism-crypto-bahamas-philanthropy) give the impression that much of his supposed rationality may indeed have been artificially crafted for his public persona.
+[^0]: Indeed, [subsequent interviews](https://www.vox.com/future-perfect/23462333/sam-bankman-fried-ftx-cryptocurrency-effective-altruism-crypto-bahamas-philanthropy) give the impression that much of his supposed rationality may have been artificially crafted to benefit his public persona.
