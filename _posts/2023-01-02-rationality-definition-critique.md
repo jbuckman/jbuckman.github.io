@@ -98,16 +98,24 @@ Instead, note that there is likely something wrong with your framework or axioms
 ---
 
 It’s important to note that nothing I’m saying here is particularly original.
-Many rationalists are aware of these ideas, and discuss them frequently; indeed, my thinking on these topics have been heavily influenced by rationalist circles.
+Many rationalists are aware of these ideas; indeed, my thinking on these topics have been heavily influenced by rationalist writing.
 For example, Scott Alexander has reviewed both [Seeing Like A State](https://slatestarcodex.com/2017/03/16/book-review-seeing-like-a-state/) and [The Secret To Our Success](https://slatestarcodex.com/2019/06/04/book-review-the-secret-of-our-success/), and sometimes uses more-or-less the same argument as I have laid out here, for example to argue against certain tenets of [longtermism](https://astralcodexten.substack.com/p/book-review-what-we-owe-the-future).
-Similarly, the principle of moderation I described above is often referred to in rationalist circles as [Chesterton's fence](https://en.wiktionary.org/wiki/Chesterton%27s_fence) or the [Lindy effect](https://en.wikipedia.org/wiki/Lindy_effect).
+Similarly, the principle of moderation I described above is essentially just [Chesterton's fence](https://en.wiktionary.org/wiki/Chesterton%27s_fence) or the [Lindy effect](https://en.wikipedia.org/wiki/Lindy_effect).
 And so on.
 
-But despite this awareness, I feel that for many self-avowed rationalists, the realization has not yet quite sunk in.
-I find that it is common to pay lip service to the idea that rationality has limits but in practice privilege rational arguments and conclusions in almost all situations.
-Many people and organizations (for example effective altruists and AI safety researchers) could benefit greatly from internalizing these ideas and adjusting their direction accordingly.
-In many ways, my critique of effective altruism is precisely the same as the one EAs often level at non-EAs: when faced with a choice between *doing* good and *feeling* good, many give according to their feelings.
-The only distinction is that for EAs, the positive feelings come from a self-perception of rationality.
+That being the case, I find the current state of affairs quite confusing.
+There is a community of people that claims to take arguments seriously.
+Many people in this community have encountered strong arguments that rationality has limits, with no serious counterpoints.
+But nonetheless, they persist in privileging rational arguments and conclusions over alternative ways of knowing.
+They may pay lip service to the idea that their frameworks are limited and conclusions suspect, but then go become utility maximizers and longtermists and AI safety researchers anyways.
+I genuinely don't understand it.
+Am I missing something? What is going on?
+
+I naturally have a rational disposition, and an AI researcher, so my circles often tend to be rationalist-adjacent.
+But I'm not worried about an AGI takeover, and I'm not an effective altruist[^1], and in general would not consider myself a member of the rationalist community.
+I'm put off by what feels like an enormous blind-spot at the heart of the movement.
+Rationalists are willing to consider any idea seriously, except for the idea that they should not take ideas so seriously.
+
 
 ---
 
@@ -118,3 +126,4 @@ Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.co
 ---
 
 [^0]: Indeed, [subsequent interviews](https://www.vox.com/future-perfect/23462333/sam-bankman-fried-ftx-cryptocurrency-effective-altruism-crypto-bahamas-philanthropy) give the impression that much of his supposed rationality may have been artificially crafted to benefit his public persona.
+[^1]: In many ways, my critique of effective altruism is precisely the same as the critique EAs often level at non-EAs: when faced with a choice between *doing* good and *feeling* good, many give according to their feelings. The only distinction is that for EAs, positive feelings are derived from a self-perception of rationality.
