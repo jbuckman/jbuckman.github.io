@@ -67,7 +67,7 @@ But this is a fundamentally confused position.
 SBF acted rationally, in that he took actions that seemed optimal within his chosen framework of expected value maximization; however, there is nothing inherently correct about that choice of framework.
 As I explain in [this essay](https://jacobbuckman.com/2022-11-18-on-the-road-to-st-petersburg/), the field of statistics has progressed in its understanding beyond naive expected-value maximization, and in a more modern framework, 2.1x-or-nothing bets are very irrational indeed.
 
-To me, SBF is a prime example of why fully committing to rationally-derived conclusions is a terrible idea.
+To me, the FTX debacle is a perfect parable about why fully committing to rationally-derived conclusions is a terrible idea.
 There are limits to one's knowledge, and meta-limits to one's understanding of one's limits.
 The world is complicated enough that your framework will often be slightly wrong, and so your perfectly rational conclusions will nonetheless be somewhat erroneous.
 If you've gone all-in, this can be catastrophic.
