@@ -60,7 +60,7 @@ SBF is a semi-mythical figure.
 It would feel appropriate if his downfall was for properly mythical reasons, like a deep commitment to literal [expected-value maximizing].
 But I think in the end it will probably have at least as much to do with the normal human vices that we all have to struggle against.
 
-Putting the object-level question of the true reason for the collapse aside[^0], note the implied contrast between the noble commitment to expectation-maxing and grubby reality of human vice.
+Putting the object-level question of the true reason for the collapse[^0] aside, note the implied contrast between the noble commitment to expectation-maxing and grubby reality of human vice.
 There is an underlying assumption that taking 2.1x-or-nothing bets is a noble ideal; that we should all aspire to overcome our fears, surpass our animal instincts, and execute perfectly EV-maxing decision-making in our own lives.
 
 But this is a fundamentally confused position.
@@ -117,4 +117,4 @@ Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.co
 
 ---
 
-[^0] Indeed, [subsequent interviews](https://www.vox.com/future-perfect/23462333/sam-bankman-fried-ftx-cryptocurrency-effective-altruism-crypto-bahamas-philanthropy) give the impression that much of his supposed rationality may indeed have been artificially crafted for his public persona.
+[^0]: Indeed, [subsequent interviews](https://www.vox.com/future-perfect/23462333/sam-bankman-fried-ftx-cryptocurrency-effective-altruism-crypto-bahamas-philanthropy) give the impression that much of his supposed rationality may indeed have been artificially crafted for his public persona.
