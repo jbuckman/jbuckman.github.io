@@ -1,6 +1,6 @@
 ---
 layout: post
-title: On Rationality&#58; A Definition And Critique
+title: Rationality&#58; A Definition And Critique
 tags: ["philosophy", "rationality", "effective altruism", "AI safety"]
 published: true
 mathjax: false
