@@ -48,7 +48,7 @@ In November, a cryptocurrency exchange called FTX [collapsed in spectacular fash
 Prior to the collapse, many rationalists regarded its founder and CEO, Sam Bankman-Fried, with admiration, sometimes approaching reverence.
 SBF was, by all accounts, an extremely rational guy.
 He [was well-known for his adherence to the philosophy of acting purely in order to maximize expected value](https://80000hours.org/podcast/episodes/sam-bankman-fried-high-risk-approach-to-crypto-and-doing-good/), which is a rational approach to making money.
-He was also a major proponent of (and donor to) effective altruism, a movement centered on a rational approach to charitable giving.
+He [was also a major proponent of (and donor to) effective altruism](https://www.forbes.com/sites/johnhyatt/2022/11/14/sam-bankman-fried-promised-millions-to-nonprofits-research-groups-thats-not-going-too-well-now/?sh=298f93855ee8), a movement centered on a rational approach to charitable giving.
 
 On the whole, reactions to the collapse were mostly what you would expect: pity for the victims who lost their money, and condemnation of his shady and unethical practices.
 But an interesting subtext I noticed was the desire to shift the blame for the destructive outcome from his rational decision-making to other aspects of his personality.
