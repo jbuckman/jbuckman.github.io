@@ -85,8 +85,8 @@ Through social norms, your contemporaries spread knowledge of how to coordinate 
 When tradition or intuition prescribe behavior that conflicts with rationally-derived conclusions, this should be given serious consideration.
 Don't dismiss the conflict out-of-hand because "it makes no sense".
 *Of course* it makes no sense *in the context of the rational framework* that you have chosen: if it made sense, there would not have been a conflict in the first place.
-Instead, search hard for a way to modify your behavior to satisfy tradition and rationality, or at the very least, a compromise.
-This leverages knowledge that is not legible enough to be incorporated neatly, and clues you in to potential limitations of your current framework that can be iterated and improved on.
+Instead, search hard for a way to modify your behavior to satisfy both tradition *and* rationality, or at the very least, find a compromise between the two.
+In doing so, you leverage knowledge that is not legible enough to be incorporated neatly, and can be clued in to potential limitations of your current rational framework.
 
 Now, I am not claiming pure reason is always flawed.
 Sometimes, traditions that make no sense are also genuinely bad; for example, maybe they solved a problem that no longer exists.
