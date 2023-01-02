@@ -76,7 +76,7 @@ SBF's fall was not an unlucky break for man whose approach was admirable, it is 
 ---
 
 To avoid the pitfalls of blindly following rationally-derived conclusions, one must hedge by behaving irrationally.
-Intuition and tradition are two examples of decision-making philosophies which are, on the whole, quite reliable.
+Intuition and tradition are two examples of irrational decision-making philosophies which are, on the whole, quite reliable.
 These strategies take advantage of knowledge that has been implicitly bequeathed to you, but which is not explicitly accessible, and thus impossible to include in a rational framework.
 For example, through evolution, your genetic ancestors passed down instincts on how to survive.
 Through religion, your cultural ancestors passed down knowledge of how to live meaningfully.
