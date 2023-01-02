@@ -126,4 +126,4 @@ Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.co
 ---
 
 [^0]: Indeed, [subsequent interviews](https://www.vox.com/future-perfect/23462333/sam-bankman-fried-ftx-cryptocurrency-effective-altruism-crypto-bahamas-philanthropy) give the impression that much of his supposed rationality may have been artificially crafted to benefit his public persona.
-[^1]: In many ways, my critique of effective altruism is precisely the same as the critique EAs often level at non-EAs: when faced with a choice between *doing* good and *feeling* good, many give according to their feelings. The only distinction is that for EAs, positive feelings are derived from a self-perception of rationality.
+[^1]: In many ways, my critique of effective altruism is precisely the same as the critique EAs often level at non-EAs: when faced with a choice between *doing* good and *feeling* good, many give charity in ways that flatter their feelings. The only distinction is that for EAs, positive feelings are derived from a self-perception of rationality.
