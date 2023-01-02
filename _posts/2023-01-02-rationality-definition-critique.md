@@ -61,7 +61,7 @@ It would feel appropriate if his downfall was for properly mythical reasons, lik
 But I think in the end it will probably have at least as much to do with the normal human vices that we all have to struggle against.
 
 Putting the object-level question of the true reason for the collapse[^0] aside, note the implied contrast between the noble commitment to expectation-maxing and grubby reality of human vice.
-There is an underlying assumption that taking 2.1x-or-nothing bets is a noble ideal; that we should all aspire to overcome our fears, surpass our animal instincts, and execute perfectly EV-maxing decision-making in our own lives.
+There is an underlying assumption that taking 2.1x-or-nothing bets is a virtuous ideal; that we should all aspire to overcome our fears, surpass our animal instincts, and execute perfectly EV-maxing decision-making in our own lives.
 
 But this is a fundamentally confused position.
 SBF acted rationally, in that he took actions that seemed optimal within his chosen framework of expected value maximization; however, there is nothing inherently correct about that choice of framework.
