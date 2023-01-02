@@ -100,7 +100,7 @@ Instead, note that there is likely something wrong with your framework or axioms
 It’s important to note that nothing I’m saying here is particularly original.
 Many rationalists are aware of these ideas, and discuss them frequently; indeed, my thinking on these topics have been heavily influenced by rationalist circles.
 For example, Scott Alexander has reviewed both [Seeing Like A State](https://slatestarcodex.com/2017/03/16/book-review-seeing-like-a-state/) and [The Secret To Our Success](https://slatestarcodex.com/2019/06/04/book-review-the-secret-of-our-success/), and sometimes uses more-or-less the same argument as I have laid out here, for example to argue against certain tenets of [longtermism](https://astralcodexten.substack.com/p/book-review-what-we-owe-the-future).
-Similarly, the principle of moderation I described above is often referred to in rationalist circles as [Chesterton's fence] (https://en.wiktionary.org/wiki/Chesterton%27s_fence) or the [Lindy effect](https://en.wikipedia.org/wiki/Lindy_effect).
+Similarly, the principle of moderation I described above is often referred to in rationalist circles as [Chesterton's fence](https://en.wiktionary.org/wiki/Chesterton%27s_fence) or the [Lindy effect](https://en.wikipedia.org/wiki/Lindy_effect).
 And so on.
 
 But despite this awareness, I feel that for many self-avowed rationalists, the realization has not yet quite sunk in.
