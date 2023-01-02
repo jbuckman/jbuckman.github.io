@@ -18,7 +18,7 @@ This brings us to our definition of rationality: *strategic systematization*. Ra
 
 For example, a rationalist whose goal is charity might establish a framework for measuring outcomes (e.g. utilitarianism), identify some axioms (e.g. empirical estimates of various quantities), and then reason with in the framework (e.g. compute marginal utility-per-dollar for donations various charitable causes) and select the action which comes out on top (e.g. bednets in Africa).
 
-How does this improve upon the Yudkowsky definition: “rationality is systematized winning”? That attempt at a definition confuses what rationality *is* with what rationality *aspires to be*. The goal of *any* decision-making philosophy is to allow its practitioners to “win”, a term which here serves as a generic stand-in for an objective that someone might seek to accomplish. An actionable definition for a decision-making philosophy must take the form of a recipe for behavior, and if we have multiple philosophies defined in this way, we can compare them by seeing which one leads to winning more often.“Winning” is therefore a way to *evaluate* decision-making strategies, but not a useful way to *define* them. (Defining a strategy as “do what wins the most”, and then advocating for it because “it wins the most”, is blatantly tautological.)
+How does this improve upon the Yudkowsky definition: “rationality is systematized winning”? That attempt at a definition confuses what rationality *is* with what rationality *aspires to be*. The goal of *any* decision-making philosophy is to allow its practitioners to “win”, a term which here serves as a generic stand-in for an objective that someone might seek to accomplish. An actionable definition for a decision-making philosophy must take the form of a recipe for behavior, and if we have multiple philosophies defined in this way, we can compare them by seeing which one leads to winning more often. "Winning" is therefore a way to *evaluate* decision-making strategies, but not a useful way to *define* them. (Defining a strategy as "do what wins the most", and then advocating for it because “it wins the most”, is blatantly tautological.)
 
 ---
 
@@ -29,7 +29,7 @@ Rationality at its best can yield complex and surprising solutions to impossible
 
 But if, in the process of systematization, the original task becomes “corrupted”, rationality can go awry. Corruption here refers to the introduction of any difference between the original task we hope to solve, and the tractable problem we arrive at after systematization. For example, perhaps we got one of the axioms wrong; perhaps the original task was intractable, so we simplified it; perhaps our framework includes an inference rule that turns out to be invalid in some edge-cases; etc. If the systematized problem does not perfectly match the original task, the rational action (i.e. the optimal action according to our model) may be a poor action in reality. Furthermore, due to the aforementioned leverage, even a miniscule amount of corruption can lead to an incredibly poor action. An action that does not just fail to win, but yields a catastrophic loss.
 
-—
+---
 
 [A follow-up question](https://www.thelastrationalist.com/rationality-is-not-systematized-winning.html), to be explored: why don’t rationalists win?
 
@@ -41,7 +41,7 @@ That rationalists don’t seem to win more than non-rationalists is, in my opini
 
 Rationality is not a Swiss army knife, to be applied to every situation. It is a scalpel: a delicate, precise, and sometimes dangerous tool that should be brought to bear only when necessary. It should come as no surprise that a die-hard rationalist, swinging his scalpel around like a madman, might fail to open a can of tuna.
 
-—
+---
 
 In November, a cryptocurrency exchange called FTX [collapsed in spectacular fashion](https://www.coindesk.com/business/2022/11/08/sam-bankman-fried-no-longer-a-billionaire-after-146b-wipeout-bloomberg/).
 
@@ -95,7 +95,7 @@ But one must do so slowly and carefully, and constantly be on the lookout for re
 In particular, if your reasoning leads to shocking conclusions that contradict intuition and tradition – conclusions such as, “we should take repeated 2.1x-or-nothing bets”, “we should replace monogamous marriage with an alternative arrangement”, or “we should all donate our money to preventing a superintelligent AI from destroying humanity” – it is sensible to refrain from taking immediate or drastic action.
 Instead, note that there is likely something wrong with your framework or axioms, and moderate your behavior accordingly.
 
-—
+---
 
 It’s important to note that nothing I’m saying here is particularly original.
 Many rationalists are aware of these ideas, and discuss them frequently; indeed, my thinking on these topics have been heavily influenced by rationalist circles.
