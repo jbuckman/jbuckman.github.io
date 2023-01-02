@@ -92,7 +92,7 @@ I am not claiming pure reason is always flawed.
 Sometimes, traditions that make no sense are also genuinely bad -- for example, maybe they solved a problem that no longer exists.
 It's absolutely possible to use rational thought to improve on the old ways.
 But one must do so slowly and carefully, and constantly be on the lookout for reasons to revise your framework in the direction indicated by irrationality.
-In particular, if your reasoning leads to shocking conclusions that contradict intuition and tradition – conclusions such as, “we should take repeated 2.1x-or-nothing bets”, “we should replace monogamous marriage with an alternative arrangement”, or “we should all donate our money to preventing a superintelligent AI from destroying humanity” – it is sensible to refrain from taking immediate or drastic action.
+In particular, if your reasoning leads to shocking conclusions that contradict intuition or tradition – conclusions such as, “we should take repeated 2.1x-or-nothing bets”, “we should replace monogamous marriage with an alternative arrangement”, or “we should all donate our money to preventing a superintelligent AI from destroying humanity” – it is sensible to refrain from taking immediate or drastic action.
 Instead, note that there is likely something wrong with your framework or axioms, and moderate your behavior accordingly.
 
 ---
