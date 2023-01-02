@@ -83,7 +83,7 @@ Through religion, your cultural ancestors passed down knowledge of how to live m
 Through social norms, your contemporaries spread knowledge of how to coordinate pro-socially.
 
 When tradition or intuition prescribe behavior that conflicts with rationally-derived conclusions, this should be given serious consideration.
-Don't dismiss the conflict out-of-hand because "it makes no sense".
+Don't dismiss the traditional course of action out-of-hand because "it makes no sense".
 *Of course* it makes no sense *in the context of the rational framework* that you have chosen: if it made sense, there would not have been a conflict in the first place.
 Instead, search hard for a way to modify your behavior to satisfy both tradition *and* rationality, or at the very least, find a compromise between the two.
 In doing so, you leverage knowledge that is not legible enough to be incorporated neatly, and can be clued in to potential limitations of your current rational framework.
