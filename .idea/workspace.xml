@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46e852db-af01-4e65-9a99-4e29b6234bf4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2023-01-02-rationality-definition-critique.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2023-01-02-thoughts-on-rationality.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2023-01-02-thoughts-on-rationality.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2023-01-02-thoughts-on-rationality.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +209,7 @@
       <workItem from="1669241860873" duration="284000" />
       <workItem from="1672687021292" duration="5911000" />
       <workItem from="1672700151313" duration="4178000" />
-      <workItem from="1672769839350" duration="105000" />
+      <workItem from="1672769839350" duration="143000" />
     </task>
     <servers />
   </component>
