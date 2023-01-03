@@ -75,19 +75,18 @@ SBF's fall was not an unlucky break for man whose approach was admirable, it is 
 ---
 
 To avoid the pitfalls of blindly following rationally-derived conclusions, one must hedge by behaving irrationally.
-Intuition and tradition are two examples of irrational decision-making philosophies which are, on the whole, quite reliable.
+Intuition, tradition, and social convention are three examples of irrational decision-making philosophies which are, on the whole, quite reliable.
 These strategies take advantage of knowledge that has been implicitly bequeathed to you, but which is not explicitly accessible, and thus impossible to include in a rational framework.
 For example, through evolution, your genetic ancestors passed down instincts on how to survive.
 Through religion, your cultural ancestors passed down knowledge of how to live meaningfully.
 Through social norms, your contemporaries spread knowledge of how to coordinate pro-socially.
 
-When tradition or intuition prescribe behavior that conflicts with rationally-derived conclusions, this should be given serious consideration.
-Don't dismiss the traditional course of action out-of-hand because "it makes no sense".
+When these sources prescribe behavior that conflicts with rationally-derived conclusions, they should be given serious consideration.
+Don't dismiss the conventional course of action out-of-hand because "it makes no sense".
 *Of course* it makes no sense *in the context of the rational framework* that you have chosen: if it made sense, there would not have been a conflict in the first place.
-Instead, search hard for a way to modify your behavior to satisfy both tradition *and* rationality, or at the very least, find a compromise between the two.
+Instead, search hard for a way to modify your behavior to satisfy both convention *and* rationality, or at the very least, find a compromise between the two.
 In doing so, you leverage knowledge that is not legible enough to be incorporated neatly, and can be clued in to potential limitations of your current rational framework.
 
-I am not claiming pure reason is always flawed.
 Sometimes, traditions that make no sense are also genuinely bad -- for example, maybe they solved a problem that no longer exists.
 It's absolutely possible to use rational thought to improve on the old ways.
 But one must do so slowly and carefully, and constantly be on the lookout for reasons to revise your framework in the direction indicated by irrationality.
@@ -96,8 +95,7 @@ Instead, note that there is likely something wrong with your framework or axioms
 
 ---
 
-It’s important to note that nothing I’m saying here is particularly original.
-Many rationalists are aware of these ideas; indeed, my thinking on these topics have been heavily influenced by rationalist writing.
+Nothing I’m saying here is particularly original, and many (most?) rationalists are familiar of these ideas.
 For example, Scott Alexander has reviewed both [Seeing Like A State](https://slatestarcodex.com/2017/03/16/book-review-seeing-like-a-state/) and [The Secret To Our Success](https://slatestarcodex.com/2019/06/04/book-review-the-secret-of-our-success/), and sometimes uses more-or-less the same argument as I have laid out here, for example to argue against certain tenets of [longtermism](https://astralcodexten.substack.com/p/book-review-what-we-owe-the-future).
 Similarly, the principle of moderation I described above is essentially just [Chesterton's fence](https://en.wiktionary.org/wiki/Chesterton%27s_fence) or the [Lindy effect](https://en.wikipedia.org/wiki/Lindy_effect).
 And so on.
@@ -108,12 +106,12 @@ Many people in this community have encountered strong arguments that rationality
 But nonetheless, they persist in privileging rational arguments and conclusions over alternative ways of knowing.
 They may pay lip service to the idea that their frameworks are limited and conclusions suspect, but then go become utility maximizers and longtermists and AI safety researchers anyways.
 I genuinely don't understand it.
-Am I missing something? What is going on?
+What am I missing?
 
 I have a natural predisposition towards rationality, and am an AI researcher, so my circles often tend to be rationalist-adjacent.
 But I'm not worried about an imminent AGI takeover, and I'm not an effective altruist[^1], and in general I would not consider myself a member of the rationalist community.
 I'm put off by what feels like an enormous blind-spot at its heart.
-Rationalists are willing to consider any idea seriously, except for the idea that they should not consider most ideas so seriously.
+Rationalists are willing to consider any idea seriously, except for the idea that they should recognize the signs for when not consider most ideas so seriously.
 
 
 ---
