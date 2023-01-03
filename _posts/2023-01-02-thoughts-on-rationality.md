@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 'Rationality: Definition & Critique'
+title: 'Thoughts On Rationality'
 tags: ["philosophy", "rationality", "effective altruism", "AI safety"]
 published: true
 mathjax: false
 ---
 
-I recently came across [this post](https://www.thelastrationalist.com/rationality-is-not-systematized-winning.html), which challenges readers to propose a definition for rationality
-The post is several years old so I'm clearly late to the game, and I'm sure that most things have been said already, but I figured I’d take a crack at it.
+I recently came across [this post](https://www.thelastrationalist.com/rationality-is-not-systematized-winning.html), which challenges readers to propose a definition for rationality.
+The post is several years old so I'm clearly late to the game, and I'm sure that most everything has been said already, but I figured I’d take a crack at it anyways.
 
 ---
 
