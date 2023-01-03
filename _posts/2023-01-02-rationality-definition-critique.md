@@ -6,7 +6,8 @@ published: true
 mathjax: false
 ---
 
-I recently came across [this post](https://www.thelastrationalist.com/rationality-is-not-systematized-winning.html), which challenges readers to propose a definition for rationality, and figured I’d take a crack at it.
+I recently came across [this post](https://www.thelastrationalist.com/rationality-is-not-systematized-winning.html), which challenges readers to propose a definition for rationality
+The post is several years old so I'm clearly late to the game, and I'm sure that most things have been said already, but I figured I’d take a crack at it.
 
 ---
 
@@ -22,12 +23,10 @@ How does this improve upon the Yudkowsky definition: “rationality is systemati
 
 ---
 
-In the centuries since the Enlightenment, rationality has become the de-facto mode of thought for the entire modern world, almost completely supplanting other decision-making philosophies. Its cultural dominance is so complete that calling someone “irrational” is seen as a great insult. Almost all of the great scientific and technological developments of modernity emerged from rational thinking. In the face of such obvious and massive benefits, it can be easy to miss its limitations.
-
 Systematization is the source of rationality’s strength, but also its Achilles’ heel. The process of reasoning gives us enormous leverage on our knowledge: for example, the ~10 [Peano axioms](https://en.wikipedia.org/wiki/Peano_axioms) are sufficient to derive essentially all of modern mathematics.
 Rationality at its best can yield complex and surprising solutions to impossible-seeming problems.
-
-But if, in the process of systematization, the original task becomes “corrupted”, rationality can go awry. Corruption here refers to the introduction of any difference between the original task we hope to solve, and the tractable problem we arrive at after systematization. For example, perhaps we got one of the axioms wrong; perhaps the original task was intractable, so we simplified it; perhaps our framework includes an inference rule that turns out to be invalid in some edge-cases; etc. If the systematized problem does not perfectly match the original task, the rational action (i.e. the optimal action according to our model) may be a poor action in reality. Furthermore, due to the aforementioned leverage, even a miniscule amount of corruption can lead to an incredibly poor action. An action that does not just fail to win, but yields a catastrophic loss.
+But if, in the process of systematization, the original task becomes “corrupted”, rationality can go awry.
+Corruption here refers to the introduction of any difference between the original task we hope to solve, and the tractable problem we arrive at after systematization. For example, perhaps we got one of the axioms wrong; perhaps the original task was intractable, so we simplified it; perhaps our framework includes an inference rule that turns out to be invalid in some edge-cases; etc. If the systematized problem does not perfectly match the original task, the rational action (i.e. the optimal action according to our model) may be a poor action in reality. Furthermore, due to the aforementioned leverage, even a miniscule amount of corruption can lead to an incredibly poor action. An action that does not just fail to win, but yields a catastrophic loss.
 
 ---
 
@@ -37,7 +36,7 @@ Rationality is king when a task can be easily systematized, with little risk of 
 
 Compared to a rational actor, a traditional actor is much less likely to make a field-changing breakthrough, like a new scientific discovery. But the flip side of this is that they are also much less likely to radically redesign the economy in a flawed way and destroy the lives of millions. (My favorite books to on this topic are [The Secret To Our Success](https://press.princeton.edu/books/paperback/9780691178431/the-secret-of-our-success) and [Seeing Like A State](https://yalebooks.yale.edu/book/9780300078152/seeing-like-a-state/).)
 
-That rationalists don’t seem to win more than non-rationalists is, in my opinion, merely reflective of the fact that the majority of life’s problems fall into the “too complex to model” category. For example, a classic rationalist failure mode is to rationally re-assess social conventions, and stop obeying the conventions that seem unreasonable. Unfortunately, the social world is sufficiently complex that an accurate understanding of the roles of various conventions is typically beyond even the most skilled and well-informed rationalist, and so their flagrant violations of social norms leave them genuinely worse off than an irrational rule-follower. 
+That rationalists don’t seem to win more than non-rationalists is merely reflective of the fact that the majority of life’s problems fall into the “too complex to model” category. For example, a classic rationalist failure mode is to rationally re-assess social conventions, and stop obeying the conventions that seem unreasonable. Unfortunately, the social world is sufficiently complex that an accurate understanding of the roles of various conventions is typically beyond even the most skilled and well-informed rationalist, and so their flagrant violations of social norms leave them genuinely worse off than an irrational rule-follower. 
 
 Rationality is not a Swiss army knife, to be applied to every situation. It is a scalpel: a delicate, precise, and sometimes dangerous tool that should be brought to bear only when necessary. It should come as no surprise that a die-hard rationalist, swinging his scalpel around like a madman, might fail to open a can of tuna.
 
