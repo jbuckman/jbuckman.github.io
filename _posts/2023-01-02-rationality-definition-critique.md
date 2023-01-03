@@ -110,7 +110,7 @@ What am I missing?
 
 I have a natural predisposition towards rationality, and am an AI researcher, so my circles often tend to be rationalist-adjacent.
 But I'm not worried about an imminent AGI takeover, and I'm not an effective altruist[^1], and in general I would not consider myself a member of the rationalist community.
-I'm put off by what feels like an enormous blind-spot at its heart.
+I'm put off by what feels like an enormous blindspot at its heart.
 Rationalists are willing to consider any idea seriously, except for the idea that they should be able to recognize when not consider ideas seriously.
 
 
