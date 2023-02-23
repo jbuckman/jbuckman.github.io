@@ -92,7 +92,7 @@ Any agent still needs to see a certain minimum amount of data in order to reach 
 
 ---
 
-Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.com/jacobmbuckman) with any feedback or questions!
+Thanks for reading. Follow me on [Substack](https://jacobbuckman.substack.com/) for more writing, or hit me up on Twitter [@jacobmbuckman](https://twitter.com/jacobmbuckman) with any feedback or questions!
 
 *Many thanks to [Alexey Guzey](https://guzey.com/) for the discussion that inspired this post.*
 

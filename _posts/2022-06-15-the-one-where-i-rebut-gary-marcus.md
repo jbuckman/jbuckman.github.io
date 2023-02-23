@@ -112,7 +112,7 @@ In the meantime, I don't see any evidence indicating that we need any modeling t
 
 ---
 
-Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.com/jacobmbuckman) with any feedback or questions!
+Thanks for reading. Follow me on [Substack](https://jacobbuckman.substack.com/) for more writing, or hit me up on Twitter [@jacobmbuckman](https://twitter.com/jacobmbuckman) with any feedback or questions!
 
 ---
 

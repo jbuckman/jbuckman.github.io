@@ -341,6 +341,9 @@ With a little effort and a lot of head-scratching, it's usually possible to use 
 Hopefully this post helped clear up the basics behind saving and loading Tensorflow models.
 There are a few other advanced tricks, like automatic checkpointing and saving/restoring meta-graphs, that I may touch on in a future post; but in my experience, those use-cases are rare, especially for beginners.
 As always, please let me know in the comments or via email if I got anything wrong, or there is anything important I missed.
-Thanks for reading!
+
+---
+
+Thanks for reading. Follow me on [Substack](https://jacobbuckman.substack.com/) for more writing, or hit me up on Twitter [@jacobmbuckman](https://twitter.com/jacobmbuckman) with any feedback or questions!
 
 [^0]: There will also be a suffix `:output_num` added to the tensor names. For now, that's always `:0`, since we are only using operations with a single output. See [this StackOverflow question for more info](https://stackoverflow.com/questions/40925652/in-tensorflow-whats-the-meaning-of-0-in-a-variables-name). Thanks Su Tang for pointing this out!

@@ -146,4 +146,7 @@ It could maybe be incorporated by randomly masking out certain segments of the i
 Well, that ended up being a bit more of a brain dump than I intended.
 In summary, I think that this is a super impressive accomplishment, and says a lot about how good policy search, domain randomization, and reward shaping are at finding solutions.
 However, I'm hesitant to draw any conclusions about whether the solution found involves much higher-level reasoning or long-term planning.
-Thanks for reading!
+
+---
+
+Thanks for reading. Follow me on [Substack](https://jacobbuckman.substack.com/) for more writing, or hit me up on Twitter [@jacobmbuckman](https://twitter.com/jacobmbuckman) with any feedback or questions!

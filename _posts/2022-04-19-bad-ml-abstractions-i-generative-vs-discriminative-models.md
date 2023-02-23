@@ -50,3 +50,7 @@ Is this a good abstraction? If not -- why? Could an analogous criticism be level
 ---
 
 **One valid use case: GANs.** A GAN is composed of 2 neural networks, the first mapping from noise to images, and the second mapping from images to Bernoulli distributions. There is nothing *fundamentally* different about these two networks, but in the context of GAN training, each serves a different role. If you want to give a name to each of the networks for ease of reference, calling them "generator" and "discriminator" seems perfectly fine.
+
+---
+
+Thanks for reading. Follow me on [Substack](https://jacobbuckman.substack.com/) for more writing, or hit us up on Twitter [@jacobmbuckman](https://twitter.com/jacobmbuckman) & [@carlesgelada](https://twitter.com/carlesgelada) with any feedback or questions!

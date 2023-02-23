@@ -78,7 +78,11 @@ But when ingesting new information, we can get in the habit of mapping from the 
 ---
 
 #### Addendum
-In the coming months, I will be writing about some specific abstractions in current ML, both the good and the bad. I'm hoping this post helps to motivate the importance of that type of discussion.[^2]
+In the coming months, we will be writing about some specific abstractions in current ML, both the good and the bad. Our hope is that this post helps to motivate the importance of that type of discussion.[^2]
+
+---
+
+Thanks for reading. Follow me on [Substack](https://jacobbuckman.substack.com/) for more writing, or hit us up on Twitter [@jacobmbuckman](https://twitter.com/jacobmbuckman) & [@carlesgelada](https://twitter.com/carlesgelada) with any feedback or questions!
 
 ---
 
