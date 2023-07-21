@@ -25,6 +25,7 @@ description: Personal Website
 navbar-links:
   Blog: ""
   Publications: "publications"
+  About: "about"
 #  Blog: "blog"
 #  Talks: "talks"
 #  Resume: "resume"
