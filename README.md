@@ -63,7 +63,7 @@ You can now visit your shiny new website, which will be seeded with several samp
 
 To add pages to your site, you can either write a markdown file (`.md`) or you can write an HTML file directly.  It is much easier to write markdown than HTML, so I suggest you do that (use the [tutorial I mentioned above](http://markdowntutorial.com/) if you need to learn markdown). You can look at some files on this site to get an idea of how to write markdown. To look at existing files, click on any file that ends in `.md`, for example [`aboutme.md`](./aboutme.md). On the next page you can see some nicely formatted text (there is a word in bold, a link, bullet points), and if you click on the pencil icon to edit the file, you will see the markdown that generated the pretty text. Very easy!
 
-In contrast, look at [`index.html`](./index.html). That's how your write HTML - not as pretty. So stick with markdown if you don't know HTML.
+In contrast, look at [`index.html`](_drafts/old_index.html). That's how your write HTML - not as pretty. So stick with markdown if you don't know HTML.
 
 Any file that you add inside the [`_posts`](./_posts) directory will be treated as a blog entry.  You can look at the existing files there to get an idea of how to write blog posts.  After you successfully add your own post, you can delete the existing files inside [`_posts`](./_posts) to remove the sample posts, as those are just demo posts to help you learn.
 
@@ -87,7 +87,7 @@ subtitle: Here you'll find all the ways to get in touch with me
 ---
 ```
 
-You can look at the top of [`aboutme.md`](./aboutme.md) or [`index.html`](./index.html) as more examples.
+You can look at the top of [`aboutme.md`](./aboutme.md) or [`index.html`](_drafts/old_index.html) as more examples.
 
 **Important takeaway: ALWAYS add the YAML front matter, which is two lines with three dashes, to EVERY page. If you have any parameters, they go between the two lines.**    
 If you don't include YAML then your file will not use the template.
