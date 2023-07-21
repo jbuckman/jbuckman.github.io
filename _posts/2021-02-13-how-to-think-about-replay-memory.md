@@ -124,7 +124,7 @@ This will require significant progress in understanding [the issues endemic to s
 
 ---
 
-Thanks for reading, and hit me up on Twitter [@jacobmbuckman](https://twitter.com/jacobmbuckman) with any feedback or questions!
+Thanks for reading. Follow me on [Substack](https://jacobbuckman.substack.com/) for more writing, or hit me up on Twitter [@jacobmbuckman](https://twitter.com/jacobmbuckman) with any feedback or questions!
 
 ---
 

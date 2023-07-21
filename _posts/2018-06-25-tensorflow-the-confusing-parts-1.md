@@ -552,6 +552,10 @@ Happy training!
 
 *This post is the first of a series; click [here](https://jacobbuckman.com/2018-09-17-tensorflow-the-confusing-parts-2/) for the next post.*
 
+---
+
+Thanks for reading. Follow me on [Substack](https://jacobbuckman.substack.com/) for more writing, or hit me up on Twitter [@jacobmbuckman](https://twitter.com/jacobmbuckman) with any feedback or questions!
+
 *Many thanks to Kathryn Rough, Katherine Lee, Sara Hooker, and Ludwig Schubert for all of their help and feedback when writing this post.*
 
 [^0]: [This page](https://docs.chainer.org/en/stable/guides/define_by_run.html) from the Chainer documentation describes the difference between define-and-run and define-by-run.

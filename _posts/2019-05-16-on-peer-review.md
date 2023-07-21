@@ -80,6 +80,10 @@ If this idea seems radical to you, keep in mind: OpenReview has been publishing 
 ### Conclusion
 I’d love to get feedback from the community on this, on both my framing of this issue and my suggested changes. Do people agree or disagree? What obvious issues have I failed to consider?
 
+---
+
+Thanks for reading. Follow me on [Substack](https://jacobbuckman.substack.com/) for more writing, or hit me up on Twitter [@jacobmbuckman](https://twitter.com/jacobmbuckman) with any feedback or questions!
+
 *Thanks to Surya Bhupatiraju, Ryan Cotterell, Adi Renduchintala, and Isaac Buckman for feedback when writing this post.*
 
 [^0]: I focus on conferences here, but this mostly applies to journals too.

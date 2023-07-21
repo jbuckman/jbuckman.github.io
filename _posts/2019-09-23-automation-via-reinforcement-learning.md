@@ -59,6 +59,10 @@ Of course, parallel research into reduction-to-RL techniques is also important. 
 ### Conclusion
 I hope that this perspective is valuable. If there is any research that doesn’t fit nicely into this taxonomy, or you have other thoughts or disagreements, please reach out to me on Twitter @jacobmbuckman, I’d love to discuss.
 
+---
+
+Thanks for reading. Follow me on [Substack](https://jacobbuckman.substack.com/) for more writing, or hit me up on Twitter [@jacobmbuckman](https://twitter.com/jacobmbuckman) with any feedback or questions!
+
 *Thanks to Saurabh Kumar for feedback when writing this post.*
 
 [^0]: The goal of automation is to save effort. I’m going to define effort in a very hand-wavy way, something along the lines of “whatever it takes to solve a task”. There are many things which we could consider effort. I want to highlight a few main categories: *human* effort, *data collection* effort, and *computational* effort. (There are clearly other categories too, but these are the most relevant to RL.) These types of effort form a hierarchy of sorts. Human effort is the most expensive, since it requires the time and attention of a person who would rather be doing something else; data collection is next-most-expensive, since it requires setting up infrastructure to interact with the messy real world; and compute effort is the least expensive, because CPUs/GPUs are relatively cheap and algorithms can often be parallelized. We are almost always happy to transmute effort from a higher tier to a lower tier. For example, everyone loves calculators, which convert the effort required to multiply two numbers from human effort into compute effort.

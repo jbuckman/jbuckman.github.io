@@ -210,3 +210,7 @@ Tensor("b/read:0", shape=(), dtype=int32)
 So a `tf.Variable` adds (at least) four ops, but most of the details can be happily abstracted away by the `tf.Variable` interface. In general, you can just assume that a `tf.Variable` will be the thing you want it to be in any given circumstance. For example, if you want to assign a value to a variable, it will resolve to the core-op; if you want to use the variable in a computation, it will resolve to the current-value-op; etc.
 
 Take some time to play around with inspecting simple Tensorflow graphs in a Colab or interpreter - it will pay off in time saved debugging later!
+
+---
+
+Thanks for reading. Follow me on [Substack](https://jacobbuckman.substack.com/) for more writing, or hit me up on Twitter [@jacobmbuckman](https://twitter.com/jacobmbuckman) with any feedback or questions!

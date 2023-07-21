@@ -7,12 +7,26 @@
     <list default="true" id="46e852db-af01-4e65-9a99-4e29b6234bf4" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/_drafts/old_index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resume.html" beforeDir="false" afterPath="$PROJECT_DIR$/_drafts/old_resume.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/talks.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-06-25-tensorflow-the-confusing-parts-1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-08-05-graph-inspection.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-08-05-graph-inspection.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-08-06-openaifive-takeaways.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-08-06-openaifive-takeaways.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-09-17-tensorflow-the-confusing-parts-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-09-17-tensorflow-the-confusing-parts-2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-05-16-on-peer-review.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-16-on-peer-review.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-09-23-automation-via-reinforcement-learning.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-09-23-automation-via-reinforcement-learning.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-10-25-three-paradigms-of-reinforcement-learning.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-10-25-three-paradigms-of-reinforcement-learning.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2020-01-22-bayesian-neural-networks-need-not-concentrate.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2020-01-22-bayesian-neural-networks-need-not-concentrate.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2020-10-31-updating-the-accepted-wisdom-in-offline-rl.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2020-10-31-updating-the-accepted-wisdom-in-offline-rl.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2020-11-30-conceptual-fundamentals-of-offline-rl.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2020-11-30-conceptual-fundamentals-of-offline-rl.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2021-02-13-how-to-think-about-replay-memory.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2021-02-13-how-to-think-about-replay-memory.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2021-02-15-fair-ml-tools-require-problematic-ml-models.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2021-02-15-fair-ml-tools-require-problematic-ml-models.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2021-05-29-please-commit-more-blatant-academic-fraud.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2021-05-29-please-commit-more-blatant-academic-fraud.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2022-02-21-abstraction-enables-thought.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2022-02-21-abstraction-enables-thought.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2022-04-19-bad-ml-abstractions-i-generative-vs-discriminative-models.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2022-04-19-bad-ml-abstractions-i-generative-vs-discriminative-models.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2022-06-14-an-actually-good-argument-against-naive-ai-scaling.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2022-06-14-an-actually-good-argument-against-naive-ai-scaling.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2022-06-15-the-one-where-i-rebut-gary-marcus.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2022-06-15-the-one-where-i-rebut-gary-marcus.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2022-09-07-recursively-self-improving-ai-is-already-here.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2022-09-07-recursively-self-improving-ai-is-already-here.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2022-11-18-on-the-road-to-st-petersburg.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2022-11-18-on-the-road-to-st-petersburg.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2023-01-02-thoughts-on-rationality.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2023-01-02-thoughts-on-rationality.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,14 +187,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jacob/PycharmProjects/jbuckman.github.io/_posts&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/jacobbuckman/PycharmProjects/jbuckman.github.io",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/_posts" />
@@ -216,8 +232,13 @@
       <workItem from="1672687021292" duration="5911000" />
       <workItem from="1672700151313" duration="4178000" />
       <workItem from="1672769839350" duration="167000" />
+<<<<<<< HEAD
       <workItem from="1675271448961" duration="725000" />
       <workItem from="1689976626755" duration="168000" />
+=======
+      <workItem from="1675271448961" duration="104000" />
+      <workItem from="1677175591755" duration="686000" />
+>>>>>>> ab676b260ce4e5aff102fcb73acb85b25ed53655
     </task>
     <servers />
   </component>
