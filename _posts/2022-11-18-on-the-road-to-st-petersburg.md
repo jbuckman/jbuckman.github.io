@@ -307,7 +307,7 @@ For the bankroll $$b_n$$,
 $$\frac{\log b_n}{n} = \frac{\log b_0}{n} + \frac{H_n}{n} \log (1+w) + (1 - \frac{H_n}{n}) \log(1-l) \overset{P}\to p \log (1+w) + (1 - p) \log(1-l)$$
 
 as $$n \to \infty$$.
-From here, we can use an epsilon-delta argument to verify that $$\frac{\log b_n}{n} \overset{P}\to z$$ implies that $$b_n \overset{P}\to 0$$ if $$z < 0$$, so its realized value is \$$$-b_0$$.
+From here, we can use an epsilon-delta argument to verify that $$\frac{\log b_n}{n} \overset{P}\to z$$ implies that $$b_n \overset{P}\to 0$$ if $$z < 0$$, so its realized value is -\$$$b_0$$.
 And so we see that this strategy will realize gains if and only if $$(1+w)^{p}(1-l)^{(1-p)} > 1$$.
 
 In summary, EV says to bet it all if $$\frac{pw}{(1-p)l} > 1$$, whereas RV says to bet it all only if $$(1+w)^{p}(1-l)^{(1-p)} > 1$$.
