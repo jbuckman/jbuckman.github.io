@@ -86,7 +86,7 @@ I glanced up sharply.
 He had lost his initial bankroll, yet continued to play?
 Had the boy been holding money in reserve?
 Squinting at his gaunt physique, I realized that what I had taken for an unsightly tumor on his leftward side was in reality a satchel strapped beneath his rags, filled to the brim with ten-ruble coins.
-For the first time since arriving in Expect, I spoke.
+For the first time since arriving in Expectsibirsk, I spoke.
 
 “What is your name, boy?”
 
@@ -261,7 +261,7 @@ Next, we just need to analyze the truncated sequence.
 We know that the expectation and variance for truncated variables exist, and for any particular sum of $$j$$ variables truncated at level $$t_j$$, some more algebra tells us that the expectation $$\mathbb{E}[\sum_{i=1}^j T(X_i, t_j)] = j (\log_2 j + \log_2 \log_2 j)$$, which we can denote as $$\mu_j$$.
 After checking some conditions, we can use [Chebyshev’s inequality](https://en.wikipedia.org/wiki/Chebyshev%27s_inequality) to bound the probability that the actual sum deviates from this mean by a factor of more than $$t_j$$, leading to the conclusion that $$\frac{|\mu_j - \sum_{i=1}^j T(X_i, t_j)|}{t_j} \overset{P}\to 0$$ as $$j \to \infty$$.
 
-Since both (1) the truncated sequences converge in probability to the real sequence, and (2) the deviations of the sum of the real sequence converge in probability to 0, we can conclude that the deviations of the sum of the *real* sequence converge in probability to 0.
+Since both (1) the truncated sequences converge in probability to the real sequence, and (2) the deviations of the sum of the limit of the truncated sequences converge in probability to 0, we can conclude that the deviations of the sum of the *real* sequence converge in probability to 0.
 Thus, for a real sequence of length $$n$$, we have $$\frac{|\mu_n - \sum_{i=1}^n X_i|}{t_n} \overset{P}\to 0$$ as $$n \to \infty$$.
 Plugging in $$\mu_n = n (\log_2 n + \log_2 \log_2 n)$$ and $$t_n = n \log_2 n$$ and doing a bit more algebra gives $$\sum_{i=1}^n \frac{X_i}{n \log_2 n} \overset{P}\to 1$$, and thus, $$\mathbb{R}[X_{1..n}] = n \log_2 n$$.
 
