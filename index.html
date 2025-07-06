@@ -2,8 +2,15 @@
 layout: default
 title: Blog
 ---
-<p>I'm occasionally in possession of thoughts on various topics. You can read those thoughts <s>here</s> on <a href="https://jacobbuckman.substack.com/">Substack</a>, where I will be hosting all future essays. Past essays will be preserved on this page for posterity.</p>
+<p>I'm occasionally in possession of thoughts on various topics. You can read those thoughts here or <a href="https://jacobbuckman.substack.com/">on Substack</a>.</p>
 <ul>
+  <li class="spaced"> <a href="https://jacobbuckman.substack.com/p/delegating-to-computers">Delegating To Computers</a> 17 September 2023 </li>
+  <li class="spaced"> <a href="https://jacobbuckman.substack.com/p/where-bayes-falls-short">Where Bayes Falls Short</a> 30 May 2023 </li>
+  <li class="spaced"> <a href="https://jacobbuckman.substack.com/p/im-not-worried-about-an-ai-apocalypse">I'm Not Worried About An AI Apocalypse</a> 22 May 2023 </li>
+  <li class="spaced"> <a href="https://jacobbuckman.substack.com/p/we-arent-close-to-creating-a-rapidly">We Aren't Close To Creating A Rapidly Self-Improving AI
+</a> 26 April 2023 </li>
+  <li class="spaced"> <a href="https://jacobbuckman.substack.com/p/deep-learning-is-better-than-linear">Deep Learning Is Better Than Linear Regression</a> 19 March 2023 </li>
+  <li class="spaced"> <a href="https://jacobbuckman.substack.com/p/pageslaughter">Pageslaughter</a> 02 February 2023 </li>
   {% for post in site.posts %}
   <a hidden>{{ post.title }} {{ post.date | date_to_long_string }} {{ post.url }} </a>
   {% if post.invisible == null %}
